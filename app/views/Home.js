@@ -1,36 +1,46 @@
-import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import React, { Component } from "react";
+import { ScrollView, Text, StyleSheet, View, Image } from 'react-native';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
-class Home extends React.Component {
-   render() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.headerText}>myADC!</Text>
-      <Image style={styles.imageHeader} source={require("../../assets/main.jpg")} />
-    </View>
-  );
+class Home extends Component {
+ render() {
+    return (
+        <ScrollView style={styles.container}>
+          <View style={styles.headerDiv}>
+          <Text style={styles.header}>myADC</Text>
+          </View>
+          <View style={styles.imgContainer}>
+          <Image source={require("../../assets/main.jpg")} style={styles.logoStyle} />
+          </View>
+        </ScrollView>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+  container:{
+    backgroundColor: "#fff"
+  },
+  headerDiv:{
     backgroundColor: '#fcec01',
-    alignItems: 'center',
-    // justifyContent: 'center',
+    height: 90
   },
-  headerText:{
-    color: '#114260',
+  header: {
+    fontSize: 50,
     fontWeight: 'bold',
-    fontSize: 32,
-    paddingBottom: 10,
-    marginTop: 10,
+    textAlign: 'center',
+    color: '#114260',
+    marginTop: 15,
   },
-  imageHeader:{
+  logoStyle: {
     height: hp('30%'),
-    width: wp('100%'),
+    width: wp('95%'),
+  },
+  imgContainer: {
+    paddingTop: 70,
+    alignItems: 'center'
+  },
 
-  }
-})}
+});
 
 export default Home;

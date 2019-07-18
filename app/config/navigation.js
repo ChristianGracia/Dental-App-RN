@@ -19,14 +19,14 @@ export const BottomTab = TabNavigator({
   tabBarPosition: 'bottom',
   swipeEnabled: true,
   tabBarOptions: {
-    activeTintColor: '#deecfb',
-    activeBackgroundColor: "#1666ba",
-    inactiveTintColor: '#deecfb',
-    inactiveBackgroundColor: "#368ce7",
+    activeTintColor: '#114260',
+    activeBackgroundColor: "#fcec01",
+    inactiveTintColor: '#114260',
+    inactiveBackgroundColor: "#ffffcc",
 
     labelStyle: {
       fontSize: 22,
       marginTop: -20,
     }
-  },
+  }
 });
