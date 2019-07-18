@@ -15,4 +15,5 @@ If possible there are a lot of things I would like to incorporate in this app. M
 * Allow patients to leave a review
 * Allow patients to fill out a contact us form and submit
 * Allow patients to view their own chart
+* Add a blog of dental and non dental related articles
 
