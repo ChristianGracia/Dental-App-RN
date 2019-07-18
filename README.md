@@ -7,7 +7,7 @@ This app will for sure display information related to procedures that can be don
 
 ## Goals
 
-If possible there are a lot of things I would like to incorporate in this app.
+If possible there are a lot of things I would like to incorporate in this app. Most of this depends on what Dentrix allows me to do and how much API access costs
 
 * integration with the software the office uses (Dentrix)
 * Allow patients to view next appointment
