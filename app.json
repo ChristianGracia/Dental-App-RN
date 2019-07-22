@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "ADC APP",
-    "slug": "AdvancedDentalCareOfNortonApp",
+    "name": "ADCN APP",
+    "slug": "ADC-APP",
     "privacy": "public",
     "sdkVersion": "33.0.0",
     "platforms": [
