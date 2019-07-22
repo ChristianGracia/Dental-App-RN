@@ -2,18 +2,18 @@ import React from "react";
 import { TabNavigator } from "react-navigation";
 
 import Home from '../views/Home';
-import Info from '../views/Info';
-import Blog from '../views/Blog';
+import Services from '../views/Services';
+import Contact from '../views/Contact';
 
 export const BottomTab = TabNavigator({
   Home: {
     screen: Home,
   },
-  Info: {
-    screen: Info,
+  Services: {
+    screen: Services,
   },
-  Blog: {
-    screen: Blog,
+  Contact: {
+    screen: Contact,
   }
 }, {
   tabBarPosition: 'bottom',
@@ -25,8 +25,9 @@ export const BottomTab = TabNavigator({
     inactiveBackgroundColor: "#ffffcc",
 
     labelStyle: {
-      fontSize: 22,
-      marginTop: -20,
+      fontSize: 23,
+      fontWeight: 'bold',
+      paddingBottom: 5,
     }
   }
 });

@@ -11,6 +11,9 @@ class Home extends Component {
           </View>
           <View style={styles.imgContainer}>
           <Image source={require("../../assets/main.jpg")} style={styles.logoStyle} />
+          <View style={styles.newsContainer}>
+          <Text style={styles.newsHeader}>News</Text>
+          </View>
           </View>
         </ScrollView>
     );
@@ -40,6 +43,14 @@ const styles = StyleSheet.create({
     paddingTop: 70,
     alignItems: 'center'
   },
+  newsHeader: {
+    fontSize: 40,
+
+  },
+  newsContainer: {
+    paddingTop: 60,
+
+  }
 
 });
 
