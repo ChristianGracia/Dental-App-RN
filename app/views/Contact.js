@@ -6,9 +6,11 @@ class Contact extends Component {
  render() {
     return (
       <SafeAreaView>
+      <ScrollView>
       <View style={styles.headerDiv}>
       <Text style={styles.header}>Contact</Text>
       </View>
+      </ScrollView>
       </SafeAreaView>
     );
   }

@@ -8,18 +8,40 @@ class Services extends React.Component {
     super(props);
 
     this.state = {
+      showList: true;
     }
   }
 
  render() {
     return (
       <SafeAreaView>
+      <ScrollView style={styles.scrollStyle}>
       <View style={styles.headerDiv}>
       <Text style={styles.header}>Services</Text>
+      </View>
       <Text style={styles.serviceHelp}>Click on a service we offer for more information</Text>
 
 
-      </View>
+            <FlatList style={styles.list}
+            data={[
+              {key: 'Crowns'},
+              {key: 'Implants'},
+              {key: 'Root Canals'},
+              {key: 'Botox'},
+              {key: 'Veneers'},
+              {key: 'Sleep Apnea'},
+              {key: 'Dentures'},
+              {key: 'Bleaching'},
+              {key: 'fillers'}
+            ]}
+            renderItem={({item}) =>
+
+            <TouchableOpacity style={styles.listItemButton}><Text style={styles.listItemText}>{item.key}</Text></TouchableOpacity>}
+
+            />
+
+
+      </ScrollView>
       </SafeAreaView>
     );
   }
@@ -41,6 +63,23 @@ const styles = StyleSheet.create({
     marginTop: 15,
   },
   serviceHelp: {
+    paddingTop: 30,
+    paddingBottom: 40,
+    textAlign: 'center',
+    fontWeight: 'bold'
+  },
+  listItemButton: {
+  },
+  listItemText: {
+    textAlign: 'center',
+    fontSize: 23,
+    paddingTop: 20,
+    fontWeight: 'bold',
+    color: '#114260'
+  },
+  list: {
+  },
+  scrollStyle: {
   }
 });
 
