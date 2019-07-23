@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { View, ScrollView, Text, StyleSheet, TouchableOpacity, FlatList, Button} from 'react-native';
 import { SafeAreaView } from 'react-navigation';
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 class Services extends React.Component {
 
@@ -9,19 +10,87 @@ class Services extends React.Component {
 
     this.state = {
       showList: true,
-      showItem: ''
+      showItem: '',
+
+      showBleaching: false,
+      showBotox: false,
+      showComposites: false,
+      showCrowns: false,
+      showDentures: false,
+      showFillers: false,
+      showImplants: false,
+      showPartials: false,
+      showRootCanals: false,
+      showSleepApnea: false,
+      showVeneers: false,
+
     }
   }
   handleClick = (item) => {
-    var check = item.key
 
+    //hide list
     this.setState({showList: false});
+    //change current item
     this.setState({showItem: item.key})
+
+    //item condition
+    if (item.key == 'Bleaching'){
+      this.setState({showBleaching: true})
+    }
+
+    if (item.key == 'Botox'){
+      this.setState({showBotox: true})
+    }
+
+    if (item.key == 'Composites'){
+      this.setState({showComposites: true})
+    }
+
+    if (item.key == 'Crowns'){
+      this.setState({showCrowns: true})
+    }
+
+    if (item.key == 'Dentures'){
+      this.setState({showDentures: true})
+    }
+    if (item.key == 'Fillers'){
+      this.setState({showFillers: true})
+    }
+    if (item.key == 'Implants'){
+      this.setState({showImplants: true})
+    }
+    if (item.key == 'Partial Dentures'){
+      this.setState({showPartials: true})
+    }
+    if (item.key == 'Root Canals'){
+      this.setState({showRootCanals: true})
+    }
+    if (item.key == 'Sleep Apnea'){
+      this.setState({showSleepApnea: true})
+    }
+    if (item.key == 'Veneers'){
+      this.setState({showVeneers: true})
+    }
 
   }
   resetList = () => {
     this.setState({showList: true});
     this.setState({showItem: ""})
+
+    //reset
+    this.setState({
+        showBleaching: false,
+        showBotox: false,
+        showComposites: false,
+        showCrowns: false,
+        showDentures: false,
+        showFillers: false,
+        showImplants: false,
+        showPartials: false,
+        showRootCanals: false,
+        showSleepApnea: false,
+        showVeneers: false,
+      });
   }
 
  render() {
@@ -36,15 +105,17 @@ class Services extends React.Component {
 
           {this.state.showList ? (<FlatList style={styles.list}
             data={[
-              {key: 'Crowns'},
-              {key: 'Implants'},
-              {key: 'Root Canals'},
-              {key: 'Botox'},
-              {key: 'Veneers'},
-              {key: 'Sleep Apnea'},
-              {key: 'Dentures'},
               {key: 'Bleaching'},
-              {key: 'Fillers'}
+              {key: 'Botox'},
+              {key: 'Composites'},
+              {key: 'Crowns'},
+              {key: 'Dentures'},
+              {key: 'Fillers'},
+              {key: 'Implants'},
+              {key: 'Partial Dentures'},
+              {key: 'Root Canals'},
+              {key: 'Sleep Apnea'},
+              {key: 'Veneers'}
             ]}
             renderItem={({item}) =>
 
@@ -52,8 +123,25 @@ class Services extends React.Component {
 
             />): null}
 
-            <Text style={styles.itemPick}>{this.state.showItem}</Text>
+            {this.state.showBleaching ? (<Text style={styles.itemPick}>Bleaching</Text>): null}
+            {this.state.showBotox ? (<Text style={styles.itemPick}>Botox</Text>): null}
+            {this.state.showComposites ? (<Text style={styles.itemPick}>Composites</Text>): null}
+            {this.state.showCrowns ? (<Text style={styles.itemPick}>Crowns</Text>): null}
+            {this.state.showDentures ? (<Text style={styles.itemPick}>Dentures</Text>): null}
+            {this.state.showFillers ? (<Text style={styles.itemPick}>Fillers</Text>): null}
+            {this.state.showImplants ? (<Text style={styles.itemPick}>Implants</Text>): null}
+            {this.state.showPartials ? (<Text style={styles.itemPick}>Partial Dentures</Text>): null}
+            {this.state.showRootCanals ? (<Text style={styles.itemPick}>Root Canals</Text>): null}
+            {this.state.showSleepApnea ? (<Text style={styles.itemPick}>Sleep Apnea</Text>): null}
+            {this.state.showVeneers ? (<Text style={styles.itemPick}>Veneers</Text>): null}
+
+            <View style={styles.buttonDiv}>
             {this.state.showItem ? (<TouchableOpacity style={styles.backButton} onPress={this.resetList}><Text style={styles.buttonText}>Back</Text></TouchableOpacity>): null}
+            </View>
+
+
+
+
 
       </ScrollView>
       </SafeAreaView>
@@ -105,6 +193,7 @@ const styles = StyleSheet.create({
   backButton: {
     paddingTop: 40,
     alignItems: 'center',
+
   },
   buttonText: {
     color: '#114260',
@@ -112,10 +201,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 20,
     borderWidth: 1,
-    borderRadius: 16,
+    borderRadius: 15,
     overflow: 'hidden',
     borderColor: '#fff',
-  }
+    width: 100,
+    height: 50,
+    textAlign: 'center',
+    paddingTop: 10,
+  },
 });
 
 export default Services;
