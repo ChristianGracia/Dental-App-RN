@@ -2,7 +2,9 @@ import React, {Component} from 'react';
 import { View, ScrollView, Text, StyleSheet, Button, TouchableOpacity, FlatList} from 'react-native';
 import { SafeAreaView } from 'react-navigation';
 import AppNavigator from '../config/AppNavigator';
+
 import MoreInfo from './MoreInfo';
+
 
 class Services extends React.Component {
 
@@ -10,13 +12,17 @@ class Services extends React.Component {
     super(props);
 
     this.state = {
-      showList: true
+      showList: true,
+      showItem: ''
     }
   }
+  handleClick = (item) => {
+    var check = item.key
 
-  handleclick = () => {
-    alert('hi');
-    this.props.navigation.navigate('MoreInfo');
+    this.setState({showList: false});
+    this.setState({showItem: item.key})
+
+    alert(this.state.showItem);
   }
 
  render() {
@@ -29,7 +35,7 @@ class Services extends React.Component {
       <Text style={styles.serviceHelp}>Click on a service we offer for more information</Text>
 
 
-          <FlatList style={styles.list}
+          {this.state.showList ? (<FlatList style={styles.list}
             data={[
               {key: 'Crowns'},
               {key: 'Implants'},
@@ -39,13 +45,17 @@ class Services extends React.Component {
               {key: 'Sleep Apnea'},
               {key: 'Dentures'},
               {key: 'Bleaching'},
-              {key: 'fillers'}
+              {key: 'Fillers'}
             ]}
             renderItem={({item}) =>
 
-            <TouchableOpacity style={styles.listItemButton} onPress = {this.handleClick}><Text style={styles.listItemText}>{item.key}</Text></TouchableOpacity>}
+            <TouchableOpacity style={styles.listItemButton} onPress={ () => this.handleClick(item)}><Text style={styles.listItemText}>{item.key}</Text></TouchableOpacity>}
 
-            />
+            />): null}
+
+            <Text>{this.state.showItem}</Text>
+
+
 
 
 
@@ -54,6 +64,7 @@ class Services extends React.Component {
     );
   }
 }
+
 
 const styles = StyleSheet.create({
   container:{
