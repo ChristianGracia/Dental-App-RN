@@ -8,8 +8,8 @@ class Services extends React.Component {
     super(props);
 
     this.state = {
-      showList: true;
-    }
+      showList: true
+    };
   }
 
  render() {
