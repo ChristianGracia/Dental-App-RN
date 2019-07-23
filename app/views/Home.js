@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import { ScrollView, Text, StyleSheet, View, Image } from 'react-native';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
+import { SafeAreaView } from 'react-navigation';
 
 class Home extends Component {
  render() {
     return (
+      <SafeAreaView>
         <ScrollView style={styles.container}>
           <View style={styles.headerDiv}>
           <Text style={styles.header}>myADC</Text>
@@ -16,6 +18,7 @@ class Home extends Component {
           </View>
           </View>
         </ScrollView>
+        </SafeAreaView>
     );
   }
 }

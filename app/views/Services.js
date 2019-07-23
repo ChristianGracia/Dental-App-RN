@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import { View, ScrollView, Text, StyleSheet, Button, TouchableOpacity } from 'react-native';
+import { View, ScrollView, Text, StyleSheet, Button, TouchableOpacity, FlatList} from 'react-native';
+import { SafeAreaView } from 'react-navigation';
 
 class Services extends React.Component {
 
@@ -10,17 +11,16 @@ class Services extends React.Component {
     }
   }
 
-  handleClick = () =>{
-    alert('hi');
-  }
-
  render() {
     return (
+      <SafeAreaView>
       <View style={styles.headerDiv}>
       <Text style={styles.header}>Services</Text>
       <Text style={styles.serviceHelp}>Click on a service we offer for more information</Text>
-      <TouchableOpacity onPress={this.handleClick}><Text>submit</Text></TouchableOpacity>
+
+
       </View>
+      </SafeAreaView>
     );
   }
 }

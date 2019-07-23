@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { View, ScrollView, Text, StyleSheet, Button } from 'react-native';
 
-
 class MoreInfo extends Component {
  render() {
     return (

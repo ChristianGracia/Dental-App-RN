@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
 import { View, TouchableOpacity, ScrollView, Text, StyleSheet, TextInput } from 'react-native';
+import { SafeAreaView } from 'react-navigation';
 
 class Contact extends Component {
  render() {
     return (
+      <SafeAreaView>
       <View style={styles.headerDiv}>
       <Text style={styles.header}>Contact</Text>
       </View>
+      </SafeAreaView>
     );
   }
 }
