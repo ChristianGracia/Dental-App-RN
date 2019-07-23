@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import { View, ScrollView, Text, StyleSheet, Button, TouchableOpacity, FlatList} from 'react-native';
 import { SafeAreaView } from 'react-navigation';
+import AppNavigator from '../config/AppNavigator';
+import MoreInfo from './MoreInfo';
 
 class Services extends React.Component {
 
@@ -9,7 +11,12 @@ class Services extends React.Component {
 
     this.state = {
       showList: true
-    };
+    }
+  }
+
+  handleclick = () => {
+    alert('hi');
+    this.props.navigation.navigate('MoreInfo');
   }
 
  render() {
@@ -22,7 +29,7 @@ class Services extends React.Component {
       <Text style={styles.serviceHelp}>Click on a service we offer for more information</Text>
 
 
-            <FlatList style={styles.list}
+          <FlatList style={styles.list}
             data={[
               {key: 'Crowns'},
               {key: 'Implants'},
@@ -36,9 +43,10 @@ class Services extends React.Component {
             ]}
             renderItem={({item}) =>
 
-            <TouchableOpacity style={styles.listItemButton}><Text style={styles.listItemText}>{item.key}</Text></TouchableOpacity>}
+            <TouchableOpacity style={styles.listItemButton} onPress = {this.handleClick}><Text style={styles.listItemText}>{item.key}</Text></TouchableOpacity>}
 
             />
+
 
 
       </ScrollView>
@@ -64,7 +72,7 @@ const styles = StyleSheet.create({
   },
   serviceHelp: {
     paddingTop: 30,
-    paddingBottom: 40,
+    paddingBottom: 25,
     textAlign: 'center',
     fontWeight: 'bold'
   },

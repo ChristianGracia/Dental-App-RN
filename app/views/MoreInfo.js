@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { View, ScrollView, Text, StyleSheet, Button } from 'react-native';
+import { AppNavigator } from '../config/AppNavigator';
 
 class MoreInfo extends Component {
  render() {
