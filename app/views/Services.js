@@ -1,10 +1,6 @@
 import React, {Component} from 'react';
-import { View, ScrollView, Text, StyleSheet, Button, TouchableOpacity, FlatList} from 'react-native';
+import { View, ScrollView, Text, StyleSheet, TouchableOpacity, FlatList, Button} from 'react-native';
 import { SafeAreaView } from 'react-navigation';
-import AppNavigator from '../config/AppNavigator';
-
-import MoreInfo from './MoreInfo';
-
 
 class Services extends React.Component {
 
@@ -22,7 +18,10 @@ class Services extends React.Component {
     this.setState({showList: false});
     this.setState({showItem: item.key})
 
-    alert(this.state.showItem);
+  }
+  resetList = () => {
+    this.setState({showList: true});
+    this.setState({showItem: ""})
   }
 
  render() {
@@ -53,11 +52,8 @@ class Services extends React.Component {
 
             />): null}
 
-            <Text>{this.state.showItem}</Text>
-
-
-
-
+            <Text style={styles.itemPick}>{this.state.showItem}</Text>
+            {this.state.showItem ? (<TouchableOpacity style={styles.backButton} onPress={this.resetList}><Text style={styles.buttonText}>Back</Text></TouchableOpacity>): null}
 
       </ScrollView>
       </SafeAreaView>
@@ -99,6 +95,26 @@ const styles = StyleSheet.create({
   list: {
   },
   scrollStyle: {
+  },
+  itemPick: {
+    textAlign: 'center',
+    fontWeight: 'bold',
+    fontSize: 23,
+    color: '#114260'
+  },
+  backButton: {
+    paddingTop: 40,
+    alignItems: 'center',
+  },
+  buttonText: {
+    color: '#114260',
+    backgroundColor: '#fcec01',
+    fontWeight: 'bold',
+    fontSize: 20,
+    borderWidth: 1,
+    borderRadius: 16,
+    overflow: 'hidden',
+    borderColor: '#fff',
   }
 });
 
