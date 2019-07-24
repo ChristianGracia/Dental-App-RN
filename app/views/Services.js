@@ -135,6 +135,17 @@ class Services extends React.Component {
             {this.state.showSleepApnea ? (<Text style={styles.itemPick}>Sleep Apnea</Text>): null}
             {this.state.showVeneers ? (<Text style={styles.itemPick}>Veneers</Text>): null}
 
+
+            <View style={styles.itemPickInfo}>
+            {this.state.showImplants ? (<Text style={styles.itemPickText}>Implant text goes here</Text>): null}
+            </View>
+
+
+
+
+
+
+
             <View style={styles.buttonDiv}>
             {this.state.showItem ? (<TouchableOpacity style={styles.backButton} onPress={this.resetList}><Text style={styles.buttonText}>Back</Text></TouchableOpacity>): null}
             </View>
@@ -209,6 +220,14 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     paddingTop: 10,
   },
+  itemPickInfo: {
+    paddingTop: 20,
+
+  },
+  itemPickText: {
+    color: "#000",
+    textAlign: 'center'
+  }
 });
 
 export default Services;
