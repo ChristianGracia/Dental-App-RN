@@ -137,7 +137,18 @@ class Services extends React.Component {
 
 
             <View style={styles.itemPickInfo}>
-            {this.state.showImplants ? (<Text style={styles.itemPickText}>Implant text goes here</Text>): null}
+            {this.state.showBleaching ? (<Text style={styles.itemPickText}>Bleaching text goes here</Text>): null}
+            {this.state.showBotox ? (<Text style={styles.itemPickText}>Botox text goes here</Text>): null}
+            {this.state.showComposites ? (<Text style={styles.itemPickText}>Composites text goes here</Text>): null}
+            {this.state.showCrowns ? (<Text style={styles.itemPickText}>Crowns text goes here</Text>): null}
+            {this.state.showDentures ? (<Text style={styles.itemPickText}>Dentures text goes here</Text>): null}
+            {this.state.showFillers ? (<Text style={styles.itemPickText}>Fillers</Text>): null}
+            {this.state.showImplants ? (<Text style={styles.itemPickText}>Implants text goes here</Text>): null}
+            {this.state.showPartials ? (<Text style={styles.itemPickText}>Partial Dentures text goes here</Text>): null}
+            {this.state.showRootCanals ? (<Text style={styles.itemPickText}>Root Canals text goes here</Text>): null}
+            {this.state.showSleepApnea ? (<Text style={styles.itemPickText}>Sleep Apnea text goes here</Text>): null}
+            {this.state.showVeneers ? (<Text style={styles.itemPickText}>Veneers text goes here</Text>): null}
+
             </View>
 
 
