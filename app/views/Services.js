@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { View, ScrollView, Text, StyleSheet, TouchableOpacity, FlatList, Button} from 'react-native';
+import { View, ScrollView, Text, StyleSheet, TouchableOpacity, FlatList, Button, Image} from 'react-native';
 import { SafeAreaView } from 'react-navigation';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
@@ -142,13 +142,17 @@ class Services extends React.Component {
             {this.state.showComposites ? (<Text style={styles.itemPickText}>Composites text goes here</Text>): null}
             {this.state.showCrowns ? (<Text style={styles.itemPickText}>Crowns text goes here</Text>): null}
             {this.state.showDentures ? (<Text style={styles.itemPickText}>Dentures text goes here</Text>): null}
-            {this.state.showFillers ? (<Text style={styles.itemPickText}>Fillers</Text>): null}
+            {this.state.showFillers ? (<Text style={styles.itemPickText}>Fillers text goes here</Text>): null}
             {this.state.showImplants ? (<Text style={styles.itemPickText}>Implants text goes here</Text>): null}
             {this.state.showPartials ? (<Text style={styles.itemPickText}>Partial Dentures text goes here</Text>): null}
             {this.state.showRootCanals ? (<Text style={styles.itemPickText}>Root Canals text goes here</Text>): null}
             {this.state.showSleepApnea ? (<Text style={styles.itemPickText}>Sleep Apnea text goes here</Text>): null}
             {this.state.showVeneers ? (<Text style={styles.itemPickText}>Veneers text goes here</Text>): null}
 
+            </View>
+
+            <View style={styles.serviceImage}>
+            {this.state.showImplants ? (<Image />): null}
             </View>
 
 
