@@ -152,7 +152,7 @@ class Services extends React.Component {
             </View>
 
             <View style={styles.serviceImage}>
-            {this.state.showImplants ? (<Image />): null}
+            {this.state.showImplants ? (<Image  source={require("../../assets/implant01.png")} />): null}
             {this.state.showComposites ? (<Image />): null}
             </View>
 
