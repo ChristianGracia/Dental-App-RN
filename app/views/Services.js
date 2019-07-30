@@ -224,7 +224,15 @@ class Services extends React.Component {
           {/* Images */}
 
           <View style={styles.serviceImage}>
-            {this.state.showImplants ? <Text>Hi</Text> : null}
+            {this.state.showImplants ? (
+              <Image
+                style={{ width: 360, height: 200, marginRight: -25 }}
+                source={{
+                  uri:
+                    "https://www.aspendental.com/-/media/aspendentaldotcom/ada-content/dental-implants/new-implants/implant_1.jpg?h=252&w=400&la=en&hash=D1211062CEC935D9CC3DEA947CE1CF47"
+                }}
+              />
+            ) : null}
           </View>
 
           {/* Back Button */}
@@ -306,6 +314,10 @@ const styles = StyleSheet.create({
   itemPickText: {
     color: "#000",
     textAlign: "center"
+  },
+  serviceImage: {
+    alignItems: "center",
+    paddingTop: 20
   }
 });
 
