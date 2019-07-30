@@ -1,16 +1,14 @@
-import React, {Component} from 'react';
-import { View, ScrollView, Text, StyleSheet, Button } from 'react-native';
+import React, { Component } from "react";
+import { View, ScrollView, Text, StyleSheet, Button } from "react-native";
 
 class Info extends Component {
- render() {
-    return (
-      <Text>Hi</Text>
-    );
+  render() {
+    return <Text>Hi</Text>;
   }
 }
 
 const styles = StyleSheet.create({
-  container:{
+  container: {
     backgroundColor: "#fff"
   }
 });

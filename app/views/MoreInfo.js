@@ -1,36 +1,34 @@
-import React, {Component} from 'react';
-import { View, ScrollView, Text, StyleSheet, Button } from 'react-native';
-import { AppNavigator } from '../config/AppNavigator';
+import React, { Component } from "react";
+import { View, ScrollView, Text, StyleSheet, Button } from "react-native";
+import { AppNavigator } from "../config/AppNavigator";
 
 class MoreInfo extends Component {
- render() {
+  render() {
     return (
       <View style={styles.headerDiv}>
-      <Text style={styles.header}>Services</Text>
-      <Text style={styles.serviceHelp}>Hi</Text>
+        <Text style={styles.header}>Services</Text>
+        <Text style={styles.serviceHelp}>Hi</Text>
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container:{
+  container: {
     backgroundColor: "#fff"
   },
-  headerDiv:{
-    backgroundColor: '#fcec01',
+  headerDiv: {
+    backgroundColor: "#fcec01",
     height: 90
   },
   header: {
     fontSize: 50,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    color: '#114260',
-    marginTop: 15,
+    fontWeight: "bold",
+    textAlign: "center",
+    color: "#114260",
+    marginTop: 15
   },
-  serviceHelp: {
-
-  }
+  serviceHelp: {}
 });
 
 export default MoreInfo;
