@@ -112,6 +112,8 @@ class Services extends React.Component {
             Click on a service we offer for more information
           </Text>
 
+          {/* Service List */}
+
           {this.state.showList ? (
             <FlatList
               style={styles.list}
@@ -138,6 +140,8 @@ class Services extends React.Component {
               )}
             />
           ) : null}
+
+          {/* Service Title */}
 
           {this.state.showBleaching ? (
             <Text style={styles.itemPick}>Bleaching</Text>
@@ -172,6 +176,8 @@ class Services extends React.Component {
           {this.state.showVeneers ? (
             <Text style={styles.itemPick}>Veneers</Text>
           ) : null}
+
+          {/* Service Text */}
 
           <View style={styles.itemPickInfo}>
             {this.state.showBleaching ? (
@@ -215,9 +221,13 @@ class Services extends React.Component {
             ) : null}
           </View>
 
+          {/* Images */}
+
           <View style={styles.serviceImage}>
             {this.state.showImplants ? <Text>Hi</Text> : null}
           </View>
+
+          {/* Back Button */}
 
           <View style={styles.buttonDiv}>
             {this.state.showItem ? (
