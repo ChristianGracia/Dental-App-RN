@@ -35,7 +35,9 @@ class Services extends React.Component {
       showImplants: false,
       showOrthodontics: false,
       showPartials: false,
+      showPediatric: false,
       showRootCanals: false,
+      showSedation: false,
       showSleepApnea: false,
       showVeneers: false
     };
@@ -84,11 +86,17 @@ class Services extends React.Component {
     if (item.key == "Orthodontics") {
       this.setState({ showOrthodontics: true });
     }
+    if (item.key == "Pediatric Dentistry") {
+      this.setState({ showPediatric: true });
+    }
     if (item.key == "Partial Dentures") {
       this.setState({ showPartials: true });
     }
     if (item.key == "Root Canals") {
       this.setState({ showRootCanals: true });
+    }
+    if (item.key == "Sedation") {
+      this.setState({ showSedation: true });
     }
     if (item.key == "Sleep Apnea") {
       this.setState({ showSleepApnea: true });
@@ -115,7 +123,9 @@ class Services extends React.Component {
       showImplants: false,
       showOrthodontics: false,
       showPartials: false,
+      showPediatric: false,
       showRootCanals: false,
+      showSedation: false,
       showSleepApnea: false,
       showVeneers: false
     });
@@ -150,7 +160,9 @@ class Services extends React.Component {
                 { key: "Implants" },
                 { key: "Orthodontics" },
                 { key: "Partial Dentures" },
+                { key: "Pediatric Dentistry" },
                 { key: "Root Canals" },
+                { key: "Sedation" },
                 { key: "Sleep Apnea" },
                 { key: "Veneers" }
               ]}
@@ -185,7 +197,7 @@ class Services extends React.Component {
           {this.state.showDentures ? (
             <Text style={styles.itemPick}>Dentures</Text>
           ) : null}
-          {this.state.showDentures ? (
+          {this.state.showDermalFillers ? (
             <Text style={styles.itemPick}>Dermal Fillers</Text>
           ) : null}
           {this.state.showDysport ? (
@@ -203,8 +215,14 @@ class Services extends React.Component {
           {this.state.showPartials ? (
             <Text style={styles.itemPick}>Partial Dentures</Text>
           ) : null}
+          {this.state.showPediatric ? (
+            <Text style={styles.itemPick}>Pediatric Dentistry</Text>
+          ) : null}
           {this.state.showRootCanals ? (
             <Text style={styles.itemPick}>Root Canals</Text>
+          ) : null}
+          {this.state.showSedation ? (
+            <Text style={styles.itemPick}>Sedation</Text>
           ) : null}
           {this.state.showSleepApnea ? (
             <Text style={styles.itemPick}>Sleep Apnea</Text>
@@ -232,9 +250,10 @@ class Services extends React.Component {
           <View style={styles.itemPickInfo}>
             {this.state.showAestheticSpa ? (
               <Text style={styles.itemPickText}>
-                Here at ADC of Norton we have {"\n"} an in-house Aesthetic Spa.
-                With a team of skilled nurses, we offer Botox, Dysport, and
-                Dermal Fillers. {"\n"}
+                Here at ADC of Norton we have an in-house Aesthetic Spa. With a
+                team of skilled nurses, we offer Botox, Dysport, and Dermal
+                Fillers.
+                {"\n"}
                 {"\n"} Information about these treatments can be found on our
                 list of services.
               </Text>
@@ -278,10 +297,18 @@ class Services extends React.Component {
                 Partial Dentures text goes here
               </Text>
             ) : null}
+            {this.state.showPediatric ? (
+              <Text style={styles.itemPickText}>
+                Pediatric Dentistry text goes here
+              </Text>
+            ) : null}
             {this.state.showRootCanals ? (
               <Text style={styles.itemPickText}>
                 Root Canals text goes here
               </Text>
+            ) : null}
+            {this.state.showSedation ? (
+              <Text style={styles.itemPickText}>Sedation text goes here</Text>
             ) : null}
             {this.state.showSleepApnea ? (
               <Text style={styles.itemPickText}>
@@ -369,12 +396,13 @@ const styles = StyleSheet.create({
   },
   itemPickInfo: {
     paddingTop: 20,
-    alignItems: "left"
+    alignItems: "left",
+    width: wp("90%")
   },
   itemPickText: {
     color: "#000",
-    textAlign: "center",
-    fontSize: 20
+    fontSize: 25,
+    paddingLeft: 20
   },
   serviceImage: {
     alignItems: "center",
