@@ -362,6 +362,18 @@ class Services extends React.Component {
               <Text style={styles.itemPickText}>Veneers text goes here</Text>
             ) : null}
           </View>
+          {/* Back Button */}
+
+          <View style={styles.buttonDiv2}>
+            {this.state.showItem ? (
+              <TouchableOpacity
+                style={styles.backButton2}
+                onPress={this.resetList}
+              >
+                <Text style={styles.buttonText2}>Back</Text>
+              </TouchableOpacity>
+            ) : null}
+          </View>
         </ScrollView>
       </SafeAreaView>
     );
@@ -369,10 +381,6 @@ class Services extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    backgroundColor: "#fff"
-    // flex: 1
-  },
   headerDiv: {
     backgroundColor: "#fcec01",
     height: 90
@@ -411,7 +419,25 @@ const styles = StyleSheet.create({
     paddingTop: hp("2%"),
     paddingLeft: hp("4%")
   },
+  buttonDiv2: {
+    alignItems: "center",
+    paddingTop: hp("10%")
+  },
   buttonText: {
+    color: "#114260",
+    backgroundColor: "#fcec01",
+    fontWeight: "bold",
+    fontSize: 20,
+    borderWidth: 1,
+    borderRadius: 15,
+    overflow: "hidden",
+    borderColor: "#fff",
+    width: 100,
+    height: 50,
+    textAlign: "center",
+    paddingTop: 10
+  },
+  buttonText2: {
     color: "#114260",
     backgroundColor: "#fcec01",
     fontWeight: "bold",
