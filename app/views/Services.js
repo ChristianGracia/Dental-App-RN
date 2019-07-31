@@ -186,54 +186,69 @@ class Services extends React.Component {
 
           {/* Service Title */}
 
-          {this.state.showAestheticSpa ? (
-            <Text style={styles.itemPick}>Aesthetic Spa</Text>
-          ) : null}
-          {this.state.showBleaching ? (
-            <Text style={styles.itemPick}>Bleaching</Text>
-          ) : null}
-          {this.state.showBotox ? (
-            <Text style={styles.itemPick}>Botox</Text>
-          ) : null}
-          {this.state.showComposites ? (
-            <Text style={styles.itemPick}>Composites</Text>
-          ) : null}
-          {this.state.showCrowns ? (
-            <Text style={styles.itemPick}>Crowns</Text>
-          ) : null}
-          {this.state.showDentures ? (
-            <Text style={styles.itemPick}>Dentures</Text>
-          ) : null}
-          {this.state.showDermalFillers ? (
-            <Text style={styles.itemPick}>Dermal Fillers</Text>
-          ) : null}
-          {this.state.showDysport ? (
-            <Text style={styles.itemPick}>Dysport</Text>
-          ) : null}
-          {this.state.showImplants ? (
-            <Text style={styles.itemPick}>Implants</Text>
-          ) : null}
-          {this.state.showOrthodontics ? (
-            <Text style={styles.itemPick}>Orthodontics</Text>
-          ) : null}
-          {this.state.showPartials ? (
-            <Text style={styles.itemPick}>Partial Dentures</Text>
-          ) : null}
-          {this.state.showPediatric ? (
-            <Text style={styles.itemPick}>Pediatric Dentistry</Text>
-          ) : null}
-          {this.state.showRootCanals ? (
-            <Text style={styles.itemPick}>Root Canals</Text>
-          ) : null}
-          {this.state.showSedation ? (
-            <Text style={styles.itemPick}>Sedation</Text>
-          ) : null}
-          {this.state.showSleepApnea ? (
-            <Text style={styles.itemPick}>Sleep Apnea</Text>
-          ) : null}
-          {this.state.showVeneers ? (
-            <Text style={styles.itemPick}>Veneers</Text>
-          ) : null}
+          <View style={styles.flewRow}>
+            {this.state.showAestheticSpa ? (
+              <Text style={styles.itemPick}>Aesthetic Spa</Text>
+            ) : null}
+            {this.state.showBleaching ? (
+              <Text style={styles.itemPick}>Bleaching</Text>
+            ) : null}
+            {this.state.showBotox ? (
+              <Text style={styles.itemPick}>Botox</Text>
+            ) : null}
+            {this.state.showComposites ? (
+              <Text style={styles.itemPick}>Composites</Text>
+            ) : null}
+            {this.state.showCrowns ? (
+              <Text style={styles.itemPick}>Crowns</Text>
+            ) : null}
+            {this.state.showDentures ? (
+              <Text style={styles.itemPick}>Dentures</Text>
+            ) : null}
+            {this.state.showDermalFillers ? (
+              <Text style={styles.itemPick}>Dermal Fillers</Text>
+            ) : null}
+            {this.state.showDysport ? (
+              <Text style={styles.itemPick}>Dysport</Text>
+            ) : null}
+            {this.state.showImplants ? (
+              <Text style={styles.itemPick}>Implants</Text>
+            ) : null}
+            {this.state.showOrthodontics ? (
+              <Text style={styles.itemPick}>Orthodontics</Text>
+            ) : null}
+            {this.state.showPartials ? (
+              <Text style={styles.itemPick}>Partial Dentures</Text>
+            ) : null}
+            {this.state.showPediatric ? (
+              <Text style={styles.itemPick}>Pediatric Dentistry</Text>
+            ) : null}
+            {this.state.showRootCanals ? (
+              <Text style={styles.itemPick}>Root Canals</Text>
+            ) : null}
+            {this.state.showSedation ? (
+              <Text style={styles.itemPick}>Sedation</Text>
+            ) : null}
+            {this.state.showSleepApnea ? (
+              <Text style={styles.itemPick}>Sleep Apnea</Text>
+            ) : null}
+            {this.state.showVeneers ? (
+              <Text style={styles.itemPick}>Veneers</Text>
+            ) : null}
+
+            {/* Back Button */}
+
+            <View style={styles.buttonDiv}>
+              {this.state.showItem ? (
+                <TouchableOpacity
+                  style={styles.backButton}
+                  onPress={this.resetList}
+                >
+                  <Text style={styles.buttonText}>Back</Text>
+                </TouchableOpacity>
+              ) : null}
+            </View>
+          </View>
 
           {/* Images */}
 
@@ -347,19 +362,6 @@ class Services extends React.Component {
               <Text style={styles.itemPickText}>Veneers text goes here</Text>
             ) : null}
           </View>
-
-          {/* Back Button */}
-
-          <View style={styles.buttonDiv}>
-            {this.state.showItem ? (
-              <TouchableOpacity
-                style={styles.backButton}
-                onPress={this.resetList}
-              >
-                <Text style={styles.buttonText}>Back</Text>
-              </TouchableOpacity>
-            ) : null}
-          </View>
         </ScrollView>
       </SafeAreaView>
     );
@@ -368,8 +370,8 @@ class Services extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#fff",
-    flex: 1
+    backgroundColor: "#fff"
+    // flex: 1
   },
   headerDiv: {
     backgroundColor: "#fcec01",
@@ -406,8 +408,8 @@ const styles = StyleSheet.create({
     paddingTop: 20
   },
   backButton: {
-    paddingTop: 40,
-    alignItems: "center"
+    paddingTop: hp("2%"),
+    paddingLeft: hp("4%")
   },
   buttonText: {
     color: "#114260",
@@ -436,6 +438,11 @@ const styles = StyleSheet.create({
   serviceImage: {
     alignItems: "center",
     paddingTop: 20
+  },
+  flewRow: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center"
   }
 });
 
