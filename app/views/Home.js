@@ -38,6 +38,16 @@ class Home extends Component {
                 </Text>
               </TouchableOpacity>
             </View>
+            <View style={styles.emailContainer}>
+              <TouchableOpacity
+                style={styles.callButton}
+                onPress={() => Linking.openURL("mailto:office@adcofnorton.com")}
+              >
+                <Text style={styles.callButtonText}>
+                  Click here to email us!
+                </Text>
+              </TouchableOpacity>
+            </View>
           </View>
         </ScrollView>
       </SafeAreaView>
@@ -93,6 +103,18 @@ const styles = StyleSheet.create({
   },
   imgDiv: {
     paddingBottom: 30
+  },
+  emailContainer: {
+    paddingTop: 40,
+    marginTop: 10,
+    paddingTop: 15,
+    paddingBottom: 15,
+    marginLeft: 30,
+    marginRight: 30,
+    backgroundColor: "#fcec01",
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "#fff"
   }
 });
 
