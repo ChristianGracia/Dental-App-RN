@@ -29,6 +29,7 @@ class Services extends React.Component {
       showComposites: false,
       showCrowns: false,
       showDentures: false,
+      showDysport: false,
       showFillers: false,
       showImplants: false,
       showPartials: false,
@@ -66,6 +67,9 @@ class Services extends React.Component {
     if (item.key == "Dentures") {
       this.setState({ showDentures: true });
     }
+    if (item.key == "Dysport") {
+      this.setState({ showDysport: true });
+    }
     if (item.key == "Fillers") {
       this.setState({ showFillers: true });
     }
@@ -97,6 +101,7 @@ class Services extends React.Component {
       showComposites: false,
       showCrowns: false,
       showDentures: false,
+      showDysport: false,
       showFillers: false,
       showImplants: false,
       showPartials: false,
@@ -129,6 +134,7 @@ class Services extends React.Component {
                 { key: "Composites" },
                 { key: "Crowns" },
                 { key: "Dentures" },
+                { key: "Dysport" },
                 { key: "Fillers" },
                 { key: "Implants" },
                 { key: "Partial Dentures" },
@@ -166,6 +172,9 @@ class Services extends React.Component {
           ) : null}
           {this.state.showDentures ? (
             <Text style={styles.itemPick}>Dentures</Text>
+          ) : null}
+          {this.state.showDysport ? (
+            <Text style={styles.itemPick}>Dysport</Text>
           ) : null}
           {this.state.showFillers ? (
             <Text style={styles.itemPick}>Fillers</Text>
@@ -226,6 +235,9 @@ class Services extends React.Component {
             ) : null}
             {this.state.showDentures ? (
               <Text style={styles.itemPickText}>Dentures text goes here</Text>
+            ) : null}
+            {this.state.showDysport ? (
+              <Text style={styles.itemPickText}>Dysport text goes here</Text>
             ) : null}
             {this.state.showFillers ? (
               <Text style={styles.itemPickText}>Fillers text goes here</Text>
