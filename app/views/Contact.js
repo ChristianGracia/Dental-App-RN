@@ -5,11 +5,17 @@ import {
   ScrollView,
   Text,
   StyleSheet,
-  TextInput
+  TextInput,
+  WebView,
+  Linking
 } from "react-native";
 import { SafeAreaView } from "react-navigation";
 
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
   render() {
     return (
       <SafeAreaView>
@@ -17,6 +23,16 @@ class Contact extends Component {
           <View style={styles.headerDiv}>
             <Text style={styles.header}>Contact</Text>
           </View>
+          <Text>Forms</Text>
+          <TouchableOpacity
+            onPress={() =>
+              Linking.openURL(
+                "https://www.adcofnorton.com/Content/Patient-Forms/ADC-Medical-Spa-Patient-Information.pdf"
+              )
+            }
+          >
+            <Text>Spa Patient Form</Text>
+          </TouchableOpacity>
         </ScrollView>
       </SafeAreaView>
     );
