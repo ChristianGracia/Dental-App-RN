@@ -22,6 +22,8 @@ class Services extends React.Component {
     this.state = {
       showList: true,
       showItem: "",
+      showClick: true,
+      showTitle: true,
 
       showAestheticSpa: false,
       showBleaching: false,
@@ -38,11 +40,12 @@ class Services extends React.Component {
       showRootCanals: false,
       showSedation: false,
       showSleepApnea: false,
-      showVeneers: false,
-      showClick: true
+      showVeneers: false
     };
   }
   handleClick = item => {
+    //hide title
+    this.setState({ showTitle: false });
     //hide click on service
     this.setState({ showClick: false });
     //hide list
@@ -126,7 +129,9 @@ class Services extends React.Component {
       showSedation: false,
       showSleepApnea: false,
       showVeneers: false,
-      showClick: true
+
+      showClick: true,
+      showTitle: true
     });
   };
 
@@ -134,9 +139,11 @@ class Services extends React.Component {
     return (
       <SafeAreaView>
         <ScrollView style={styles.scrollStyle}>
-          <View style={styles.headerDiv}>
-            <Text style={styles.header}>Services</Text>
-          </View>
+          {this.state.showTitle ? (
+            <View style={styles.headerDiv}>
+              <Text style={styles.header}>Services</Text>
+            </View>
+          ) : null}
           {this.state.showClick ? (
             <Text style={styles.serviceHelp}>
               Click on a service we offer for more information
