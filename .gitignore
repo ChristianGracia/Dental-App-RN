@@ -10,6 +10,6 @@ web-build/
 web-report/
 .expo-shared/*
 .idea/*
-views/MoreInfo.js
-views/Blog.js
-views/Info.js
+app/views/MoreInfo.js
+app/views/Blog.js
+app/views/Info.js
