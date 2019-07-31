@@ -30,8 +30,10 @@ class Services extends React.Component {
       showCrowns: false,
       showDentures: false,
       showDysport: false,
+      showDermalFillers: false,
       showFillers: false,
       showImplants: false,
+      showOrthodontics: false,
       showPartials: false,
       showRootCanals: false,
       showSleepApnea: false,
@@ -67,6 +69,9 @@ class Services extends React.Component {
     if (item.key == "Dentures") {
       this.setState({ showDentures: true });
     }
+    if (item.key == "Dermal Fillers") {
+      this.setState({ showDermalFillers: true });
+    }
     if (item.key == "Dysport") {
       this.setState({ showDysport: true });
     }
@@ -75,6 +80,9 @@ class Services extends React.Component {
     }
     if (item.key == "Implants") {
       this.setState({ showImplants: true });
+    }
+    if (item.key == "Orthodontics") {
+      this.setState({ showOrthodontics: true });
     }
     if (item.key == "Partial Dentures") {
       this.setState({ showPartials: true });
@@ -101,9 +109,11 @@ class Services extends React.Component {
       showComposites: false,
       showCrowns: false,
       showDentures: false,
+      showDermalFillers: false,
       showDysport: false,
       showFillers: false,
       showImplants: false,
+      showOrthodontics: false,
       showPartials: false,
       showRootCanals: false,
       showSleepApnea: false,
@@ -134,9 +144,11 @@ class Services extends React.Component {
                 { key: "Composites" },
                 { key: "Crowns" },
                 { key: "Dentures" },
+                { key: "Dermal Fillers" },
                 { key: "Dysport" },
                 { key: "Fillers" },
                 { key: "Implants" },
+                { key: "Orthodontics" },
                 { key: "Partial Dentures" },
                 { key: "Root Canals" },
                 { key: "Sleep Apnea" },
@@ -173,6 +185,9 @@ class Services extends React.Component {
           {this.state.showDentures ? (
             <Text style={styles.itemPick}>Dentures</Text>
           ) : null}
+          {this.state.showDentures ? (
+            <Text style={styles.itemPick}>Dermal Fillers</Text>
+          ) : null}
           {this.state.showDysport ? (
             <Text style={styles.itemPick}>Dysport</Text>
           ) : null}
@@ -181,6 +196,9 @@ class Services extends React.Component {
           ) : null}
           {this.state.showImplants ? (
             <Text style={styles.itemPick}>Implants</Text>
+          ) : null}
+          {this.state.showImplants ? (
+            <Text style={styles.itemPick}>Orthodontics</Text>
           ) : null}
           {this.state.showPartials ? (
             <Text style={styles.itemPick}>Partial Dentures</Text>
@@ -236,6 +254,11 @@ class Services extends React.Component {
             {this.state.showDentures ? (
               <Text style={styles.itemPickText}>Dentures text goes here</Text>
             ) : null}
+            {this.state.showDermalFillers ? (
+              <Text style={styles.itemPickText}>
+                Dermal Fillers text goes here
+              </Text>
+            ) : null}
             {this.state.showDysport ? (
               <Text style={styles.itemPickText}>Dysport text goes here</Text>
             ) : null}
@@ -244,6 +267,11 @@ class Services extends React.Component {
             ) : null}
             {this.state.showImplants ? (
               <Text style={styles.itemPickText}>Implants text goes here</Text>
+            ) : null}
+            {this.state.showOrthodontics ? (
+              <Text style={styles.itemPickText}>
+                Orthodontics text goes here
+              </Text>
             ) : null}
             {this.state.showPartials ? (
               <Text style={styles.itemPickText}>
