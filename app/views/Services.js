@@ -225,12 +225,12 @@ class Services extends React.Component {
           {/* Images */}
 
           <View style={styles.serviceImage}>
-            {this.state.showImplants ? (
+            {this.state.showAestheticSpa ? (
               <Image
-                style={{ width: 360, height: 200, marginRight: "-5%" }}
+                style={{ width: "100%", height: 300 }}
                 source={{
                   uri:
-                    "https://www.aspendental.com/-/media/aspendentaldotcom/ada-content/dental-implants/new-implants/implant_1.jpg?h=252&w=400&la=en&hash=D1211062CEC935D9CC3DEA947CE1CF47"
+                    "https://www.adcofnorton.com/images/Norton-MA-Botox-Dysport.jpg"
                 }}
               />
             ) : null}
@@ -240,6 +240,24 @@ class Services extends React.Component {
                 source={{
                   uri:
                     "https://www.news-medical.net/image.axd?picture=2017%2F8%2Fshutterstock_611274782.jpg"
+                }}
+              />
+            ) : null}
+            {this.state.showImplants ? (
+              <Image
+                style={{ width: 360, height: 200, marginRight: "-5%" }}
+                source={{
+                  uri:
+                    "https://www.aspendental.com/-/media/aspendentaldotcom/ada-content/dental-implants/new-implants/implant_1.jpg?h=252&w=400&la=en&hash=D1211062CEC935D9CC3DEA947CE1CF47"
+                }}
+              />
+            ) : null}
+            {this.state.showRootCanals ? (
+              <Image
+                style={{ width: 360, height: 200 }}
+                source={{
+                  uri:
+                    "http://icondentalsf.com/wp-content/uploads/2019/01/rct-before-after.jpg"
                 }}
               />
             ) : null}
@@ -398,7 +416,7 @@ const styles = StyleSheet.create({
   },
   itemPickText: {
     color: "#000",
-    fontSize: 25,
+    fontSize: 20,
     paddingLeft: 20
   },
   serviceImage: {
