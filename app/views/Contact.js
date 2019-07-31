@@ -27,6 +27,24 @@ class Contact extends Component {
           <TouchableOpacity
             onPress={() =>
               Linking.openURL(
+                "https://www.ident.ws/template_include/new_patient_sign_in.do?site=14740&practiceId=22404"
+              )
+            }
+          >
+            <Text>New Patient Form</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() =>
+              Linking.openURL(
+                "https://www.adcofnorton.com/Content/Patient-Forms/Financial-Policy-2012.pdf"
+              )
+            }
+          >
+            <Text>Financial Policy Form</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() =>
+              Linking.openURL(
                 "https://www.adcofnorton.com/Content/Patient-Forms/ADC-Medical-Spa-Patient-Information.pdf"
               )
             }
