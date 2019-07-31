@@ -205,7 +205,11 @@ class Services extends React.Component {
           <View style={styles.itemPickInfo}>
             {this.state.showAestheticSpa ? (
               <Text style={styles.itemPickText}>
-                Aesthetic Spa text goes here
+                Here at ADC of Norton we have {"\n"} an in-house Aesthetic Spa.
+                With a team of skilled nurses, we offer Botox, Dysport, and
+                Dermal Fillers. {"\n"}
+                {"\n"} Information about these treatments can be found on our
+                list of services.
               </Text>
             ) : null}
             {this.state.showBleaching ? (
@@ -269,7 +273,8 @@ class Services extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#fff"
+    backgroundColor: "#fff",
+    flex: 1
   },
   headerDiv: {
     backgroundColor: "#fcec01",
@@ -323,11 +328,13 @@ const styles = StyleSheet.create({
     paddingTop: 10
   },
   itemPickInfo: {
-    paddingTop: 20
+    paddingTop: 20,
+    alignItems: "left"
   },
   itemPickText: {
     color: "#000",
-    textAlign: "center"
+    textAlign: "center",
+    fontSize: 20
   },
   serviceImage: {
     alignItems: "center",
