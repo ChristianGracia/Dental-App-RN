@@ -38,10 +38,13 @@ class Services extends React.Component {
       showRootCanals: false,
       showSedation: false,
       showSleepApnea: false,
-      showVeneers: false
+      showVeneers: false,
+      showClick: true
     };
   }
   handleClick = item => {
+    //hide click on service
+    this.setState({ showClick: false });
     //hide list
     this.setState({ showList: false });
     //change current item
@@ -122,7 +125,8 @@ class Services extends React.Component {
       showRootCanals: false,
       showSedation: false,
       showSleepApnea: false,
-      showVeneers: false
+      showVeneers: false,
+      showClick: true
     });
   };
 
@@ -133,9 +137,11 @@ class Services extends React.Component {
           <View style={styles.headerDiv}>
             <Text style={styles.header}>Services</Text>
           </View>
-          <Text style={styles.serviceHelp}>
-            Click on a service we offer for more information
-          </Text>
+          {this.state.showClick ? (
+            <Text style={styles.serviceHelp}>
+              Click on a service we offer for more information
+            </Text>
+          ) : null}
 
           {/* Service List */}
 
@@ -389,7 +395,8 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontWeight: "bold",
     fontSize: 23,
-    color: "#114260"
+    color: "#114260",
+    paddingTop: 20
   },
   backButton: {
     paddingTop: 40,

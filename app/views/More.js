@@ -25,7 +25,7 @@ class Contact extends Component {
       <SafeAreaView>
         <ScrollView>
           <View style={styles.headerDiv}>
-            <Text style={styles.header}>Contact</Text>
+            <Text style={styles.header}>More</Text>
           </View>
           <View style={styles.headerSpacing} />
 

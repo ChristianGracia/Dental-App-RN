@@ -3,7 +3,7 @@ import { TabNavigator } from "react-navigation";
 
 import Home from "../views/Home";
 import Services from "../views/Services";
-import Contact from "../views/Contact";
+import More from "../views/More";
 
 export const BottomTab = TabNavigator(
   {
@@ -13,8 +13,8 @@ export const BottomTab = TabNavigator(
     Services: {
       screen: Services
     },
-    Contact: {
-      screen: Contact
+    More: {
+      screen: More
     }
   },
   {
