@@ -23,6 +23,7 @@ class Services extends React.Component {
       showList: true,
       showItem: "",
 
+      showAestheticSpa: false,
       showBleaching: false,
       showBotox: false,
       showComposites: false,
@@ -43,6 +44,9 @@ class Services extends React.Component {
     this.setState({ showItem: item.key });
 
     //item condition
+    if (item.key == "Aesthetic Spa") {
+      this.setState({ showAestheticSpa: true });
+    }
     if (item.key == "Bleaching") {
       this.setState({ showBleaching: true });
     }
@@ -87,6 +91,7 @@ class Services extends React.Component {
 
     //reset
     this.setState({
+      showAestheticSpa: false,
       showBleaching: false,
       showBotox: false,
       showComposites: false,
@@ -118,6 +123,7 @@ class Services extends React.Component {
             <FlatList
               style={styles.list}
               data={[
+                { key: "Aesthetic Spa" },
                 { key: "Bleaching" },
                 { key: "Botox" },
                 { key: "Composites" },
@@ -143,6 +149,9 @@ class Services extends React.Component {
 
           {/* Service Title */}
 
+          {this.state.showAestheticSpa ? (
+            <Text style={styles.itemPick}>Aesthetic Spa</Text>
+          ) : null}
           {this.state.showBleaching ? (
             <Text style={styles.itemPick}>Bleaching</Text>
           ) : null}
@@ -177,9 +186,28 @@ class Services extends React.Component {
             <Text style={styles.itemPick}>Veneers</Text>
           ) : null}
 
+          {/* Images */}
+
+          <View style={styles.serviceImage}>
+            {this.state.showImplants ? (
+              <Image
+                style={{ width: 360, height: 200, marginRight: -25 }}
+                source={{
+                  uri:
+                    "https://www.aspendental.com/-/media/aspendentaldotcom/ada-content/dental-implants/new-implants/implant_1.jpg?h=252&w=400&la=en&hash=D1211062CEC935D9CC3DEA947CE1CF47"
+                }}
+              />
+            ) : null}
+          </View>
+
           {/* Service Text */}
 
           <View style={styles.itemPickInfo}>
+            {this.state.showAestheticSpa ? (
+              <Text style={styles.itemPickText}>
+                Aesthetic Spa text goes here
+              </Text>
+            ) : null}
             {this.state.showBleaching ? (
               <Text style={styles.itemPickText}>Bleaching text goes here</Text>
             ) : null}
@@ -218,20 +246,6 @@ class Services extends React.Component {
             ) : null}
             {this.state.showVeneers ? (
               <Text style={styles.itemPickText}>Veneers text goes here</Text>
-            ) : null}
-          </View>
-
-          {/* Images */}
-
-          <View style={styles.serviceImage}>
-            {this.state.showImplants ? (
-              <Image
-                style={{ width: 360, height: 200, marginRight: -25 }}
-                source={{
-                  uri:
-                    "https://www.aspendental.com/-/media/aspendentaldotcom/ada-content/dental-implants/new-implants/implant_1.jpg?h=252&w=400&la=en&hash=D1211062CEC935D9CC3DEA947CE1CF47"
-                }}
-              />
             ) : null}
           </View>
 
