@@ -31,7 +31,6 @@ class Services extends React.Component {
       showDentures: false,
       showDysport: false,
       showDermalFillers: false,
-      showFillers: false,
       showImplants: false,
       showOrthodontics: false,
       showPartials: false,
@@ -77,9 +76,6 @@ class Services extends React.Component {
     if (item.key == "Dysport") {
       this.setState({ showDysport: true });
     }
-    if (item.key == "Fillers") {
-      this.setState({ showFillers: true });
-    }
     if (item.key == "Implants") {
       this.setState({ showImplants: true });
     }
@@ -119,7 +115,6 @@ class Services extends React.Component {
       showDentures: false,
       showDermalFillers: false,
       showDysport: false,
-      showFillers: false,
       showImplants: false,
       showOrthodontics: false,
       showPartials: false,
@@ -156,7 +151,6 @@ class Services extends React.Component {
                 { key: "Dentures" },
                 { key: "Dermal Fillers" },
                 { key: "Dysport" },
-                { key: "Fillers" },
                 { key: "Implants" },
                 { key: "Orthodontics" },
                 { key: "Partial Dentures" },
@@ -203,13 +197,10 @@ class Services extends React.Component {
           {this.state.showDysport ? (
             <Text style={styles.itemPick}>Dysport</Text>
           ) : null}
-          {this.state.showFillers ? (
-            <Text style={styles.itemPick}>Fillers</Text>
-          ) : null}
           {this.state.showImplants ? (
             <Text style={styles.itemPick}>Implants</Text>
           ) : null}
-          {this.state.showImplants ? (
+          {this.state.showOrthodontics ? (
             <Text style={styles.itemPick}>Orthodontics</Text>
           ) : null}
           {this.state.showPartials ? (
@@ -236,10 +227,19 @@ class Services extends React.Component {
           <View style={styles.serviceImage}>
             {this.state.showImplants ? (
               <Image
-                style={{ width: 360, height: 200, marginRight: -25 }}
+                style={{ width: 360, height: 200, marginRight: "-5%" }}
                 source={{
                   uri:
                     "https://www.aspendental.com/-/media/aspendentaldotcom/ada-content/dental-implants/new-implants/implant_1.jpg?h=252&w=400&la=en&hash=D1211062CEC935D9CC3DEA947CE1CF47"
+                }}
+              />
+            ) : null}
+            {this.state.showCrowns ? (
+              <Image
+                style={{ width: 360, height: 200 }}
+                source={{
+                  uri:
+                    "https://www.news-medical.net/image.axd?picture=2017%2F8%2Fshutterstock_611274782.jpg"
                 }}
               />
             ) : null}
@@ -280,9 +280,6 @@ class Services extends React.Component {
             ) : null}
             {this.state.showDysport ? (
               <Text style={styles.itemPickText}>Dysport text goes here</Text>
-            ) : null}
-            {this.state.showFillers ? (
-              <Text style={styles.itemPickText}>Fillers text goes here</Text>
             ) : null}
             {this.state.showImplants ? (
               <Text style={styles.itemPickText}>Implants text goes here</Text>
