@@ -103,11 +103,12 @@ class Services extends React.Component {
     }
     if (item.key == "Sleep Apnea") {
       this.setState({ showSleepApnea: true });
+      this.refs._scrollView.scrollTo({ y: 0, animated: true });
     }
     if (item.key == "Veneers") {
       this.setState({ showVeneers: true });
+      this.refs._scrollView.scrollTo({ y: 0, animated: true });
     }
-    this.refs._scrollView.scrollTo({ x: 0, y: 0, animated: true });
   };
 
   resetList = () => {
@@ -227,7 +228,7 @@ class Services extends React.Component {
               <Text style={styles.itemPick}>Partial Dentures</Text>
             ) : null}
             {this.state.showPediatric ? (
-              <Text style={styles.itemPick}>Pediatric Dentistry</Text>
+              <Text style={{ ...styles.itemPick }}>Pediatric Dentistry</Text>
             ) : null}
             {this.state.showRootCanals ? (
               <Text style={styles.itemPick}>Root Canals</Text>
@@ -297,7 +298,7 @@ class Services extends React.Component {
             ) : null}
             {this.state.showVeneers ? (
               <Image
-                style={{ width: wp("90%"), height: hp("70%") }}
+                style={{ width: wp("90%"), height: hp("60%") }}
                 source={{
                   uri:
                     "https://www.dentalhealth.org/GetImage.aspx?IDMF=f95a3006-fe99-4190-9d4c-67d97e9c347f&w=400&h=549&src=mc"
@@ -317,10 +318,16 @@ class Services extends React.Component {
                 {"\n"}
                 {"\n"}
                 Botox and Dysport are both safe and effective treatments for
-                moderate to severe wrinkles. These treatments reduce the
-                appearance of wrinkles by relaxing the underlying muscles
-                beneath the skin which results in smoother skin. Both treatments
-                have the same active ingredient but have their differences.
+                moderate to severe wrinkles.
+                {"\n"}
+                {"\n"}
+                These treatments reduce the appearance of wrinkles by relaxing
+                the underlying muscles beneath the skin which results in
+                smoother skin.
+                {"\n"}
+                {"\n"}
+                Both treatments have the same active ingredient but have their
+                differences.
                 {"\n"}
                 {"\n"}
                 More information about Botox, Dysport, and Dermal Fillers can be
@@ -386,9 +393,12 @@ class Services extends React.Component {
                 {"\n"}
                 Sleep apnea will cause medical conditions to occur, and existing
                 medical conditions to worsen or make more difficult for you and
-                your doctor to manage. Hypertension (high blood pressure,
-                eventually renal failure), diabetes, heart failure, and stroke
-                are very common in people who suffer from sleep apnea.
+                your doctor to manage.
+                {"\n"}
+                {"\n"}
+                Hypertension (high blood pressure, eventually renal failure),
+                diabetes, heart failure, and stroke are very common in people
+                who suffer from sleep apnea.
                 {"\n"}
                 {"\n"}
                 <Text style={{ color: "red", fontWeight: "bold" }}>
@@ -425,17 +435,21 @@ class Services extends React.Component {
             {this.state.showVeneers ? (
               <Text style={styles.itemPickText}>
                 Veneers are a thin layer of porcelain/composite material that is
-                designed to fit over the front surface of a tooth. Veneers can
-                improve the color, shape, position of tooth, and close gaps that
-                would normally require braces.
+                designed to fit over the front surface of a tooth.
+                {"\n"}
+                {"\n"}
+                Veneers can improve the color, shape, position of tooth, and
+                close gaps that would normally require braces.
                 {"\n"}
                 {"\n"}
                 First a small amount of enamel (just enough to fit the Veneer)
                 is removed from the tooth where the Veneer is being placed. This
                 is done so that once the Veneer is placed, the tooth will be its
-                normal size. Then an impression will be taken and a Veneer will
-                be created by our lab and matched to the color of your
-                surrounding teeth.
+                normal size.
+                {"\n"}
+                {"\n"}
+                Then an impression will be taken and a Veneer will be created by
+                our lab and matched to the color of your surrounding teeth.
                 {"\n"}
                 {"\n"}
                 Veneers can last for a very long time and quickly help solve
@@ -443,6 +457,7 @@ class Services extends React.Component {
               </Text>
             ) : null}
           </View>
+
           {/* Back Button */}
 
           <View style={styles.buttonDiv2}>
@@ -455,6 +470,9 @@ class Services extends React.Component {
               </TouchableOpacity>
             ) : null}
           </View>
+
+          {/* add some white space */}
+          <View style={{ height: 30, color: "#fff" }} />
         </ScrollView>
       </SafeAreaView>
     );
@@ -492,7 +510,7 @@ const styles = StyleSheet.create({
   itemPick: {
     textAlign: "center",
     fontWeight: "bold",
-    fontSize: 29,
+    fontSize: 23,
     color: "#114260",
     paddingTop: 20
   },
