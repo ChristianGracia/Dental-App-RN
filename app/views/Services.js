@@ -357,32 +357,32 @@ class Services extends React.Component {
                 There are many reasons why a dentist may recommend a crown:
                 {"\n"}
                 {"\n"}
-                <Text style={{ color: "red" }}>1)</Text> To protect a weak tooth
-                from breaking due to decay or fractures
+                <Text style={{ color: "red" }}>1{")"}</Text> To protect a weak
+                tooth from breaking due to decay or fractures
                 {"\n"}
                 {"\n"}
-                <Text style={{ color: "red" }}>2)</Text> Restore an already
+                <Text style={{ color: "red" }}>2{")"}</Text> Restore an already
                 broken tooth
                 {"\n"}
                 {"\n"}
-                <Text style={{ color: "red" }}>3)</Text> To cover and support a
-                tooth with a large cavity
+                <Text style={{ color: "red" }}>3{")"}</Text> To cover and
+                support a tooth with a large cavity
                 {"\n"}
                 {"\n"}
-                <Text style={{ color: "red" }}>4)</Text> To hold a dental bridge
-                in place
+                <Text style={{ color: "red" }}>4{")"}</Text> To hold a dental
+                bridge in place
                 {"\n"}
                 {"\n"}
-                <Text style={{ color: "red" }}>5)</Text> To cover discolored or
-                disfigured tooth
+                <Text style={{ color: "red" }}>5{")"}</Text> To cover discolored
+                or disfigured tooth
                 {"\n"}
                 {"\n"}
-                <Text style={{ color: "red" }}>6)</Text> To cover a dental
+                <Text style={{ color: "red" }}>6{")"}</Text> To cover a dental
                 implant
                 {"\n"}
                 {"\n"}
-                <Text style={{ color: "red" }}>7)</Text> To make a tooth look
-                better
+                <Text style={{ color: "red" }}>7{")"}</Text> To make a tooth
+                look better
                 {"\n"}
                 {"\n"}
                 <Text style={{ fontWeight: "bold", textAlign: "center" }}>
