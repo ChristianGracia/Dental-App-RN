@@ -390,7 +390,7 @@ class Services extends React.Component {
                 </Text>
                 {"\n"}
                 {"\n"}
-                <Text style={{}}>
+                <Text>
                   Permanent crowns can be made from stainless steel, all metal
                   (such as gold or another alloy), porcelain-fused-to-metal, all
                   resin, or all ceramic.
