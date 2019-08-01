@@ -149,6 +149,9 @@ class Services extends React.Component {
               Click on a service we offer for more information
             </Text>
           ) : null}
+          <View>
+            <Text />
+          </View>
 
           {/* Service List */}
 
@@ -300,8 +303,16 @@ class Services extends React.Component {
                 team of skilled nurses, we offer Botox, Dysport, and Dermal
                 Fillers.
                 {"\n"}
-                {"\n"} Information about these treatments can be found on our
-                list of services.
+                {"\n"}
+                Botox and Dysport are both safe and effective treatments for
+                moderate to severe wrinkles. These treatments reduce the
+                appearance of wrinkles by relaxing the underlying muscles
+                beneath the skin which results in smoother skin. Both treatments
+                have the same active ingredient but have their differences.
+                {"\n"}
+                {"\n"}
+                More information about these treatments can be found on our list
+                of services.
               </Text>
             ) : null}
             {this.state.showBleaching ? (
@@ -411,7 +422,7 @@ const styles = StyleSheet.create({
   itemPick: {
     textAlign: "center",
     fontWeight: "bold",
-    fontSize: 23,
+    fontSize: 29,
     color: "#114260",
     paddingTop: 20
   },
@@ -454,7 +465,7 @@ const styles = StyleSheet.create({
   itemPickInfo: {
     paddingTop: 20,
     alignItems: "left",
-    width: wp("90%")
+    width: wp("95%")
   },
   itemPickText: {
     color: "#000",
