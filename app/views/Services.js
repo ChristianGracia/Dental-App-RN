@@ -495,6 +495,7 @@ class Services extends React.Component {
                 </Text>
               </Text>
             ) : null}
+            <Text />
             {this.state.showDentures ? (
               <Text style={styles.itemPickText}>Dentures text goes here</Text>
             ) : null}
