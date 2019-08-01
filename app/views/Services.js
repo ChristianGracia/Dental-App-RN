@@ -107,7 +107,9 @@ class Services extends React.Component {
     if (item.key == "Veneers") {
       this.setState({ showVeneers: true });
     }
+    this.refs._scrollView.scrollTo({ x: 0, y: 0, animated: true });
   };
+
   resetList = () => {
     this.setState({ showList: true });
     this.setState({ showItem: "" });
@@ -139,7 +141,7 @@ class Services extends React.Component {
   render() {
     return (
       <SafeAreaView>
-        <ScrollView style={styles.scrollStyle}>
+        <ScrollView style={styles.scrollStyle} ref="_scrollView">
           {this.state.showTitle ? (
             <View style={styles.headerDiv}>
               <Text style={styles.header}>Services</Text>

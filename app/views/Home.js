@@ -33,9 +33,7 @@ class Home extends Component {
                 style={styles.callButton}
                 onPress={() => Linking.openURL(`tel:5086228777`)}
               >
-                <Text style={styles.callButtonText}>
-                  Click here to call us!
-                </Text>
+                <Text style={styles.callButtonText}>Click here to call us</Text>
               </TouchableOpacity>
             </View>
             <View style={styles.emailContainer}>
@@ -47,9 +45,7 @@ class Home extends Component {
                   )
                 }
               >
-                <Text style={styles.callButtonText}>
-                  Click here to email us!
-                </Text>
+                <Text style={styles.callButtonText}>Click to email us</Text>
               </TouchableOpacity>
             </View>
             <View style={styles.directionsContainer}>
@@ -61,7 +57,7 @@ class Home extends Component {
                   )
                 }
               >
-                <Text style={styles.callButtonText}>Directions!</Text>
+                <Text style={styles.callButtonText}>Click for Directions</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -118,7 +114,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#fcec01"
   },
   imgDiv: {
-    paddingBottom: 30
+    paddingBottom: 20
   },
   emailContainer: {
     paddingTop: 40,
@@ -134,7 +130,7 @@ const styles = StyleSheet.create({
   },
   directionsContainer: {
     paddingTop: 40,
-    marginTop: 10,
+    marginTop: 7,
     paddingTop: 15,
     paddingBottom: 15,
     marginLeft: 30,
