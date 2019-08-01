@@ -346,129 +346,135 @@ class Services extends React.Component {
             ) : null}
             {this.state.showCrowns ? (
               <Text style={styles.itemPickText}>
-                A crown is a cover or “cap” for your tooth that restores the
-                tooth’s normal shape, size, function, and appearance.
-                {"\n"}
-                {"\n"}
-                Once a crown is cemented, it covers the entire visible portion
-                of a tooth above the gum line.
-                {"\n"}
-                {"\n"}
-                There are many reasons why a dentist may recommend a crown:
-                {"\n"}
-                {"\n"}
-                <Text style={{ color: "red" }}>1{")"}</Text> To protect a weak
-                tooth from breaking due to decay or fractures
-                {"\n"}
-                {"\n"}
-                <Text style={{ color: "red" }}>2{")"}</Text> Restore an already
-                broken tooth
-                {"\n"}
-                {"\n"}
-                <Text style={{ color: "red" }}>3{")"}</Text> To cover and
-                support a tooth with a large cavity
-                {"\n"}
-                {"\n"}
-                <Text style={{ color: "red" }}>4{")"}</Text> To hold a dental
-                bridge in place
-                {"\n"}
-                {"\n"}
-                <Text style={{ color: "red" }}>5{")"}</Text> To cover discolored
-                or disfigured tooth
-                {"\n"}
-                {"\n"}
-                <Text style={{ color: "red" }}>6{")"}</Text> To cover a dental
-                implant
-                {"\n"}
-                {"\n"}
-                <Text style={{ color: "red" }}>7{")"}</Text> To make a tooth
-                look better
-                {"\n"}
-                {"\n"}
-                <Text style={{ fontWeight: "bold", textAlign: "center" }}>
-                  Types of Crowns
-                </Text>
-                {"\n"}
-                {"\n"}
                 <Text>
-                  Permanent crowns can be made from stainless steel, all metal
-                  (such as gold or another alloy), porcelain-fused-to-metal, all
-                  resin, or all ceramic.
+                  A crown is a cover or “cap” for your tooth that restores the
+                  tooth’s normal shape, size, function, and appearance.
                   {"\n"}
                   {"\n"}
-                  <Text style={{ color: "blue", fontWeight: "bold" }}>
-                    Stainless steel crowns:
+                  Once a crown is cemented, it covers the entire visible portion
+                  of a tooth above the gum line.
+                  {"\n"}
+                  {"\n"}
+                  There are many reasons why a dentist may recommend a crown:
+                  {"\n"}
+                  {"\n"}
+                  <Text style={{ color: "red" }}>1{")"}</Text> To protect a weak
+                  tooth from breaking due to decay or fractures
+                  {"\n"}
+                  {"\n"}
+                  <Text style={{ color: "red" }}>2{")"}</Text> Restore an
+                  already broken tooth
+                  {"\n"}
+                  {"\n"}
+                  <Text style={{ color: "red" }}>3{")"}</Text> To cover and
+                  support a tooth with a large cavity
+                  {"\n"}
+                  {"\n"}
+                  <Text style={{ color: "red" }}>4{")"}</Text> To hold a dental
+                  bridge in place
+                  {"\n"}
+                  {"\n"}
+                  <Text style={{ color: "red" }}>5{")"}</Text> To cover
+                  discolored or disfigured tooth
+                  {"\n"}
+                  {"\n"}
+                  <Text style={{ color: "red" }}>6{")"}</Text> To cover a dental
+                  implant
+                  {"\n"}
+                  {"\n"}
+                  <Text style={{ color: "red" }}>7{")"}</Text> To make a tooth
+                  look better
+                  {"\n"}
+                  {"\n"}
+                  <Text style={{ fontWeight: "bold", textAlign: "center" }}>
+                    Types of Crowns
                   </Text>
                   {"\n"}
-                  Stainless steel crowns are prefabricated crowns that are used
-                  on permanent teeth primarily as a temporary measure. The crown
-                  protects the tooth or filling while a permanent crown is made
-                  from another material. The crown covers the entire tooth and
-                  protects it from further decay. In general, stainless steel
-                  crowns are used for children's teeth because they don't
-                  require multiple dental visits to put in place and so are more
-                  cost- effective than custom-made crowns and prophylactic
-                  dental care needed to protect a tooth without a crown.
                   {"\n"}
-                  {"\n"}
-                  <Text style={{ color: "blue", fontWeight: "bold" }}>
-                    Metals:
+                  <Text>
+                    Permanent crowns can be made from stainless steel, all metal
+                    (such as gold or another alloy), porcelain-fused-to-metal,
+                    all resin, or all ceramic.
+                    {"\n"}
+                    {"\n"}
+                    <Text style={{ color: "blue", fontWeight: "bold" }}>
+                      Stainless steel crowns:
+                    </Text>
+                    {"\n"}
+                    Stainless steel crowns are prefabricated crowns that are
+                    used on permanent teeth primarily as a temporary measure.
+                    The crown protects the tooth or filling while a permanent
+                    crown is made from another material. The crown covers the
+                    entire tooth and protects it from further decay. In general,
+                    stainless steel crowns are used for children's teeth because
+                    they don't require multiple dental visits to put in place
+                    and so are more cost- effective than custom-made crowns and
+                    prophylactic dental care needed to protect a tooth without a
+                    crown.
+                    {"\n"}
+                    {"\n"}
+                    <Text style={{ color: "blue", fontWeight: "bold" }}>
+                      Metals:
+                    </Text>
+                    {"\n"}
+                    Metals used in crowns include alloys that have a high
+                    content of gold or platinum, or base-metal alloys (for
+                    example, cobalt- chromium and nickel-chromium alloys). Metal
+                    crowns withstand biting and chewing forces well and probably
+                    last the longest in terms of wear down. Also, metal crowns
+                    rarely chip or break. The metallic color is the main
+                    drawback. Metal crowns are a good choice for out-of-sight
+                    molars.
+                    {"\n"}
+                    {"\n"}
+                    <Text style={{ color: "blue", fontWeight: "bold" }}>
+                      Porcelain-fused-to-metal:
+                    </Text>
+                    {"\n"}
+                    Porcelain-fused-to-metal dental crowns can be color matched
+                    to your adjacent teeth (unlike the metallic crowns).
+                    However, more wearing to the opposing teeth occurs with this
+                    crown type compared with metal or resin crowns. The crown's
+                    porcelain portion can also chip or break off. Next to
+                    all-ceramic crowns, porcelain-fused-to-metal crowns look
+                    most like normal teeth. However, sometimes the metal
+                    underlying the crown's porcelain can show through as a dark
+                    line, especially at the gum line and even more so if your
+                    gums recede. These crowns can be a good choice for front or
+                    back teeth as well as long bridges where the metal is needed
+                    for strength.
+                    {"\n"}
+                    {"\n"}
+                    <Text style={{ color: "blue", fontWeight: "bold" }}>
+                      All-resin:
+                    </Text>
+                    {"\n"}
+                    All-resin dental crowns are less expensive than other crown
+                    types. However, they wear down over time and are more prone
+                    to fractures than porcelain-fused-to-metal crowns.
+                    {"\n"}
+                    {"\n"}
+                    <Text style={{ color: "blue", fontWeight: "bold" }}>
+                      All-ceramic or all-porcelain:
+                    </Text>
+                    {"\n"}
+                    All-ceramic or all-porcelain dental crowns provide better
+                    natural color match than any other crown type and may be
+                    more suitable for people with metal allergies. All-ceramic
+                    crowns can be used for front and back teeth.
+                    {"\n"}
+                    {"\n"}
+                    <Text style={{ color: "blue", fontWeight: "bold" }}>
+                      Temporary/Permanent:
+                    </Text>
+                    {"\n"}
+                    Temporary crowns can be made in your dentist's office,
+                    whereas most permanent crowns are made in a dental
+                    laboratory. Typically, temporary crowns are made of an
+                    acrylic-based material or stainless steel and can be used as
+                    a temporary restoration until a permanent crown is
+                    constructed by a lab.
                   </Text>
-                  {"\n"}
-                  Metals used in crowns include alloys that have a high content
-                  of gold or platinum, or base-metal alloys (for example,
-                  cobalt- chromium and nickel-chromium alloys). Metal crowns
-                  withstand biting and chewing forces well and probably last the
-                  longest in terms of wear down. Also, metal crowns rarely chip
-                  or break. The metallic color is the main drawback. Metal
-                  crowns are a good choice for out-of-sight molars.
-                  {"\n"}
-                  {"\n"}
-                  <Text style={{ color: "blue", fontWeight: "bold" }}>
-                    Porcelain-fused-to-metal:
-                  </Text>
-                  {"\n"}
-                  Porcelain-fused-to-metal dental crowns can be color matched to
-                  your adjacent teeth (unlike the metallic crowns). However,
-                  more wearing to the opposing teeth occurs with this crown type
-                  compared with metal or resin crowns. The crown's porcelain
-                  portion can also chip or break off. Next to all-ceramic
-                  crowns, porcelain-fused-to-metal crowns look most like normal
-                  teeth. However, sometimes the metal underlying the crown's
-                  porcelain can show through as a dark line, especially at the
-                  gum line and even more so if your gums recede. These crowns
-                  can be a good choice for front or back teeth as well as long
-                  bridges where the metal is needed for strength.
-                  {"\n"}
-                  {"\n"}
-                  <Text style={{ color: "blue", fontWeight: "bold" }}>
-                    All-resin:
-                  </Text>
-                  {"\n"}
-                  All-resin dental crowns are less expensive than other crown
-                  types. However, they wear down over time and are more prone to
-                  fractures than porcelain-fused-to-metal crowns.
-                  {"\n"}
-                  {"\n"}
-                  <Text style={{ color: "blue", fontWeight: "bold" }}>
-                    All-ceramic or all-porcelain:
-                  </Text>
-                  {"\n"}
-                  All-ceramic or all-porcelain dental crowns provide better
-                  natural color match than any other crown type and may be more
-                  suitable for people with metal allergies. All-ceramic crowns
-                  can be used for front and back teeth.
-                  {"\n"}
-                  {"\n"}
-                  <Text style={{ color: "blue", fontWeight: "bold" }}>
-                    Temporary/Permanent:
-                  </Text>
-                  {"\n"}
-                  Temporary crowns can be made in your dentist's office, whereas
-                  most permanent crowns are made in a dental laboratory.
-                  Typically, temporary crowns are made of an acrylic-based
-                  material or stainless steel and can be used as a temporary
-                  restoration until a permanent crown is constructed by a lab.
                 </Text>
               </Text>
             ) : null}
