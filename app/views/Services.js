@@ -366,28 +366,28 @@ class Services extends React.Component {
                 </Text>
                 {"\n"}
                 {"\n"}
-                <Text style={{ color: "red" }}>2{")"}</Text> Restore an already
-                broken tooth
+                <Text style={{ color: "red" }}>2{")"}</Text>{" "}
+                <Text>Restore an already broken tooth</Text>
                 {"\n"}
                 {"\n"}
-                <Text style={{ color: "red" }}>3{")"}</Text> To cover and
-                support a tooth with a large cavity
+                <Text style={{ color: "red" }}>3{")"}</Text>{" "}
+                <Text>To cover and support a tooth with a large cavity</Text>
                 {"\n"}
                 {"\n"}
-                <Text style={{ color: "red" }}>4{")"}</Text> To hold a dental
-                bridge in place
+                <Text style={{ color: "red" }}>4{")"}</Text>{" "}
+                <Text>To hold a dental bridge in place</Text>
                 {"\n"}
                 {"\n"}
-                <Text style={{ color: "red" }}>5{")"}</Text> To cover discolored
-                or disfigured tooth
+                <Text style={{ color: "red" }}>5{")"}</Text>{" "}
+                <Text>To cover discolored or disfigured tooth</Text>
                 {"\n"}
                 {"\n"}
-                <Text style={{ color: "red" }}>6{")"}</Text> To cover a dental
-                implant
+                <Text style={{ color: "red" }}>6{")"}</Text>{" "}
+                <Text>To cover a dental implant</Text>
                 {"\n"}
                 {"\n"}
-                <Text style={{ color: "red" }}>7{")"}</Text> To make a tooth
-                look better
+                <Text style={{ color: "red" }}>7{")"}</Text>{" "}
+                <Text>To make a tooth look better</Text>
                 {"\n"}
                 {"\n"}
                 <Text style={{ fontWeight: "bold", textAlign: "center" }}>
