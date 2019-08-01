@@ -358,49 +358,56 @@ class Services extends React.Component {
                   There are many reasons why a dentist may recommend a crown:
                   {"\n"}
                   {"\n"}
-                  <Text style={{ color: "red" }}>1{")"}</Text> To protect a weak
-                  tooth from breaking due to decay or fractures
-                  {"\n"}
-                  {"\n"}
-                  <Text style={{ color: "red" }}>2{")"}</Text> Restore an
-                  already broken tooth
-                  {"\n"}
-                  {"\n"}
-                  <Text style={{ color: "red" }}>3{")"}</Text> To cover and
-                  support a tooth with a large cavity
-                  {"\n"}
-                  {"\n"}
-                  <Text style={{ color: "red" }}>4{")"}</Text> To hold a dental
-                  bridge in place
-                  {"\n"}
-                  {"\n"}
-                  <Text style={{ color: "red" }}>5{")"}</Text> To cover
-                  discolored or disfigured tooth
-                  {"\n"}
-                  {"\n"}
-                  <Text style={{ color: "red" }}>6{")"}</Text> To cover a dental
-                  implant
-                  {"\n"}
-                  {"\n"}
-                  <Text style={{ color: "red" }}>7{")"}</Text> To make a tooth
-                  look better
-                  {"\n"}
-                  {"\n"}
-                  <Text style={{ fontWeight: "bold", textAlign: "center" }}>
-                    Types of Crowns
-                  </Text>
-                  {"\n"}
-                  {"\n"}
+                </Text>
+                <Text style={{ color: "red" }}>1{")"}</Text>{" "}
+                <Text>
+                  To protect a weak tooth from breaking due to decay or
+                  fractures
+                </Text>
+                {"\n"}
+                {"\n"}
+                <Text style={{ color: "red" }}>2{")"}</Text> Restore an already
+                broken tooth
+                {"\n"}
+                {"\n"}
+                <Text style={{ color: "red" }}>3{")"}</Text> To cover and
+                support a tooth with a large cavity
+                {"\n"}
+                {"\n"}
+                <Text style={{ color: "red" }}>4{")"}</Text> To hold a dental
+                bridge in place
+                {"\n"}
+                {"\n"}
+                <Text style={{ color: "red" }}>5{")"}</Text> To cover discolored
+                or disfigured tooth
+                {"\n"}
+                {"\n"}
+                <Text style={{ color: "red" }}>6{")"}</Text> To cover a dental
+                implant
+                {"\n"}
+                {"\n"}
+                <Text style={{ color: "red" }}>7{")"}</Text> To make a tooth
+                look better
+                {"\n"}
+                {"\n"}
+                <Text style={{ fontWeight: "bold", textAlign: "center" }}>
+                  Types of Crowns
+                </Text>
+                {"\n"}
+                {"\n"}
+                <Text>
                   <Text>
                     Permanent crowns can be made from stainless steel, all metal
                     (such as gold or another alloy), porcelain-fused-to-metal,
                     all resin, or all ceramic.
-                    {"\n"}
-                    {"\n"}
-                    <Text style={{ color: "blue", fontWeight: "bold" }}>
-                      Stainless steel crowns:
-                    </Text>
-                    {"\n"}
+                  </Text>
+                  {"\n"}
+                  {"\n"}
+                  <Text style={{ color: "blue", fontWeight: "bold" }}>
+                    Stainless steel crowns:
+                  </Text>
+                  {"\n"}
+                  <Text>
                     Stainless steel crowns are prefabricated crowns that are
                     used on permanent teeth primarily as a temporary measure.
                     The crown protects the tooth or filling while a permanent
@@ -413,10 +420,12 @@ class Services extends React.Component {
                     crown.
                     {"\n"}
                     {"\n"}
-                    <Text style={{ color: "blue", fontWeight: "bold" }}>
-                      Metals:
-                    </Text>
-                    {"\n"}
+                  </Text>
+                  <Text style={{ color: "blue", fontWeight: "bold" }}>
+                    Metals:
+                  </Text>
+                  {"\n"}
+                  <Text>
                     Metals used in crowns include alloys that have a high
                     content of gold or platinum, or base-metal alloys (for
                     example, cobalt- chromium and nickel-chromium alloys). Metal
@@ -425,12 +434,14 @@ class Services extends React.Component {
                     rarely chip or break. The metallic color is the main
                     drawback. Metal crowns are a good choice for out-of-sight
                     molars.
-                    {"\n"}
-                    {"\n"}
-                    <Text style={{ color: "blue", fontWeight: "bold" }}>
-                      Porcelain-fused-to-metal:
-                    </Text>
-                    {"\n"}
+                  </Text>
+                  {"\n"}
+                  {"\n"}
+                  <Text style={{ color: "blue", fontWeight: "bold" }}>
+                    Porcelain-fused-to-metal:
+                  </Text>
+                  {"\n"}
+                  <Text>
                     Porcelain-fused-to-metal dental crowns can be color matched
                     to your adjacent teeth (unlike the metallic crowns).
                     However, more wearing to the opposing teeth occurs with this
@@ -445,29 +456,35 @@ class Services extends React.Component {
                     for strength.
                     {"\n"}
                     {"\n"}
-                    <Text style={{ color: "blue", fontWeight: "bold" }}>
-                      All-resin:
-                    </Text>
-                    {"\n"}
+                  </Text>
+                  <Text style={{ color: "blue", fontWeight: "bold" }}>
+                    All-resin:
+                  </Text>
+                  {"\n"}
+                  <Text>
                     All-resin dental crowns are less expensive than other crown
                     types. However, they wear down over time and are more prone
                     to fractures than porcelain-fused-to-metal crowns.
                     {"\n"}
                     {"\n"}
-                    <Text style={{ color: "blue", fontWeight: "bold" }}>
-                      All-ceramic or all-porcelain:
-                    </Text>
-                    {"\n"}
+                  </Text>
+                  <Text style={{ color: "blue", fontWeight: "bold" }}>
+                    All-ceramic or all-porcelain:
+                  </Text>
+                  {"\n"}
+                  <Text>
                     All-ceramic or all-porcelain dental crowns provide better
                     natural color match than any other crown type and may be
                     more suitable for people with metal allergies. All-ceramic
                     crowns can be used for front and back teeth.
                     {"\n"}
                     {"\n"}
-                    <Text style={{ color: "blue", fontWeight: "bold" }}>
-                      Temporary/Permanent:
-                    </Text>
-                    {"\n"}
+                  </Text>
+                  <Text style={{ color: "blue", fontWeight: "bold" }}>
+                    Temporary/Permanent:
+                  </Text>
+                  {"\n"}
+                  <Text>
                     Temporary crowns can be made in your dentist's office,
                     whereas most permanent crowns are made in a dental
                     laboratory. Typically, temporary crowns are made of an
