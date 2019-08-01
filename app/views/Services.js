@@ -7,7 +7,8 @@ import {
   TouchableOpacity,
   FlatList,
   Button,
-  Image
+  Image,
+  Linking
 } from "react-native";
 import { SafeAreaView } from "react-navigation";
 import {
@@ -299,8 +300,8 @@ class Services extends React.Component {
           <View style={styles.itemPickInfo}>
             {this.state.showAestheticSpa ? (
               <Text style={styles.itemPickText}>
-                Here at ADC of Norton we have an in-house Aesthetic Spa. With a
-                team of skilled nurses, we offer Botox, Dysport, and Dermal
+                Here at ADC of Norton we have an in-house Aesthetic Spa. With
+                our team of skilled nurses, we offer Botox, Dysport, and Dermal
                 Fillers.
                 {"\n"}
                 {"\n"}
@@ -311,8 +312,8 @@ class Services extends React.Component {
                 have the same active ingredient but have their differences.
                 {"\n"}
                 {"\n"}
-                More information about these treatments can be found on our list
-                of services.
+                More information about Botox, Dysport, and Dermal Fillers can be
+                found on our list of services.
               </Text>
             ) : null}
             {this.state.showBleaching ? (
@@ -366,7 +367,48 @@ class Services extends React.Component {
             ) : null}
             {this.state.showSleepApnea ? (
               <Text style={styles.itemPickText}>
-                Sleep Apnea text goes here
+                Sleep apnea is an extremely serious condition that causes a
+                person to wake up constantly throughout the night from
+                respiratory disturbances like sleep apnea (when you stop
+                breathing).
+                {"\n"}
+                {"\n"}
+                Sleep apnea will cause medical conditions to occur, and existing
+                medical conditions to worsen or make more difficult for you and
+                your doctor to manage. Hypertension (high blood pressure,
+                eventually renal failure), diabetes, heart failure, and stroke
+                are very common in people who suffer from sleep apnea.
+                {"\n"}
+                {"\n"}
+                <Text style={{ color: "red", fontWeight: "bold" }}>
+                  Symptoms of Sleep Apnea:
+                </Text>
+                {"\n"}
+                {"\n"}
+                <Text style={{ fontSize: 14 }}>
+                  Headaches, tension headaches, stress headaches, migraines,
+                  lack of energy, interrupted sleep patterns, obesity issues,
+                  anxiety, hypertension, tiredness, snoring, soreness in the
+                  ears, clenching of the jaw, TMJ problems, trigger point pain,
+                  insomnia, and fatigue.
+                </Text>
+                {"\n"}
+                {"\n"}
+                <Text
+                  style={{
+                    color: "blue",
+                    textAlign: "center",
+                    fontWeight: "bold",
+                    fontSize: "15"
+                  }}
+                  onPress={() =>
+                    Linking.openURL(
+                      "https://www.adcofnorton.com/Norton-Sleep-Apnea-Quiz.asp"
+                    )
+                  }
+                >
+                  Click to take our Sleep Apnea Quiz
+                </Text>
               </Text>
             ) : null}
             {this.state.showVeneers ? (
