@@ -33,7 +33,7 @@ class Home extends Component {
                 style={styles.callButton}
                 onPress={() => Linking.openURL(`tel:5086228777`)}
               >
-                <Text style={styles.callButtonText}>Click here to call us</Text>
+                <Text style={styles.callButtonText}>Click to call us</Text>
               </TouchableOpacity>
             </View>
             <View style={styles.emailContainer}>
@@ -57,7 +57,7 @@ class Home extends Component {
                   )
                 }
               >
-                <Text style={styles.callButtonText}>Click for Directions</Text>
+                <Text style={styles.callButtonText}>Click for directions</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
   },
   logoStyle: {
     height: hp("40%"),
-    width: wp("95%")
+    width: wp("100%")
   },
   imgContainer: {
     paddingTop: 70,
