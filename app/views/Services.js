@@ -700,7 +700,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontWeight: "bold",
     fontSize: 23,
-    color: "#114260",
+    color: "red",
     paddingTop: 20
   },
   backButton: {},
@@ -756,11 +756,8 @@ const styles = StyleSheet.create({
     justifyContent: "center"
   },
   buttonDiv: {
-    paddingTop: hp("2%"),
-    paddingLeft: wp("5%")
-  },
-  container: {
-    flex: 1
+    paddingLeft: wp("8%"),
+    paddingTop: hp("1%")
   }
 });
 
