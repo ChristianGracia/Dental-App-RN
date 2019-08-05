@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     marginTop: 15
   },
   logoStyle: {
-    height: hp("30%"),
+    height: hp("40%"),
     width: wp("95%")
   },
   imgContainer: {
