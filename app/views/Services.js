@@ -271,9 +271,18 @@ class Services extends React.Component {
                   }}
                 />
               ) : null}
+              {this.state.showComposites ? (
+                <Image
+                  style={{ width: "100%", height: hp("45%") }}
+                  source={{
+                    uri:
+                      "https://completedentalhealthmi.com/wp-content/uploads/2019/05/white-filling-vs-silver-filling.png"
+                  }}
+                />
+              ) : null}
               {this.state.showCrowns ? (
                 <Image
-                  style={{ width: 360, height: 200 }}
+                  style={{ width: "100%", height: hp("45%") }}
                   source={{
                     uri:
                       "https://www.news-medical.net/image.axd?picture=2017%2F8%2Fshutterstock_611274782.jpg"
@@ -291,7 +300,7 @@ class Services extends React.Component {
               ) : null}
               {this.state.showRootCanals ? (
                 <Image
-                  style={{ width: 360, height: 200 }}
+                  style={{ width: "100%", height: hp("45%") }}
                   source={{
                     uri:
                       "http://icondentalsf.com/wp-content/uploads/2019/01/rct-before-after.jpg"
