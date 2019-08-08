@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff"
   },
   headerDiv: {
-    backgroundColor: "#fcec01",
+    backgroundColor: "#fef200",
     height: 90
   },
   header: {
@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
     color: "#114260",
     fontWeight: "bold",
     fontSize: 20,
-    backgroundColor: "#fcec01",
+    backgroundColor: "#FEF200",
     width: wp("70%"),
     textAlign: "center"
   },
