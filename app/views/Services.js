@@ -53,6 +53,8 @@ class Services extends React.Component {
     this.setState({ showList: false });
     //change current item
     this.setState({ showItem: item.key });
+    //reset scrollview
+    this.refs._scrollView.scrollTo({ y: 0, animated: true });
 
     //item condition
     if (item.key == "Aesthetic Spa") {
@@ -97,18 +99,15 @@ class Services extends React.Component {
     }
     if (item.key == "Root Canals") {
       this.setState({ showRootCanals: true });
-      this.refs._scrollView.scrollTo({ y: 0, animated: true });
     }
     if (item.key == "Sedation") {
       this.setState({ showSedation: true });
     }
     if (item.key == "Sleep Apnea") {
       this.setState({ showSleepApnea: true });
-      this.refs._scrollView.scrollTo({ y: 0, animated: true });
     }
     if (item.key == "Veneers") {
       this.setState({ showVeneers: true });
-      this.refs._scrollView.scrollTo({ y: 0, animated: true });
     }
   };
 
