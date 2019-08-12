@@ -18,47 +18,53 @@ class Home extends Component {
   render() {
     return (
       <SafeAreaView>
-        <ScrollView style={styles.container}>
-          <View style={styles.headerDiv}>
-            <Text style={styles.header}>myADC</Text>
-          </View>
-          <View style={styles.imgContainer}>
-            <Image
-              source={require("../../assets/main.jpg")}
-              style={styles.logoStyle}
-            />
+        <ScrollView>
+          <View style={styles.container}>
+            <View style={styles.headerDiv}>
+              <Text style={styles.header}>myADC</Text>
+            </View>
+            <View style={styles.imgContainer}>
+              <Image
+                source={require("../../assets/main.jpg")}
+                style={styles.logoStyle}
+              />
+            </View>
             <View style={styles.imgDiv} />
-            <View style={styles.callContainer}>
-              <TouchableOpacity
-                style={styles.callButton}
-                onPress={() => Linking.openURL(`tel:5086228777`)}
-              >
-                <Text style={styles.callButtonText}>Click to call us</Text>
-              </TouchableOpacity>
-            </View>
-            <View style={styles.emailContainer}>
-              <TouchableOpacity
-                style={styles.callButton}
-                onPress={() =>
-                  Linking.openURL(
-                    "mailto:office@adcofnorton.com?subject=App-email"
-                  )
-                }
-              >
-                <Text style={styles.callButtonText}>Click to email us</Text>
-              </TouchableOpacity>
-            </View>
-            <View style={styles.directionsContainer}>
-              <TouchableOpacity
-                style={styles.callButton}
-                onPress={() =>
-                  Linking.openURL(
-                    "https://www.google.com/maps/place/Advanced+Dental+Care+of+Norton/@41.9615083,-71.2001785,17z/data=!3m1!4b1!4m5!3m4!1s0x89e461d156c36c9f:0xb5fcf264919e17a5!8m2!3d41.9615083!4d-71.1979898"
-                  )
-                }
-              >
-                <Text style={styles.callButtonText}>Click for directions</Text>
-              </TouchableOpacity>
+            <View style={styles.contactBox}>
+              <View style={styles.callContainer}>
+                <TouchableOpacity
+                  style={styles.callButton}
+                  onPress={() => Linking.openURL(`tel:5086228777`)}
+                >
+                  <Text style={styles.callButtonText}>Click to call us</Text>
+                </TouchableOpacity>
+              </View>
+              <View style={styles.emailContainer}>
+                <TouchableOpacity
+                  style={styles.callButton}
+                  onPress={() =>
+                    Linking.openURL(
+                      "mailto:office@adcofnorton.com?subject=App-email"
+                    )
+                  }
+                >
+                  <Text style={styles.callButtonText}>Click to email us</Text>
+                </TouchableOpacity>
+              </View>
+              <View style={styles.directionsContainer}>
+                <TouchableOpacity
+                  style={styles.callButton}
+                  onPress={() =>
+                    Linking.openURL(
+                      "https://www.google.com/maps/place/Advanced+Dental+Care+of+Norton/@41.9615083,-71.2001785,17z/data=!3m1!4b1!4m5!3m4!1s0x89e461d156c36c9f:0xb5fcf264919e17a5!8m2!3d41.9615083!4d-71.1979898"
+                    )
+                  }
+                >
+                  <Text style={styles.callButtonText}>
+                    Click for directions
+                  </Text>
+                </TouchableOpacity>
+              </View>
             </View>
           </View>
         </ScrollView>
@@ -69,11 +75,13 @@ class Home extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#fff"
+    backgroundColor: "#fff",
+    flex: 1
   },
   headerDiv: {
-    backgroundColor: "#fef200",
-    height: 90
+    backgroundColor: "#fcec01",
+    height: 90,
+    flex: 1
   },
   header: {
     fontSize: 50,
@@ -83,33 +91,22 @@ const styles = StyleSheet.create({
     marginTop: 15
   },
   logoStyle: {
-    height: hp("40%"),
-    width: wp("100%")
+    width: wp("100%"),
+    height: hp("40%")
   },
   imgContainer: {
     paddingTop: 70,
-    alignItems: "center"
+    alignContent: "center"
   },
   callButtonText: {
     color: "#114260",
     fontWeight: "bold",
     fontSize: 20,
-    backgroundColor: "#FEF200",
-    width: wp("70%"),
+    backgroundColor: "#fcec01",
+
     textAlign: "center"
   },
-  callContainer: {
-    paddingTop: 40,
-    marginTop: 10,
-    paddingTop: 15,
-    paddingBottom: 15,
-    marginLeft: 30,
-    marginRight: 30,
-    backgroundColor: "#fcec01",
-    borderRadius: 10,
-    borderWidth: 1,
-    borderColor: "#fff"
-  },
+
   callButton: {
     backgroundColor: "#fcec01"
   },
@@ -117,7 +114,7 @@ const styles = StyleSheet.create({
     paddingBottom: 20
   },
   emailContainer: {
-    paddingTop: 40,
+    flex: 1,
     marginTop: 10,
     paddingTop: 15,
     paddingBottom: 15,
@@ -126,10 +123,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#fcec01",
     borderRadius: 10,
     borderWidth: 1,
-    borderColor: "#fff"
+    borderColor: "#fff",
+    width: wp("80%")
   },
   directionsContainer: {
-    paddingTop: 40,
+    flex: 1,
     marginTop: 7,
     paddingTop: 15,
     paddingBottom: 15,
@@ -138,7 +136,25 @@ const styles = StyleSheet.create({
     backgroundColor: "#fcec01",
     borderRadius: 10,
     borderWidth: 1,
-    borderColor: "#fff"
+    borderColor: "#fff",
+    width: wp("80%")
+  },
+
+  callContainer: {
+    flex: 1,
+    marginTop: 10,
+    paddingTop: 15,
+    paddingBottom: 15,
+    marginLeft: 30,
+    marginRight: 30,
+    backgroundColor: "#fcec01",
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "#fff",
+    width: wp("80%")
+  },
+  contactBox: {
+    alignItems: "center"
   }
 });
 
