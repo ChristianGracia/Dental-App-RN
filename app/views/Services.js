@@ -16,8 +16,11 @@ import {
   heightPercentageToDP as hp
 } from "react-native-responsive-screen";
 
+import AestheticSpa from "../components/services/AestheticSpa";
+import Composites from "../components/services/Composites";
 import Crowns from "../components/services/Crowns";
 import Implants from "../components/services/Implants";
+import Orthodontics from "../components/services/Orthodontics";
 import Veneers from "../components/services/Veneers";
 
 class Services extends React.Component {
@@ -266,44 +269,16 @@ class Services extends React.Component {
             </View>
 
             {/* Show Service image + info*/}
+            {this.state.showAestheticSpa ? <AestheticSpa /> : null}
+            {this.state.showComposites ? <Composites /> : null}
             {this.state.showCrowns ? <Crowns /> : null}
             {this.state.showImplants ? <Implants /> : null}
             {this.state.showVeneers ? <Veneers /> : null}
+            {this.state.showOrthodontics ? <Orthodontics /> : null}
 
             {/* Images */}
 
             <View style={styles.serviceImage}>
-              {this.state.showAestheticSpa ? (
-                <Image
-                  style={{ width: "100%", height: hp("45%") }}
-                  resizeMode="contain"
-                  source={{
-                    uri:
-                      "https://www.adcofnorton.com/images/Norton-MA-Botox-Dysport.jpg"
-                  }}
-                />
-              ) : null}
-              {this.state.showComposites ? (
-                <Image
-                  style={{ width: "100%", height: hp("45%") }}
-                  resizeMode="contain"
-                  source={{
-                    uri:
-                      "https://completedentalhealthmi.com/wp-content/uploads/2019/05/white-filling-vs-silver-filling.png"
-                  }}
-                />
-              ) : null}
-
-              {this.state.showOrthodontics ? (
-                <Image
-                  style={{ width: "100%", height: hp("45%") }}
-                  resizeMode="contain"
-                  source={{
-                    uri:
-                      "https://www.readersdigest.ca/wp-content/uploads/sites/14/2010/10/does-your-child-really-need-braces-1200x1200.jpg"
-                  }}
-                />
-              ) : null}
               {this.state.showRootCanals ? (
                 <Image
                   style={{
@@ -322,30 +297,6 @@ class Services extends React.Component {
             {/* Service Text */}
 
             <View style={styles.itemPickInfo}>
-              {this.state.showAestheticSpa ? (
-                <Text style={styles.itemPickText}>
-                  Here at ADC of Norton we have an in-house Aesthetic Spa. With
-                  our team of skilled nurses, we offer Botox, Dysport, and
-                  Dermal Fillers.
-                  {"\n"}
-                  {"\n"}
-                  Botox and Dysport are both safe and effective treatments for
-                  moderate to severe wrinkles.
-                  {"\n"}
-                  {"\n"}
-                  These treatments reduce the appearance of wrinkles by relaxing
-                  the underlying muscles beneath the skin which results in
-                  smoother skin.
-                  {"\n"}
-                  {"\n"}
-                  Both treatments have the same active ingredient but have their
-                  differences.
-                  {"\n"}
-                  {"\n"}
-                  More information about Botox, Dysport, and Dermal Fillers can
-                  be found on our list of services.
-                </Text>
-              ) : null}
               {this.state.showBleaching ? (
                 <Text style={styles.itemPickText}>
                   Bleaching text goes here
@@ -353,37 +304,6 @@ class Services extends React.Component {
               ) : null}
               {this.state.showBotox ? (
                 <Text style={styles.itemPickText}>Botox text goes here</Text>
-              ) : null}
-              {this.state.showComposites ? (
-                <Text style={styles.itemPickText}>
-                  Composites are tooth colored resin fillings that are used in
-                  small to midsize cavities that provide durability and
-                  resistance to fractures and allow a tooth to withstand the
-                  pressure that comes from chewing.
-                  {"\n"}
-                  {"\n"}
-                  These fillings can not only be used to fill cavities but also
-                  can be used to change the color of teeth and reshape
-                  disfigured teeth.
-                  {"\n"}
-                  {"\n"}
-                  Composites are a good choice for people who want their teeth
-                  to look natural because the alternatives (like amalgam
-                  fillings) are easy to look at and tell that work was done on
-                  the tooth.
-                  {"\n"}
-                  {"\n"}
-                  Composite fillings usually take longer to place then a metal
-                  (amalgam) filling because the tooth is needed to be kept clean
-                  and dry during the procedure.
-                  {"\n"}
-                  {"\n"}
-                  Composite fillings are now used more than metal alternatives
-                  because most people want fillings that match the color of
-                  their natural teeth. At our office we use a shade guide to
-                  match our many shades of composite resins to the natural color
-                  of our patient’s teeth.
-                </Text>
               ) : null}
 
               {this.state.showDentures ? (
@@ -397,116 +317,7 @@ class Services extends React.Component {
               {this.state.showDysport ? (
                 <Text style={styles.itemPickText}>Dysport text goes here</Text>
               ) : null}
-              {this.state.showOrthodontics ? (
-                <Text style={styles.itemPickText}>
-                  At Advanced Dental Care of Norton we have our own in-house
-                  orthodontist and these are the services we provide:{"\n"}
-                  {"\n"}
-                  <Text
-                    style={{ color: "red", fontSize: 20, fontWeight: "bold" }}
-                  >
-                    Adult Orthodontics
-                  </Text>
-                  {"\n"}
-                  {"\n"}
-                  Orthodontic treatments today are no longer just for kids. Many
-                  adults are choosing to have orthodontic treatments not only to
-                  correct dental issues that may have affected their oral
-                  health, but also for the cosmetic benefits of straight teeth.
-                  Orthodontic treatments for adults include both traditional and
-                  clear braces and, for those who want to be more discrete with
-                  their treatment, clear aligners. While traditional braces for
-                  adults work the same as those for children, the length of the
-                  treatment time may be longer. {"\n"}
-                  {"\n"}
-                  <Text
-                    style={{ color: "red", fontSize: 20, fontWeight: "bold" }}
-                  >
-                    Teen Orthodontics
-                  </Text>
-                  {"\n"}
-                  {"\n"}The teen years are a suitable time to begin orthodontic
-                  treatments. The bone in the jaw of a teenager is still
-                  moldable by moving teeth because it has not yet set in its
-                  shape. Gaps, crooked teeth, overcrowding of teeth and improper
-                  alignment of bites can all be corrected during the teenage
-                  years. While no teenager looks forward to wearing braces for a
-                  year or two, there have been advances in orthodontic
-                  technology that gives more choices for orthodontic teeth
-                  straightening like metal vs ceramic braces and the choice of
-                  the color combination of the tiny rubber bands. {"\n"}
-                  {"\n"}
-                  <Text
-                    style={{ color: "red", fontSize: 20, fontWeight: "bold" }}
-                  >
-                    Traditional Braces
-                  </Text>
-                  {"\n"}
-                  {"\n"}
-                  When you hear the term braces, it is usually in reference to
-                  the traditional braces that require the use of metal wires and
-                  brackets. These braces are typically recommended for cases
-                  requiring more severe correction as a result of their
-                  durability.{"\n"}
-                  {"\n"}
-                  <Text
-                    style={{ color: "red", fontSize: 20, fontWeight: "bold" }}
-                  >
-                    Six Month Smiles
-                  </Text>
-                  {"\n"}
-                  {"\n"}
-                  The Six Month Smiles Bracing System is a clear bracing system
-                  for adults. Most adults do not want the hassle of having to
-                  walk around with visible braces for an extended period of
-                  time. With the Six Month Smiles system, clear braces are used
-                  and the primary focus is on the cosmetic appearance of the
-                  teeth that are visible in your smile, and not the position of
-                  your bite. Therefore, one can have their teeth straightened in
-                  just around six months!
-                  {"\n"}
-                  {"\n"}
-                  <Text
-                    style={{ color: "red", fontSize: 20, fontWeight: "bold" }}
-                  >
-                    Fastbraces®
-                  </Text>
-                  {"\n"}
-                  {"\n"}
-                  The Fastbraces® Technology straightens the teeth differently
-                  from traditional braces. Unlike the latter which aligns the
-                  crown of the teeth first, then addresses the positioning of
-                  the root of the tooth, Fastbraces®, from the beginning of
-                  treatment, works to correct the position of the root of the
-                  tooth. As a result of this, treatment using the Fastbraces®
-                  Technology tend to be completed faster than that of
-                  traditional braces.
-                  {"\n"}
-                  {"\n"}
-                  <Text
-                    style={{ color: "red", fontSize: 20, fontWeight: "bold" }}
-                  >
-                    Invisalign
-                  </Text>
-                  {"\n"}
-                  {"\n"}
-                  Many adults simply do not like having to deal with wires and
-                  brackets, and for them, Invisalign has been the proven choice.
-                  Unlike the other bracing systems which uses either metal or
-                  clear braces, Invisalign uses a series of custom-made aligners
-                  that are not only so clear that they are almost invisible, but
-                  they can also be removed for eating, drinking, and normal
-                  brushing and flossing of the teeth!
-                  {"\n"}
-                  {"\n"}
-                  <Text style={{ textAlign: "center", fontWeight: "bold" }}>
-                    At Advanced Dental Care of Norton, we customize
-                    individualized treatment plans based on our patients needs,
-                    to get the best results, using the best suited system. Call
-                    us today to schedule a consultation.
-                  </Text>
-                </Text>
-              ) : null}
+
               {this.state.showPartials ? (
                 <Text style={styles.itemPickText}>
                   Partial Dentures text goes here

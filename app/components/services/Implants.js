@@ -22,7 +22,7 @@ class Implants extends Component {
               "https://www.aspendental.com/-/media/aspendentaldotcom/ada-content/dental-implants/new-implants/implant_1.jpg?h=252&w=400&la=en&hash=D1211062CEC935D9CC3DEA947CE1CF47"
           }}
         />
-        <Text style={styles.itemPickText}>Implants text goes here</Text>
+        <Text style={styles.itemPickText}>{"\n"}Implants text goes here</Text>
       </View>
     );
   }
