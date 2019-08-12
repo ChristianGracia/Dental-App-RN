@@ -17,10 +17,19 @@ import {
 } from "react-native-responsive-screen";
 
 import AestheticSpa from "../components/services/AestheticSpa";
+import Bleaching from "../components/services/Bleaching";
+import Botox from "../components/services/Botox";
 import Composites from "../components/services/Composites";
 import Crowns from "../components/services/Crowns";
+import Dentures from "../components/services/Dentures";
+import DermalFillers from "../components/services/DermalFillers";
 import Implants from "../components/services/Implants";
 import Orthodontics from "../components/services/Orthodontics";
+import Partials from "../components/services/Partials";
+import Pediatrics from "../components/services/Pediatrics";
+import RootCanals from "../components/services/RootCanals";
+import Sedation from "../components/services/Sedation";
+import SleepApnea from "../components/services/SleepApnea";
 import Veneers from "../components/services/Veneers";
 
 class Services extends React.Component {
@@ -268,158 +277,30 @@ class Services extends React.Component {
               </View>
             </View>
 
-            {/* Show Service image + info*/}
+            {/* Show Service Component */}
             {this.state.showAestheticSpa ? <AestheticSpa /> : null}
+            {this.state.showBleaching ? <Bleaching /> : null}
+            {this.state.showBotox ? <Botox /> : null}
             {this.state.showComposites ? <Composites /> : null}
             {this.state.showCrowns ? <Crowns /> : null}
+            {this.state.showDentures ? <Dentures /> : null}
+            {this.state.showDermalFillers ? <DermalFillers /> : null}
+            {this.state.showDysport ? <Dysport /> : null}
             {this.state.showImplants ? <Implants /> : null}
-            {this.state.showVeneers ? <Veneers /> : null}
             {this.state.showOrthodontics ? <Orthodontics /> : null}
+            {this.state.showPartials ? <Partials /> : null}
+            {this.state.showPediatric ? <Pediatrics /> : null}
+            {this.state.showRootCanals ? <RootCanals /> : null}
+            {this.state.showSedation ? <Sedation /> : null}
+            {this.state.showSleepApnea ? <SleepApnea /> : null}
+            {this.state.showVeneers ? <Veneers /> : null}
 
             {/* Images */}
-
-            <View style={styles.serviceImage}>
-              {this.state.showRootCanals ? (
-                <Image
-                  style={{
-                    width: "100%",
-                    height: hp("45%")
-                  }}
-                  resizeMode="contain"
-                  source={{
-                    uri:
-                      "http://icondentalsf.com/wp-content/uploads/2019/01/rct-before-after.jpg"
-                  }}
-                />
-              ) : null}
-            </View>
-
+            <View style={styles.serviceImage} />
             {/* Service Text */}
-
-            <View style={styles.itemPickInfo}>
-              {this.state.showBleaching ? (
-                <Text style={styles.itemPickText}>
-                  Bleaching text goes here
-                </Text>
-              ) : null}
-              {this.state.showBotox ? (
-                <Text style={styles.itemPickText}>Botox text goes here</Text>
-              ) : null}
-
-              {this.state.showDentures ? (
-                <Text style={styles.itemPickText}>Dentures text goes here</Text>
-              ) : null}
-              {this.state.showDermalFillers ? (
-                <Text style={styles.itemPickText}>
-                  Dermal Fillers text goes here
-                </Text>
-              ) : null}
-              {this.state.showDysport ? (
-                <Text style={styles.itemPickText}>Dysport text goes here</Text>
-              ) : null}
-
-              {this.state.showPartials ? (
-                <Text style={styles.itemPickText}>
-                  Partial Dentures text goes here
-                </Text>
-              ) : null}
-              {this.state.showPediatric ? (
-                <Text style={styles.itemPickText}>
-                  Pediatric Dentistry text goes here
-                </Text>
-              ) : null}
-              {this.state.showRootCanals ? (
-                <Text style={styles.itemPickText}>
-                  When the pulp of a tooth is infected (either through decay or
-                  injury), a root canal by an Endodontist is needed to save the
-                  tooth.
-                  {"\n"}
-                  {"\n"}
-                  At early stages of infection you may not feel any pain but it
-                  is a sure sign that a root canal is needed when the tooth
-                  starts to darken in color.
-                  {"\n"}
-                  {"\n"}
-                  If a root canal is not performed, the infection can spread
-                  through the root canal system of the tooth which can lead to
-                  an abscess in which pus collects, swelling occurs, and the
-                  tooth can be lost.
-                  {"\n"}
-                  {"\n"}
-                  Contrary to what you may hear, root canals are not painful
-                  with local anaesthetic and there should be no more pain than
-                  one would feel with a normal filling be done.
-                  {"\n"}
-                  {"\n"}
-                  First the root is cleaned to remove all infection from the
-                  root canal and drain any abscesses.
-                  {"\n"}
-                  {"\n"}
-                  Then a temporary filling is placed and after seeing the
-                  Endodontist again and the infection is cleared, a permanent
-                  filling is placed and the tooth is saved.
-                  {"\n"}
-                  {"\n"}
-                  Root canals are important because once the pulp is destroyed,
-                  the tooth will never be able to heal.
-                </Text>
-              ) : null}
-              {this.state.showSedation ? (
-                <Text style={styles.itemPickText}>Sedation text goes here</Text>
-              ) : null}
-              {this.state.showSleepApnea ? (
-                <Text style={styles.itemPickText}>
-                  Sleep apnea is an extremely serious condition that causes a
-                  person to wake up constantly throughout the night from
-                  respiratory disturbances like sleep apnea (when you stop
-                  breathing).
-                  {"\n"}
-                  {"\n"}
-                  Sleep apnea will cause medical conditions to occur, and
-                  existing medical conditions to worsen or make more difficult
-                  for you and your doctor to manage.
-                  {"\n"}
-                  {"\n"}
-                  Hypertension (high blood pressure, eventually renal failure),
-                  diabetes, heart failure, and stroke are very common in people
-                  who suffer from sleep apnea.
-                  {"\n"}
-                  {"\n"}
-                  <Text style={{ color: "red", fontWeight: "bold" }}>
-                    Symptoms of Sleep Apnea:
-                  </Text>
-                  {"\n"}
-                  {"\n"}
-                  <Text style={{ fontSize: 14 }}>
-                    Headaches, tension headaches, stress headaches, migraines,
-                    lack of energy, interrupted sleep patterns, obesity issues,
-                    anxiety, hypertension, tiredness, snoring, soreness in the
-                    ears, clenching of the jaw, TMJ problems, trigger point
-                    pain, insomnia, and fatigue.
-                  </Text>
-                  {"\n"}
-                  {"\n"}
-                  <Text
-                    style={{
-                      color: "blue",
-                      textAlign: "center",
-                      fontWeight: "bold",
-                      fontSize: "15"
-                    }}
-                    onPress={() =>
-                      Linking.openURL(
-                        "https://www.adcofnorton.com/Norton-Sleep-Apnea-Quiz.asp"
-                      )
-                    }
-                  >
-                    Click to take our Sleep Apnea Quiz
-                  </Text>
-                </Text>
-              ) : null}
-            </View>
+            <View style={styles.itemPickInfo} />
 
             {/* Back Button */}
-
             <View style={styles.buttonDiv2}>
               {this.state.showItem ? (
                 <TouchableOpacity
