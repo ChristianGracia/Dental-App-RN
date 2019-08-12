@@ -17,10 +17,11 @@ class Crowns extends Component {
               "https://www.news-medical.net/image.axd?picture=2017%2F8%2Fshutterstock_611274782.jpg"
           }}
         />
+
         <Text style={styles.itemPickText}>
           <Text>
-            A crown is a cover or “cap” for your tooth that restores the tooth’s
-            normal shape, size, function, and appearance.
+            {"\n"}A crown is a cover or “cap” for your tooth that restores the
+            tooth’s normal shape, size, function, and appearance.
             {"\n"}
             {"\n"}
             Once a crown is cemented, it covers the entire visible portion of a

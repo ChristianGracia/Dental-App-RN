@@ -17,6 +17,8 @@ import {
 } from "react-native-responsive-screen";
 
 import Crowns from "../components/services/Crowns";
+import Implants from "../components/services/Implants";
+import Veneers from "../components/services/Veneers";
 
 class Services extends React.Component {
   constructor(props) {
@@ -265,6 +267,8 @@ class Services extends React.Component {
 
             {/* Show Service image + info*/}
             {this.state.showCrowns ? <Crowns /> : null}
+            {this.state.showImplants ? <Implants /> : null}
+            {this.state.showVeneers ? <Veneers /> : null}
 
             {/* Images */}
 
@@ -290,20 +294,6 @@ class Services extends React.Component {
                 />
               ) : null}
 
-              {this.state.showImplants ? (
-                <Image
-                  style={{
-                    width: "100%",
-                    height: hp("45%"),
-                    marginRight: wp("-7%")
-                  }}
-                  resizeMode="contain"
-                  source={{
-                    uri:
-                      "https://www.aspendental.com/-/media/aspendentaldotcom/ada-content/dental-implants/new-implants/implant_1.jpg?h=252&w=400&la=en&hash=D1211062CEC935D9CC3DEA947CE1CF47"
-                  }}
-                />
-              ) : null}
               {this.state.showOrthodontics ? (
                 <Image
                   style={{ width: "100%", height: hp("45%") }}
@@ -325,19 +315,6 @@ class Services extends React.Component {
                     uri:
                       "http://icondentalsf.com/wp-content/uploads/2019/01/rct-before-after.jpg"
                   }}
-                />
-              ) : null}
-              {this.state.showVeneers ? (
-                <Image
-                  style={{
-                    width: "100%",
-                    height: hp("45%")
-                  }}
-                  source={{
-                    uri:
-                      "https://www.dentalhealth.org/GetImage.aspx?IDMF=f95a3006-fe99-4190-9d4c-67d97e9c347f&w=400&h=549&src=mc"
-                  }}
-                  resizeMode="contain"
                 />
               ) : null}
             </View>
@@ -419,9 +396,6 @@ class Services extends React.Component {
               ) : null}
               {this.state.showDysport ? (
                 <Text style={styles.itemPickText}>Dysport text goes here</Text>
-              ) : null}
-              {this.state.showImplants ? (
-                <Text style={styles.itemPickText}>Implants text goes here</Text>
               ) : null}
               {this.state.showOrthodontics ? (
                 <Text style={styles.itemPickText}>
@@ -629,30 +603,6 @@ class Services extends React.Component {
                   >
                     Click to take our Sleep Apnea Quiz
                   </Text>
-                </Text>
-              ) : null}
-              {this.state.showVeneers ? (
-                <Text style={styles.itemPickText}>
-                  Veneers are a thin layer of porcelain/composite material that
-                  is designed to fit over the front surface of a tooth.
-                  {"\n"}
-                  {"\n"}
-                  Veneers can improve the color, shape, position of tooth, and
-                  close gaps that would normally require braces.
-                  {"\n"}
-                  {"\n"}
-                  First a small amount of enamel (just enough to fit the Veneer)
-                  is removed from the tooth where the Veneer is being placed.
-                  This is done so that once the Veneer is placed, the tooth will
-                  be its normal size.
-                  {"\n"}
-                  {"\n"}
-                  Then an impression will be taken and a Veneer will be created
-                  by our lab and matched to the color of your surrounding teeth.
-                  {"\n"}
-                  {"\n"}
-                  Veneers can last for a very long time and quickly help solve
-                  problem areas in your smile.
                 </Text>
               ) : null}
             </View>
