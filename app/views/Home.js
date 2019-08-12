@@ -27,9 +27,10 @@ class Home extends Component {
               <Image
                 source={require("../../assets/main.jpg")}
                 style={styles.logoStyle}
+                resizeMode="contain"
               />
             </View>
-            <View style={styles.imgDiv} />
+
             <View style={styles.contactBox}>
               <View style={styles.callContainer}>
                 <TouchableOpacity
@@ -91,28 +92,30 @@ const styles = StyleSheet.create({
     marginTop: 15
   },
   logoStyle: {
-    width: wp("100%"),
+    flex: 1,
+    width: null,
+    maxHeight: 400,
     height: hp("40%")
   },
   imgContainer: {
-    paddingTop: 70,
-    alignContent: "center"
+    alignContent: "center",
+    flex: 1,
+    paddingTop: 20,
+    paddingLeft: 5,
+    paddingRight: 5
   },
   callButtonText: {
     color: "#114260",
     fontWeight: "bold",
     fontSize: 20,
     backgroundColor: "#fcec01",
-
     textAlign: "center"
   },
 
   callButton: {
     backgroundColor: "#fcec01"
   },
-  imgDiv: {
-    paddingBottom: 20
-  },
+
   emailContainer: {
     flex: 1,
     marginTop: 10,
@@ -154,7 +157,8 @@ const styles = StyleSheet.create({
     width: wp("80%")
   },
   contactBox: {
-    alignItems: "center"
+    alignItems: "center",
+    flex: 1
   }
 });
 
