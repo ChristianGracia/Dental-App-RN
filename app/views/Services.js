@@ -151,18 +151,15 @@ class Services extends React.Component {
             ) : null}
             {this.state.showClick ? (
               <Text style={styles.serviceHelp}>
-                Click on a service we offer for more information
+                Click on a service we offer for options and information
               </Text>
             ) : null}
-            <View>
-              <Text />
-            </View>
 
             {/* Service List */}
 
             {this.state.showList ? (
               <FlatList
-                style={styles.list}
+                style={styles.flatList}
                 data={[
                   { key: "Aesthetic Spa" },
                   { key: "Bleaching" },
@@ -264,6 +261,7 @@ class Services extends React.Component {
               {this.state.showAestheticSpa ? (
                 <Image
                   style={{ width: "100%", height: hp("45%") }}
+                  resizeMode="contain"
                   source={{
                     uri:
                       "https://www.adcofnorton.com/images/Norton-MA-Botox-Dysport.jpg"
@@ -273,6 +271,7 @@ class Services extends React.Component {
               {this.state.showComposites ? (
                 <Image
                   style={{ width: "100%", height: hp("45%") }}
+                  resizeMode="contain"
                   source={{
                     uri:
                       "https://completedentalhealthmi.com/wp-content/uploads/2019/05/white-filling-vs-silver-filling.png"
@@ -282,6 +281,7 @@ class Services extends React.Component {
               {this.state.showCrowns ? (
                 <Image
                   style={{ width: "100%", height: hp("45%") }}
+                  resizeMode="contain"
                   source={{
                     uri:
                       "https://www.news-medical.net/image.axd?picture=2017%2F8%2Fshutterstock_611274782.jpg"
@@ -290,16 +290,35 @@ class Services extends React.Component {
               ) : null}
               {this.state.showImplants ? (
                 <Image
-                  style={{ width: 360, height: 200, marginRight: "-5%" }}
+                  style={{
+                    width: "100%",
+                    height: hp("45%"),
+                    marginRight: wp("-7%")
+                  }}
+                  resizeMode="contain"
                   source={{
                     uri:
                       "https://www.aspendental.com/-/media/aspendentaldotcom/ada-content/dental-implants/new-implants/implant_1.jpg?h=252&w=400&la=en&hash=D1211062CEC935D9CC3DEA947CE1CF47"
                   }}
                 />
               ) : null}
-              {this.state.showRootCanals ? (
+              {this.state.showOrthodontics ? (
                 <Image
                   style={{ width: "100%", height: hp("45%") }}
+                  resizeMode="contain"
+                  source={{
+                    uri:
+                      "https://www.readersdigest.ca/wp-content/uploads/sites/14/2010/10/does-your-child-really-need-braces-1200x1200.jpg"
+                  }}
+                />
+              ) : null}
+              {this.state.showRootCanals ? (
+                <Image
+                  style={{
+                    width: "100%",
+                    height: hp("45%")
+                  }}
+                  resizeMode="contain"
                   source={{
                     uri:
                       "http://icondentalsf.com/wp-content/uploads/2019/01/rct-before-after.jpg"
@@ -308,11 +327,15 @@ class Services extends React.Component {
               ) : null}
               {this.state.showVeneers ? (
                 <Image
-                  style={{ width: wp("90%"), height: hp("60%") }}
+                  style={{
+                    width: "100%",
+                    height: hp("45%")
+                  }}
                   source={{
                     uri:
                       "https://www.dentalhealth.org/GetImage.aspx?IDMF=f95a3006-fe99-4190-9d4c-67d97e9c347f&w=400&h=549&src=mc"
                   }}
+                  resizeMode="contain"
                 />
               ) : null}
             </View>
@@ -703,6 +726,9 @@ class Services extends React.Component {
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
   headerDiv: {
     backgroundColor: "#fcec01",
     height: 90
@@ -716,9 +742,10 @@ const styles = StyleSheet.create({
   },
   serviceHelp: {
     paddingTop: 30,
-    paddingBottom: 25,
+    paddingBottom: 15,
     textAlign: "center",
-    fontWeight: "bold"
+    fontWeight: "bold",
+    fontSize: 15
   },
   listItemButton: {},
   listItemText: {
@@ -728,7 +755,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "#114260"
   },
-  list: {},
+  flatList: {},
   scrollStyle: {},
   itemPick: {
     textAlign: "center",
