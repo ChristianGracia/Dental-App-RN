@@ -8,9 +8,11 @@ import {
 class Bleaching extends Component {
   render() {
     return (
-      <View style={{ padding: 15 }}>
+      <View>
         <Text style={styles.itemPick}>Bleaching</Text>
-        <Text style={styles.itemPickText}>Bleaching text goes here</Text>
+        <View style={{ padding: 15 }}>
+          <Text style={styles.itemPickText}>Bleaching text goes here</Text>
+        </View>
       </View>
     );
   }

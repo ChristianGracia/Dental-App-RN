@@ -8,9 +8,11 @@ import {
 class Botox extends Component {
   render() {
     return (
-      <View style={{ padding: 15 }}>
+      <View>
         <Text style={styles.itemPick}>Botox</Text>
-        <Text style={styles.itemPickText}>Botox text goes here</Text>
+        <View style={{ padding: 15 }}>
+          <Text style={styles.itemPickText}>Botox text goes here</Text>
+        </View>
       </View>
     );
   }

@@ -8,9 +8,13 @@ import {
 class Partials extends Component {
   render() {
     return (
-      <View style={{ padding: 15 }}>
+      <View>
         <Text style={styles.itemPick}>Partial Dentures</Text>
-        <Text style={styles.itemPickText}>Partial Denture text goes here</Text>
+        <View style={{ padding: 15 }}>
+          <Text style={styles.itemPickText}>
+            Partial Denture text goes here
+          </Text>
+        </View>
       </View>
     );
   }

@@ -8,9 +8,11 @@ import {
 class DermalFillers extends Component {
   render() {
     return (
-      <View style={{ padding: 15 }}>
+      <View>
         <Text style={styles.itemPick}>Dermal Fillers</Text>
-        <Text style={styles.itemPickText}>Dermal Fillers text goes here</Text>
+        <View style={{ padding: 15 }}>
+          <Text style={styles.itemPickText}>Dermal Fillers text goes here</Text>
+        </View>
       </View>
     );
   }

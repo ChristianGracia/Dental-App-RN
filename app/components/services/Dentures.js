@@ -8,9 +8,11 @@ import {
 class Dentures extends Component {
   render() {
     return (
-      <View style={{ padding: 15 }}>
+      <View>
         <Text style={styles.itemPick}>Dentures</Text>
-        <Text style={styles.itemPickText}>Dentures text goes here</Text>
+        <View style={{ padding: 15 }}>
+          <Text style={styles.itemPickText}>Dentures text goes here</Text>
+        </View>
       </View>
     );
   }

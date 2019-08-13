@@ -8,9 +8,11 @@ import {
 class Dysport extends Component {
   render() {
     return (
-      <View style={{ padding: 15 }}>
+      <View>
         <Text style={styles.itemPick}>Dysport</Text>
-        <Text style={styles.itemPickText}>Dysport text goes here</Text>
+        <View style={{ padding: 15 }}>
+          <Text style={styles.itemPickText}>Dysport text goes here</Text>
+        </View>
       </View>
     );
   }
