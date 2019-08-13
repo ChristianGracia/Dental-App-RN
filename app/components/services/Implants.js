@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp
@@ -7,6 +7,19 @@ import {
 import { iOSColors } from "react-native-typography";
 
 class Implants extends Component {
+  constructor() {
+    super();
+    this.state = {
+      showProcedures: false
+    };
+  }
+  showButton = e => {
+    if (this.state.showProcedures == false) {
+      this.setState({ showProcedures: true });
+    } else {
+      this.setState({ showProcedures: false });
+    }
+  };
   render() {
     return (
       <View>
@@ -81,9 +94,9 @@ class Implants extends Component {
               5) Don't have health conditions that will affect bone healing{" "}
               {"\n"}
               6) Are unable or unwilling to wear dentures{"\n"}
-              7) Want to improve your speech Are willing to commit{"\n"}
-              several months to the process {"\n"}
-              8) Don't smoke tobacco{"\n"}
+              7) Want to improve your speech {"\n"}
+              8) Are willing to commit several months to the process {"\n"}
+              9) Don't smoke tobacco{"\n"}
               {"\n"}
               {"\n"}
             </Text>
@@ -164,13 +177,32 @@ class Implants extends Component {
               (grafting), when needed{"\n"}- Dental implant placement {"\n"}-
               Bone growth and healing {"\n"}- Abutment placement {"\n"}-
               Artificial tooth placement {"\n"}
+              {"\n"}
               The entire process can take many months from start to finish. Much
               of that time is devoted to healing and waiting for the growth of
               new bone in your jaw. Depending on your situation, the specific
               procedure done or the materials used, certain steps can sometimes
               be combined.
+              {"\n"}
+              {"\n"}
             </Text>
           </Text>
+          <View style={styles.buttonDiv}>
+            <TouchableOpacity
+              styles={styles.showButton}
+              onPress={this.showButton.bind(this)}
+            >
+              {this.state.showProcedures ? (
+                <Text style={styles.buttonText}>Hide Implant Procedures</Text>
+              ) : null}
+              {!this.state.showProcedures ? (
+                <Text style={styles.buttonText}>Show Implant Procedures</Text>
+              ) : null}
+            </TouchableOpacity>
+          </View>
+          <View>
+            {this.state.showProcedures ? <Text>Implant Procedures</Text> : null}
+          </View>
         </View>
       </View>
     );
@@ -191,6 +223,24 @@ const styles = StyleSheet.create({
     marginTop: 20,
     backgroundColor: "#fcec01",
     marginBottom: 10
+  },
+  buttonDiv: {
+    alignItems: "center"
+  },
+  buttonText: {
+    color: "#114260",
+    backgroundColor: "#fcec01",
+    fontWeight: "bold",
+    fontSize: 20,
+    borderWidth: 1,
+    borderRadius: 15,
+    overflow: "hidden",
+    borderColor: "#fff",
+    width: wp("80%"),
+    height: 50,
+    textAlign: "center",
+    paddingTop: 10,
+    paddingBottom: 20
   }
 });
 
