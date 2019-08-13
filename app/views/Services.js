@@ -23,6 +23,7 @@ import Composites from "../components/services/Composites";
 import Crowns from "../components/services/Crowns";
 import Dentures from "../components/services/Dentures";
 import DermalFillers from "../components/services/DermalFillers";
+import Dysport from "../components/services/Dysport";
 import Implants from "../components/services/Implants";
 import Orthodontics from "../components/services/Orthodontics";
 import Partials from "../components/services/Partials";
@@ -156,12 +157,6 @@ class Services extends React.Component {
   };
 
   render() {
-    const { showCrowns } = this.state;
-    let information;
-
-    if (showCrowns) {
-      information = <Crowns />;
-    }
     return (
       <SafeAreaView>
         <ScrollView style={styles.scrollStyle} ref="_scrollView">
@@ -226,9 +221,7 @@ class Services extends React.Component {
               {this.state.showComposites ? (
                 <Text style={styles.itemPick}>Composites</Text>
               ) : null}
-              {this.state.showCrowns ? (
-                <Text style={styles.itemPick}>Crowns</Text>
-              ) : null}
+
               {this.state.showDentures ? (
                 <Text style={styles.itemPick}>Dentures</Text>
               ) : null}
@@ -408,12 +401,10 @@ const styles = StyleSheet.create({
     paddingTop: 20
   },
   flexRow: {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "center"
+    alignContent: "left"
   },
   buttonDiv: {
-    paddingLeft: wp("8%"),
+    paddingLeft: wp("1%"),
     paddingTop: hp("1%")
   }
 });
