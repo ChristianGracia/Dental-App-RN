@@ -61,7 +61,7 @@ class SleepApnea extends Component {
           someone has both obstructive sleep apnea and central sleep apnea
           {"\n"}
           {"\n"}
-          <Text style={{ color: iOSColors.yellow, fontWeight: "bold" }}>
+          <Text style={{ color: "red", fontWeight: "bold" }}>
             Symptoms of Sleep Apnea:
           </Text>
           {"\n"}
