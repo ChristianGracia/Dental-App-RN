@@ -4,6 +4,7 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp
 } from "react-native-responsive-screen";
+import { iOSColors } from "react-native-typography";
 
 class Implants extends Component {
   render() {
@@ -66,11 +67,109 @@ class Implants extends Component {
             either side of the space left by the missing tooth. An advantage of
             implants is that no adjacent teeth need to be prepared or ground
             down to hold your new replacement tooth/teeth in place.
-            {"\n\n"}To receive implants, you need to have healthy gums and
-            adequate bone to support the implant. You must also commit to
-            keeping these structures healthy. Meticulous oral hygiene and
-            regular dental visits are critical to the long-term success of
-            dental implants.
+            {"\n\n"}
+            <Text style={{ fontWeight: "bold" }}>
+              Dental Implants might be right for you if...{"\n"}
+              {"\n"}
+            </Text>
+            <Text>
+              1) Have one or more missing teeth {"\n"}
+              2) Have a jawbone that's reached full growth {"\n"}
+              3) Have adequate bone to secure the implants or are able to have a
+              bone graft {"\n"}
+              4) Have healthy oral tissues {"\n"}
+              5) Don't have health conditions that will affect bone healing{" "}
+              {"\n"}
+              6) Are unable or unwilling to wear dentures{"\n"}
+              7) Want to improve your speech Are willing to commit{"\n"}
+              several months to the process {"\n"}
+              8) Don't smoke tobacco{"\n"}
+              {"\n"}
+              {"\n"}
+            </Text>
+            <Text style={{ fontWeight: "bold" }}>
+              How to prepare{"\n"}
+              {"\n"}
+            </Text>
+            <Text>
+              The planning process for dental implants may involve a variety of
+              specialists which fortunately at Advanced Dental Care of Norton we
+              have all these specialists in-house. {"\n"}
+              {"\n"}These specialist include a doctor who specializes in
+              conditions of the mouth, jaw and face (oral and maxillofacial
+              surgeon), a dentist specializing in treating structures that
+              support the teeth, such as gums and bones (periodontist), a
+              dentist who designs and fits artificial teeth (prosthodontist).{" "}
+              {"\n"}
+              {"\n"} Because dental implants require one or more surgical
+              procedures, you must have a thorough evaluation to prepare for the
+              process, including:{"\n"}
+              {"\n"}
+              <Text
+                style={{
+                  fontWeight: "bold",
+                  textAlign: "center",
+                  color: iOSColors.blue
+                }}
+              >
+                Comprehensive dental exam
+              </Text>
+              {"\n\n"} You may have dental X-rays and 3D images taken, and have
+              models made of your teeth and jaw. {"\n\n"}
+              <Text
+                style={{
+                  fontWeight: "bold",
+                  textAlign: "center",
+                  color: iOSColors.blue
+                }}
+              >
+                Review of your medical history
+              </Text>
+              {"\n\n"}Tell your doctor about any medical conditions and any
+              medications you take, including prescription and over-the-counter
+              drugs and supplements. If you have certain heart conditions or
+              orthopedic implants, your doctor may prescribe antibiotics before
+              surgery to help prevent infection.{"\n\n"}
+              <Text
+                style={{
+                  fontWeight: "bold",
+                  textAlign: "center",
+                  color: iOSColors.blue
+                }}
+              >
+                Treatment plan{"\n\n"}
+              </Text>
+              Tailored to your situation, this plan takes into account factors
+              such as how many teeth you need replaced and the condition of your
+              jawbone and remaining teeth. To control pain, anesthesia options
+              during surgery include local anesthesia, sedation or general
+              anesthesia.
+              {"\n"}
+              {"\n"}Your dental care team will instruct you about eating and
+              drinking before surgery, depending on what type of anesthesia you
+              have. If you're having sedation or general anesthesia, plan to
+              have someone take you home after surgery and expect to rest for
+              the remainder of the day.{"\n"}
+              {"\n"}
+            </Text>
+            <Text style={{ fontWeight: "bold" }}>
+              What to Expect{"\n"}
+              {"\n"}
+            </Text>
+            <Text>
+              Dental implant surgery is usually an outpatient surgery performed
+              in stages, with healing time between procedures. The process of
+              placing a dental implant involves multiple steps, including:
+              {"\n\n"}- Damaged tooth removal {"\n"}- Jawbone preparation
+              (grafting), when needed{"\n"}- Dental implant placement {"\n"}-
+              Bone growth and healing {"\n"}- Abutment placement {"\n"}-
+              Artificial tooth placement {"\n"}
+              The entire process can take many months from start to finish. Much
+              of that time is devoted to healing and waiting for the growth of
+              new bone in your jaw. Depending on your situation, the specific
+              procedure done or the materials used, certain steps can sometimes
+              be combined.
+            </Text>
           </Text>
         </View>
       </View>
