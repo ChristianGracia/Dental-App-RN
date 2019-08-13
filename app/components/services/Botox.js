@@ -8,7 +8,7 @@ import {
 class Botox extends Component {
   render() {
     return (
-      <View>
+      <View style={{ padding: 15 }}>
         <Text style={styles.itemPick}>Botox</Text>
         <Text style={styles.itemPickText}>Botox text goes here</Text>
       </View>
@@ -19,8 +19,7 @@ class Botox extends Component {
 const styles = StyleSheet.create({
   itemPickText: {
     color: "#000",
-    fontSize: 20,
-    paddingLeft: 20
+    fontSize: 20
   },
   itemPick: {
     textAlign: "center",

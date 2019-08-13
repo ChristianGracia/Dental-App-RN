@@ -9,7 +9,7 @@ import {
 class SleepApnea extends Component {
   render() {
     return (
-      <View>
+      <View style={{ padding: 15 }}>
         <Text style={styles.itemPick}>Sleep Apnea</Text>
         <Image
           style={{ width: "100%", height: hp("45%"), marginTop: 15 }}
@@ -104,9 +104,7 @@ class SleepApnea extends Component {
 const styles = StyleSheet.create({
   itemPickText: {
     color: "#000",
-    fontSize: 20,
-    paddingLeft: 15,
-    paddingRight: 15
+    fontSize: 20
   },
   itemPick: {
     textAlign: "center",

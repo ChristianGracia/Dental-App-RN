@@ -8,7 +8,7 @@ import {
 class Partials extends Component {
   render() {
     return (
-      <View>
+      <View style={{ padding: 15 }}>
         <Text style={styles.itemPick}>Partial Dentures</Text>
         <Text style={styles.itemPickText}>Partial Denture text goes here</Text>
       </View>
@@ -19,8 +19,7 @@ class Partials extends Component {
 const styles = StyleSheet.create({
   itemPickText: {
     color: "#000",
-    fontSize: 20,
-    paddingLeft: 20
+    fontSize: 20
   },
   itemPick: {
     textAlign: "center",

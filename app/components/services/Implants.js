@@ -77,7 +77,6 @@ const styles = StyleSheet.create({
   itemPickText: {
     color: "#000",
     fontSize: 20,
-
     alignItems: "center"
   },
   itemPick: {

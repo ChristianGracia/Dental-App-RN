@@ -8,7 +8,7 @@ import {
 class Veneers extends Component {
   render() {
     return (
-      <View>
+      <View style={{ padding: 15 }}>
         <Text style={styles.itemPick}>Veneers</Text>
         <Image
           style={{
@@ -52,8 +52,7 @@ class Veneers extends Component {
 const styles = StyleSheet.create({
   itemPickText: {
     color: "#000",
-    fontSize: 20,
-    paddingLeft: 20
+    fontSize: 20
   },
   itemPick: {
     textAlign: "center",
