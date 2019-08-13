@@ -9,6 +9,7 @@ class Composites extends Component {
   render() {
     return (
       <View>
+        <Text style={styles.itemPick}>Composites</Text>
         <Image
           style={{ width: "100%", height: hp("45%"), marginTop: 15 }}
           resizeMode="contain"
@@ -53,6 +54,13 @@ const styles = StyleSheet.create({
     color: "#000",
     fontSize: 20,
     paddingLeft: 20
+  },
+  itemPick: {
+    textAlign: "center",
+    fontWeight: "bold",
+    fontSize: 23,
+    color: "red",
+    paddingTop: 20
   }
 });
 

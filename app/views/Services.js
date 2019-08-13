@@ -209,22 +209,6 @@ class Services extends React.Component {
             {/* Service Title */}
 
             <View style={styles.flexRow}>
-              {this.state.showAestheticSpa ? (
-                <Text style={styles.itemPick}>Aesthetic Spa</Text>
-              ) : null}
-              {this.state.showBleaching ? (
-                <Text style={styles.itemPick}>Bleaching</Text>
-              ) : null}
-              {this.state.showBotox ? (
-                <Text style={styles.itemPick}>Botox</Text>
-              ) : null}
-              {this.state.showComposites ? (
-                <Text style={styles.itemPick}>Composites</Text>
-              ) : null}
-
-              {this.state.showDentures ? (
-                <Text style={styles.itemPick}>Dentures</Text>
-              ) : null}
               {this.state.showDermalFillers ? (
                 <Text style={styles.itemPick}>Dermal Fillers</Text>
               ) : null}
