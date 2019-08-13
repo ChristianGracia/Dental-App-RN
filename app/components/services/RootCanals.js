@@ -13,7 +13,8 @@ class RootCanals extends Component {
         <Image
           style={{
             width: "100%",
-            height: hp("45%")
+            height: hp("45%"),
+            marginTop: 15
           }}
           resizeMode="contain"
           source={{

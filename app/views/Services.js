@@ -5,10 +5,7 @@ import {
   Text,
   StyleSheet,
   TouchableOpacity,
-  FlatList,
-  Button,
-  Image,
-  Linking
+  FlatList
 } from "react-native";
 import { SafeAreaView } from "react-navigation";
 import {

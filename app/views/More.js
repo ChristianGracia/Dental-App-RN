@@ -5,9 +5,8 @@ import {
   ScrollView,
   Text,
   StyleSheet,
-  TextInput,
-  WebView,
-  Linking
+  Linking,
+  Label
 } from "react-native";
 import { SafeAreaView } from "react-navigation";
 import {
