@@ -123,9 +123,11 @@ const styles = StyleSheet.create({
   itemPick: {
     textAlign: "center",
     fontWeight: "bold",
-    fontSize: 23,
-    color: "red",
-    paddingTop: 20
+    fontSize: 30,
+    color: "#114260",
+    marginTop: 20,
+    backgroundColor: "#fcec01",
+    marginBottom: 10
   }
 });
 

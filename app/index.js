@@ -4,6 +4,7 @@ import { BottomTab } from "./config/navigation";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 import rootReducer from "./reducers/rootReducer";
+import { iOSColors } from "react-native-typography";
 
 //remove warnings during dev
 console.disableYellowBox = true;

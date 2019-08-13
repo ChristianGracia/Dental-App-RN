@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { View, Text, Image, StyleSheet } from "react-native";
+import { iOSColors } from "react-native-typography";
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp
@@ -60,7 +61,7 @@ class SleepApnea extends Component {
           someone has both obstructive sleep apnea and central sleep apnea
           {"\n"}
           {"\n"}
-          <Text style={{ color: "red", fontWeight: "bold" }}>
+          <Text style={{ color: iOSColors.yellow, fontWeight: "bold" }}>
             Symptoms of Sleep Apnea:
           </Text>
           {"\n"}
@@ -110,9 +111,11 @@ const styles = StyleSheet.create({
   itemPick: {
     textAlign: "center",
     fontWeight: "bold",
-    fontSize: 23,
-    color: "red",
-    paddingTop: 20
+    fontSize: 30,
+    color: "#114260",
+    marginTop: 20,
+    backgroundColor: "#fcec01",
+    marginBottom: 10
   }
 });
 
