@@ -9,6 +9,7 @@ class SleepApnea extends Component {
   render() {
     return (
       <View>
+        <Text style={styles.itemPick}>Sleep Apnea</Text>
         <Text style={styles.itemPickText}>
           Sleep apnea is an extremely serious condition that causes a person to
           wake up constantly throughout the night from respiratory disturbances
@@ -64,6 +65,13 @@ const styles = StyleSheet.create({
     color: "#000",
     fontSize: 20,
     paddingLeft: 20
+  },
+  itemPick: {
+    textAlign: "center",
+    fontWeight: "bold",
+    fontSize: 23,
+    color: "red",
+    paddingTop: 20
   }
 });
 

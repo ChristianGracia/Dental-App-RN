@@ -206,52 +206,16 @@ class Services extends React.Component {
               />
             ) : null}
 
-            {/* Service Title */}
-
-            <View style={styles.flexRow}>
-              {this.state.showDermalFillers ? (
-                <Text style={styles.itemPick}>Dermal Fillers</Text>
+            {/* Back Button */}
+            <View style={styles.buttonDiv}>
+              {this.state.showItem ? (
+                <TouchableOpacity
+                  style={styles.backButton}
+                  onPress={this.resetList}
+                >
+                  <Text style={styles.buttonText}>Back</Text>
+                </TouchableOpacity>
               ) : null}
-              {this.state.showDysport ? (
-                <Text style={styles.itemPick}>Dysport</Text>
-              ) : null}
-              {this.state.showImplants ? (
-                <Text style={styles.itemPick}>Implants</Text>
-              ) : null}
-              {this.state.showOrthodontics ? (
-                <Text style={styles.itemPick}>Orthodontics</Text>
-              ) : null}
-              {this.state.showPartials ? (
-                <Text style={styles.itemPick}>Partial Dentures</Text>
-              ) : null}
-              {this.state.showPediatric ? (
-                <Text style={{ ...styles.itemPick }}>Pediatric Dentistry</Text>
-              ) : null}
-              {this.state.showRootCanals ? (
-                <Text style={styles.itemPick}>Root Canals</Text>
-              ) : null}
-              {this.state.showSedation ? (
-                <Text style={styles.itemPick}>Sedation</Text>
-              ) : null}
-              {this.state.showSleepApnea ? (
-                <Text style={styles.itemPick}>Sleep Apnea</Text>
-              ) : null}
-              {this.state.showVeneers ? (
-                <Text style={styles.itemPick}>Veneers</Text>
-              ) : null}
-
-              {/* Back Button */}
-
-              <View style={styles.buttonDiv}>
-                {this.state.showItem ? (
-                  <TouchableOpacity
-                    style={styles.backButton}
-                    onPress={this.resetList}
-                  >
-                    <Text style={styles.buttonText}>Back</Text>
-                  </TouchableOpacity>
-                ) : null}
-              </View>
             </View>
 
             {/* Show Service Component */}
@@ -275,7 +239,6 @@ class Services extends React.Component {
             {/* Images */}
             <View style={styles.serviceImage} />
             {/* Service Text */}
-            <View style={styles.itemPickInfo} />
 
             {/* Back Button */}
             <View style={styles.buttonDiv2}>
@@ -288,9 +251,6 @@ class Services extends React.Component {
                 </TouchableOpacity>
               ) : null}
             </View>
-
-            {/* add some white space */}
-            <View style={{ height: 30, color: "#fff" }} />
           </View>
         </ScrollView>
       </SafeAreaView>
@@ -330,13 +290,6 @@ const styles = StyleSheet.create({
   },
   flatList: {},
   scrollStyle: {},
-  itemPick: {
-    textAlign: "center",
-    fontWeight: "bold",
-    fontSize: 23,
-    color: "red",
-    paddingTop: 20
-  },
   backButton: {},
   buttonDiv2: {
     alignItems: "center",
@@ -370,22 +323,9 @@ const styles = StyleSheet.create({
     textAlign: "center",
     paddingTop: 10
   },
-  itemPickInfo: {
-    paddingTop: 20,
-    alignItems: "left",
-    width: wp("95%")
-  },
-  itemPickText: {
-    color: "#000",
-    fontSize: 20,
-    paddingLeft: 20
-  },
   serviceImage: {
     alignItems: "center",
     paddingTop: 20
-  },
-  flexRow: {
-    alignContent: "left"
   },
   buttonDiv: {
     paddingLeft: wp("1%"),

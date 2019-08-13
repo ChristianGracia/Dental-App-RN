@@ -9,6 +9,7 @@ class Implants extends Component {
   render() {
     return (
       <View>
+        <Text style={styles.itemPick}>Implants</Text>
         <Image
           style={{
             width: "100%",
@@ -33,6 +34,13 @@ const styles = StyleSheet.create({
     color: "#000",
     fontSize: 20,
     paddingLeft: 20
+  },
+  itemPick: {
+    textAlign: "center",
+    fontWeight: "bold",
+    fontSize: 23,
+    color: "red",
+    paddingTop: 20
   }
 });
 

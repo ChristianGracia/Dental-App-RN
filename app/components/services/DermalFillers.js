@@ -9,6 +9,7 @@ class DermalFillers extends Component {
   render() {
     return (
       <View>
+        <Text style={styles.itemPick}>Dermal Fillers</Text>
         <Text style={styles.itemPickText}>Dermal Fillers text goes here</Text>
       </View>
     );
@@ -20,6 +21,13 @@ const styles = StyleSheet.create({
     color: "#000",
     fontSize: 20,
     paddingLeft: 20
+  },
+  itemPick: {
+    textAlign: "center",
+    fontWeight: "bold",
+    fontSize: 23,
+    color: "red",
+    paddingTop: 20
   }
 });
 
