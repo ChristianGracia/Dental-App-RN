@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { View, Text } from "react-native";
+import { iOSColors } from "react-native-typography";
 
 export default class ImplantsMore extends Component {
   render() {
@@ -25,7 +26,7 @@ export default class ImplantsMore extends Component {
           the implant surgery. The condition of your jawbone determines how you
           proceed.{"\n\n"}
           <Text style={{ fontWeight: "bold" }}>
-            Placing the Dental Implant{"\n\n"}
+            Placing the dental implant{"\n\n"}
           </Text>
           During surgery to place the dental implant, your oral surgeon makes a
           cut to open your gum and expose the bone. Holes are drilled into the
@@ -41,6 +42,21 @@ export default class ImplantsMore extends Component {
           several months, helps provide a solid base for your new artificial
           tooth — just as roots do for your natural teeth.
           {"\n\n"}
+          <Text style={{ fontWeight: "bold" }}>
+            Placing the Abutment {"\n\n"}
+          </Text>
+          When osseointegration is complete, you may need additional surgery to
+          place the abutment — the piece where the crown will eventually attach.
+          This minor surgery is typically done with local anesthesia in an
+          outpatient setting. To place the abutment:
+          {"\n\n"}
+          <Text style={{ color: iOSColors.blue }}>1{") "}</Text>Your oral
+          surgeon reopens your gum to expose the dental implant {"\n\n"}
+          <Text style={{ color: iOSColors.blue }}>2{") "}</Text> The abutment is
+          attached to the dental implant
+          {"\n\n"}
+          <Text style={{ color: iOSColors.blue }}>3{") "}</Text>The gum tissue
+          is then closed around, but not over, the abutment{"\n\n"}
         </Text>
       </View>
     );
