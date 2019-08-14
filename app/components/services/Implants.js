@@ -53,6 +53,14 @@ class Implants extends Component {
             over 25 years.
             {"\n\n"}
             <Text style={{ fontWeight: "bold" }}>
+              Types of Dental Implants We Place
+            </Text>
+            {"\n\n"}
+            At Advanced Dental Care of Norton, we uses titanium or zirconia
+            imlants. Zirconia is used when a patient has a metal allergy and we
+            are unable to use titanium.
+            {"\n\n"}
+            <Text style={{ fontWeight: "bold" }}>
               How do Dental Implants Work?
             </Text>{" "}
             {"\n\n"}
