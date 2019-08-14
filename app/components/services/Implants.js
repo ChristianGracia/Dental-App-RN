@@ -5,6 +5,7 @@ import {
   heightPercentageToDP as hp
 } from "react-native-responsive-screen";
 import { iOSColors } from "react-native-typography";
+import ImplantsMore from "./ImplantsMore";
 
 class Implants extends Component {
   constructor() {
@@ -86,17 +87,14 @@ class Implants extends Component {
               {"\n"}
             </Text>
             <Text>
-              1) Have one or more missing teeth {"\n"}
-              2) Have a jawbone that's reached full growth {"\n"}
-              3) Have adequate bone to secure the implants or are able to have a
-              bone graft {"\n"}
-              4) Have healthy oral tissues {"\n"}
-              5) Don't have health conditions that will affect bone healing{" "}
-              {"\n"}
-              6) Are unable or unwilling to wear dentures{"\n"}
-              7) Want to improve your speech {"\n"}
-              8) Are willing to commit several months to the process {"\n"}
-              9) Don't smoke tobacco{"\n"}
+              1{")"} Have one or more missing teeth {"\n"}2{")"}Have a jawbone
+              that's reached full growth {"\n"}3{")"}Have adequate bone to
+              secure the implants or are able to have a bone graft {"\n"}4{")"}
+              Have healthy oral tissues {"\n"}5{")"}Don't have health conditions
+              that will affect bone healing {"\n"}6{")"}Are unable or unwilling
+              to wear dentures{"\n"}7{")"}Want to improve your speech {"\n"}8
+              {")"}Are willing to commit several months to the process {"\n"}9
+              {")"}Don't smoke tobacco{"\n"}
               {"\n"}
               {"\n"}
             </Text>
@@ -200,9 +198,7 @@ class Implants extends Component {
               ) : null}
             </TouchableOpacity>
           </View>
-          <View>
-            {this.state.showProcedures ? <Text>Implant Procedures</Text> : null}
-          </View>
+          <View>{this.state.showProcedures ? <ImplantsMore /> : null}</View>
         </View>
       </View>
     );
