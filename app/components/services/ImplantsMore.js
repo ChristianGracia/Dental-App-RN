@@ -3,6 +3,11 @@ import { View, Text } from "react-native";
 import { iOSColors } from "react-native-typography";
 
 export default class ImplantsMore extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   render() {
     return (
       <View style={{ paddingTop: 30 }}>
