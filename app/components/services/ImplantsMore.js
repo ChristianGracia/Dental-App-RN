@@ -13,6 +13,19 @@ export default class ImplantsMore extends Component {
     return (
       <View style={{ paddingTop: 30, flex: 1 }}>
         <Text style={{ fontSize: 20 }}>
+          <Text style={styles.header}>Endosteal implant{"\n\n"}</Text>
+          <Text>
+            These dental implants are placed in the jawbone. Typically made of
+            titanium and shaped like small screws, they are the most commonly
+            used type of implant.{"\n\n"}
+          </Text>
+          <Text style={styles.header}>Subperiosteal implant{"\n\n"}</Text>
+          <Text>
+            These dental implants are placed under the gum but on, or above, the
+            jawbone. This type of implant may be used in patients who do not
+            have enough healthy natural jawbone and cannot, or do not want to,
+            undergo a bone augmentation procedure to rebuild it.{"\n\n"}
+          </Text>
           <Text style={styles.header}>Bone graft{"\n\n"}</Text>If your jawbone
           isn't thick enough or is too soft, you may need bone grafting before
           you can have dental implant surgery. That's because the powerful
@@ -30,6 +43,18 @@ export default class ImplantsMore extends Component {
           need only minor bone grafting, which can be done at the same time as
           the implant surgery. The condition of your jawbone determines how you
           proceed.{"\n\n"}
+          <Text style={styles.header}>Sinus lift{"\n\n"}</Text>
+          <Text>
+            Also called sinus augmentation or sinus elevation, this involves
+            adding bone below the sinus in cases where natural bone has
+            deteriorated due to missing upper back teeth.{"\n\n"}
+          </Text>
+          <Text style={styles.header}>Ridge expansion{"\n\n"}</Text>
+          <Text>
+            If your jaw isn’t wide enough to support dental implants, bone graft
+            material can be added to a small ridge, or space, created along the
+            top of your jaw.{"\n\n"}
+          </Text>
           <Text style={styles.header}>Placing the dental implant{"\n\n"}</Text>
           During surgery to place the dental implant, your oral surgeon makes a
           cut to open your gum and expose the bone. Holes are drilled into the
@@ -45,7 +70,7 @@ export default class ImplantsMore extends Component {
           several months, helps provide a solid base for your new artificial
           tooth — just as roots do for your natural teeth.
           {"\n\n"}
-          <Text style={styles.header}>Placing the Abutment {"\n\n"}</Text>
+          <Text style={styles.header}>Placing the abutment {"\n\n"}</Text>
           When osseointegration is complete, you may need additional surgery to
           place the abutment — the piece where the crown will eventually attach.
           This minor surgery is typically done with local anesthesia in an

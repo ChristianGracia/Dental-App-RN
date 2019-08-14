@@ -220,7 +220,7 @@ class Implants extends Component {
                   {"\n"}
                   {"\n"}
                 </Text>
-                <Text style={{ fontWeight: "bold" }}>
+                <Text style={{ fontWeight: "bold", textAlign: "center" }}>
                   Tips to make your implants last{"\n"}
                   {"\n"}
                 </Text>
