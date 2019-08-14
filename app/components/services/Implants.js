@@ -64,7 +64,7 @@ class Implants extends Component {
               <Text style={styles.itemPickText}>
                 {"\n"}
                 <Text style={{ fontWeight: "bold" }}>
-                  What are Dental Implants?
+                  What are dental implants?
                 </Text>
                 {"\n\n"}
                 Dental implants are metal posts or frames that are surgically
@@ -75,7 +75,7 @@ class Implants extends Component {
                 for over 25 years.
                 {"\n\n"}
                 <Text style={{ fontWeight: "bold" }}>
-                  Types of Dental Implants We Place
+                  Types of dental implants we place
                 </Text>
                 {"\n\n"}
                 At Advanced Dental Care of Norton, we uses titanium or zirconia
@@ -83,7 +83,7 @@ class Implants extends Component {
                 we are unable to use titanium.
                 {"\n\n"}
                 <Text style={{ fontWeight: "bold" }}>
-                  How do Dental Implants Work?
+                  How do dental implants Work?
                 </Text>{" "}
                 {"\n\n"}
                 Because implants fuse to your jawbone, they provide stable
@@ -115,7 +115,7 @@ class Implants extends Component {
                 replacement tooth/teeth in place.
                 {"\n\n"}
                 <Text style={{ fontWeight: "bold" }}>
-                  Dental Implants might be right for you if...{"\n"}
+                  Dental implants might be right for you if...{"\n"}
                   {"\n"}
                 </Text>
                 <Text>
@@ -220,6 +220,36 @@ class Implants extends Component {
                   {"\n"}
                   {"\n"}
                 </Text>
+                <Text style={{ fontWeight: "bold" }}>
+                  Tips to make your implants last{"\n"}
+                  {"\n"}
+                </Text>
+                <Text style={{ fontWeight: "bold" }}>
+                  {"\n"}
+                  Practice excellent oral hygiene
+                </Text>
+                {"\n"}Just as with your natural teeth, keep implants, artificial
+                teeth and gum tissue clean. Specially designed brushes, such as
+                an interdental brush that slides between teeth, can help clean
+                the nooks and crannies around teeth, gums and metal posts.{" "}
+                {"\n"}
+                <Text style={{ fontWeight: "bold" }}>
+                  {"\n"}
+                  See your dentist regularly
+                </Text>{" "}
+                {"\n"}
+                Schedule dental checkups to ensure the health and proper
+                functioning of your implants and follow the advice for
+                professional cleanings. {"\n"}
+                {"\n"}
+                <Text style={{ fontWeight: "bold" }}>
+                  Avoid damaging habits
+                </Text>{" "}
+                {"\n"}
+                Don't chew hard items, such as ice and hard candy, which can
+                break your crowns — or your natural teeth. Avoid tooth-staining
+                tobacco and caffeine products. Get treatment if you grind your
+                teeth. {"\n"}
               </Text>
             </View>
           ) : null}
@@ -253,15 +283,15 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   buttonText: {
-    color: "#114260",
-    backgroundColor: "#fcec01",
+    color: iOSColors.white,
+    backgroundColor: iOSColors.black,
     fontWeight: "bold",
     fontSize: 20,
     borderWidth: 1,
     borderRadius: 15,
     overflow: "hidden",
     borderColor: "#fff",
-    width: wp("80%"),
+    width: "auto",
     height: 50,
     textAlign: "center",
     paddingTop: 10,
