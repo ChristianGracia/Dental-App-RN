@@ -13,19 +13,6 @@ export default class ImplantsMore extends Component {
     return (
       <View style={{ paddingTop: 30, flex: 1 }}>
         <Text style={{ fontSize: 20 }}>
-          <Text style={styles.header}>Endosteal implant{"\n\n"}</Text>
-          <Text>
-            These dental implants are placed in the jawbone. Typically made of
-            titanium and shaped like small screws, they are the most commonly
-            used type of implant.{"\n\n"}
-          </Text>
-          <Text style={styles.header}>Subperiosteal implant{"\n\n"}</Text>
-          <Text>
-            These dental implants are placed under the gum but on, or above, the
-            jawbone. This type of implant may be used in patients who do not
-            have enough healthy natural jawbone and cannot, or do not want to,
-            undergo a bone augmentation procedure to rebuild it.{"\n\n"}
-          </Text>
           <Text style={styles.header}>Bone graft{"\n\n"}</Text>If your jawbone
           isn't thick enough or is too soft, you may need bone grafting before
           you can have dental implant surgery. That's because the powerful

@@ -79,8 +79,9 @@ class Implants extends Component {
                 </Text>
                 {"\n\n"}
                 At Advanced Dental Care of Norton, we uses titanium or zirconia
-                imlants. Zirconia is used when a patient has a metal allergy and
-                we are unable to use titanium.
+                implants. Zirconia is used when a patient has a metal allergy
+                and we are unable to use titanium. These implants are endosteal
+                implants and they are the most commonly used type of implant.
                 {"\n\n"}
                 <Text style={{ fontWeight: "bold" }}>
                   How do dental implants Work?
