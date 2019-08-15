@@ -1,7 +1,10 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Image } from "react-native";
 import { iOSColors } from "react-native-typography";
-import { widthPercentageToDP as wp } from "react-native-responsive-screen";
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp
+} from "react-native-responsive-screen";
 
 export default class ImplantsMore extends Component {
   constructor(props) {
@@ -12,44 +15,89 @@ export default class ImplantsMore extends Component {
   render() {
     return (
       <View style={{ paddingTop: 30, flex: 1 }}>
-        <Text style={{ fontSize: 20 }}>
+           
+           <View>
+      
           <Text style={{}}>
             If your jawbone is not able to support dental implants, several
             techniques can be used to rebuild bone, restore your natural jawline
             and provide a sturdy foundation for implant-supported teeth. These
             include:{"\n\n"}
           </Text>
-          <Text style={styles.headerTech}>Bone graft{"\n\n"}</Text>If your
-          jawbone isn't thick enough or is too soft, you may need bone grafting
-          before you can have dental implant surgery. That's because the
-          powerful chewing action of your mouth exerts great pressure on your
-          bone, and if it can't support the implant, the surgery likely would
-          fail.
-          {"\n\n"}A bone graft can create a more solid base for the implant.
-          There are several bone graft materials that can be used to rebuild a
-          jawbone. Options may include a natural bone graft, such as from
-          another location in your body, or a synthetic bone graft, such as
-          bone-substitute material that can provide support structures for new
-          bone growth. Talk to your doctor about options that will work best for
-          you.
-          {"\n\n"}It may take several months for the transplanted bone to grow
-          enough new bone to support a dental implant. In some cases, you may
-          need only minor bone grafting, which can be done at the same time as
-          the implant surgery. The condition of your jawbone determines how you
-          proceed.{"\n\n"}
+          <Text style={styles.headerTech}>Bone graft{"\n\n"}</Text>
+          <Text>
+            If your jawbone isn't thick enough or is too soft, you may need bone
+            grafting before you can have dental implant surgery. That's because
+            the powerful chewing action of your mouth exerts great pressure on
+            your bone, and if it can't support the implant, the surgery likely
+            would fail.
+          </Text>
+          <Image
+            style={{
+              width: wp("80%"),
+              height: hp("50%"),
+              marginLeft: wp("25%"),
+              marginRight: wp("25%")
+            }}
+            resizeMode="contain"
+            source={{
+              uri:
+                "https://www.mayoclinic.org/-/media/kcms/gbs/patient-consumer/images/2013/08/26/10/37/my00084_im04754_mcdc7_jawbone_graftthu_jpg.png"
+            }}
+          />
+          <Text>
+            {"\n\n"}A bone graft can create a more solid base for the implant.
+            There are several bone graft materials that can be used to rebuild a
+            jawbone. Options may include a natural bone graft, such as from
+            another location in your body, or a synthetic bone graft, such as
+            bone-substitute material that can provide support structures for new
+            bone growth. Talk to your doctor about options that will work best
+            for you.
+            {"\n\n"}It may take several months for the transplanted bone to grow
+            enough new bone to support a dental implant. In some cases, you may
+            need only minor bone grafting, which can be done at the same time as
+            the implant surgery. The condition of your jawbone determines how
+            you proceed.{"\n\n"}
+          </Text>
           <Text style={styles.headerTech}>Sinus lift{"\n\n"}</Text>
           <Text>
             Also called sinus augmentation or sinus elevation, this involves
             adding bone below the sinus in cases where natural bone has
             deteriorated due to missing upper back teeth.{"\n\n"}
           </Text>
+          <Image
+            style={{
+              width: wp("80%"),
+              height: hp("50%"),
+              marginLeft: wp("25%"),
+              marginRight: wp("25%")
+            }}
+            resizeMode="contain"
+            source={{
+              uri:
+                "https://mydentistburbank.com/wp-content/uploads/2018/04/sinus_lift3.jpg"
+            }}
+          />
           <Text style={styles.headerTech}>Ridge expansion{"\n\n"}</Text>
           <Text>
             If your jaw isn’t wide enough to support dental implants, bone graft
             material can be added to a small ridge, or space, created along the
             top of your jaw.{"\n\n"}
           </Text>
-          <Text style={styles.header}>Placing the dental implant{"\n\n"}</Text>
+          <Image
+            style={{
+              width: wp("80%"),
+              height: hp("50%"),
+              marginLeft: wp("25%"),
+              marginRight: wp("25%")
+            }}
+            resizeMode="contain"
+            source={{
+              uri:
+                "https://www.jaipurdentalimplants.com/wp-content/uploads/2017/04/Ridge-Split.jpg"
+            }}
+          />
+          <Text style={styles.header}>Placing the dental implant{"\n\n"}</Text><Text>
           During surgery to place the dental implant, your oral surgeon makes a
           cut to open your gum and expose the bone. Holes are drilled into the
           bone where the dental implant metal post will be placed. Since the
@@ -64,18 +112,20 @@ export default class ImplantsMore extends Component {
           several months, helps provide a solid base for your new artificial
           tooth — just as roots do for your natural teeth.
           {"\n\n"}
+          </Text>
           <Text style={styles.header}>Placing the abutment {"\n\n"}</Text>
+          <Text>
           When osseointegration is complete, you may need additional surgery to
           place the abutment — the piece where the crown will eventually attach.
           This minor surgery is typically done with local anesthesia in an
           outpatient setting. To place the abutment:
-          {"\n\n"}
-          <Text style={styles.implantSteps}>1{") "}</Text>Your oral surgeon
-          reopens your gum to expose the dental implant {"\n\n"}
-          <Text style={styles.implantSteps}>2{") "}</Text>The abutment is
-          attached to the dental implant
-          {"\n\n"}
-          <Text style={styles.implantSteps}>3{") "}</Text>The gum tissue is then
+          {"\n\n"}</Text>
+          <Text style={styles.implantSteps}>1{") "}</Text><Text>Your oral surgeon
+          reopens your gum to expose the dental implant {"\n\n"}</Text>
+          <Text style={styles.implantSteps}>2{") "}</Text><Text>The abutment is
+        attached to the dental implant
+          {"\n\n"}</Text>
+          <Text style={styles.implantSteps}>3{") "}</Text><Text>The gum tissue is then
           closed around, but not over, the abutment{"\n\n"}
           {"\n\n"}
           In some cases, the abutment is attached to the dental implant metal
@@ -88,9 +138,11 @@ export default class ImplantsMore extends Component {
           placed in a separate procedure. After the abutment is placed, your
           gums must heal for about two weeks before the artificial tooth can be
           attached.{"\n\n"}
+          </Text>
           <Text style={styles.header}>
             Choosing your new artificial teeth {"\n\n"}
           </Text>
+          <Text>
           Once your gums heal, you'll have more impressions made of your mouth
           and remaining teeth. These impressions are used to make the crown —
           your realistic-looking artificial tooth. The crown can't be placed
@@ -98,6 +150,7 @@ export default class ImplantsMore extends Component {
           You and your dental specialist can choose artificial teeth that are
           removable, fixed or a combination of both: {"\n\n"}{" "}
         </Text>
+        </View>
         <View style={styles.removeFixContainer}>
           <Text style={{ fontSize: 20 }}>
             <Text style={styles.removeOrFix}>Removable {"\n\n"}</Text>
@@ -143,30 +196,47 @@ export default class ImplantsMore extends Component {
             <Text style={{ fontWeight: "bold" }}>
               Mini dental implants (MDIs)
             </Text>
-            {"\n\n"}
-            Also called small or narrow diameter implants, these toothpick-sized
-            implants are narrower than most commonly used dental implants. They
-            are placed through less-invasive techniques and are used primarily
-            to stabilize a lower denture.{"\n\n"}
+            <Text>
+              {"\n\n"}
+              Also called small or narrow diameter implants, these
+              toothpick-sized implants are narrower than most commonly used
+              dental implants. They are placed through less-invasive techniques
+              and are used primarily to stabilize a lower denture.{"\n\n"}
+            </Text>
             <Text style={{ fontWeight: "bold" }}>All-on-4</Text>
-            {"\n\n"}All-on-4 is an alternative to placing a top or bottom set of
-            replacement teeth, called a full arch. Four dental implants (6 for
-            "All-on-6" available) are placed in available bone, avoiding the
-            need for bone grafting. Special abutments are used so that a
-            temporary set of replacement teeth can be placed the same day. You
-            follow a modified diet while the gum tissues heal and the implants
-            bond with your natural bone. After about six months, the permanent
-            replacement teeth will be placed and you can resume a regular diet.
-            {"\n\n"}
-            When replacing multiple teeth, less implants are typically used to
-            support many teeth. For example, to replace the entire top row of a
-            patient’s teeth, 4 or 6 implants may be enough to support them all.
-            Similarly, three missing teeth can be supported by two implants. The
-            dental implants cost is typically higher when it comes to replacing
-            multiple teeth, but is definitely the most beneficial and valuable
-            option.
-          </Text>
-        </View>
+            <Text>
+              {"\n\n"}All-on-4 is an alternative to placing a top or bottom set
+              of replacement teeth, called a full arch. Four dental implants (6
+              for "All-on-6" available) are placed in available bone, avoiding
+              the need for bone grafting. Special abutments are used so that a
+              temporary set of replacement teeth can be placed the same day. You
+              follow a modified diet while the gum tissues heal and the implants
+              bond with your natural bone. After about six months, the permanent
+              replacement teeth will be placed and you can resume a regular
+              diet.
+              {"\n\n"}
+              When replacing multiple teeth, less implants are typically used to
+              support many teeth. For example, to replace the entire top row of
+              a patient’s teeth, 4 or 6 implants may be enough to support them
+              all. Similarly, three missing teeth can be supported by two
+              implants. The dental implants cost is typically higher when it
+              comes to replacing multiple teeth, but is definitely the most
+              beneficial and valuable option.
+            </Text>
+  
+          <View style={{ alignItems: "center" }}>
+            <Image
+              style={{
+                width: wp("80%"),
+                height: hp("50%")
+              }}
+              resizeMode="contain"
+              source={{
+                uri: "https://miro.medium.com/max/665/0*VvamRkkK2eSSzqHG.png"
+              }}
+            />
+          </View>
+   
       </View>
     );
   }
