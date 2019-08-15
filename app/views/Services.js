@@ -16,6 +16,7 @@ import {
 import AestheticSpa from "../components/services/AestheticSpa";
 import Bleaching from "../components/services/Bleaching";
 import Botox from "../components/services/Botox";
+import Bridge from "../components/services/Bridge";
 import Composites from "../components/services/Composites";
 import Crowns from "../components/services/Crowns";
 import Dentures from "../components/services/Dentures";
@@ -43,6 +44,7 @@ class Services extends React.Component {
       showAestheticSpa: false,
       showBleaching: false,
       showBotox: false,
+      showBridge: false,
       showComposites: false,
       showCrowns: false,
       showDentures: false,
@@ -80,6 +82,9 @@ class Services extends React.Component {
 
     if (item.key == "Botox") {
       this.setState({ showBotox: true });
+    }
+    if (item.key == "Bridge") {
+      this.setState({ showBridge: true });
     }
 
     if (item.key == "Composites") {
@@ -134,6 +139,7 @@ class Services extends React.Component {
       showAestheticSpa: false,
       showBleaching: false,
       showBotox: false,
+      showBridge: false,
       showComposites: false,
       showCrowns: false,
       showDentures: false,
@@ -178,6 +184,7 @@ class Services extends React.Component {
                   { key: "Aesthetic Spa" },
                   { key: "Bleaching" },
                   { key: "Botox" },
+                  { key: "Bridge" },
                   { key: "Composites" },
                   { key: "Crowns" },
                   { key: "Dentures" },
@@ -219,6 +226,7 @@ class Services extends React.Component {
             {this.state.showAestheticSpa ? <AestheticSpa /> : null}
             {this.state.showBleaching ? <Bleaching /> : null}
             {this.state.showBotox ? <Botox /> : null}
+            {this.state.showBridge ? <Bridge /> : null}
             {this.state.showComposites ? <Composites /> : null}
             {this.state.showCrowns ? <Crowns /> : null}
             {this.state.showDentures ? <Dentures /> : null}
