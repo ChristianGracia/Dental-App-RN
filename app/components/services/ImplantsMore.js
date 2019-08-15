@@ -13,11 +13,18 @@ export default class ImplantsMore extends Component {
     return (
       <View style={{ paddingTop: 30, flex: 1 }}>
         <Text style={{ fontSize: 20 }}>
-          <Text style={styles.header}>Bone graft{"\n\n"}</Text>If your jawbone
-          isn't thick enough or is too soft, you may need bone grafting before
-          you can have dental implant surgery. That's because the powerful
-          chewing action of your mouth exerts great pressure on your bone, and
-          if it can't support the implant, the surgery likely would fail.
+          <Text style={{}}>
+            If your jawbone is not able to support dental implants, several
+            techniques can be used to rebuild bone, restore your natural jawline
+            and provide a sturdy foundation for implant-supported teeth. These
+            include:{"\n\n"}
+          </Text>
+          <Text style={styles.headerTech}>Bone graft{"\n\n"}</Text>If your
+          jawbone isn't thick enough or is too soft, you may need bone grafting
+          before you can have dental implant surgery. That's because the
+          powerful chewing action of your mouth exerts great pressure on your
+          bone, and if it can't support the implant, the surgery likely would
+          fail.
           {"\n\n"}A bone graft can create a more solid base for the implant.
           There are several bone graft materials that can be used to rebuild a
           jawbone. Options may include a natural bone graft, such as from
@@ -30,13 +37,13 @@ export default class ImplantsMore extends Component {
           need only minor bone grafting, which can be done at the same time as
           the implant surgery. The condition of your jawbone determines how you
           proceed.{"\n\n"}
-          <Text style={styles.header}>Sinus lift{"\n\n"}</Text>
+          <Text style={styles.headerTech}>Sinus lift{"\n\n"}</Text>
           <Text>
             Also called sinus augmentation or sinus elevation, this involves
             adding bone below the sinus in cases where natural bone has
             deteriorated due to missing upper back teeth.{"\n\n"}
           </Text>
-          <Text style={styles.header}>Ridge expansion{"\n\n"}</Text>
+          <Text style={styles.headerTech}>Ridge expansion{"\n\n"}</Text>
           <Text>
             If your jaw isn’t wide enough to support dental implants, bone graft
             material can be added to a small ridge, or space, created along the
@@ -65,7 +72,7 @@ export default class ImplantsMore extends Component {
           {"\n\n"}
           <Text style={styles.implantSteps}>1{") "}</Text>Your oral surgeon
           reopens your gum to expose the dental implant {"\n\n"}
-          <Text style={styles.implantSteps}>2{") "}</Text> The abutment is
+          <Text style={styles.implantSteps}>2{") "}</Text>The abutment is
           attached to the dental implant
           {"\n\n"}
           <Text style={styles.implantSteps}>3{") "}</Text>The gum tissue is then
@@ -114,6 +121,43 @@ export default class ImplantsMore extends Component {
               implant if they're bridged together. {"\n\n"}
             </Text>
           </Text>
+          <Text style={styles.header}>
+            Alternative Dental Implant Techniques
+          </Text>
+          <Text style={{ fontSize: 20 }}>
+            {"\n\n"}
+            Depending on the health of your jawbone and your specific needs,
+            your dental implant dentist may suggest some alternative treatment
+            options in addition to the traditional multi-step dental implant
+            procedure. Options may include:{"\n\n"}
+            <Text style={{ fontWeight: "bold" }}>
+              Immediate Load Dental Implants
+            </Text>
+            {"\n\n"}
+            Also called as same day implants or Teeth in a Day®, immediate load
+            dental implants allow placement of a temporary tooth during the same
+            appointment as your dental implant placement. This may be a good
+            option if you have enough natural bone and an implant secure enough
+            to support immediate placement and pressure on the new temporary
+            tooth.{"\n\n"}
+            <Text style={{ fontWeight: "bold" }}>
+              Mini dental implants (MDIs)
+            </Text>
+            {"\n\n"}
+            Also called small or narrow diameter implants, these toothpick-sized
+            implants are narrower than most commonly used dental implants. They
+            are placed through less-invasive techniques and are used primarily
+            to stabilize a lower denture.{"\n\n"}
+            <Text style={{ fontWeight: "bold" }}>All-on-4</Text>
+            {"\n\n"}All-on-4 is an alternative to placing a top or bottom set of
+            replacement teeth, called a full arch. Four dental implants are
+            placed in available bone, avoiding the need for bone grafting.
+            Special abutments are used so that a temporary set of replacement
+            teeth can be placed the same day. You follow a modified diet while
+            the gum tissues heal and the implants bond with your natural bone.
+            After about six months, the permanent replacement teeth will be
+            placed and you can resume a regular diet.
+          </Text>
         </View>
       </View>
     );
@@ -124,6 +168,11 @@ const styles = StyleSheet.create({
   header: {
     fontWeight: "bold",
     fontSize: 25
+  },
+  headerTech: {
+    fontWeight: "bold",
+    fontSize: 25,
+    textAlign: "center"
   },
   implantSteps: {
     color: iOSColors.blue

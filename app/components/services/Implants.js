@@ -107,30 +107,42 @@ class Implants extends Component {
                       "https://www.aaid-implant.org/assets/1/7/Implant_Basics_Diagram.png"
                   }}
                 />
-                {"\n\n"}For some people, ordinary bridges and dentures are
-                simply not comfortable or even possible, due to sore spots, poor
-                ridges or gagging. In addition, ordinary bridges must be
-                attached to teeth on either side of the space left by the
-                missing tooth. An advantage of implants is that no adjacent
-                teeth need to be prepared or ground down to hold your new
-                replacement tooth/teeth in place.
-                {"\n\n"}
+                <Text style={{ fontWeight: "bold" }}>
+                  3-D Imaging and Treatment Planning{"\n\n"}
+                </Text>
+                <Text>
+                  State-of-the-art, highly precise 3D digital imaging and
+                  implant surgical planning software have made implant
+                  procedures faster and highly predictable. At Advanced Dental
+                  Care of Norton we use these tools to analyze the anatomy of
+                  your jaw and determine the best sites for implant placement
+                  before surgery. This saves time and money, and shortens
+                  recovery time.{"\n\n"}
+                </Text>
                 <Text style={{ fontWeight: "bold" }}>
                   Dental implants might be right for you if...{"\n"}
                   {"\n"}
                 </Text>
                 <Text>
-                  1{")"} Have one or more missing teeth {"\n"}2{")"}Have a
-                  jawbone that's reached full growth {"\n"}3{")"}Have adequate
+                  1{") "}Have one or more missing teeth {"\n"}2{") "}Have a
+                  jawbone that's reached full growth {"\n"}3{") "}Have adequate
                   bone to secure the implants or are able to have a bone graft{" "}
-                  {"\n"}4{")"}
-                  Have healthy oral tissues {"\n"}5{")"}Don't have health
-                  conditions that will affect bone healing {"\n"}6{")"}Are
-                  unable or unwilling to wear dentures{"\n"}7{")"}Want to
-                  improve your speech {"\n"}8{")"}Are willing to commit several
-                  months to the process {"\n"}9{")"}Don't smoke tobacco{"\n"}
+                  {"\n"}4{") "}
+                  Have healthy oral tissues {"\n"}5{") "}Don't have health
+                  conditions that will affect bone healing {"\n"}6{") "}Are
+                  unable or unwilling to wear dentures{"\n"}7{") "}Want to
+                  improve your speech {"\n"}8{") "}Are willing to commit several
+                  months to the process {"\n"}9{") "}Don't smoke tobacco{"\n"}
                   {"\n"}
                   {"\n"}
+                  {"\n\n"}For some people, ordinary bridges and dentures are
+                  simply not comfortable or even possible, due to sore spots,
+                  poor ridges or gagging. In addition, ordinary bridges must be
+                  attached to teeth on either side of the space left by the
+                  missing tooth. An advantage of implants is that no adjacent
+                  teeth need to be prepared or ground down to hold your new
+                  replacement tooth/teeth in place.
+                  {"\n\n"}
                 </Text>
                 <Text style={{ fontWeight: "bold" }}>
                   How to prepare{"\n"}
