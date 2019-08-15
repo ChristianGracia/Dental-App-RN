@@ -24,7 +24,7 @@ class Contact extends Component {
       <SafeAreaView>
         <ScrollView>
           <View style={styles.headerDiv}>
-            <Text style={{ ...styles.header, fontFamily: "Verdana-Bold" }}>More</Text>
+            <Text style={{ ...styles.header, fontFamily: "Verdana-Bold" }}>Testing Font</Text>
           </View>
           <View style={styles.headerSpacing} />
 

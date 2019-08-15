@@ -5,13 +5,13 @@ import {
   heightPercentageToDP as hp
 } from "react-native-responsive-screen";
 
-class Bridge extends Component {
+class Bridges extends Component {
   render() {
     return (
       <View>
-        <Text style={styles.itemPick}>Bridge</Text>
+        <Text style={styles.itemPick}>Bridges</Text>
         <View style={{ padding: 15 }}>
-          <Text style={styles.itemPickText}>Bridge text goes here</Text>
+          <Text style={styles.itemPickText}>Bridges text goes here</Text>
         </View>
       </View>
     );
@@ -34,4 +34,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Bridge;
+export default Bridges;
