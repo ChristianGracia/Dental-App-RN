@@ -21,7 +21,14 @@ class Home extends Component {
         <ScrollView>
           <View style={styles.container}>
             <View style={styles.headerDiv}>
-              <Text style={styles.header}>myADC</Text>
+              <Text
+                style={{
+                  ...styles.header,
+                  fontFamily: "Avenir Next Condensed"
+                }}
+              >
+                myADC
+              </Text>
             </View>
             <View style={styles.imgContainer}>
               <Image

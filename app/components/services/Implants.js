@@ -77,7 +77,7 @@ class Implants extends Component {
                   {"\n\n"}
                 </Text>
                 <Text style={{ fontWeight: "bold" }}>
-                  Types of dental implants we place
+                  Types of dental implants we place:
                 </Text>
                 <Text>
                   {"\n\n"}
@@ -91,7 +91,7 @@ class Implants extends Component {
                 <Text style={{ fontWeight: "bold" }}>
                   How do dental implants Work?
                 </Text>
-                <Text>
+                <Text style>
                   {"\n\n"}
                   Because implants fuse to your jawbone, they provide stable
                   support for artificial teeth. Dentures and bridges mounted to

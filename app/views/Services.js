@@ -166,7 +166,14 @@ class Services extends React.Component {
           <View style={styles.container}>
             {this.state.showTitle ? (
               <View style={styles.headerDiv}>
-                <Text style={styles.header}>Services</Text>
+                <Text
+                  style={{
+                    ...styles.header,
+                    fontFamily: "Avenir Next Condensed"
+                  }}
+                >
+                  Services
+                </Text>
               </View>
             ) : null}
             {this.state.showClick ? (
