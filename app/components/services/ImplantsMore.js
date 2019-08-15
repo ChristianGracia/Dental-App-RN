@@ -14,9 +14,9 @@ export default class ImplantsMore extends Component {
 
   render() {
     return (
-      <View style={{ paddingTop: 30, flex: 1, alignItems: "center" }}>
+      <View style={{ paddingTop: 30, flex: 1 }}>
         <View>
-          <Text style={{}}>
+          <Text style={styles.text}>
             If your jawbone is not able to support dental implants, several
             techniques can be used to rebuild bone, restore your natural jawline
             and provide a sturdy foundation for implant-supported teeth. These
@@ -25,7 +25,7 @@ export default class ImplantsMore extends Component {
 
           <Text style={styles.headerTech}>Bone graft{"\n\n"}</Text>
 
-          <Text>
+          <Text style={styles.text}>
             If your jawbone isn't thick enough or is too soft, you may need bone
             grafting before you can have dental implant surgery. That's because
             the powerful chewing action of your mouth exerts great pressure on
@@ -33,21 +33,23 @@ export default class ImplantsMore extends Component {
             would fail.
           </Text>
 
-          <Image
-            style={{
-              width: wp("80%"),
-              height: hp("50%"),
-              marginLeft: wp("25%"),
-              marginRight: wp("25%")
-            }}
-            resizeMode="contain"
-            source={{
-              uri:
-                "https://www.mayoclinic.org/-/media/kcms/gbs/patient-consumer/images/2013/08/26/10/37/my00084_im04754_mcdc7_jawbone_graftthu_jpg.png"
-            }}
-          />
+          <View style={{ alignItems: "center" }}>
+            <Image
+              style={{
+                width: wp("80%"),
+                height: hp("50%"),
+                marginLeft: wp("25%"),
+                marginRight: wp("25%")
+              }}
+              resizeMode="contain"
+              source={{
+                uri:
+                  "https://www.mayoclinic.org/-/media/kcms/gbs/patient-consumer/images/2013/08/26/10/37/my00084_im04754_mcdc7_jawbone_graftthu_jpg.png"
+              }}
+            />
+          </View>
 
-          <Text>
+          <Text style={styles.text}>
             {"\n\n"}A bone graft can create a more solid base for the implant.
             There are several bone graft materials that can be used to rebuild a
             jawbone. Options may include a natural bone graft, such as from
@@ -63,48 +65,51 @@ export default class ImplantsMore extends Component {
           </Text>
 
           <Text style={styles.headerTech}>Sinus lift{"\n\n"}</Text>
-          <Text>
+          <Text style={styles.text}>
             Also called sinus augmentation or sinus elevation, this involves
             adding bone below the sinus in cases where natural bone has
             deteriorated due to missing upper back teeth.{"\n\n"}
           </Text>
-
-          <Image
-            style={{
-              width: wp("80%"),
-              height: hp("50%"),
-              marginLeft: wp("25%"),
-              marginRight: wp("25%")
-            }}
-            resizeMode="contain"
-            source={{
-              uri:
-                "https://mydentistburbank.com/wp-content/uploads/2018/04/sinus_lift3.jpg"
-            }}
-          />
+          <View style={{ alignItems: "center" }}>
+            <Image
+              style={{
+                width: wp("80%"),
+                height: hp("50%"),
+                marginLeft: wp("25%"),
+                marginRight: wp("25%")
+              }}
+              resizeMode="contain"
+              source={{
+                uri:
+                  "https://mydentistburbank.com/wp-content/uploads/2018/04/sinus_lift3.jpg"
+              }}
+            />
+          </View>
           <Text style={styles.headerTech}>Ridge expansion{"\n\n"}</Text>
 
-          <Text>
+          <Text style={styles.text}>
             If your jaw isn’t wide enough to support dental implants, bone graft
             material can be added to a small ridge, or space, created along the
             top of your jaw.{"\n\n"}
           </Text>
 
-          <Image
-            style={{
-              width: wp("80%"),
-              height: hp("50%"),
-              marginLeft: wp("25%"),
-              marginRight: wp("25%")
-            }}
-            resizeMode="contain"
-            source={{
-              uri:
-                "https://www.jaipurdentalimplants.com/wp-content/uploads/2017/04/Ridge-Split.jpg"
-            }}
-          />
+          <View style={{ alignItems: "center" }}>
+            <Image
+              style={{
+                width: wp("80%"),
+                height: hp("50%"),
+                marginLeft: wp("25%"),
+                marginRight: wp("25%")
+              }}
+              resizeMode="contain"
+              source={{
+                uri:
+                  "https://www.jaipurdentalimplants.com/wp-content/uploads/2017/04/Ridge-Split.jpg"
+              }}
+            />
+          </View>
           <Text style={styles.header}>Placing the dental implant{"\n\n"}</Text>
-          <Text>
+          <Text style={styles.text}>
             During surgery to place the dental implant, your oral surgeon makes
             a cut to open your gum and expose the bone. Holes are drilled into
             the bone where the dental implant metal post will be placed. Since
@@ -123,7 +128,7 @@ export default class ImplantsMore extends Component {
           </Text>
 
           <Text style={styles.header}>Placing the abutment {"\n\n"}</Text>
-          <Text>
+          <Text style={styles.text}>
             When osseointegration is complete, you may need additional surgery
             to place the abutment — the piece where the crown will eventually
             attach. This minor surgery is typically done with local anesthesia
@@ -132,18 +137,18 @@ export default class ImplantsMore extends Component {
           </Text>
 
           <Text style={styles.implantSteps}>1{") "}</Text>
-          <Text>
+          <Text style={styles.text}>
             Your oral surgeon reopens your gum to expose the dental implant{" "}
             {"\n\n"}
           </Text>
           <Text style={styles.implantSteps}>2{") "}</Text>
-          <Text>
+          <Text style={styles.text}>
             The abutment is attached to the dental implant
             {"\n\n"}
           </Text>
 
           <Text style={styles.implantSteps}>3{") "}</Text>
-          <Text>
+          <Text style={styles.text}>
             The gum tissue is then closed around, but not over, the abutment
             {"\n\n"}
             {"\n\n"}
@@ -163,7 +168,7 @@ export default class ImplantsMore extends Component {
             Choosing your new artificial teeth {"\n\n"}
           </Text>
 
-          <Text>
+          <Text style={styles.text}>
             Once your gums heal, you'll have more impressions made of your mouth
             and remaining teeth. These impressions are used to make the crown —
             your realistic-looking artificial tooth. The crown can't be placed
@@ -173,27 +178,24 @@ export default class ImplantsMore extends Component {
           </Text>
 
           <View style={styles.removeFixContainer}>
-            <Text style={{ fontSize: 20 }}>
-              <Text style={styles.removeOrFix}>Removable {"\n\n"}</Text>
-              <Text style={{ width: wp("80%") }}>
-                This type is similar to a conventional removable denture and can
-                be a partial or full denture. It contains artificial white teeth
-                surrounded by pink plastic gum. It's mounted on a metal frame
-                that's attached to the implant abutment, and it snaps securely
-                into place. It can be easily removed for repair or daily
-                cleaning. {"\n\n"}
-              </Text>
+            <Text style={styles.removeOrFix}>Removable {"\n\n"}</Text>
+            <Text style={styles.text}>
+              This type is similar to a conventional removable denture and can
+              be a partial or full denture. It contains artificial white teeth
+              surrounded by pink plastic gum. It's mounted on a metal frame
+              that's attached to the implant abutment, and it snaps securely
+              into place. It can be easily removed for repair or daily cleaning.{" "}
+              {"\n\n"}
             </Text>
-            <Text style={{ fontSize: 20 }}>
-              <Text style={styles.removeOrFix}>Fixed {"\n\n"}</Text>
-              <Text style={{ fontSize: 20, textAlign: "center" }}>
-                In this type, an artificial tooth is permanently screwed or
-                cemented onto an individual implant abutment. You can't remove
-                the tooth for cleaning or during sleep. Most of the time, each
-                crown is attached to its own dental implant. However, because
-                implants are exceptionally strong, several teeth can be replaced
-                by one implant if they're bridged together. {"\n\n"}
-              </Text>
+
+            <Text style={styles.removeOrFix}>Fixed {"\n\n"}</Text>
+            <Text style={styles.text}>
+              In this type, an artificial tooth is permanently screwed or
+              cemented onto an individual implant abutment. You can't remove the
+              tooth for cleaning or during sleep. Most of the time, each crown
+              is attached to its own dental implant. However, because implants
+              are exceptionally strong, several teeth can be replaced by one
+              implant if they're bridged together. {"\n\n"}
             </Text>
           </View>
 
@@ -201,62 +203,96 @@ export default class ImplantsMore extends Component {
             Alternative Dental Implant Techniques
           </Text>
 
-          <Text style={{ fontSize: 20 }}>
+          <Text style={styles.text}>
             {"\n\n"}
             Depending on the health of your jawbone and your specific needs,
             your dental implant dentist may suggest some alternative treatment
             options in addition to the traditional multi-step dental implant
             procedure. Options may include:{"\n\n"}
           </Text>
-
-          <Text style={{ fontWeight: "bold" }}>
-            Immediate Load Dental Implants
-          </Text>
-
-          <Text>
-            {"\n\n"}
-            Also called as same day implants or Teeth in a Day®, immediate load
-            dental implants allow placement of a temporary tooth during the same
-            appointment as your dental implant placement. This may be a good
-            option if you have enough natural bone and an implant secure enough
-            to support immediate placement and pressure on the new temporary
-            tooth.{"\n\n"}
-          </Text>
-
-          <Text style={{ fontWeight: "bold" }}>
-            Mini dental implants (MDIs)
-          </Text>
-
-          <Text>
-            {"\n\n"}
-            Also called small or narrow diameter implants, these toothpick-sized
-            implants are narrower than most commonly used dental implants. They
-            are placed through less-invasive techniques and are used primarily
-            to stabilize a lower denture.{"\n\n"}
-          </Text>
-
-          <Text style={{ fontWeight: "bold" }}>All-on-4</Text>
-
-          <Text>
-            {"\n\n"}All-on-4 is an alternative to placing a top or bottom set of
-            replacement teeth, called a full arch. Four dental implants (6 for
-            "All-on-6" available) are placed in available bone, avoiding the
-            need for bone grafting. Special abutments are used so that a
-            temporary set of replacement teeth can be placed the same day. You
-            follow a modified diet while the gum tissues heal and the implants
-            bond with your natural bone. After about six months, the permanent
-            replacement teeth will be placed and you can resume a regular diet.
-            {"\n\n"}
-            When replacing multiple teeth, less implants are typically used to
-            support many teeth. For example, to replace the entire top row of a
-            patient’s teeth, 4 or 6 implants may be enough to support them all.
-            Similarly, three missing teeth can be supported by two implants. The
-            dental implants cost is typically higher when it comes to replacing
-            multiple teeth, but is definitely the most beneficial and valuable
-            option.
-          </Text>
-
           <View style={{ alignItems: "center" }}>
+            <Text style={styles.altDentalTech}>
+              Immediate Load Dental Implants
+            </Text>
+
+            <Text style={styles.text}>
+              {"\n\n"}
+              Also called as same day implants or Teeth in a Day®, immediate
+              load dental implants allow placement of a temporary tooth during
+              the same appointment as your dental implant placement. This may be
+              a good option if you have enough natural bone and an implant
+              secure enough to support immediate placement and pressure on the
+              new temporary tooth. {"\n\n"}Here at Advanced Dental Care of
+              Norton, we specialize in immediate load implant so you can leave
+              our office after an implant procedure without any gaps in your
+              smile{"\n\n"}
+            </Text>
+
+            <Image
+              style={{
+                width: wp("80%"),
+                height: hp("50%")
+              }}
+              resizeMode="contain"
+              source={{
+                uri:
+                  "https://friedmandentalgroup.com/wp-content/uploads/2015/07/non-removable-same-day-dental-Implants.jpg"
+              }}
+            />
+
+            <Text style={styles.altDentalTech}>
+              Mini dental implants (MDIs)
+            </Text>
+
+            <Text style={styles.text}>
+              {"\n\n"}
+              Also called small or narrow diameter implants, these
+              toothpick-sized implants are narrower than most commonly used
+              dental implants. They are placed through less-invasive techniques
+              and are used primarily to stabilize a lower denture. MDIs are
+              typically used in situations where regular implants cannot be used
+              like if an implant needs to be placed in a narrow space.
+              {"\n\n"}The small size of mini implants often means that no
+              incision needs to be made to place the implant. They can usually
+              be inserted right through the gum into the bone. This eliminates
+              the need for a recovery period, and the restoration can usually be
+              placed right away or only a short time after.{"\n\n"}
+            </Text>
+
+            <Image
+              style={{
+                width: wp("80%"),
+                height: hp("50%")
+              }}
+              resizeMode="contain"
+              source={{
+                uri:
+                  "https://www.thomasdentalcenter.com/storage/app/media/mini-implants-2.jpg"
+              }}
+            />
+
+            <Text style={styles.altDentalTech}>{"\n\n"}All-on-4</Text>
+
+            <Text style={styles.text}>
+              {"\n\n"}All-on-4 is an alternative to placing a top or bottom set
+              of replacement teeth, called a full arch. Four dental implants (6
+              for "All-on-6" available) are placed in available bone, avoiding
+              the need for bone grafting. Special abutments are used so that a
+              temporary set of replacement teeth can be placed the same day. You
+              follow a modified diet while the gum tissues heal and the implants
+              bond with your natural bone. After about six months, the permanent
+              replacement teeth will be placed and you can resume a regular
+              diet.
+              {"\n\n"}
+              When replacing multiple teeth, less implants are typically used to
+              support many teeth. For example, to replace the entire top row of
+              a patient’s teeth, 4 or 6 implants may be enough to support them
+              all. Similarly, three missing teeth can be supported by two
+              implants. The dental implants cost is typically higher when it
+              comes to replacing multiple teeth, but is definitely the most
+              beneficial and valuable option.
+            </Text>
+
             <Image
               style={{
                 width: wp("80%"),
@@ -287,11 +323,20 @@ const styles = StyleSheet.create({
   implantSteps: {
     color: iOSColors.blue
   },
+  text: {
+    fontSize: 20
+  },
 
   removeOrFix: {
     color: iOSColors.blue,
     textAlign: "center",
     fontSize: 25,
     fontWeight: "bold"
+  },
+  altDentalTech: {
+    fontWeight: "bold",
+    textAlign: "ceter",
+    color: iOSColors.red,
+    fontSize: 22
   }
 });
