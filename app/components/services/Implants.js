@@ -67,33 +67,40 @@ class Implants extends Component {
                   What are dental implants?
                 </Text>
                 {"\n\n"}
-                Dental implants are metal posts or frames that are surgically
-                positioned into the jawbone beneath your gums. Once in place,
-                they allow your dentist to mount replacement teeth onto them.
-                {"\n\n"}At Advanced Dental Care of Norton, we have successfully
-                placed thousands of implants with Dr. Gracia placing implants
-                for over 25 years.
-                {"\n\n"}
+                <Text>
+                  Dental implants are metal posts or frames that are surgically
+                  positioned into the jawbone beneath your gums. Once in place,
+                  they allow your dentist to mount replacement teeth onto them.
+                  {"\n\n"}At Advanced Dental Care of Norton, we have
+                  successfully placed thousands of implants with Dr. Gracia
+                  placing implants for over 25 years.
+                  {"\n\n"}
+                </Text>
                 <Text style={{ fontWeight: "bold" }}>
                   Types of dental implants we place
                 </Text>
-                {"\n\n"}
-                At Advanced Dental Care of Norton, we uses titanium or zirconia
-                implants. Zirconia is used when a patient has a metal allergy
-                and we are unable to use titanium. These implants are endosteal
-                implants and they are the most commonly used type of implant.
-                {"\n\n"}
+                <Text>
+                  {"\n\n"}
+                  At Advanced Dental Care of Norton, we uses titanium or
+                  zirconia implants. Zirconia is used when a patient has a metal
+                  allergy and we are unable to use titanium. These implants are
+                  endosteal implants and they are the most commonly used type of
+                  implant.
+                  {"\n\n"}
+                </Text>
                 <Text style={{ fontWeight: "bold" }}>
                   How do dental implants Work?
-                </Text>{" "}
-                {"\n\n"}
-                Because implants fuse to your jawbone, they provide stable
-                support for artificial teeth. Dentures and bridges mounted to
-                implants won't slip or shift in your mouth — an especially
-                important benefit when eating and speaking. This secure fit
-                helps the dentures and bridges — as well as individual crowns
-                placed over implants — feel more natural than conventional
-                bridges or dentures.
+                </Text>
+                <Text>
+                  {"\n\n"}
+                  Because implants fuse to your jawbone, they provide stable
+                  support for artificial teeth. Dentures and bridges mounted to
+                  implants won't slip or shift in your mouth — an especially
+                  important benefit when eating and speaking. This secure fit
+                  helps the dentures and bridges — as well as individual crowns
+                  placed over implants — feel more natural than conventional
+                  bridges or dentures.
+                </Text>
                 <Image
                   style={{
                     width: wp("80%"),
@@ -162,26 +169,30 @@ class Implants extends Component {
                   procedures, you must have a thorough evaluation to prepare for
                   the process, including:{"\n"}
                   {"\n"}
-                  <Text
-                    style={{
-                      fontWeight: "bold",
-                      textAlign: "center",
-                      color: iOSColors.blue
-                    }}
-                  >
-                    Comprehensive dental exam
-                  </Text>
+                </Text>
+                <Text
+                  style={{
+                    fontWeight: "bold",
+                    textAlign: "center",
+                    color: iOSColors.blue
+                  }}
+                >
+                  Comprehensive dental exam
+                </Text>
+                <Text>
                   {"\n\n"} You may have dental X-rays and 3D images taken, and
                   have models made of your teeth and jaw. {"\n\n"}
-                  <Text
-                    style={{
-                      fontWeight: "bold",
-                      textAlign: "center",
-                      color: iOSColors.blue
-                    }}
-                  >
-                    Review of your medical history
-                  </Text>
+                </Text>
+                <Text
+                  style={{
+                    fontWeight: "bold",
+                    textAlign: "center",
+                    color: iOSColors.blue
+                  }}
+                >
+                  Review of your medical history
+                </Text>
+                <Text>
                   {"\n\n"}Tell your doctor about any medical conditions and any
                   medications you take, including prescription and
                   over-the-counter drugs and supplements. If you have certain
@@ -189,15 +200,17 @@ class Implants extends Component {
                   prescribe antibiotics before surgery to help prevent
                   infection.
                   {"\n\n"}
-                  <Text
-                    style={{
-                      fontWeight: "bold",
-                      textAlign: "center",
-                      color: iOSColors.blue
-                    }}
-                  >
-                    Treatment plan{"\n\n"}
-                  </Text>
+                </Text>
+                <Text
+                  style={{
+                    fontWeight: "bold",
+                    textAlign: "center",
+                    color: iOSColors.blue
+                  }}
+                >
+                  Treatment plan{"\n\n"}
+                </Text>
+                <Text>
                   Tailored to your situation, this plan takes into account
                   factors such as how many teeth you need replaced and the
                   condition of your jawbone and remaining teeth. To control
@@ -241,28 +254,56 @@ class Implants extends Component {
                   {"\n"}
                   Practice excellent oral hygiene
                 </Text>
-                {"\n"}Just as with your natural teeth, keep implants, artificial
-                teeth and gum tissue clean. Specially designed brushes, such as
-                an interdental brush that slides between teeth, can help clean
-                the nooks and crannies around teeth, gums and metal posts.{" "}
-                {"\n"}
+                <Text>
+                  {"\n"}Just as with your natural teeth, keep implants,
+                  artificial teeth and gum tissue clean. Specially designed
+                  brushes, such as an interdental brush that slides between
+                  teeth, can help clean the nooks and crannies around teeth,
+                  gums and metal posts. {"\n"}
+                </Text>
                 <Text style={{ fontWeight: "bold" }}>
                   {"\n"}
                   See your dentist regularly
-                </Text>{" "}
-                {"\n"}
-                Schedule dental checkups to ensure the health and proper
-                functioning of your implants and follow the advice for
-                professional cleanings. {"\n"}
-                {"\n"}
+                </Text>
+                <Text>
+                  {" "}
+                  {"\n"}
+                  Schedule dental checkups to ensure the health and proper
+                  functioning of your implants and follow the advice for
+                  professional cleanings. {"\n"}
+                  {"\n"}
+                </Text>
                 <Text style={{ fontWeight: "bold" }}>
                   Avoid damaging habits
-                </Text>{" "}
-                {"\n"}
-                Don't chew hard items, such as ice and hard candy, which can
-                break your crowns — or your natural teeth. Avoid tooth-staining
-                tobacco and caffeine products. Get treatment if you grind your
-                teeth. {"\n"}
+                </Text>
+                <Text>
+                  {" "}
+                  {"\n"}
+                  Don't chew hard items, such as ice and hard candy, which can
+                  break your crowns — or your natural teeth. Avoid
+                  tooth-staining tobacco and caffeine products. Get treatment if
+                  you grind your teeth. {"\n\n"}
+                </Text>
+                <Text style={{ fontWeight: "bold" }}>
+                  5 facts about Dental Implants {"\n\n"}
+                </Text>
+                <Text>
+                  - Ancient dental implants have been traced back to around 600
+                  AD, when tooth-like pieces of shell were hammered into the jaw
+                  of a Mayan woman. {"\n\n"}- Dental implants are the only
+                  dental restoration option that preserves natural bone,
+                  actually helping to stimulate bone growth. {"\n\n"}- In 1951,
+                  a small group of dentists who were successfully placing dental
+                  implants formed the AAID – American Academy of Implant
+                  Dentistry – to share their knowledge on the practice of
+                  implantology. AAID is the first professional organization in
+                  the world dedicated to advancing implant dentistry. {"\n\n"}-
+                  In 1952, Swedish orthopedic surgeon P.I. Branemark discovered
+                  that titanium naturally fuses with bone, eventually switching
+                  his research focus to the mouth from the knee and hip.{" "}
+                  {"\n\n"}- 3 million people in the United States have implants,
+                  a number that is growing by 500,000 annually. {"\n\n"}
+                </Text>
               </Text>
             </View>
           ) : null}

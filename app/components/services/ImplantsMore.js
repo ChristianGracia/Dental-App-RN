@@ -150,13 +150,21 @@ export default class ImplantsMore extends Component {
             to stabilize a lower denture.{"\n\n"}
             <Text style={{ fontWeight: "bold" }}>All-on-4</Text>
             {"\n\n"}All-on-4 is an alternative to placing a top or bottom set of
-            replacement teeth, called a full arch. Four dental implants are
-            placed in available bone, avoiding the need for bone grafting.
-            Special abutments are used so that a temporary set of replacement
-            teeth can be placed the same day. You follow a modified diet while
-            the gum tissues heal and the implants bond with your natural bone.
-            After about six months, the permanent replacement teeth will be
-            placed and you can resume a regular diet.
+            replacement teeth, called a full arch. Four dental implants (6 for
+            "All-on-6" available) are placed in available bone, avoiding the
+            need for bone grafting. Special abutments are used so that a
+            temporary set of replacement teeth can be placed the same day. You
+            follow a modified diet while the gum tissues heal and the implants
+            bond with your natural bone. After about six months, the permanent
+            replacement teeth will be placed and you can resume a regular diet.
+            {"\n\n"}
+            When replacing multiple teeth, less implants are typically used to
+            support many teeth. For example, to replace the entire top row of a
+            patient’s teeth, 4 or 6 implants may be enough to support them all.
+            Similarly, three missing teeth can be supported by two implants. The
+            dental implants cost is typically higher when it comes to replacing
+            multiple teeth, but is definitely the most beneficial and valuable
+            option.
           </Text>
         </View>
       </View>
