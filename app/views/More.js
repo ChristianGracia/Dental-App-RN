@@ -61,6 +61,18 @@ class Contact extends Component {
               <Text style={styles.formButtonText}>Spa Patient Info</Text>
             </TouchableOpacity>
           </View>
+          <View> 
+            <TouchableOpacity
+              style={styles.formsText}
+              onPress={() =>
+               alert("paypal pressed")
+                )
+              }
+            >
+              <Text style={styles.formButtonText}>Spa Patient Info</Text>
+            </TouchableOpacity>
+
+          </View>
 
 
         <Text style={{paddingTop: 30, paddingBottom: 20, textAlign: "center", fontWeight: "bold", fontSize: 30}}>In box font list for testing ( will remove when I decide fonts for app)</Text>
