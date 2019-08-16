@@ -63,12 +63,11 @@ class Contact extends Component {
           </View>
           <View> 
             
-            <Text>Pay your balance now with Paypal!</Text> 
+            <Text style={styles.paypalHeader}>Pay your balance now with Paypal!</Text> 
             <TouchableOpacity
               style={styles.formsText}
               onPress={() =>
                alert("paypal pressed")
-              
               }
           >
                <Text style={styles.formButtonText}>Pay Now!</Text>
@@ -426,6 +425,13 @@ const styles = StyleSheet.create({
     backgroundColor: "#fcec01",
     width: wp("70%"),
     textAlign: "center"
+  },
+  paypalHeader: {
+    paddingTop: 20,
+    textAlign: "center",
+    fontSize: 25,
+    color: "#114260",
+    fontWeight: "bold"
   }
 });
 
