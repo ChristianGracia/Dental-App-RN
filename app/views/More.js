@@ -63,14 +63,14 @@ class Contact extends Component {
           </View>
           <View> 
             
-            <Text style={styles.paypalHeader}>Pay your balance now with Paypal!</Text> 
+            <Text style={styles.paypalHeader}>Pay your balance</Text> 
             <TouchableOpacity
               style={styles.formsText}
               onPress={() =>
                alert("paypal pressed")
               }
           >
-               <Text style={styles.formButtonText}>Pay Now!</Text>
+               <Text style={styles.formButtonText}>Pay Now with llllll!</Text>
             </TouchableOpacity>
 
           </View>
