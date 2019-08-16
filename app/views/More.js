@@ -68,7 +68,7 @@ class Contact extends Component {
               style={styles.formsText}
               onPress={() =>
                alert("paypal pressed")
-                )
+              
               }
           >
                <Text style={styles.formButtonText}>Pay Now!</Text>
