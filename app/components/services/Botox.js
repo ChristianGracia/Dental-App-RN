@@ -11,6 +11,14 @@ class Botox extends Component {
       <View>
         <Text style={styles.itemPick}>Botox</Text>
         <View style={{ padding: 15 }}>
+          <Image
+            style={{ width: "100%", height: hp("45%"), marginTop: 15 }}
+            resizeMode="contain"
+            source={{
+              uri:
+                "https://www.tidewaterskincare.com/wp-content/uploads/2018/03/Botox-1.jpg"
+            }}
+          />
           <Text style={styles.itemPickText}>Botox text goes here</Text>
         </View>
       </View>
