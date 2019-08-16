@@ -34,11 +34,40 @@ class AestheticSpa extends Component {
             {"\n"}
             {"\n"}
             Both treatments have the same active ingredient but have their
-            differences.
-            {"\n"}
-            {"\n"}
-            More information about Botox, Dysport, and Dermal Fillers can be
-            found on our list of services.
+            differences.{"\n\n"}
+            <Text
+              style={{
+                color: "blue",
+                fontSize: 25,
+                fontWeight: "bold",
+                textAlign: "center"
+              }}
+            >
+              {" "}
+              Botox/Dysport Uses:
+            </Text>
+            <Text style={{ color: "red", textAlign: "center" }}>
+              {"\n"}
+              {"\n"}
+              Forehead Lines{"\n"}
+              Frown Lines{"\n"}
+              Brow Furrowing{"(11’s)\n"}
+              Crow’s Feet{"\n"}
+              Nose Lines {"(Bunny lines)\n"}
+              Lip Flip{"\n"}
+              Facial Contouring{"\n"}
+              Dimpling Chin{"\n"}
+              Relaxing Neck Bands{"\n"}
+              GummySmiles{"\n"}
+              Reduce Pores/Acne{"\n"}
+              Migraines/Headaches{"\n"}
+              TMJ Teeth Grinding{"\n"}
+              Excessive Underarm Sweating{"\n"}
+            </Text>
+            <Text style={{ fontWeight: "bold", textAlign: "center" }}>
+              {"\n\n"}More information about Botox, Dysport, and Dermal Fillers
+              can be found on our list of services.
+            </Text>
           </Text>
         </View>
       </View>
