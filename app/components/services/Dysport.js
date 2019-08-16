@@ -11,7 +11,15 @@ class Dysport extends Component {
       <View>
         <Text style={styles.itemPick}>Dysport</Text>
         <View style={{ padding: 15 }}>
+          <Image
+            style={{ width: "100%", height: hp("45%"), marginTop: 15 }}
+            resizeMode="contain"
+            source={{
+              uri: "https://sa1s3optim.patientpop.com/assets/docs/51507.png"
+            }}
+          />
           <Text style={styles.itemPickText}>Dysport text goes here</Text>
+          <Text />
         </View>
       </View>
     );
