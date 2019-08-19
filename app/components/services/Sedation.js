@@ -11,6 +11,18 @@ class Sedation extends Component {
       <View>
         <Text style={styles.itemPick}>Sedation</Text>
         <View style={{ padding: 15 }}>
+          <Image
+            style={{
+              width: "100%",
+              height: hp("45%"),
+              marginTop: 15
+            }}
+            resizeMode="contain"
+            source={{
+              uri:
+                "https://d11upr8lrcn9x7.cloudfront.net/www.aspenwooddental.com/s3fs-public/sedation-dentistry-infographic.jpg"
+            }}
+          />
           <Text style={styles.itemPickText}>Sedation text goes here</Text>
         </View>
       </View>

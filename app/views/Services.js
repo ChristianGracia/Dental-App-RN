@@ -256,6 +256,8 @@ class Services extends React.Component {
                 </TouchableOpacity>
               ) : null}
             </View>
+            {/* Add some white space under button */}
+            <View style={{ height: hp("3%"), color: "#fff" }} />
           </View>
         </ScrollView>
       </SafeAreaView>
@@ -298,7 +300,7 @@ const styles = StyleSheet.create({
   backButton: {},
   buttonDiv2: {
     alignItems: "center",
-    paddingTop: hp("10%")
+    paddingTop: hp("5%")
   },
   buttonText: {
     color: "#fcec01",
