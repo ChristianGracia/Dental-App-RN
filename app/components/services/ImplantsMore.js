@@ -35,12 +35,7 @@ export default class ImplantsMore extends Component {
 
           <View style={{ alignItems: "center" }}>
             <Image
-              style={{
-                width: wp("80%"),
-                height: hp("50%"),
-                marginLeft: wp("25%"),
-                marginRight: wp("25%")
-              }}
+              style={styles.imgSizer}
               resizeMode="contain"
               source={{
                 uri:
@@ -72,12 +67,7 @@ export default class ImplantsMore extends Component {
           </Text>
           <View style={{ alignItems: "center" }}>
             <Image
-              style={{
-                width: wp("80%"),
-                height: hp("50%"),
-                marginLeft: wp("25%"),
-                marginRight: wp("25%")
-              }}
+              style={styles.imgSizer}
               resizeMode="contain"
               source={{
                 uri:
@@ -95,12 +85,7 @@ export default class ImplantsMore extends Component {
 
           <View style={{ alignItems: "center" }}>
             <Image
-              style={{
-                width: wp("80%"),
-                height: hp("50%"),
-                marginLeft: wp("25%"),
-                marginRight: wp("25%")
-              }}
+              style={styles.imgSizer}
               resizeMode="contain"
               source={{
                 uri:
@@ -229,10 +214,7 @@ export default class ImplantsMore extends Component {
             </Text>
 
             <Image
-              style={{
-                width: wp("80%"),
-                height: hp("50%")
-              }}
+              style={styles.imgSizer}
               resizeMode="contain"
               source={{
                 uri:
@@ -263,10 +245,7 @@ export default class ImplantsMore extends Component {
             </Text>
 
             <Image
-              style={{
-                width: wp("80%"),
-                height: hp("50%")
-              }}
+              style={styles.imgSizer}
               resizeMode="contain"
               source={{
                 uri: "https://miro.medium.com/max/665/0*VvamRkkK2eSSzqHG.png"
@@ -307,5 +286,11 @@ const styles = StyleSheet.create({
     textAlign: "ceter",
     color: iOSColors.red,
     fontSize: 22
+  },
+  imgSizer: {
+    width: wp("80%"),
+    height: hp("50%"),
+    marginLeft: wp("25%"),
+    marginRight: wp("25%")
   }
 });

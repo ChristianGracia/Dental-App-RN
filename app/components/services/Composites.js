@@ -12,7 +12,7 @@ class Composites extends Component {
         <Text style={styles.itemPick}>Composites</Text>
         <View style={{ padding: 15 }}>
           <Image
-            style={{ width: "100%", height: hp("45%"), marginTop: 15 }}
+            style={styles.imgSizer}
             resizeMode="contain"
             source={{
               uri:
@@ -65,6 +65,11 @@ const styles = StyleSheet.create({
     marginTop: 20,
     backgroundColor: "#fcec01",
     marginBottom: 10
+  },
+  imgSizer: {
+    width: "100%",
+    height: hp("45%"),
+    marginTop: 15
   }
 });
 

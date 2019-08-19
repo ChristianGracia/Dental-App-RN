@@ -12,7 +12,7 @@ class Dysport extends Component {
         <Text style={styles.itemPick}>Dysport</Text>
         <View style={{ padding: 15 }}>
           <Image
-            style={{ width: "100%", height: hp("45%"), marginTop: 15 }}
+            style={styles.imgSizer}
             resizeMode="contain"
             source={{
               uri: "https://sa1s3optim.patientpop.com/assets/docs/51507.png"
@@ -39,6 +39,11 @@ const styles = StyleSheet.create({
     marginTop: 20,
     backgroundColor: "#fcec01",
     marginBottom: 10
+  },
+  imgSizer: {
+    width: "100%",
+    height: hp("45%"),
+    marginTop: 15
   }
 });
 

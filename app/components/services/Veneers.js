@@ -12,11 +12,7 @@ class Veneers extends Component {
         <Text style={styles.itemPick}>Veneers</Text>
         <View style={{ padding: 15 }}>
           <Image
-            style={{
-              width: "100%",
-              height: hp("45%"),
-              marginTop: 15
-            }}
+            style={styles.imgSizer}
             source={{
               uri:
                 "https://www.dentalhealth.org/GetImage.aspx?IDMF=f95a3006-fe99-4190-9d4c-67d97e9c347f&w=400&h=549&src=mc"
@@ -65,6 +61,11 @@ const styles = StyleSheet.create({
     marginTop: 20,
     backgroundColor: "#fcec01",
     marginBottom: 10
+  },
+  imgSizer: {
+    width: "100%",
+    height: hp("45%"),
+    marginTop: 15
   }
 });
 

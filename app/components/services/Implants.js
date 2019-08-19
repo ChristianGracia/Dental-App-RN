@@ -49,12 +49,7 @@ class Implants extends Component {
           {!this.state.showProcedures ? (
             <View>
               <Image
-                style={{
-                  width: "100%",
-                  height: hp("45%"),
-                  marginTop: 15,
-                  paddingLeft: wp("5%")
-                }}
+                style={styles.imgSizer}
                 resizeMode="contain"
                 source={{
                   uri:
@@ -350,6 +345,11 @@ const styles = StyleSheet.create({
     textAlign: "center",
     paddingTop: 10,
     paddingBottom: 20
+  },
+  imgSizer: {
+    width: "100%",
+    height: hp("45%"),
+    marginTop: 15
   }
 });
 
