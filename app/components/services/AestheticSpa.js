@@ -25,16 +25,7 @@ class AestheticSpa extends Component {
             team of skilled nurses, we offer Botox, Dysport, and Dermal Fillers.
             {"\n"}
             {"\n"}
-            <Text
-              style={{
-                color: "blue",
-                fontSize: 25,
-                fontWeight: "bold",
-                textAlign: "center"
-              }}
-            >
-              Botox/Dysport
-            </Text>
+            <Text style={styles.itemHeader}>Botox/Dysport</Text>
             <Text>
               {"\n"}
               {"\n"}Botox and Dysport are both safe and effective treatments for
@@ -49,17 +40,7 @@ class AestheticSpa extends Component {
               Both treatments have the same active ingredient but have their
               differences.{"\n\n"}
             </Text>
-            <Text
-              style={{
-                color: "blue",
-                fontSize: 25,
-                fontWeight: "bold",
-                textAlign: "center"
-              }}
-            >
-              {" "}
-              Botox/Dysport Uses:
-            </Text>
+            <Text style={styles.itemHeader}> Botox/Dysport Uses:</Text>
             <Text style={{ color: "red", textAlign: "center" }}>
               {"\n"}
               {"\n"}
@@ -78,14 +59,7 @@ class AestheticSpa extends Component {
               TMJ Teeth Grinding{"\n"}
               Excessive Underarm Sweating{"\n"}
             </Text>
-            <Text
-              style={{
-                color: "blue",
-                fontSize: 25,
-                fontWeight: "bold",
-                textAlign: "center"
-              }}
-            >
+            <Text style={styles.itemHeader}>
               {"\n\n"}
               Dermal Fillers:{"\n\n"}
             </Text>
@@ -103,14 +77,7 @@ class AestheticSpa extends Component {
               approximately five days. Depending on the type/brand, filler may
               last up to one year.
             </Text>
-            <Text
-              style={{
-                color: "blue",
-                fontSize: 25,
-                fontWeight: "bold",
-                textAlign: "center"
-              }}
-            >
+            <Text style={styles.itemHeader}>
               {"\n\n"}
               Dermal Filler Uses:
               {"\n\n"}
@@ -148,6 +115,12 @@ const styles = StyleSheet.create({
     marginTop: 20,
     backgroundColor: "#fcec01",
     marginBottom: 10
+  },
+  itemHeader: {
+    color: "blue",
+    fontSize: 25,
+    fontWeight: "bold",
+    textAlign: "center"
   }
 });
 
