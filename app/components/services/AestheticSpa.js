@@ -47,6 +47,7 @@ class AestheticSpa extends Component {
         />
 
         <Text style={styles.itemHeader}>Botox/Dysport</Text>
+
         <Text style={styles.itemPickText}>
           {"\n"}
           {"\n"}Botox and Dysport are both safe and effective treatments for
@@ -134,7 +135,6 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: "bold",
     textAlign: "center",
-
     backgroundColor: "#fcec01"
   },
   serviceList: {
@@ -144,11 +144,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center"
   },
-  serviceList: {
-    color: "red",
-    textAlign: "center",
-    fontSize: 20
-  },
+
   imgSizer: {
     width: "100%",
     height: hp("45%"),

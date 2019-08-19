@@ -1,12 +1,5 @@
 import React, { Component } from "react";
-import {
-  View,
-  Text,
-  Image,
-  StyleSheet,
-  TouchableOpacity,
-  ScrollView
-} from "react-native";
+import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp
@@ -241,11 +234,11 @@ class Implants extends Component {
                   {"\n"}
                   {"\n"}
                 </Text>
-                <Text style={{ fontWeight: "bold", textAlign: "center" }}>
-                  Tips to make your implants last{"\n"}
-                  {"\n"}
+                <Text style={styles.itemHeader}>
+                  Tips to make your implants last
                 </Text>
                 <Text style={{ fontWeight: "bold" }}>
+                  {"\n"}
                   {"\n"}
                   Practice excellent oral hygiene
                 </Text>
@@ -279,17 +272,17 @@ class Implants extends Component {
                   tooth-staining tobacco and caffeine products. Get treatment if
                   you grind your teeth. {"\n\n"}
                 </Text>
-                <Text style={{ fontWeight: "bold" }}>
-                  5 facts about Dental Implants {"\n\n"}
+                <Text style={styles.itemHeader}>
+                  5 facts about Dental Implants
                 </Text>
                 <Text>
-                  - Ancient dental implants have been traced back to around 600
-                  AD, when tooth-like pieces of shell were hammered into the jaw
-                  of a Mayan woman. {"\n\n"}- Dental implants are the only
-                  dental restoration option that preserves natural bone,
-                  actually helping to stimulate bone growth. {"\n\n"}- In 1951,
-                  a small group of dentists who were successfully placing dental
-                  implants formed the AAID – American Academy of Implant
+                  {"\n\n"}- Ancient dental implants have been traced back to
+                  around 600 AD, when tooth-like pieces of shell were hammered
+                  into the jaw of a Mayan woman. {"\n\n"}- Dental implants are
+                  the only dental restoration option that preserves natural
+                  bone, actually helping to stimulate bone growth. {"\n\n"}- In
+                  1951, a small group of dentists who were successfully placing
+                  dental implants formed the AAID – American Academy of Implant
                   Dentistry – to share their knowledge on the practice of
                   implantology. AAID is the first professional organization in
                   the world dedicated to advancing implant dentistry. {"\n\n"}-
@@ -313,6 +306,13 @@ class Implants extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1
+  },
+  itemHeader: {
+    color: "#114260",
+    fontSize: 25,
+    fontWeight: "bold",
+    textAlign: "center",
+    backgroundColor: "#fcec01"
   },
   itemPickText: {
     color: "#000",
