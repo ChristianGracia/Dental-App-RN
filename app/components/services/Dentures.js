@@ -11,6 +11,14 @@ class Dentures extends Component {
       <View>
         <Text style={styles.itemPick}>Dentures</Text>
         <View style={{ padding: 15 }}>
+          <Image
+            style={{ width: "100%", height: hp("45%"), marginTop: 15 }}
+            resizeMode="contain"
+            source={{
+              uri:
+                "http://familydentistry.webhost.io/wp-content/uploads/2016/07/Dentures-sets-300x300.jpg"
+            }}
+          />
           <Text style={styles.itemPickText}>Dentures text goes here</Text>
         </View>
       </View>
