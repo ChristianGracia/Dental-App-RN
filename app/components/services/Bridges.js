@@ -11,6 +11,14 @@ class Bridges extends Component {
       <View>
         <Text style={styles.itemPick}>Bridges</Text>
         <View style={{ padding: 15 }}>
+          <Image
+            style={{ width: "100%", height: hp("45%"), marginTop: 15 }}
+            resizeMode="contain"
+            source={{
+              uri:
+                "https://westcoastinternational.com/wp-content/uploads/2018/05/dental-bridges.jpg"
+            }}
+          />
           <Text style={styles.itemPickText}>Bridges text goes here</Text>
         </View>
       </View>
