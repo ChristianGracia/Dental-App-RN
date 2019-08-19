@@ -11,6 +11,14 @@ class Bleaching extends Component {
       <View>
         <Text style={styles.itemPick}>Bleaching</Text>
         <View style={{ padding: 15 }}>
+          <Image
+            style={{ width: "100%", height: hp("45%"), marginTop: 15 }}
+            resizeMode="contain"
+            source={{
+              uri:
+                "https://cdn.prod-carehubs.net/n1/802899ec472ea3d8/uploads/2015/05/teeth-whitening.jpg"
+            }}
+          />
           <Text style={styles.itemPickText}>Bleaching text goes here</Text>
         </View>
       </View>

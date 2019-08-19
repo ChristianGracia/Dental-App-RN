@@ -57,13 +57,11 @@ class AestheticSpa extends Component {
               Reduce Pores/Acne{"\n"}
               Migraines/Headaches{"\n"}
               TMJ Teeth Grinding{"\n"}
-              Excessive Underarm Sweating{"\n"}
+              Excessive Underarm Sweating{"\n"} {"\n\n"}
             </Text>
-            <Text style={styles.itemHeader}>
-              {"\n\n"}
-              Dermal Fillers:{"\n\n"}
-            </Text>
+            <Text style={styles.itemHeader}>Dermal Fillers:</Text>
             <Text>
+              {"\n\n"}
               Dermal fillers help to replace lost volume, add contour, and help
               to diminish fine lines in the face. This gives the face a more
               youthful, rested appearance.
@@ -75,14 +73,11 @@ class AestheticSpa extends Component {
               {"\n\n"}Injectable fillers have a possibility of bruising,
               swelling, and/or tenderness at the site of injection for
               approximately five days. Depending on the type/brand, filler may
-              last up to one year.
+              last up to one year. {"\n\n"}
             </Text>
-            <Text style={styles.itemHeader}>
-              {"\n\n"}
-              Dermal Filler Uses:
-              {"\n\n"}
-            </Text>
+            <Text style={styles.itemHeader}>Dermal Filler Uses:</Text>
             <Text style={{ color: "red", textAlign: "center" }}>
+              {"\n\n"}
               Lips Cheeks{"\n"}
               Nasolabial Folds{"\n"}
               Marionet Lines{"\n"}
