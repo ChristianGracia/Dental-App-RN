@@ -240,37 +240,6 @@ export default class ImplantsMore extends Component {
               }}
             />
 
-            <Text style={styles.altDentalTech}>
-              Mini dental implants (MDIs)
-            </Text>
-
-            <Text style={styles.text}>
-              {"\n\n"}
-              Also called small or narrow diameter implants, these
-              toothpick-sized implants are narrower than most commonly used
-              dental implants. They are placed through less-invasive techniques
-              and are used primarily to stabilize a lower denture. MDIs are
-              typically used in situations where regular implants cannot be used
-              like if an implant needs to be placed in a narrow space.
-              {"\n\n"}The small size of mini implants often means that no
-              incision needs to be made to place the implant. They can usually
-              be inserted right through the gum into the bone. This eliminates
-              the need for a recovery period, and the restoration can usually be
-              placed right away or only a short time after.{"\n\n"}
-            </Text>
-
-            <Image
-              style={{
-                width: wp("80%"),
-                height: hp("50%")
-              }}
-              resizeMode="contain"
-              source={{
-                uri:
-                  "https://www.thomasdentalcenter.com/storage/app/media/mini-implants-2.jpg"
-              }}
-            />
-
             <Text style={styles.altDentalTech}>{"\n\n"}All-on-4</Text>
 
             <Text style={styles.text}>
