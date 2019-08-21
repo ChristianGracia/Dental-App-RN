@@ -13,7 +13,6 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp
 } from "react-native-responsive-screen";
-import CheckoutForm from "../components/CheckoutForm";
 
 class Contact extends Component {
   constructor(props) {
@@ -25,9 +24,7 @@ class Contact extends Component {
       <SafeAreaView>
         <ScrollView>
           <View style={styles.headerDiv}>
-            <Text style={{ ...styles.header, fontFamily: "Verdana-Bold" }}>
-              Testing Font
-            </Text>
+            <Text style={{ ...styles.header }}>More</Text>
           </View>
           <View style={styles.headerSpacing} />
 
@@ -68,11 +65,10 @@ class Contact extends Component {
             <Text style={styles.paypalHeader}>Pay your balance</Text>
             <TouchableOpacity
               style={styles.formsText}
-              onPress={() => alert("paypal pressed")}
+              onPress={() => alert("press")}
             >
-              <Text style={styles.formButtonText}>Pay Now with llllll!</Text>
+              <Text style={styles.formButtonText}>Pay now with paypal</Text>
             </TouchableOpacity>
-            <CheckoutForm />
           </View>
         </ScrollView>
       </SafeAreaView>
@@ -124,8 +120,8 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 20,
     backgroundColor: "#fcec01",
-    width: wp("70%"),
-    textAlign: "center"
+    textAlign: "center",
+    width: wp("20%")
   },
   paypalHeader: {
     paddingTop: 20,
