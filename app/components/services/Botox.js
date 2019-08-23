@@ -19,8 +19,7 @@ class Botox extends Component {
                 "https://www.tidewaterskincare.com/wp-content/uploads/2018/03/Botox-1.jpg"
             }}
           />
-          <Text style={styles.itemPickText}>Botox text goes here</Text>
-          <Text>
+          <Text style={styles.itemPickText}>
             Botox injections use a toxin called onobotulinumtoxinA to
             temporarily prevent a muscle from moving. Botox injections are not
             only reduce the appearance of facial wrinkles, botox can also used
