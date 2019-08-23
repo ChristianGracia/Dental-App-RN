@@ -4,6 +4,7 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp
 } from "react-native-responsive-screen";
+import { iOSColors } from "react-native-typography";
 
 class Dentures extends Component {
   render() {
@@ -31,21 +32,35 @@ class Dentures extends Component {
               making you look older. Dentures can help fill out the appearance
               of your face and profile. They can be made to closely resemble
               your natural teeth so that your appearance does not change much.
-              Dentures may even improve the look of your smile.
+              Dentures may even improve the look of your smile.{"\n\n"}
+            </Text>
+            <Text style={{ fontWeight: "bold", textAlign: "center" }}>
+              {" "}
+              Types of dentures:
             </Text>
             <Text>
-              Types of dentures:{"\n\n"}
-              Conventional{"\n\n"}
+              {"\n\n"}
+              <Text style={{ fontWeight: "bold", color: iOSColors.blue }}>
+                Conventional
+              </Text>
+              {"\n\n"}
               This full removable denture is made and placed in your mouth after
               the remaining teeth are removed and tissues have healed, which may
               take several months.{"\n\n"}
-              Immediate{"\n\n"}
+              <Text style={{ fontWeight: "bold", color: iOSColors.blue }}>
+                Immediate
+              </Text>
+              {"\n\n"}
               This removable denture is inserted on the same day that the
               remaining teeth are removed. Your dentist will take measurements
               and make models of your jaw during a preliminary visit. You don’t
               have to be without teeth during the healing period, but may need
               to have the denture relined or remade after your jaw has healed.
-              {"\n\n"} Overdenture{"\n\n"}
+              {"\n\n"}
+              <Text style={{ fontWeight: "bold", color: iOSColors.blue }}>
+                Overdenture
+              </Text>
+              {"\n\n"}
               Sometimes some of your teeth can be saved to preserve your jawbone
               and provide stability and support for the denture. An overdenture
               fits over a small number of remaining natural teeth after they
@@ -87,6 +102,7 @@ class Dentures extends Component {
               safety and effectiveness.{"\n\n"}If you have any questions about
               your dentures, or if they stop fitting well or become damaged,
               contact your us! Be sure to schedule regular dental checkups, too!
+              {"\n\n"}
             </Text>
             <Text>
               <Text style={{ fontWeight: "bold" }}>How Are Dentures Made?</Text>
@@ -104,7 +120,7 @@ class Dentures extends Component {
               {"\n\n"}You will "try in" this model several times and the denture
               will be assessed for color, shape, and fit before the final
               denture is cast.{"\n\n"}Create a final denture.
-              {"\n\n"}Make adjustments to fit if/as necessary
+              {"\n\n"}Make adjustments to fit if/as necessary{"\n\n"}
             </Text>
             <Text>
               <Text style={{ fontWeight: "bold" }}>
@@ -131,6 +147,22 @@ class Dentures extends Component {
               before going to bed. This allows gum tissues to rest and allows
               normal stimulation and cleansing by the tongue and saliva. The
               denture can be put back in the mouth in the morning. {"\n\n"}
+            </Text>
+            <Text>
+              <Text style={{ fontWeight: "bold", textAlign: "center" }}>
+                Reasons to use a denture adhesive
+              </Text>
+              {"\n\n"}
+              To enhance satisfaction with a properly constructed denture.
+              Adhesives enhance retention, stability, bite force, and an
+              individual's sense of security.
+              {"\n\n"}To assist individuals with dry mouth conditions that
+              lessen denture adherence, such as individuals taking cold
+              medications, those with neurologic disabilities including strokes,
+              and the elderly.
+              {"\n\n"}To provide added stability and security for those who
+              place unusual demands on facial muscles, such as public speakers
+              or musicians.
             </Text>
           </Text>
         </View>
