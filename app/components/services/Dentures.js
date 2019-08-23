@@ -19,7 +19,19 @@ class Dentures extends Component {
                 "http://familydentistry.webhost.io/wp-content/uploads/2016/07/Dentures-sets-300x300.jpg"
             }}
           />
-          <Text style={styles.itemPickText}>Dentures text goes here</Text>
+          <Text style={styles.itemPickText}>
+            Dentures are removable appliances that can replace missing teeth and
+            help restore your smile. If you’ve lost all of your natural teeth,
+            whether from gum disease, tooth decay or injury, replacing missing
+            teeth will benefit your appearance and your health. That’s because
+            dentures make it easier to eat and speak better than you could
+            without teeth—things that people often take for granted.{"\n\n"}When
+            you lose all of your teeth, facial muscles can sag, making you look
+            older. Dentures can help fill out the appearance of your face and
+            profile. They can be made to closely resemble your natural teeth so
+            that your appearance does not change much. Dentures may even improve
+            the look of your smile.
+          </Text>
         </View>
       </View>
     );
