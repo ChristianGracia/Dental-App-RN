@@ -95,7 +95,7 @@ class Dentures extends Component {
               dentist who specializes in the restoration and replacement of
               teeth) determines what type of appliance is best for you.
             </Text>
-            <Text>Steps</Text>
+            <Text>Denture Creation</Text>
             <Text>
               Make a series of impressions of your jaw and take measurements of
               how your jaws relate to one another and how much space is between
@@ -105,6 +105,19 @@ class Dentures extends Component {
               will be assessed for color, shape, and fit before the final
               denture is cast.{"\n\n"}Create a final denture.
               {"\n\n"}Make adjustments to fit if/as necessary
+            </Text>
+            <Text>
+              <Text style={{ fontWeight: "bold" }}>
+                Will Eating With New Dentures Be Difficult?
+              </Text>
+              {"\n\n"}Eating with new dentures will take a little practice and
+              may be uncomfortable for some wearers for a few weeks. To get used
+              to the new denture, start with soft foods cut into small pieces.
+              Chew slowly using both sides of your mouth.
+              {"\n\n"}As you get used to new dentures, add other foods until you
+              return to a normal diet. Be cautious with hot or hard foods and
+              sharp-edged bones or shells. Avoid foods that are extremely sticky
+              or hard.
             </Text>
           </Text>
         </View>
