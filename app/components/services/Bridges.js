@@ -19,7 +19,15 @@ class Bridges extends Component {
                 "https://westcoastinternational.com/wp-content/uploads/2018/05/dental-bridges.jpg"
             }}
           />
-          <Text style={styles.itemPickText}>Bridges text goes here</Text>
+          <Text style={styles.itemPickText}>
+            Dental bridges lliterally bridge the gap created by one or more
+            missing teeth.{"\n\n"}A bridge is made up of two or more crowns for
+            the teeth on either side of the gap. The two or more anchoring teeth
+            are called abutment teeth and contain a false tooth/teeth in
+            between. These false teeth are called pontics and can be made from
+            gold, alloys, porcelain, or a combination of these materials. Dental
+            bridges are supported by natural teeth or implants.
+          </Text>
         </View>
       </View>
     );
