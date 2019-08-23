@@ -20,13 +20,27 @@ class Bridges extends Component {
             }}
           />
           <Text style={styles.itemPickText}>
-            Dental bridges lliterally bridge the gap created by one or more
-            missing teeth.{"\n\n"}A bridge is made up of two or more crowns for
-            the teeth on either side of the gap. The two or more anchoring teeth
-            are called abutment teeth and contain a false tooth/teeth in
-            between. These false teeth are called pontics and can be made from
-            gold, alloys, porcelain, or a combination of these materials. Dental
-            bridges are supported by natural teeth or implants.
+            <Text>
+              Dental bridges lliterally bridge the gap created by one or more
+              missing teeth.{"\n\n"}A bridge is made up of two or more crowns
+              for the teeth on either side of the gap. The two or more anchoring
+              teeth are called abutment teeth and contain a false tooth/teeth in
+              between. These false teeth are called pontics and can be made from
+              gold, alloys, porcelain, or a combination of these materials.
+              Dental bridges are supported by natural teeth or implants.
+            </Text>
+            <Text>
+              <Text>What Are the Benefits of Dental Bridges?</Text>
+              {"\n\n"}Bridges can:{"\n\n"}
+              Restore your smile
+              {"\n\n"}Restore the ability to properly chew and speak
+              {"\n\n"}
+              Maintain the shape of your face
+              {"\n\n"}Distribute the forces in your bite properly by replacing
+              missing teeth
+              {"\n\n"}Prevent remaining teeth from drifting out of position
+              {"\n\n"}
+            </Text>
           </Text>
         </View>
       </View>
