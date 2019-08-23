@@ -52,6 +52,31 @@ class Dentures extends Component {
               have been prepared by your dentist. Implants can serve the same
               function, too.
             </Text>
+            <Text>
+              New dentures may feel awkward for a few weeks until you become
+              accustomed to them. The dentures may feel loose while the muscles
+              of your cheek and tongue learn to keep them in place.{"\n\n"} It
+              is not unusual to experience minor irritation or soreness. You may
+              find that saliva flow temporarily increases. As your mouth becomes
+              accustomed to the dentures, these problems should go away.{"\n\n"}
+              Follow-up appointments with the dentist are generally needed after
+              a denture is inserted so the fit can be checked and adjusted. If
+              any problem persists, particularly irritation or soreness, be sure
+              to consult your dentist.
+            </Text>
+            <Text>
+              Like your teeth, your dentures should be brushed daily to remove
+              food particles and plaque.{"\n\n"}Brushing also can help keep the
+              teeth from staining.{"\n\n"}Rinse your dentures before brushing to
+              remove any loose food or debris.{"\n\n"}Use a soft bristle
+              toothbrush and a non-abrasive cleanser to gently brush all the
+              surfaces of the dentures so they don't get scratched.{"\n\n"}When
+              brushing, clean your mouth thoroughly—including your gums, cheeks,
+              roof of your mouth and tongue to remove any plaque.{"\n\n"}This
+              can help reduce the risk of oral irritation and bad breath.
+              {"\n\n"}When you’re not wearing your dentures, put them in a safe
+              place covered in water to keep them from warping.
+            </Text>
           </Text>
         </View>
       </View>
