@@ -119,6 +119,19 @@ class Dentures extends Component {
               sharp-edged bones or shells. Avoid foods that are extremely sticky
               or hard.
             </Text>
+            <Text>
+              <Text>Are Dentures Worn 24 Hours a Day?</Text>
+              {"\n\n"}Your dentist or prosthodontist will instruct you as to how
+              long to wear dentures and when to remove them. During the first
+              several days after receiving your denture, you may be asked to
+              wear it all the time, including while you sleep. Although this may
+              be temporarily uncomfortable, it is the quickest way to identify
+              the areas on the denture that may need adjustment.
+              {"\n\n"}Once adjustments are made, you should remove dentures
+              before going to bed. This allows gum tissues to rest and allows
+              normal stimulation and cleansing by the tongue and saliva. The
+              denture can be put back in the mouth in the morning. {"\n\n"}
+            </Text>
           </Text>
         </View>
       </View>
