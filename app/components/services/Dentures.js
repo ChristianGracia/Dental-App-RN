@@ -77,6 +77,35 @@ class Dentures extends Component {
               {"\n\n"}When you’re not wearing your dentures, put them in a safe
               place covered in water to keep them from warping.
             </Text>
+            <Text>
+              Occasionally, denture wearers may use adhesives. Adhesives come in
+              many forms: creams, powders, pads/wafers, strips or liquids. If
+              you use one of these products, read the instructions, and use them
+              exactly as directed.{"\n\n"}Your dentist can recommend appropriate
+              cleansers and adhesives; look for products with the ADA Seal of
+              Acceptance. Products with the ADA Seal have been evaluated for
+              safety and effectiveness.{"\n\n"}If you have any questions about
+              your dentures, or if they stop fitting well or become damaged,
+              contact your us! Be sure to schedule regular dental checkups, too!
+            </Text>
+            <Text>
+              <Text style={{ fontWeight: "bold" }}>How Are Dentures Made?</Text>
+              {"\n\n"}The denture development process takes a few weeks and
+              several appointments. Once your dentist or prosthodontist (a
+              dentist who specializes in the restoration and replacement of
+              teeth) determines what type of appliance is best for you.
+            </Text>
+            <Text>Steps</Text>
+            <Text>
+              Make a series of impressions of your jaw and take measurements of
+              how your jaws relate to one another and how much space is between
+              them.{"\n\n"}Create models, wax forms, and/or plastic patterns in
+              the exact shape and position of the denture to be made.
+              {"\n\n"}You will "try in" this model several times and the denture
+              will be assessed for color, shape, and fit before the final
+              denture is cast.{"\n\n"}Create a final denture.
+              {"\n\n"}Make adjustments to fit if/as necessary
+            </Text>
           </Text>
         </View>
       </View>
