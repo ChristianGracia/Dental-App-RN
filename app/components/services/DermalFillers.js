@@ -11,6 +11,14 @@ class DermalFillers extends Component {
       <View>
         <Text style={styles.itemPick}>Dermal Fillers</Text>
         <View style={{ padding: 15 }}>
+          <Image
+            style={styles.imgSizer}
+            resizeMode="contain"
+            source={{
+              uri:
+                "http://www.goenerplex.com/wp-content/uploads/2019/03/Dermal-Fillers-1024x609-673x400.jpg"
+            }}
+          />
           <Text>About:</Text>
           <Text>
             {"\n\n"}
