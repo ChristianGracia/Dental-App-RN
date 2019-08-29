@@ -11,6 +11,17 @@ class DermalFillers extends Component {
       <View>
         <Text style={styles.itemPick}>Dermal Fillers</Text>
         <View style={{ padding: 15 }}>
+          <Text>About:</Text>
+          <Text>
+            {"\n\n"}
+            Juvederm is a cosmetic treatment referred to as a filler. It’s used
+            to restore facial contours and improve signs of aging. It’s an
+            injectable dermal filler with a base of hyaluronic acid. {"\n\n"}
+            It’s a treatment that focuses on the face, specifically the cheeks,
+            lips, and around the mouth. The procedure to inject the product
+            takes 15 to 60 minutes. {"\n\n"}It’s one of the most common
+            nonsurgical cosmetic procedures done in the U.S.
+          </Text>
           <Text style={styles.itemPickText}>What dermal fillers can do</Text>
           <Text>
             {"\n"}Plump thin lips{"\n"}
