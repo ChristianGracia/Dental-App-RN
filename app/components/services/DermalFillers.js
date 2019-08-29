@@ -35,6 +35,28 @@ class DermalFillers extends Component {
             Dermal fillers can be very helpful in those with early signs of
             aging, or as a value-added part of facial rejuvenation surgery.
           </Text>
+          <Text style={{ fontWeight: "bold" }}>
+            Results are often noticeable immediately after a procedure and can
+            last one to two years.
+          </Text>
+          <Text>
+            <Text style={{ fontWeight: "bold" }}>How does Juvederm work? </Text>
+            Juvederm works by adding volume to the facial tissue through its
+            active ingredient, hyaluronic acid. Hyaluronic acid is a natural
+            substance found in the human body. It stimulates the production of
+            the connective tissue that plumps the skin (collagen). As you get
+            older, the production of hyaluronic acid and collagen decreases.
+            This increases the appearance of sagging and wrinkling of the facial
+            skin. During the procedure, your doctor, physician assistant, or
+            nurse typically uses a pen to mark the areas to be treated. Your
+            doctor will then inject Juvederm into the target area. They will
+            also lightly massage the area to ensure an even distribution and
+            reduce the chance of swelling. The entire procedure usually takes
+            between 15 and 60 minutes, depending on the area treated. Juvederm
+            injections contain a small amount of pain-reducing lidocaine. This
+            will help minimize any pain or discomfort you feel during treatment
+            and make it go away quickly.
+          </Text>
         </View>
       </View>
     );
