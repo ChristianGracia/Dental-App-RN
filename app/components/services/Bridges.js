@@ -38,7 +38,7 @@ class Bridges extends Component {
               <Text style={{ fontWeight: "bold", color: iOSColors.blue }}>
                 Bridges can:
               </Text>
-              <Text style={{ margin: -10 }}>
+              <Text style>
                 {"\n\n"}
                 Restore your smile
                 {"\n\n"}Restore the ability to properly chew and speak

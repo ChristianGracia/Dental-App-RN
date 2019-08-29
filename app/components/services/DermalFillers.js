@@ -11,7 +11,19 @@ class DermalFillers extends Component {
       <View>
         <Text style={styles.itemPick}>Dermal Fillers</Text>
         <View style={{ padding: 15 }}>
-          <Text style={styles.itemPickText}>Dermal Fillers text goes here</Text>
+          <Text style={styles.itemPickText}>What dermal fillers can do</Text>
+          <Text>
+            {"\n"}Plump thin lips{"\n"}
+            {"\n"}Enhance shallow contours{"\n"}
+            {"\n"}Soften facial creases and wrinkles{"\n"}
+            {"\n"}Improve the appearance of recessed scars{"\n"}
+            {"\n"}Reconstruct contour deformities in the face{"\n"}
+            {"\n"}Decrease or remove the shadow of the lower lids{"\n"}
+          </Text>
+          <Text>
+            Dermal fillers can be very helpful in those with early signs of
+            aging, or as a value-added part of facial rejuvenation surgery.
+          </Text>
         </View>
       </View>
     );
