@@ -60,7 +60,10 @@ class Home extends Component {
                         // Linking.openURL(
                         //   "mailto:office@adcofnorton.com?subject=App-email"
                         // )
-                        this.setState({ showEmail: true })
+                        {
+                          this.setState({ showEmail: true });
+                          alert("pressed");
+                        }
                       }
                     >
                       <Text style={styles.callButtonText}>
