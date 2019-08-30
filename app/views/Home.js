@@ -15,6 +15,11 @@ import { SafeAreaView } from "react-navigation";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
 class Home extends Component {
+  constructor(props){
+    state = {
+      showEmail: false
+    }
+  }
   render() {
     return (
       <SafeAreaView>
@@ -44,9 +49,10 @@ class Home extends Component {
                 <TouchableOpacity
                   style={styles.callButton}
                   onPress={() =>
-                    Linking.openURL(
-                      "mailto:office@adcofnorton.com?subject=App-email"
-                    )
+                    // Linking.openURL(
+                    //   "mailto:office@adcofnorton.com?subject=App-email"
+                    // )
+                    this.setState({showEmail: true;})
                   }
                 >
                   <Text style={styles.callButtonText}>Click to email us</Text>
