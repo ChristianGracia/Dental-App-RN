@@ -19,8 +19,6 @@ export default class Email extends Component {
             }}
             type="text"
             name="name"
-            value={this.state.name}
-            onChange={this.onChange}
             placeholder="Name"
           />
 
@@ -30,8 +28,6 @@ export default class Email extends Component {
             }}
             type="email"
             name="email"
-            value={this.state.email}
-            onChange={this.onChange}
             placeholder="Email"
           />
           <Input
@@ -46,20 +42,9 @@ export default class Email extends Component {
               width: "90%",
               color: "black"
             }}
-            value={this.state.body}
-            onChange={this.onChange}
           />
 
-          <input
-            type="submit"
-            value="send"
-            onClick={e => {
-              if (body == "" || email == "" || name == "") {
-                e.preventDefault();
-                window.alert("Please fill out form");
-              }
-            }}
-          />
+          <input type="submit" value="send" />
         </Form>
       </View>
     );
