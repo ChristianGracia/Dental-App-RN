@@ -16,7 +16,6 @@ export default class Email extends Component {
       {/*   <Form
               action="https://sendpoint.io/id/ADCEMAIL"
               method="POST"
-              style={{}}
             >
               
                   <Input
@@ -40,9 +39,6 @@ export default class Email extends Component {
                     onChange={this.onChange}
                     placeholder="Email"
                   />
-
-
-
               <Input
                 rows="4"
                 cols="50"
@@ -60,7 +56,6 @@ export default class Email extends Component {
               />
       
               <input
-            
                 type="submit"
                 value="send"
                 onClick={e => {
