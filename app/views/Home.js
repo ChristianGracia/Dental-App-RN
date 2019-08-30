@@ -13,12 +13,13 @@ import {
 } from "react-native-responsive-screen";
 import { SafeAreaView } from "react-navigation";
 import { TouchableOpacity } from "react-native-gesture-handler";
+import Email from "../components/Email";
 
 class Home extends Component {
-  constructor(props){
+  constructor(props) {
     state = {
       showEmail: false
-    }
+    };
   }
   render() {
     return (
@@ -28,51 +29,62 @@ class Home extends Component {
             <View style={styles.headerDiv}>
               <Text style={styles.header}>myADC</Text>
             </View>
-            <View style={styles.imgContainer}>
-              <Image
-                source={require("../../assets/main.jpg")}
-                style={styles.logoStyle}
-                resizeMode="contain"
-              />
-            </View>
 
-            <View style={styles.contactBox}>
-              <View style={styles.callContainer}>
-                <TouchableOpacity
-                  style={styles.callButton}
-                  onPress={() => Linking.openURL(`tel:5086228777`)}
-                >
-                  <Text style={styles.callButtonText}>Click to call us</Text>
-                </TouchableOpacity>
+            {this.showEmail ? (
+              <Email />
+            ) : (
+              <View>
+                <View style={styles.imgContainer}>
+                  <Image
+                    source={require("../../assets/main.jpg")}
+                    style={styles.logoStyle}
+                    resizeMode="contain"
+                  />
+                </View>
+
+                <View style={styles.contactBox}>
+                  <View style={styles.callContainer}>
+                    <TouchableOpacity
+                      style={styles.callButton}
+                      onPress={() => Linking.openURL(`tel:5086228777`)}
+                    >
+                      <Text style={styles.callButtonText}>
+                        Click to call us
+                      </Text>
+                    </TouchableOpacity>
+                  </View>
+                  <View style={styles.emailContainer}>
+                    <TouchableOpacity
+                      style={styles.callButton}
+                      onPress={() =>
+                        // Linking.openURL(
+                        //   "mailto:office@adcofnorton.com?subject=App-email"
+                        // )
+                        this.setState({ showEmail: true })
+                      }
+                    >
+                      <Text style={styles.callButtonText}>
+                        Click to email us
+                      </Text>
+                    </TouchableOpacity>
+                  </View>
+                  <View style={styles.directionsContainer}>
+                    <TouchableOpacity
+                      style={styles.callButton}
+                      onPress={() =>
+                        Linking.openURL(
+                          "https://www.google.com/maps/place/Advanced+Dental+Care+of+Norton/@41.9615083,-71.2001785,17z/data=!3m1!4b1!4m5!3m4!1s0x89e461d156c36c9f:0xb5fcf264919e17a5!8m2!3d41.9615083!4d-71.1979898"
+                        )
+                      }
+                    >
+                      <Text style={styles.callButtonText}>
+                        Click for directions
+                      </Text>
+                    </TouchableOpacity>
+                  </View>
+                </View>
               </View>
-              <View style={styles.emailContainer}>
-                <TouchableOpacity
-                  style={styles.callButton}
-                  onPress={() =>
-                    // Linking.openURL(
-                    //   "mailto:office@adcofnorton.com?subject=App-email"
-                    // )
-                    this.setState({showEmail: true;})
-                  }
-                >
-                  <Text style={styles.callButtonText}>Click to email us</Text>
-                </TouchableOpacity>
-              </View>
-              <View style={styles.directionsContainer}>
-                <TouchableOpacity
-                  style={styles.callButton}
-                  onPress={() =>
-                    Linking.openURL(
-                      "https://www.google.com/maps/place/Advanced+Dental+Care+of+Norton/@41.9615083,-71.2001785,17z/data=!3m1!4b1!4m5!3m4!1s0x89e461d156c36c9f:0xb5fcf264919e17a5!8m2!3d41.9615083!4d-71.1979898"
-                    )
-                  }
-                >
-                  <Text style={styles.callButtonText}>
-                    Click for directions
-                  </Text>
-                </TouchableOpacity>
-              </View>
-            </View>
+            )}
           </View>
         </ScrollView>
       </SafeAreaView>
