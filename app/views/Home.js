@@ -30,8 +30,8 @@ class Home extends Component {
               <Text style={styles.header}>myADC</Text>
             </View>
 
-            {this.showEmail ? (
-              <Email />
+            {this.state.showEmail ? (
+              <Text>hi</Text>
             ) : (
               <View>
                 <View style={styles.imgContainer}>
@@ -40,7 +40,7 @@ class Home extends Component {
                     style={styles.logoStyle}
                     resizeMode="contain"
                   />
-                </View>
+                </View>}
 
                 <View style={styles.contactBox}>
                   <View style={styles.callContainer}>
@@ -61,7 +61,6 @@ class Home extends Component {
                         //   "mailto:office@adcofnorton.com?subject=App-email"
                         // )
                         {
-                          this.setState({ showEmail: true });
                           alert("pressed");
                         }
                       }
@@ -87,7 +86,7 @@ class Home extends Component {
                   </View>
                 </View>
               </View>
-            )}
+            )
           </View>
         </ScrollView>
       </SafeAreaView>
