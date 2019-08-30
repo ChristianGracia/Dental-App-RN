@@ -1,29 +1,25 @@
 import React, { Component } from "react";
-import { View, Text } from "react-native";
+import { View, Text, Form, Input } from "react-native";
 
 export default class Email extends Component {
+  constructor(props) {
+    this.state = {
+      name: "",
+      body: "",
+      email: ""
+    };
+  }
   render() {
     return;
     <View>
       <Text>Hi</Text>
-      {/*   <form
-              action="https://sendpoint.io/id/gWFzbxh9O"
+      {/*   <Form
+              action="https://sendpoint.io/id/ADCEMAIL"
               method="POST"
               style={{}}
             >
-              <div class="row">
-                <div class="col-md">
-                  <div style={{}}></div>
-                  <Jump>
-                    <i
-                      class="fas fa-mail-bulk"
-                      style={{ fontSize: 80, color: "white" }}
-                    ></i>
-                  </Jump>
-                </div>
-                <div style={{ padding: 10 }}></div>
-                <div class="col-md">
-                  <input
+              
+                  <Input
                     style={{
                       padding: 5
                     }}
@@ -33,8 +29,8 @@ export default class Email extends Component {
                     onChange={this.onChange}
                     placeholder="Name"
                   />
-                  <div style={{ padding: 10 }}></div>
-                  <input
+     
+                  <Input
                     style={{
                       padding: 5
                     }}
@@ -44,10 +40,10 @@ export default class Email extends Component {
                     onChange={this.onChange}
                     placeholder="Email"
                   />
-                </div>
-              </div>
-              <div style={{ padding: 20 }}></div>
-              <textarea
+
+
+
+              <Input
                 rows="4"
                 cols="50"
                 class=""
@@ -62,9 +58,9 @@ export default class Email extends Component {
                 value={this.state.body}
                 onChange={this.onChange}
               />
-              <div style={{ padding: 20 }}></div>
+      
               <input
-                className="btn-dark"
+            
                 type="submit"
                 value="send"
                 onClick={e => {
@@ -74,7 +70,7 @@ export default class Email extends Component {
                   }
                 }}
               />
-            </form>*/}
+            </Form>*/}
     </View>;
   }
 }

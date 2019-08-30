@@ -17,7 +17,7 @@ import Email from "../components/Email";
 
 class Home extends Component {
   constructor(props) {
-    state = {
+    this.state = {
       showEmail: false
     };
   }
