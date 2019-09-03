@@ -30,7 +30,6 @@ class Home extends Component {
             <View style={styles.headerDiv}>
               <Text style={styles.header}>myADC</Text>
             </View>
-
             {!this.state.showEmail ? (
               <View style={styles.imgContainer}>
                 <Image
@@ -80,6 +79,11 @@ class Home extends Component {
                 </View>
               </View>
             )}
+            <TouchableOpacity
+              onPress={() => this.setState({ showEmail: false })}
+            >
+              <Text>BACK</Text>
+            </TouchableOpacity>
           </View>
         </ScrollView>
       </SafeAreaView>
