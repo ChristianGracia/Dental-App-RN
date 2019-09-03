@@ -283,7 +283,7 @@ const styles = StyleSheet.create({
   },
   altDentalTech: {
     fontWeight: "bold",
-    textAlign: "ceter",
+    textAlign: "center",
     color: iOSColors.red,
     fontSize: 22
   },
