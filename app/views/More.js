@@ -104,10 +104,8 @@ const styles = StyleSheet.create({
     fontWeight: "bold"
   },
   formsText: {
-    paddingTop: 40,
     marginTop: 10,
-    paddingTop: 15,
-    paddingBottom: 15,
+    padding: 15,
     marginLeft: 30,
     marginRight: 30,
     backgroundColor: "#fcec01",
@@ -120,8 +118,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 20,
     backgroundColor: "#fcec01",
-    textAlign: "center",
-    width: wp("20%")
+    textAlign: "center"
   },
   paypalHeader: {
     paddingTop: 20,
