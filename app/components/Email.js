@@ -1,5 +1,11 @@
 import React, { Component } from "react";
-import { View, TextInput, StyleSheet } from "react-native";
+import {
+  View,
+  TextInput,
+  StyleSheet,
+  TouchableOpacity,
+  Text
+} from "react-native";
 
 class Email extends Component {
   constructor(props) {
@@ -13,10 +19,28 @@ class Email extends Component {
   render() {
     return (
       <View style={{ padding: 30 }}>
-        <TextInput type="text" name="name" placeholder="Name" />
+        <TextInput
+          type="text"
+          name="name"
+          placeholder="Name"
+          value={this.state.name}
+        />
 
-        <TextInput type="email" name="email" placeholder="Email" />
-        <TextInput type="text" name="body" placeholder="Leave a message" />
+        <TextInput
+          type="tel"
+          name="Phone"
+          placeholder="Phone Number"
+          value={this.state.phone}
+        />
+        <TextInput
+          type="text"
+          name="body"
+          placeholder="Leave a message"
+          value={this.state.body}
+        />
+        <TouchableOpacity onPress={() => console.log("hi")}>
+          <Text>Submit</Text>
+        </TouchableOpacity>
       </View>
     );
   }

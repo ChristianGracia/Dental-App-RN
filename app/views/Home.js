@@ -79,11 +79,13 @@ class Home extends Component {
                 </View>
               </View>
             )}
-            <TouchableOpacity
-              onPress={() => this.setState({ showEmail: false })}
-            >
-              <Text>BACK</Text>
-            </TouchableOpacity>
+            {this.state.showEmail ? (
+              <TouchableOpacity
+                onPress={() => this.setState({ showEmail: false })}
+              >
+                <Text>BACK</Text>
+              </TouchableOpacity>
+            ) : null}
           </View>
         </ScrollView>
       </SafeAreaView>
