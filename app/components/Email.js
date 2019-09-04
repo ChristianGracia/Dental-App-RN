@@ -11,13 +11,14 @@ class Email extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "",
-      body: "",
-      phone: "",
+      patientName: "",
+      patientEmail: "",
+      patientPhone: "",
       email: "adc-app"
     };
-    this.onChange = this.onChange.bind(this);
+
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.onChange = this.onChange.bind(this);
   }
 
   handleSubmit = () => {
@@ -36,34 +37,34 @@ class Email extends Component {
     // });
     alert("hi");
   };
-  onChange = e => {
+  onChange(e) {
     this.setState({ [e.target.name]: e.target.value });
-  };
+  }
 
   render() {
     return (
       <View style={{ padding: 30 }}>
         <TextInput
           type="text"
-          name="name"
+          name="patientName"
           placeholder="Name"
-          value={this.state.name}
           onChange={this.onChange}
+          value={this.state.patientName}
         />
 
         <TextInput
           type="tel"
-          name="phone"
+          name="patientPhone"
           placeholder="Phone Number"
-          value={this.state.phone}
           onChange={this.onChange}
+          value={this.state.patientPhone}
         />
         <TextInput
           type="text"
-          name="body"
-          value={this.state.body}
+          name="patientEmail"
           onChange={this.onChange}
           placeholder="Leave a message"
+          value={this.state.patientEmail}
         />
         <TouchableOpacity onPress={this.handleSubmit}>
           <Text>Submit</Text>
