@@ -22,30 +22,42 @@ class Email extends Component {
   }
 
   handleSubmit = () => {
-    // fetch("https://sendpoint.io/id/ADCEMAIL", {
-    //   method: "POST",
-    //   headers: {
-    //     Accept: "application/json",
-    //     "Content-Type": "application/json"
-    //   },
-    //   body: JSON.stringify({
-    //     name: this.state.name,
-    //     phone: this.state.phone,
-    //     body: this.state.body,
-    //     email: this.state.email,
-    //   })
-    // });
-    alert("hi");
+    fetch("https://sendpoint.io/id/ADCEMAIL", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        name: this.state.patientName,
+        phone: this.state.patientPhone,
+        body: this.state.patientEmail,
+        email: this.state.email
+      })
+    });
   };
-  onChange(e) {
-    this.setState({ [e.target.name]: e.target.value });
-  }
+
+  onChange = event => {
+    switch (event.nativeEvent.target) {
+      case 157:
+        this.setState({ patientName: event.nativeEvent.text });
+        break;
+      case 159:
+        this.setState({ patientPhone: event.nativeEvent.text });
+        break;
+      case 163:
+        this.setState({ patientEmail: event.nativeEvent.text });
+      default:
+        console.log("err");
+    }
+  };
 
   render() {
     return (
       <View style={{ padding: 30 }}>
         <TextInput
           type="text"
+          id="a"
           name="patientName"
           placeholder="Name"
           onChange={this.onChange}
