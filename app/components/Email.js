@@ -17,12 +17,10 @@ class Email extends Component {
       email: "adc-app"
     };
     this.onChange = this.onChange.bind(this);
-  }
-  onChange(e) {
-    this.setState({ [e.target.name]: e.target.value });
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  postEmail() {
+  handleSubmit = () => {
     // fetch("https://sendpoint.io/id/ADCEMAIL", {
     //   method: "POST",
     //   headers: {
@@ -36,8 +34,11 @@ class Email extends Component {
     //     email: this.state.email,
     //   })
     // });
-    console.log("hi");
-  }
+    alert("hi");
+  };
+  onChange = e => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
 
   render() {
     return (
@@ -60,11 +61,11 @@ class Email extends Component {
         <TextInput
           type="text"
           name="body"
-          placeholder="Leave a message"
           value={this.state.body}
           onChange={this.onChange}
+          placeholder="Leave a message"
         />
-        <TouchableOpacity onClick={() => this.postEmail()}>
+        <TouchableOpacity onPress={this.handleSubmit}>
           <Text>Submit</Text>
         </TouchableOpacity>
       </View>
