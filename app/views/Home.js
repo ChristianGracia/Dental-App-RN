@@ -22,6 +22,7 @@ class Home extends Component {
       showEmail: false
     };
   }
+
   render() {
     return (
       <SafeAreaView>
