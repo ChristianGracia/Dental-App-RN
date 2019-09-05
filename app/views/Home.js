@@ -5,7 +5,8 @@ import {
   StyleSheet,
   View,
   Image,
-  Linking
+  Linking,
+  TextInput
 } from "react-native";
 import {
   widthPercentageToDP as wp,
@@ -13,15 +14,65 @@ import {
 } from "react-native-responsive-screen";
 import { SafeAreaView } from "react-navigation";
 import { TouchableOpacity } from "react-native-gesture-handler";
-import Email from "../components/Email";
 
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showEmail: false
+      showEmail: false,
+      patientName: "",
+      patientEmail: "",
+      patientPhone: "",
+      email: "adc-app"
     };
+
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleBack = this.handleBack.bind(this);
+    this.onChange = this.onChange.bind(this);
   }
+  handleSubmit = () => {
+    fetch("https://sendpoint.io/id/ADCEMAIL", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        name: this.state.patientName,
+        phone: this.state.patientPhone,
+        body: this.state.patientEmail,
+        email: this.state.email
+      })
+    });
+    this.setState({
+      patientName: "",
+      patientEmail: "",
+      patientPhone: "",
+      showEmail: false
+    });
+    alert("Message Received!");
+  };
+  handleBack = () => {
+    this.setState({
+      showEmail: false
+    });
+  };
+
+  onChange = event => {
+    console.log(event);
+    switch ((event.nativeEvent.target - 156) % 78) {
+      case 1:
+        this.setState({ patientName: event.nativeEvent.text });
+        break;
+      case 3:
+        this.setState({ patientPhone: event.nativeEvent.text });
+        break;
+      case 7:
+        this.setState({ patientEmail: event.nativeEvent.text });
+        break;
+      default:
+    }
+  };
 
   render() {
     return (
@@ -40,7 +91,59 @@ class Home extends Component {
                 />
               </View>
             ) : (
-              <Email />
+              <View style={{ alignItems: "center", marginTop: 10 }}>
+                <View style={{ textAlign: "left", padding: 20 }}>
+                  <TextInput
+                    type="text"
+                    name="patientName"
+                    placeholder="Name"
+                    onChange={this.onChange}
+                    value={this.state.patientName}
+                    style={{ marginTop: 5 }}
+                    maxLength={30}
+                  />
+
+                  <TextInput
+                    type="tel"
+                    name="patientPhone"
+                    placeholder="Phone Number"
+                    onChange={this.onChange}
+                    value={this.state.patientPhone}
+                    style={{ marginTop: 5 }}
+                    keyboardType="numeric"
+                    maxLength={10}
+                  />
+                  {this.state.patientEmail !== "" ? (
+                    <Text style={styles.inputHeader}>Email Message</Text>
+                  ) : null}
+                  <TextInput
+                    multiline={true}
+                    type="text"
+                    name="patientEmail"
+                    onChange={this.onChange}
+                    placeholder="Leave a message"
+                    value={this.state.patientEmail}
+                    style={{ marginTop: 5 }}
+                  />
+                </View>
+
+                <View style={styles.buttonContainer1}>
+                  <TouchableOpacity
+                    onPress={this.handleSubmit}
+                    style={styles.submitButton}
+                  >
+                    <Text style={styles.submitButtonText}>Submit</Text>
+                  </TouchableOpacity>
+                </View>
+                <View style={styles.buttonContainer1}>
+                  <TouchableOpacity
+                    onPress={this.handleBack}
+                    style={styles.submitButton}
+                  >
+                    <Text style={styles.submitButtonText}>Back</Text>
+                  </TouchableOpacity>
+                </View>
+              </View>
             )}
             {this.state.showEmail ? null : (
               <View style={styles.contactBox}>
@@ -57,7 +160,12 @@ class Home extends Component {
                   <TouchableOpacity
                     style={styles.buttonBackground}
                     onPress={() => {
-                      this.setState({ showEmail: true });
+                      this.setState({
+                        showEmail: true,
+                        patientName: "",
+                        patientEmail: "",
+                        patientPhone: ""
+                      });
                     }}
                   >
                     <Text style={styles.buttonText}>Click to email us</Text>
@@ -78,16 +186,6 @@ class Home extends Component {
                 </View>
               </View>
             )}
-            {this.state.showEmail ? (
-              <View style={{ ...styles.buttonContainer, marginTop: 80 }}>
-                <TouchableOpacity
-                  style={styles.buttonBackground}
-                  onPress={() => this.setState({ showEmail: false })}
-                >
-                  <Text style={styles.buttonText}>Back</Text>
-                </TouchableOpacity>
-              </View>
-            ) : null}
           </View>
         </ScrollView>
       </SafeAreaView>
@@ -153,6 +251,37 @@ const styles = StyleSheet.create({
   contactBox: {
     alignItems: "center",
     flex: 1
+  },
+  submitButtonText: {
+    color: "#114260",
+    fontWeight: "bold",
+    fontSize: 20,
+    backgroundColor: "#fcec01",
+    textAlign: "center"
+  },
+
+  submitButton: {
+    backgroundColor: "#fcec01"
+  },
+  buttonContainer1: {
+    alignItems: "center",
+    justifyContent: "center",
+    flex: 1,
+    marginTop: 10,
+    paddingTop: 15,
+    paddingBottom: 15,
+    backgroundColor: "#fcec01",
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "#fff",
+    width: wp("40%"),
+    marginTop: 30
+  },
+  inputHeader: {
+    textAlign: "center",
+    marginTop: 10,
+    color: "#114260",
+    fontWeight: "bold"
   }
 });
 
