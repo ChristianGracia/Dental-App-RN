@@ -24,7 +24,6 @@ class Email extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.onChange = this.onChange.bind(this);
   }
-
   handleSubmit = () => {
     fetch("https://sendpoint.io/id/ADCEMAIL", {
       method: "POST",
@@ -39,6 +38,11 @@ class Email extends Component {
         email: this.state.email
       })
     });
+    this.setState({
+      patientName: "",
+      patientEmail: "",
+      patientPhone: ""
+    });
   };
 
   onChange = event => {
@@ -52,7 +56,6 @@ class Email extends Component {
       case 163:
         this.setState({ patientEmail: event.nativeEvent.text });
       default:
-        console.log("err");
     }
   };
 
@@ -67,7 +70,9 @@ class Email extends Component {
             onChange={this.onChange}
             value={this.state.patientName}
             style={{ marginTop: 5 }}
+            maxLength={30}
           />
+
           <TextInput
             type="tel"
             name="patientPhone"
@@ -75,7 +80,12 @@ class Email extends Component {
             onChange={this.onChange}
             value={this.state.patientPhone}
             style={{ marginTop: 5 }}
+            keyboardType="numeric"
+            maxLength={10}
           />
+          {this.state.patientEmail !== "" ? (
+            <Text style={styles.inputHeader}>Email Message</Text>
+          ) : null}
           <TextInput
             multiline={true}
             type="text"
@@ -125,6 +135,12 @@ const styles = StyleSheet.create({
     borderColor: "#fff",
     width: wp("40%"),
     marginTop: 30
+  },
+  inputHeader: {
+    textAlign: "center",
+    marginTop: 10,
+    color: "#114260",
+    fontWeight: "bold"
   }
 });
 
