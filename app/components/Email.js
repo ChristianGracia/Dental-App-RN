@@ -54,7 +54,7 @@ class Email extends Component {
 
   render() {
     return (
-      <View style={{ padding: 30 }}>
+      <View style={{ padding: 60 }}>
         <TextInput
           type="text"
           id="a"
@@ -78,12 +78,29 @@ class Email extends Component {
           placeholder="Leave a message"
           value={this.state.patientEmail}
         />
-        <TouchableOpacity onPress={this.handleSubmit}>
-          <Text>Submit</Text>
+        <TouchableOpacity
+          onPress={this.handleSubmit}
+          style={styles.submitButton}
+        >
+          <Text style={styles.submitButtonText}>Submit</Text>
         </TouchableOpacity>
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  submitButtonText: {
+    color: "#114260",
+    fontWeight: "bold",
+    fontSize: 20,
+    backgroundColor: "#fcec01",
+    textAlign: "center"
+  },
+
+  submitButton: {
+    backgroundColor: "#fcec01"
+  }
+});
 
 export default Email;
