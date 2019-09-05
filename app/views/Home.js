@@ -79,7 +79,7 @@ class Home extends Component {
               </View>
             )}
             {this.state.showEmail ? (
-              <View style={styles.buttonContainer}>
+              <View style={{ ...styles.buttonContainer, marginTop: 80 }}>
                 <TouchableOpacity
                   style={styles.buttonBackground}
                   onPress={() => this.setState({ showEmail: false })}

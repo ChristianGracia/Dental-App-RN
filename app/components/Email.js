@@ -6,6 +6,10 @@ import {
   TouchableOpacity,
   Text
 } from "react-native";
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp
+} from "react-native-responsive-screen";
 
 class Email extends Component {
   constructor(props) {
@@ -54,36 +58,43 @@ class Email extends Component {
 
   render() {
     return (
-      <View style={{ padding: 60 }}>
-        <TextInput
-          type="text"
-          id="a"
-          name="patientName"
-          placeholder="Name"
-          onChange={this.onChange}
-          value={this.state.patientName}
-        />
+      <View style={{ alignItems: "center", marginTop: 10 }}>
+        <View style={{ textAlign: "left", padding: 20 }}>
+          <TextInput
+            type="text"
+            name="patientName"
+            placeholder="Name"
+            onChange={this.onChange}
+            value={this.state.patientName}
+            style={{ marginTop: 5 }}
+          />
+          <TextInput
+            type="tel"
+            name="patientPhone"
+            placeholder="Phone Number"
+            onChange={this.onChange}
+            value={this.state.patientPhone}
+            style={{ marginTop: 5 }}
+          />
+          <TextInput
+            multiline={true}
+            type="text"
+            name="patientEmail"
+            onChange={this.onChange}
+            placeholder="Leave a message"
+            value={this.state.patientEmail}
+            style={{ marginTop: 5 }}
+          />
+        </View>
 
-        <TextInput
-          type="tel"
-          name="patientPhone"
-          placeholder="Phone Number"
-          onChange={this.onChange}
-          value={this.state.patientPhone}
-        />
-        <TextInput
-          type="text"
-          name="patientEmail"
-          onChange={this.onChange}
-          placeholder="Leave a message"
-          value={this.state.patientEmail}
-        />
-        <TouchableOpacity
-          onPress={this.handleSubmit}
-          style={styles.submitButton}
-        >
-          <Text style={styles.submitButtonText}>Submit</Text>
-        </TouchableOpacity>
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity
+            onPress={this.handleSubmit}
+            style={styles.submitButton}
+          >
+            <Text style={styles.submitButtonText}>Submit</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     );
   }
@@ -100,6 +111,20 @@ const styles = StyleSheet.create({
 
   submitButton: {
     backgroundColor: "#fcec01"
+  },
+  buttonContainer: {
+    alignItems: "center",
+    justifyContent: "center",
+    flex: 1,
+    marginTop: 10,
+    paddingTop: 15,
+    paddingBottom: 15,
+    backgroundColor: "#fcec01",
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "#fff",
+    width: wp("40%"),
+    marginTop: 30
   }
 });
 
