@@ -23,7 +23,8 @@ class Home extends Component {
       patientName: "",
       patientEmail: "",
       patientPhone: "",
-      email: "adc-app"
+      email: "adc-app",
+      linkedIn: ""
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -67,7 +68,7 @@ class Home extends Component {
     this.setState({ patientPhone: e.target.value });
   };
   onChangeEmail = e => {
-    console.log(e);
+    console.log(e.target.props);
     this.setState({ patientEmail: e.target.value });
   };
 
@@ -116,7 +117,7 @@ class Home extends Component {
                   <TextInput
                     multiline={true}
                     type="text"
-                    id="patientEmail"
+                    name={"patientEmail"}
                     onChange={this.onChangeEmail}
                     placeholder="Leave a message"
                     value={this.state.patientEmail}
