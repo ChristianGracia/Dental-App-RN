@@ -28,7 +28,9 @@ class Home extends Component {
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleBack = this.handleBack.bind(this);
-    this.onChange = this.onChange.bind(this);
+    this.onChangeName = this.onChangeName.bind(this);
+    this.onChangePhone = this.onChangePhone.bind(this);
+    this.onChangeEmail = this.onChangeEmail.bind(this);
   }
   handleSubmit = () => {
     fetch("https://sendpoint.io/id/ADCEMAIL", {
@@ -58,20 +60,15 @@ class Home extends Component {
     });
   };
 
-  onChange = event => {
-    console.log(event);
-    switch ((event.nativeEvent.target - 156) % 78) {
-      case 1:
-        this.setState({ patientName: event.nativeEvent.text });
-        break;
-      case 3:
-        this.setState({ patientPhone: event.nativeEvent.text });
-        break;
-      case 7:
-        this.setState({ patientEmail: event.nativeEvent.text });
-        break;
-      default:
-    }
+  onChangeName = e => {
+    this.setState({ patientName: e.target.value });
+  };
+  onChangePhone = e => {
+    this.setState({ patientPhone: e.target.value });
+  };
+  onChangeEmail = e => {
+    console.log(e);
+    this.setState({ patientEmail: e.target.value });
   };
 
   render() {
@@ -95,9 +92,9 @@ class Home extends Component {
                 <View style={{ textAlign: "left", padding: 20 }}>
                   <TextInput
                     type="text"
-                    name="patientName"
+                    key="patientName"
                     placeholder="Name"
-                    onChange={this.onChange}
+                    onChange={this.onChangeName}
                     value={this.state.patientName}
                     style={{ marginTop: 5 }}
                     maxLength={30}
@@ -107,7 +104,7 @@ class Home extends Component {
                     type="tel"
                     name="patientPhone"
                     placeholder="Phone Number"
-                    onChange={this.onChange}
+                    onChange={this.onChangePhone}
                     value={this.state.patientPhone}
                     style={{ marginTop: 5 }}
                     keyboardType="numeric"
@@ -119,8 +116,8 @@ class Home extends Component {
                   <TextInput
                     multiline={true}
                     type="text"
-                    name="patientEmail"
-                    onChange={this.onChange}
+                    id="patientEmail"
+                    onChange={this.onChangeEmail}
                     placeholder="Leave a message"
                     value={this.state.patientEmail}
                     style={{ marginTop: 5 }}
