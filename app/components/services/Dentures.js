@@ -34,22 +34,15 @@ class Dentures extends Component {
               your natural teeth so that your appearance does not change much.
               Dentures may even improve the look of your smile.{"\n\n"}
             </Text>
-            <Text style={{ fontWeight: "bold", textAlign: "center" }}>
-              {" "}
-              Types of dentures:
-            </Text>
+            <Text style={styles.serviceTitles}> Types of dentures:</Text>
             <Text>
               {"\n\n"}
-              <Text style={{ fontWeight: "bold", color: iOSColors.blue }}>
-                Conventional
-              </Text>
+              <Text style={styles.serviceTitles}>Conventional</Text>
               {"\n\n"}
               This full removable denture is made and placed in your mouth after
               the remaining teeth are removed and tissues have healed, which may
               take several months.{"\n\n"}
-              <Text style={{ fontWeight: "bold", color: iOSColors.blue }}>
-                Immediate
-              </Text>
+              <Text style={styles.serviceTitles}> Immediate</Text>
               {"\n\n"}
               This removable denture is inserted on the same day that the
               remaining teeth are removed. Your dentist will take measurements
@@ -57,9 +50,7 @@ class Dentures extends Component {
               have to be without teeth during the healing period, but may need
               to have the denture relined or remade after your jaw has healed.
               {"\n\n"}
-              <Text style={{ fontWeight: "bold", color: iOSColors.blue }}>
-                Overdenture
-              </Text>
+              <Text style={styles.serviceTitles}>Overdenture</Text>
               {"\n\n"}
               <Text>
                 Sometimes some of your teeth can be saved to preserve your
@@ -69,9 +60,7 @@ class Dentures extends Component {
                 serve the same function, too.{"\n\n"}
               </Text>
             </Text>
-            <Text style={{ fontWeight: "bold", textAlign: "center" }}>
-              Denture Care
-            </Text>
+            <Text style={styles.serviceTitles}>Denture Care</Text>
             <Text>
               {"\n\n"}
               New dentures may feel awkward for a few weeks until you become
@@ -85,9 +74,7 @@ class Dentures extends Component {
               any problem persists, particularly irritation or soreness, be sure
               to consult your dentist. {"\n\n"}
             </Text>
-            <Text style={{ fontWeight: "bold", color: iOSColors.blue }}>
-              Denture Cleaning
-            </Text>
+            <Text style={styles.serviceTitles}>Denture Cleaning</Text>
 
             <Text>
               {"\n\n"}
@@ -110,9 +97,7 @@ class Dentures extends Component {
               {"\n\n\n"}
             </Text>
             <Text>
-              <Text style={{ fontWeight: "bold", textAlign: "center" }}>
-                How Are Dentures Made?
-              </Text>
+              <Text style={styles.serviceTitles}>How Are Dentures Made?</Text>
               {"\n\n"}The denture development process takes a few weeks and
               several appointments. Once your dentist or prosthodontist (a
               dentist who specializes in the restoration and replacement of
@@ -133,7 +118,7 @@ class Dentures extends Component {
               {"\n\n5) "}Make adjustments to fit if/as necessary{"\n\n"}
             </Text>
             <Text>
-              <Text style={{ fontWeight: "bold", textAlign: "center" }}>
+              <Text style={styles.serviceTitles}>
                 Will Eating With New Dentures Be Difficult?
               </Text>
               {"\n\n"}Eating with new dentures will take a little practice and
@@ -146,7 +131,7 @@ class Dentures extends Component {
               or hard.{"\n\n"}
             </Text>
             <Text>
-              <Text style={{ fontWeight: "bold", textAlign: "center" }}>
+              <Text style={styles.serviceTitles}>
                 Are Dentures Worn 24 Hours a Day?
               </Text>
               {"\n\n"}Your dentist or prosthodontist will instruct you as to how
@@ -201,6 +186,11 @@ const styles = StyleSheet.create({
     width: "100%",
     height: hp("45%"),
     marginTop: 15
+  },
+  serviceTitles: {
+    fontWeight: "bold",
+    textAlign: "center",
+    color: iOSColors.blue
   }
 });
 
