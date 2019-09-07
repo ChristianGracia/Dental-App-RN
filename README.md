@@ -1,23 +1,54 @@
 # Advanced Dental Care of Norton App
 
-This repo contains a React Native application that works on iOS or Android mobiel devices. I am making this app for my father's dental office with the hope
-of getting it on the Apple and Android app store for the patients of the office to use.
+10,000+ lines of code
 
-This app will for sure display information related to procedures that can be done at the office such as implants, crowns, root canals, botox, sleep apnea tests, etc.
+This repo contains a React Native application that works on all iOS or Android mobile devices.
 
-Will be working on this only while I'm at the dental office because I have many projects going on.
+## Current Features
 
-## Goals
+- displays tons of information about dental procures,
+- in-app email form that can send emails to the office with in a second
+- 1 click call button,
+- 1 click open directions to office in google maps
+- opens links to consent forms to be emailed
+- looks good on all mobile devices
 
-If possible there are a lot of things I would like to incorporate in this app. Most of this depends on what Dentrix allows me to do and how much API access costs
+## Todo
 
-* integration with the software the office uses (Dentrix)
-* Allow patients to view next appointment
-* Allow patients to view balance and ledger
-* Allow patients to leave a review
-* Allow patients to fill out a contact us form and submit
-* Submission form will email form details to the front desk and send a confirmation email to patient using sendgrid
-* Add patients to email list to recieve discounts such as 10% next cleaning
-* Allow patients to view their own chart
-* Add a blog of dental and non dental related articles
+- integrate paypal
+- maybe add more forms, fill out a few more services, style service components
 
+then get on app store
+
+I work on this app for a few hours a week for a dental office and will be getting this app eventually
+to the Apple and Android app store for the patients of the office to use.
+
+This app already displays a ton information related to procedures that can be done at the office such as implants, crowns, root canals, botox, sleep apnea tests, etc.
+
+until its on the app store you have to use expo to view
+
+## Installation
+
+download expo-cli
+
+```bash
+npm install -g expo-cli
+```
+
+clone this repo
+
+and then npm install
+
+```bash
+npm install
+```
+
+then to open
+
+start expo
+
+```bash
+expo start
+```
+
+requires android/iOS device or simulator
