@@ -4,10 +4,12 @@
 
 This repo contains a React Native application that works on all iOS or Android mobile devices.
 
+being made for www.adcofnorton.com
+
 ## Current Features
 
 - displays tons of information about dental procures,
-- in-app email form that can send emails to the office with in a second
+- in-app email form that can send emails to the office in less then a second
 - 1 click call button,
 - 1 click open directions to office in google maps
 - opens links to consent forms to be emailed
