@@ -98,7 +98,7 @@ class Home extends Component {
                 />
               </View>
             ) : (
-              <View style={{ alignItems: "center", marginTop: 50 }}>
+              <View style={{ alignItems: "center", marginTop: hp("10%") }}>
                 <View style={{ textAlign: "left", padding: 20 }}>
                   <TextInput
                     type="text"
@@ -106,7 +106,7 @@ class Home extends Component {
                     placeholder="Name"
                     onChange={this.onChangeName}
                     value={this.state.patientName}
-                    style={{ marginTop: 5 }}
+                    style={{ marginTop: 5, marginBottom: 10 }}
                     maxLength={30}
                   />
 
@@ -116,7 +116,7 @@ class Home extends Component {
                     placeholder="Phone Number"
                     onChange={this.onChangePhone}
                     value={this.state.patientPhone}
-                    style={{ marginTop: 5 }}
+                    style={{ marginTop: 5, marginBottom: 10 }}
                     keyboardType="numeric"
                     maxLength={10}
                   />
@@ -134,7 +134,7 @@ class Home extends Component {
                   />
                 </View>
 
-                <View style={styles.buttonContainer1}>
+                <View style={styles.emailButtons}>
                   <TouchableOpacity
                     onPress={this.handleSubmit}
                     style={styles.submitButton}
@@ -142,7 +142,7 @@ class Home extends Component {
                     <Text style={styles.submitButtonText}>Submit</Text>
                   </TouchableOpacity>
                 </View>
-                <View style={styles.buttonContainer1}>
+                <View style={styles.emailButtons}>
                   <TouchableOpacity
                     onPress={this.handleBack}
                     style={styles.submitButton}
@@ -270,18 +270,17 @@ const styles = StyleSheet.create({
   submitButton: {
     backgroundColor: "#fcec01"
   },
-  buttonContainer1: {
+  emailButtons: {
     alignItems: "center",
     justifyContent: "center",
     flex: 1,
     marginTop: 10,
-    paddingTop: 15,
-    paddingBottom: 15,
+    padding: 15,
     backgroundColor: "#fcec01",
     borderRadius: 10,
     borderWidth: 1,
     borderColor: "#fff",
-    width: wp("40%"),
+    width: "auto",
     marginTop: 30
   },
   inputHeader: {
