@@ -7,9 +7,14 @@ import rootReducer from "./reducers/rootReducer";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { fas } from "@fortawesome/free-brands-svg-icons";
+import {
+  faPhone,
+  faEnvelope,
+  faMapMarkerAlt
+} from "@fortawesome/free-solid-svg-icons";
 
-library.add(fab, faCheckSquare, faCoffee);
+library.add(fab, faPhone, faEnvelope, faMapMarkerAlt);
 
 //remove warnings during dev
 console.disableYellowBox = true;

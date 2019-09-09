@@ -184,7 +184,7 @@ class Home extends Component {
                       onPress={() => Linking.openURL(`tel:5086228777`)}
                     >
                       <Text style={styles.buttonText}>
-                        Call us <FontAwesomeIcon icon="coffee" />
+                        Call us <FontAwesomeIcon icon="phone" />
                       </Text>
                     </TouchableOpacity>
                   </View>
@@ -201,7 +201,9 @@ class Home extends Component {
                         });
                       }}
                     >
-                      <Text style={styles.buttonText}>Click to email us</Text>
+                      <Text style={styles.buttonText}>
+                        Email us <FontAwesomeIcon icon="envelope" />
+                      </Text>
                     </TouchableOpacity>
                   </View>
 
@@ -215,7 +217,8 @@ class Home extends Component {
                       }
                     >
                       <Text style={styles.buttonText}>
-                        Click for directions
+                        Directions
+                        <FontAwesomeIcon icon="map-marker-alt" />
                       </Text>
                     </TouchableOpacity>
                   </View>
