@@ -8,7 +8,7 @@ being made for www.adcofnorton.com
 
 ## Current Features
 
-- displays tons of information about dental procures,
+- displays tons of information about dental procedures,
 - in-app email form that can send emails to the office in less then a second
 - 1 click call button,
 - 1 click open directions to office in google maps

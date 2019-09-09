@@ -62,14 +62,13 @@ class Home extends Component {
   };
 
   onChangeName = e => {
-    this.setState({ patientName: e.target.value });
+    this.setState({ patientName: e.nativeEvent.text });
   };
   onChangePhone = e => {
-    this.setState({ patientPhone: e.target.value });
+    this.setState({ patientPhone: e.nativeEvent.text });
   };
   onChangeEmail = e => {
-    console.log(e.target.props);
-    this.setState({ patientEmail: e.target.value });
+    this.setState({ patientEmail: e.nativeEvent.text });
   };
 
   render() {
@@ -93,7 +92,7 @@ class Home extends Component {
                 <View style={{ textAlign: "left", padding: 20 }}>
                   <TextInput
                     type="text"
-                    key="patientName"
+                    name="name"
                     placeholder="Name"
                     onChange={this.onChangeName}
                     value={this.state.patientName}
