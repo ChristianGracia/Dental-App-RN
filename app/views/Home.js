@@ -34,27 +34,36 @@ class Home extends Component {
     this.onChangeEmail = this.onChangeEmail.bind(this);
   }
   handleSubmit = () => {
-    fetch("https://sendpoint.io/id/ADCEMAIL", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        name: this.state.patientName,
-        phone: this.state.patientPhone,
-        body: this.state.patientEmail,
-        email: this.state.email
-      })
-    });
-    this.setState({
-      patientName: "",
-      patientEmail: "",
-      patientPhone: "",
-      showEmail: false
-    });
-    alert("Message Received!");
+    if (
+      this.state.patientName !== "" &&
+      this.state.patientPhone !== "" &&
+      this.state.patientEmail !== ""
+    ) {
+      fetch("https://sendpoint.io/id/ADCEMAIL", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          name: this.state.patientName,
+          phone: this.state.patientPhone,
+          body: this.state.patientEmail,
+          email: this.state.email
+        })
+      });
+      this.setState({
+        patientName: "",
+        patientEmail: "",
+        patientPhone: "",
+        showEmail: false
+      });
+      alert("Message Received!");
+    } else {
+      alert("Please fill out all fields!");
+    }
   };
+
   handleBack = () => {
     this.setState({
       showEmail: false
@@ -62,6 +71,7 @@ class Home extends Component {
   };
 
   onChangeName = e => {
+    console.log(e.nativeEvent);
     this.setState({ patientName: e.nativeEvent.text });
   };
   onChangePhone = e => {
@@ -88,7 +98,7 @@ class Home extends Component {
                 />
               </View>
             ) : (
-              <View style={{ alignItems: "center", marginTop: 10 }}>
+              <View style={{ alignItems: "center", marginTop: 50 }}>
                 <View style={{ textAlign: "left", padding: 20 }}>
                   <TextInput
                     type="text"
