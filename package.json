@@ -8,6 +8,10 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.22",
+    "@fortawesome/free-brands-svg-icons": "^5.10.2",
+    "@fortawesome/free-solid-svg-icons": "^5.10.2",
+    "@fortawesome/react-native-fontawesome": "^0.1.0",
     "expo": "^33.0.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.6",
@@ -16,6 +20,7 @@
     "react-native-gesture-handler": "^1.2.2",
     "react-native-keyboard-aware-scroll-view": "^0.9.1",
     "react-native-responsive-screen": "^1.2.2",
+    "react-native-svg": "^9.4.0",
     "react-native-typography": "^1.4.1",
     "react-native-web": "^0.11.4",
     "react-navigation": "^1.5.8",

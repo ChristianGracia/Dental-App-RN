@@ -9,6 +9,7 @@ import {
   TextInput,
   KeyboardAvoidingView
 } from "react-native";
+import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp
@@ -182,7 +183,9 @@ class Home extends Component {
                       style={styles.buttonBackground}
                       onPress={() => Linking.openURL(`tel:5086228777`)}
                     >
-                      <Text style={styles.buttonText}>Click to call us</Text>
+                      <Text style={styles.buttonText}>
+                        Call us <FontAwesomeIcon icon="coffee" />
+                      </Text>
                     </TouchableOpacity>
                   </View>
 
