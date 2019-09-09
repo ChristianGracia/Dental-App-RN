@@ -6,12 +6,14 @@ import {
   View,
   Image,
   Linking,
-  TextInput
+  TextInput,
+  KeyboardAvoidingView
 } from "react-native";
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp
 } from "react-native-responsive-screen";
+import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { SafeAreaView } from "react-navigation";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
@@ -85,115 +87,139 @@ class Home extends Component {
     return (
       <SafeAreaView>
         <ScrollView>
-          <View style={styles.container}>
-            <View style={styles.headerDiv}>
-              <Text style={styles.header}>myADC</Text>
-            </View>
-            {!this.state.showEmail ? (
-              <View style={styles.imgContainer}>
-                <Image
-                  source={require("../../assets/main.jpg")}
-                  style={styles.logoStyle}
-                  resizeMode="contain"
-                />
+          <KeyboardAwareScrollView
+            contentContainerStyle={styles.container}
+            resetScrollToCoords={{ x: 0, y: 0 }}
+          >
+            <KeyboardAvoidingView>
+              <View style={styles.headerDiv}>
+                <Text style={styles.header}>myADC</Text>
               </View>
-            ) : (
-              <View style={{ alignItems: "center", marginTop: hp("10%") }}>
-                <View style={{ textAlign: "left", padding: 20 }}>
-                  <TextInput
-                    type="text"
-                    name="name"
-                    placeholder="Name"
-                    onChange={this.onChangeName}
-                    value={this.state.patientName}
-                    style={{ marginTop: 5, marginBottom: 10 }}
-                    maxLength={30}
-                  />
-
-                  <TextInput
-                    type="tel"
-                    name="patientPhone"
-                    placeholder="Phone Number"
-                    onChange={this.onChangePhone}
-                    value={this.state.patientPhone}
-                    style={{ marginTop: 5, marginBottom: 10 }}
-                    keyboardType="numeric"
-                    maxLength={10}
-                  />
-                  {this.state.patientEmail !== "" ? (
-                    <Text style={styles.inputHeader}>Email Message</Text>
-                  ) : null}
-                  <TextInput
-                    multiline={true}
-                    type="text"
-                    name={"patientEmail"}
-                    onChange={this.onChangeEmail}
-                    placeholder="Leave a message"
-                    value={this.state.patientEmail}
-                    style={{ marginTop: 5 }}
+              {!this.state.showEmail ? (
+                <View style={styles.imgContainer}>
+                  <Image
+                    source={require("../../assets/main.jpg")}
+                    style={styles.logoStyle}
+                    resizeMode="contain"
                   />
                 </View>
+              ) : (
+                <View style={{ alignItems: "center" }}>
+                  <View style={{ textAlign: "left", padding: 20 }}>
+                    {this.state.patientName !== "" ? (
+                      <Text
+                        style={{ ...styles.inputHeader, textAlign: "left" }}
+                      >
+                        Name
+                      </Text>
+                    ) : null}
+                    <TextInput
+                      type="text"
+                      name="name"
+                      placeholder="Name"
+                      onChange={this.onChangeName}
+                      value={this.state.patientName}
+                      style={{ marginTop: 5, marginBottom: 10 }}
+                      maxLength={30}
+                    />
 
-                <View style={styles.emailButtons}>
-                  <TouchableOpacity
-                    onPress={this.handleSubmit}
-                    style={styles.submitButton}
-                  >
-                    <Text style={styles.submitButtonText}>Submit</Text>
-                  </TouchableOpacity>
-                </View>
-                <View style={styles.emailButtons}>
-                  <TouchableOpacity
-                    onPress={this.handleBack}
-                    style={styles.submitButton}
-                  >
-                    <Text style={styles.submitButtonText}>Back</Text>
-                  </TouchableOpacity>
-                </View>
-              </View>
-            )}
-            {this.state.showEmail ? null : (
-              <View style={styles.contactBox}>
-                <View style={styles.buttonContainer}>
-                  <TouchableOpacity
-                    style={styles.buttonBackground}
-                    onPress={() => Linking.openURL(`tel:5086228777`)}
-                  >
-                    <Text style={styles.buttonText}>Click to call us</Text>
-                  </TouchableOpacity>
-                </View>
+                    {this.state.patientPhone !== "" ? (
+                      <Text
+                        style={{ ...styles.inputHeader, textAlign: "left" }}
+                      >
+                        Phone
+                      </Text>
+                    ) : null}
 
-                <View style={styles.buttonContainer}>
-                  <TouchableOpacity
-                    style={styles.buttonBackground}
-                    onPress={() => {
-                      this.setState({
-                        showEmail: true,
-                        patientName: "",
-                        patientEmail: "",
-                        patientPhone: ""
-                      });
-                    }}
-                  >
-                    <Text style={styles.buttonText}>Click to email us</Text>
-                  </TouchableOpacity>
-                </View>
+                    <TextInput
+                      type="tel"
+                      name="patientPhone"
+                      placeholder="Phone Number"
+                      onChange={this.onChangePhone}
+                      value={this.state.patientPhone}
+                      style={{ marginTop: 5, marginBottom: 10 }}
+                      keyboardType="numeric"
+                      maxLength={10}
+                    />
+                    {this.state.patientEmail !== "" ? (
+                      <Text style={styles.inputHeader}>Email Message</Text>
+                    ) : null}
 
-                <View style={styles.buttonContainer}>
-                  <TouchableOpacity
-                    style={styles.buttonBackground}
-                    onPress={() =>
-                      Linking.openURL(
-                        "https://www.google.com/maps/place/Advanced+Dental+Care+of+Norton/@41.9615083,-71.2001785,17z/data=!3m1!4b1!4m5!3m4!1s0x89e461d156c36c9f:0xb5fcf264919e17a5!8m2!3d41.9615083!4d-71.1979898"
-                      )
-                    }
-                  >
-                    <Text style={styles.buttonText}>Click for directions</Text>
-                  </TouchableOpacity>
+                    <TextInput
+                      multiline={true}
+                      type="text"
+                      name={"patientEmail"}
+                      onChange={this.onChangeEmail}
+                      placeholder="Leave a message"
+                      value={this.state.patientEmail}
+                      style={{ marginTop: 5, width: wp("80%") }}
+                    />
+                  </View>
+
+                  <View style={styles.emailButtons}>
+                    <TouchableOpacity
+                      onPress={this.handleSubmit}
+                      style={styles.buttonBackground}
+                    >
+                      <Text style={styles.submitButtonText}>Submit</Text>
+                    </TouchableOpacity>
+                  </View>
+                  <View style={styles.emailButtons}>
+                    <TouchableOpacity
+                      onPress={this.handleBack}
+                      style={styles.buttonBackground}
+                    >
+                      <Text style={styles.submitButtonText}>Back</Text>
+                    </TouchableOpacity>
+                  </View>
+                  <View style={{ paddingTop: 200 }}></View>
                 </View>
-              </View>
-            )}
-          </View>
+              )}
+              {this.state.showEmail ? null : (
+                <View style={styles.contactBox}>
+                  <View style={styles.buttonContainer}>
+                    <TouchableOpacity
+                      style={styles.buttonBackground}
+                      onPress={() => Linking.openURL(`tel:5086228777`)}
+                    >
+                      <Text style={styles.buttonText}>Click to call us</Text>
+                    </TouchableOpacity>
+                  </View>
+
+                  <View style={styles.buttonContainer}>
+                    <TouchableOpacity
+                      style={styles.buttonBackground}
+                      onPress={() => {
+                        this.setState({
+                          showEmail: true,
+                          patientName: "",
+                          patientEmail: "",
+                          patientPhone: ""
+                        });
+                      }}
+                    >
+                      <Text style={styles.buttonText}>Click to email us</Text>
+                    </TouchableOpacity>
+                  </View>
+
+                  <View style={styles.buttonContainer}>
+                    <TouchableOpacity
+                      style={styles.buttonBackground}
+                      onPress={() =>
+                        Linking.openURL(
+                          "https://www.google.com/maps/place/Advanced+Dental+Care+of+Norton/@41.9615083,-71.2001785,17z/data=!3m1!4b1!4m5!3m4!1s0x89e461d156c36c9f:0xb5fcf264919e17a5!8m2!3d41.9615083!4d-71.1979898"
+                        )
+                      }
+                    >
+                      <Text style={styles.buttonText}>
+                        Click for directions
+                      </Text>
+                    </TouchableOpacity>
+                  </View>
+                </View>
+              )}
+            </KeyboardAvoidingView>
+          </KeyboardAwareScrollView>
         </ScrollView>
       </SafeAreaView>
     );
@@ -245,15 +271,16 @@ const styles = StyleSheet.create({
   buttonContainer: {
     flex: 1,
     marginTop: 10,
-    paddingTop: 15,
-    paddingBottom: 15,
+    padding: 15,
+    paddingRight: 20,
+    paddingLeft: 20,
     marginLeft: 30,
     marginRight: 30,
     backgroundColor: "#fcec01",
     borderRadius: 10,
     borderWidth: 1,
     borderColor: "#fff",
-    width: wp("80%")
+    width: "auto"
   },
   contactBox: {
     alignItems: "center",
@@ -265,10 +292,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     backgroundColor: "#fcec01",
     textAlign: "center"
-  },
-
-  submitButton: {
-    backgroundColor: "#fcec01"
   },
   emailButtons: {
     alignItems: "center",
