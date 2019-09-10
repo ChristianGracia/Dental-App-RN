@@ -8,6 +8,7 @@ import {
   Linking,
   Label
 } from "react-native";
+import { iOSColors } from "react-native-typography";
 import { SafeAreaView } from "react-navigation";
 import {
   widthPercentageToDP as wp,
@@ -18,7 +19,11 @@ class Contact extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+    this.handleReview = this.handleReview.bind(this);
   }
+  handleReview = e => {
+    console.log("hi");
+  };
   render() {
     return (
       <SafeAreaView>
@@ -35,10 +40,13 @@ class Contact extends Component {
               <Text style={styles.formButtonText}>Anonymous Review</Text>
             </TouchableOpacity>
             <Text style={styles.buttonHeaders}>
-              Leave an anonymous review about our office
+              Leave an anonymous review about our office!
             </Text>
 
-            <TouchableOpacity style={styles.formsText}>
+            <TouchableOpacity
+              style={styles.formsText}
+              onPress={this.handleReview}
+            >
               <Text style={styles.formButtonText}>App Suggestions</Text>
             </TouchableOpacity>
             <Text style={styles.buttonHeaders}>
@@ -131,7 +139,7 @@ const styles = StyleSheet.create({
     textAlign: "center"
   },
   buttonHeaders: {
-    color: "red",
+    color: iOSColors.blue,
     marginTop: 20,
     fontWeight: "bold"
   }

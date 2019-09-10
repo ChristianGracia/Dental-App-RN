@@ -188,7 +188,7 @@ class Home extends Component {
                         <FontAwesomeIcon
                           icon="phone"
                           color="#114260"
-                          size="20"
+                          size={20}
                         />
                       </Text>
                     </TouchableOpacity>
@@ -208,7 +208,11 @@ class Home extends Component {
                     >
                       <Text style={styles.buttonText}>
                         Email us{" "}
-                        <FontAwesomeIcon icon="envelope" color="#114260" />
+                        <FontAwesomeIcon
+                          icon="envelope"
+                          color="#114260"
+                          size={20}
+                        />
                       </Text>
                     </TouchableOpacity>
                   </View>
@@ -223,10 +227,11 @@ class Home extends Component {
                       }
                     >
                       <Text style={styles.buttonText}>
-                        Directions
+                        Directions{" "}
                         <FontAwesomeIcon
                           icon="map-marker-alt"
                           color="#114260"
+                          size={20}
                         />
                       </Text>
                     </TouchableOpacity>
