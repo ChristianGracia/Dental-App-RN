@@ -30,14 +30,21 @@ class Contact extends Component {
 
           <View style={styles.formsContainer}>
             <Text style={styles.formHeader}>Tell us what you think!</Text>
-            <Text>Leave an anonymous review about our office</Text>
+
             <TouchableOpacity style={styles.formsText}>
               <Text style={styles.formButtonText}>Anonymous Review</Text>
             </TouchableOpacity>
-            <Text>Tell us what you want us to add to our app</Text>
+            <Text style={styles.buttonHeaders}>
+              Leave an anonymous review about our office
+            </Text>
+
             <TouchableOpacity style={styles.formsText}>
               <Text style={styles.formButtonText}>App Suggestions</Text>
             </TouchableOpacity>
+            <Text style={styles.buttonHeaders}>
+              Tell us what you want us to add to this App!
+            </Text>
+            <View style={{ marginBottom: 20 }}></View>
 
             <Text style={styles.formHeader}>Forms</Text>
             <TouchableOpacity
@@ -103,7 +110,8 @@ const styles = StyleSheet.create({
     fontSize: 25,
     color: "#114260",
     fontWeight: "bold",
-    marginTop: 20
+    marginTop: 20,
+    marginBottom: 20
   },
   formsText: {
     marginTop: 10,
@@ -121,6 +129,11 @@ const styles = StyleSheet.create({
     fontSize: 20,
     backgroundColor: "#fcec01",
     textAlign: "center"
+  },
+  buttonHeaders: {
+    color: "red",
+    marginTop: 20,
+    fontWeight: "bold"
   }
 });
 
