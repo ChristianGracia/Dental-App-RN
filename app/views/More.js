@@ -29,6 +29,16 @@ class Contact extends Component {
           <View style={styles.headerSpacing} />
 
           <View style={styles.formsContainer}>
+            <Text style={styles.formHeader}>Tell us what you think!</Text>
+            <Text>Leave an anonymous review about our office</Text>
+            <TouchableOpacity style={styles.formsText}>
+              <Text style={styles.formButtonText}>Anonymous Review</Text>
+            </TouchableOpacity>
+            <Text>Tell us what you want us to add to our app</Text>
+            <TouchableOpacity style={styles.formsText}>
+              <Text style={styles.formButtonText}>App Suggestions</Text>
+            </TouchableOpacity>
+
             <Text style={styles.formHeader}>Forms</Text>
             <TouchableOpacity
               style={styles.formsText}
@@ -59,15 +69,6 @@ class Contact extends Component {
               }
             >
               <Text style={styles.formButtonText}>Spa Patient Info</Text>
-            </TouchableOpacity>
-          </View>
-          <View>
-            <Text style={styles.paypalHeader}>Pay your balance</Text>
-            <TouchableOpacity
-              style={styles.formsText}
-              onPress={() => alert("press")}
-            >
-              <Text style={styles.formButtonText}>Pay now with paypal</Text>
             </TouchableOpacity>
           </View>
         </ScrollView>
@@ -101,7 +102,8 @@ const styles = StyleSheet.create({
   formHeader: {
     fontSize: 25,
     color: "#114260",
-    fontWeight: "bold"
+    fontWeight: "bold",
+    marginTop: 20
   },
   formsText: {
     marginTop: 10,
@@ -119,13 +121,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     backgroundColor: "#fcec01",
     textAlign: "center"
-  },
-  paypalHeader: {
-    paddingTop: 20,
-    textAlign: "center",
-    fontSize: 25,
-    color: "#114260",
-    fontWeight: "bold"
   }
 });
 
