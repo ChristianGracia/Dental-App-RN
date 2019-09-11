@@ -94,7 +94,15 @@ class Contact extends Component {
                   <Text style={styles.formButtonText}>Spa Patient Info</Text>
                 </TouchableOpacity>
               </View>
-            ) : null}
+            ) : (
+              <View>
+                <TouchableOpacity
+                  onPress={() => this.setState({ showOther: true })}
+                >
+                  <Text>Back</Text>
+                </TouchableOpacity>
+              </View>
+            )}
           </View>
         </ScrollView>
       </SafeAreaView>
