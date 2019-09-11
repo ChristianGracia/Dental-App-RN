@@ -6,7 +6,7 @@ import {
   Text,
   StyleSheet,
   Linking,
-  Label
+  TextInput
 } from "react-native";
 import { iOSColors } from "react-native-typography";
 import { SafeAreaView } from "react-navigation";
@@ -19,13 +19,26 @@ class Contact extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showOther: true
+      showOther: true,
+      showReview: false,
+      showSuggestion: false,
+      patientReview: ""
     };
     this.handleReview = this.handleReview.bind(this);
   }
   handleReview = e => {
-    this.setState({ showOther: false });
-    console.log(this.state.showOther);
+    this.setState({ showOther: false, showReview: true });
+  };
+  handleSuggestion = e => {
+    this.setState({ showOther: false, showSuggestion: true });
+  };
+  onChangeReview = e => {
+    this.setState({ patientReview: e.nativeEvent.text });
+    console.log(this.state.patientReview);
+  };
+  onChangeSuggestion = e => {
+    this.setState({ patientSuggestion: e.nativeEvent.text });
+    console.log(this.state.patientSuggestion);
   };
   render() {
     return (
@@ -51,7 +64,7 @@ class Contact extends Component {
 
             <TouchableOpacity
               style={styles.formsText}
-              onPress={this.handleReview}
+              onPress={this.handleSuggestion}
             >
               <Text style={styles.formButtonText}>App Suggestions</Text>
             </TouchableOpacity>
@@ -59,6 +72,29 @@ class Contact extends Component {
               Tell us what you want us to add to this App!
             </Text>
             <View style={{ marginBottom: 20 }}></View>
+
+            {this.state.showReview ? (
+              <TextInput
+                multiline={true}
+                type="text"
+                name={"patientReview"}
+                onChange={this.onChangeReview}
+                placeholder="Leave a message"
+                value={this.state.patientReview}
+                style={{ marginTop: 5, width: wp("80%") }}
+              />
+            ) : null}
+            {this.state.showSuggestion ? (
+              <TextInput
+                multiline={true}
+                type="text"
+                name={"patientSugesstion"}
+                onChange={this.onChangeSuggestion}
+                placeholder="Leave a message"
+                value={this.state.patientSuggestion}
+                style={{ marginTop: 5, width: wp("80%") }}
+              />
+            ) : null}
 
             {this.state.showOther ? (
               <View>
@@ -97,9 +133,10 @@ class Contact extends Component {
             ) : (
               <View>
                 <TouchableOpacity
+                  style={styles.formsText}
                   onPress={() => this.setState({ showOther: true })}
                 >
-                  <Text>Back</Text>
+                  <Text style={styles.formButtonText}>Back</Text>
                 </TouchableOpacity>
               </View>
             )}
