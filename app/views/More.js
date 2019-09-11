@@ -18,11 +18,14 @@ import {
 class Contact extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      showOther: true
+    };
     this.handleReview = this.handleReview.bind(this);
   }
   handleReview = e => {
-    console.log("hi");
+    this.setState({ showOther: false });
+    console.log(this.state.showOther);
   };
   render() {
     return (
@@ -36,7 +39,10 @@ class Contact extends Component {
           <View style={styles.formsContainer}>
             <Text style={styles.formHeader}>Tell us what you think!</Text>
 
-            <TouchableOpacity style={styles.formsText}>
+            <TouchableOpacity
+              style={styles.formsText}
+              onPress={this.handleReview}
+            >
               <Text style={styles.formButtonText}>Anonymous Review</Text>
             </TouchableOpacity>
             <Text style={styles.buttonHeaders}>
@@ -54,37 +60,41 @@ class Contact extends Component {
             </Text>
             <View style={{ marginBottom: 20 }}></View>
 
-            <Text style={styles.formHeader}>Forms</Text>
-            <TouchableOpacity
-              style={styles.formsText}
-              onPress={() =>
-                Linking.openURL(
-                  "https://www.ident.ws/template_include/new_patient_sign_in.do?site=14740&practiceId=22404"
-                )
-              }
-            >
-              <Text style={styles.formButtonText}>New Patient</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              style={styles.formsText}
-              onPress={() =>
-                Linking.openURL(
-                  "https://www.adcofnorton.com/Content/Patient-Forms/Financial-Policy-2012.pdf"
-                )
-              }
-            >
-              <Text style={styles.formButtonText}>Financial Policy</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              style={styles.formsText}
-              onPress={() =>
-                Linking.openURL(
-                  "https://www.adcofnorton.com/Content/Patient-Forms/ADC-Medical-Spa-Patient-Information.pdf"
-                )
-              }
-            >
-              <Text style={styles.formButtonText}>Spa Patient Info</Text>
-            </TouchableOpacity>
+            {this.state.showOther ? (
+              <View>
+                <Text style={styles.formHeader}>Forms</Text>
+                <TouchableOpacity
+                  style={styles.formsText}
+                  onPress={() =>
+                    Linking.openURL(
+                      "https://www.ident.ws/template_include/new_patient_sign_in.do?site=14740&practiceId=22404"
+                    )
+                  }
+                >
+                  <Text style={styles.formButtonText}>New Patient</Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                  style={styles.formsText}
+                  onPress={() =>
+                    Linking.openURL(
+                      "https://www.adcofnorton.com/Content/Patient-Forms/Financial-Policy-2012.pdf"
+                    )
+                  }
+                >
+                  <Text style={styles.formButtonText}>Financial Policy</Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                  style={styles.formsText}
+                  onPress={() =>
+                    Linking.openURL(
+                      "https://www.adcofnorton.com/Content/Patient-Forms/ADC-Medical-Spa-Patient-Information.pdf"
+                    )
+                  }
+                >
+                  <Text style={styles.formButtonText}>Spa Patient Info</Text>
+                </TouchableOpacity>
+              </View>
+            ) : null}
           </View>
         </ScrollView>
       </SafeAreaView>
