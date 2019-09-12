@@ -132,7 +132,7 @@ class Contact extends Component {
                 <View style={{ marginBottom: 20 }}></View>
 
                 {this.state.showReview ? (
-                  <View>
+                  <View style={{ alignItems: "center" }}>
                     <TextInput
                       multiline={true}
                       type="text"
@@ -145,14 +145,18 @@ class Contact extends Component {
 
                     <TouchableOpacity
                       onPress={this.handleReviewSubmit}
-                      style={{ ...styles.buttonStyle, marginTop: 30 }}
+                      style={{
+                        ...styles.buttonStyle,
+                        width: "40%",
+                        marginTop: 30
+                      }}
                     >
                       <Text style={styles.buttonText}>Submit</Text>
                     </TouchableOpacity>
                   </View>
                 ) : null}
                 {this.state.showSuggestion ? (
-                  <View>
+                  <View style={{ alignItems: "center" }}>
                     <TextInput
                       multiline={true}
                       type="text"
@@ -166,6 +170,7 @@ class Contact extends Component {
                       onPress={this.handleSuggestionSubmit}
                       style={{
                         ...styles.buttonStyle,
+                        width: "40%",
                         marginTop: 30
                       }}
                     >
