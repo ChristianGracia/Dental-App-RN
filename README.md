@@ -10,6 +10,8 @@ being made for www.adcofnorton.com
 
 - displays tons of information about dental procedures,
 - in-app email form that can send emails to the office in less then a second
+- anonymous comment form that is emailed to me to screen
+- suggestion form for what patients might also want in the app
 - 1 click call button,
 - 1 click open directions to office in google maps
 - opens links to consent forms to be emailed
