@@ -182,7 +182,10 @@ class Contact extends Component {
                 ) : (
                   <View>
                     <TouchableOpacity
-                      style={styles.buttonStyle}
+                      style={{
+                        ...styles.buttonStyle,
+                        backgroundColor: "#114260"
+                      }}
                       onPress={() =>
                         this.setState({
                           showOther: true,
@@ -192,7 +195,15 @@ class Contact extends Component {
                         })
                       }
                     >
-                      <Text style={styles.buttonText}>Back</Text>
+                      <Text
+                        style={{
+                          ...styles.buttonText,
+                          color: "#fcec01",
+                          backgroundColor: "#114260"
+                        }}
+                      >
+                        Back
+                      </Text>
                     </TouchableOpacity>
                   </View>
                 )}
