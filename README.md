@@ -33,7 +33,7 @@ until its on the app store you have to use expo to view
 
 ## Installation
 
-download expo-cli
+install expo-cli
 
 ```bash
 npm install -g expo-cli
@@ -53,6 +53,12 @@ start expo
 
 ```bash
 expo start
+```
+
+or
+
+```bash
+npm start
 ```
 
 requires android/iOS device or simulator
