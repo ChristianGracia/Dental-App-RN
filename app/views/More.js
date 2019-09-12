@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Forms from "../components/Forms";
 import {
   View,
   TouchableOpacity,
@@ -42,7 +43,7 @@ class Contact extends Component {
   };
   handleReviewSubmit = e => {
     if (this.state.patientReview !== "") {
-      fetch("https://sendpoint.io/id/ADCEMAIL", {
+      fetch("https://sendpoint.io/id/MsfrYX08-", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -65,7 +66,7 @@ class Contact extends Component {
   };
   handleSuggestionSubmit = e => {
     if (this.state.patientSuggestion !== "") {
-      fetch("https://sendpoint.io/id/ADCEMAIL", {
+      fetch("https://sendpoint.io/id/LA3afJK4H", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -79,11 +80,11 @@ class Contact extends Component {
       this.setState({
         patientSuggestion: "",
 
-        showReview: false
+        showSuggestion: false
       });
-      alert("Review Received!");
+      alert("Suggestion Received!");
     } else {
-      alert("Please leave a review!");
+      alert("Please leave a suggestion!");
     }
   };
   render() {
@@ -150,10 +151,10 @@ class Contact extends Component {
                   style={{ marginTop: 5, width: wp("80%") }}
                 />
                 <TouchableOpacity
-                  onPress={this.handleSubmit}
+                  onPress={this.handleSuggestionSubmit}
                   style={styles.formText}
                 >
-                  <Text style={styles.formButtonText}>Submit</Text>
+                  <Text style={{ ...styles.formButtonText }}>Submit</Text>
                 </TouchableOpacity>
               </View>
             ) : null}
@@ -161,36 +162,7 @@ class Contact extends Component {
             {this.state.showOther ? (
               <View>
                 <Text style={styles.formHeader}>Forms</Text>
-                <TouchableOpacity
-                  style={styles.formsText}
-                  onPress={() =>
-                    Linking.openURL(
-                      "https://www.ident.ws/template_include/new_patient_sign_in.do?site=14740&practiceId=22404"
-                    )
-                  }
-                >
-                  <Text style={styles.formButtonText}>New Patient</Text>
-                </TouchableOpacity>
-                <TouchableOpacity
-                  style={styles.formsText}
-                  onPress={() =>
-                    Linking.openURL(
-                      "https://www.adcofnorton.com/Content/Patient-Forms/Financial-Policy-2012.pdf"
-                    )
-                  }
-                >
-                  <Text style={styles.formButtonText}>Financial Policy</Text>
-                </TouchableOpacity>
-                <TouchableOpacity
-                  style={styles.formsText}
-                  onPress={() =>
-                    Linking.openURL(
-                      "https://www.adcofnorton.com/Content/Patient-Forms/ADC-Medical-Spa-Patient-Information.pdf"
-                    )
-                  }
-                >
-                  <Text style={styles.formButtonText}>Spa Patient Info</Text>
-                </TouchableOpacity>
+                <Forms />
               </View>
             ) : (
               <View>
@@ -242,7 +214,8 @@ const styles = StyleSheet.create({
     color: "#114260",
     fontWeight: "bold",
     marginTop: 20,
-    marginBottom: 20
+    marginBottom: 20,
+    textAlign: "center"
   },
   formsText: {
     marginTop: 10,
