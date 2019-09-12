@@ -167,11 +167,17 @@ class Home extends Component {
                       <Text style={styles.submitButtonText}>Submit</Text>
                     </TouchableOpacity>
                   </View>
-                  <View style={styles.emailButtons}>
+                  <View
+                    style={{
+                      ...styles.emailButtons,
+                      backgroundColor: "#114260"
+                    }}
+                  >
                     <TouchableOpacity
                       onPress={this.handleBack}
                       style={{
-                        ...styles.buttonBackground
+                        ...styles.buttonBackground,
+                        backgroundColor: "#114260"
                       }}
                     >
                       <Text
