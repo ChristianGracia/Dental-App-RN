@@ -17,6 +17,7 @@ import {
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { SafeAreaView } from "react-navigation";
 import { TouchableOpacity } from "react-native-gesture-handler";
+import Directions from "../components/Directions";
 
 class Home extends Component {
   constructor(props) {
@@ -218,23 +219,7 @@ class Home extends Component {
                   </View>
 
                   <View style={styles.buttonContainer}>
-                    <TouchableOpacity
-                      style={styles.buttonBackground}
-                      onPress={() =>
-                        Linking.openURL(
-                          "https://www.google.com/maps/place/Advanced+Dental+Care+of+Norton/@41.9615083,-71.2001785,17z/data=!3m1!4b1!4m5!3m4!1s0x89e461d156c36c9f:0xb5fcf264919e17a5!8m2!3d41.9615083!4d-71.1979898"
-                        )
-                      }
-                    >
-                      <Text style={styles.buttonText}>
-                        Directions{" "}
-                        <FontAwesomeIcon
-                          icon="map-marker-alt"
-                          color="#114260"
-                          size={20}
-                        />
-                      </Text>
-                    </TouchableOpacity>
+                    <Directions />
                   </View>
                 </View>
               )}

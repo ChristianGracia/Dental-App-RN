@@ -142,9 +142,10 @@ class Contact extends Component {
                       value={this.state.patientReview}
                       style={{ marginTop: 5, width: wp("80%") }}
                     />
+
                     <TouchableOpacity
                       onPress={this.handleReviewSubmit}
-                      style={styles.buttonStyle}
+                      style={{ ...styles.buttonStyle, marginTop: 30 }}
                     >
                       <Text style={styles.buttonText}>Submit</Text>
                     </TouchableOpacity>
@@ -164,7 +165,8 @@ class Contact extends Component {
                     <TouchableOpacity
                       onPress={this.handleSuggestionSubmit}
                       style={{
-                        ...styles.buttonStyle
+                        ...styles.buttonStyle,
+                        marginTop: 30
                       }}
                     >
                       <Text style={{ ...styles.buttonText }}>Submit</Text>
