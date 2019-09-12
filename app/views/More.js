@@ -92,29 +92,29 @@ class Contact extends Component {
       <SafeAreaView>
         <ScrollView>
           <View style={styles.headerDiv}>
-            <Text style={{ ...styles.header }}>More</Text>
+            <Text style={styles.header}>More</Text>
           </View>
           <View style={styles.headerSpacing} />
 
-          <View style={styles.formsContainer}>
+          <View style={styles.buttonContainer}>
             <Text style={styles.formHeader}>Tell us what you think!</Text>
             {this.state.showSuggestion ? null : (
               <View>
                 <TouchableOpacity
-                  style={styles.formsText}
+                  style={styles.buttonStyle}
                   onPress={this.handleReview}
                 >
-                  <Text style={styles.formButtonText}>Anonymous Review</Text>
+                  <Text style={styles.buttonText}>Anonymous Review</Text>
                 </TouchableOpacity>
               </View>
             )}
             {this.state.showReview ? null : (
               <View>
                 <TouchableOpacity
-                  style={styles.formsText}
+                  style={styles.buttonStyle}
                   onPress={this.handleSuggestion}
                 >
-                  <Text style={styles.formButtonText}>App Suggestions</Text>
+                  <Text style={styles.buttonText}>App Suggestions</Text>
                 </TouchableOpacity>
               </View>
             )}
@@ -135,7 +135,7 @@ class Contact extends Component {
                   onPress={this.handleReviewSubmit}
                   style={styles.formText}
                 >
-                  <Text style={styles.formButtonText}>Submit</Text>
+                  <Text style={styles.buttonText}>Submit</Text>
                 </TouchableOpacity>
               </View>
             ) : null}
@@ -154,7 +154,7 @@ class Contact extends Component {
                   onPress={this.handleSuggestionSubmit}
                   style={styles.formText}
                 >
-                  <Text style={{ ...styles.formButtonText }}>Submit</Text>
+                  <Text style={{ ...styles.buttonText }}>Submit</Text>
                 </TouchableOpacity>
               </View>
             ) : null}
@@ -167,7 +167,7 @@ class Contact extends Component {
             ) : (
               <View>
                 <TouchableOpacity
-                  style={styles.formsText}
+                  style={styles.buttonStyle}
                   onPress={() =>
                     this.setState({
                       showOther: true,
@@ -176,7 +176,7 @@ class Contact extends Component {
                     })
                   }
                 >
-                  <Text style={styles.formButtonText}>Back</Text>
+                  <Text style={styles.buttonText}>Back</Text>
                 </TouchableOpacity>
               </View>
             )}
@@ -205,7 +205,7 @@ const styles = StyleSheet.create({
   headerSpacing: {
     paddingTop: 30
   },
-  formsContainer: {
+  buttonContainer: {
     alignItems: "center",
     flex: 1
   },
@@ -217,7 +217,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     textAlign: "center"
   },
-  formsText: {
+  buttonStyle: {
     marginTop: 10,
     padding: 15,
     marginLeft: 30,
@@ -227,7 +227,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "#fff"
   },
-  formButtonText: {
+  buttonText: {
     color: "#114260",
     fontWeight: "bold",
     fontSize: 20,
