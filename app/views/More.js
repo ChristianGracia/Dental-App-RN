@@ -24,15 +24,16 @@ class Contact extends Component {
       showOther: true,
       showReview: false,
       showSuggestion: false,
+      showForms: true,
       patientReview: ""
     };
     this.handleReview = this.handleReview.bind(this);
   }
   handleReview = e => {
-    this.setState({ showOther: false, showReview: true });
+    this.setState({ showForms: false, showReview: true, showOther: false });
   };
   handleSuggestion = e => {
-    this.setState({ showOther: false, showSuggestion: true });
+    this.setState({ showForms: false, showSuggestion: true, showOther: false });
   };
   onChangeReview = e => {
     this.setState({ patientReview: e.nativeEvent.text });
@@ -103,8 +104,12 @@ class Contact extends Component {
               <View style={styles.headerSpacing} />
 
               <View style={styles.buttonContainer}>
-                <Text style={styles.titleHeaders}>Tell us what you think!</Text>
-                {this.state.showSuggestion ? null : (
+                {this.state.showForms ? (
+                  <Text style={styles.titleHeaders}>
+                    Tell us what you think!
+                  </Text>
+                ) : null}
+                {!this.state.showForms ? null : (
                   <View>
                     <TouchableOpacity
                       style={styles.buttonStyle}
@@ -114,7 +119,7 @@ class Contact extends Component {
                     </TouchableOpacity>
                   </View>
                 )}
-                {this.state.showReview ? null : (
+                {!this.state.showForms ? null : (
                   <View>
                     <TouchableOpacity
                       style={styles.buttonStyle}
@@ -152,7 +157,7 @@ class Contact extends Component {
                       type="text"
                       name={"patientSugesstion"}
                       onChange={this.onChangeSuggestion}
-                      placeholder="Tell us what you want us to add to this App!"
+                      placeholder="What would you like added to this app?"
                       value={this.state.patientSuggestion}
                       style={{ marginTop: 5, width: wp("80%") }}
                     />
@@ -180,7 +185,8 @@ class Contact extends Component {
                         this.setState({
                           showOther: true,
                           showReview: false,
-                          showSuggestion: false
+                          showSuggestion: false,
+                          showForms: true
                         })
                       }
                     >
