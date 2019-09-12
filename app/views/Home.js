@@ -5,7 +5,6 @@ import {
   StyleSheet,
   View,
   Image,
-  Linking,
   TextInput,
   KeyboardAvoidingView
 } from "react-native";
@@ -76,7 +75,6 @@ class Home extends Component {
   };
 
   onChangeName = e => {
-    console.log(e.nativeEvent);
     this.setState({ patientName: e.nativeEvent.text });
   };
   onChangePhone = e => {
