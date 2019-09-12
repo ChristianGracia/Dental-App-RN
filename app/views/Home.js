@@ -105,7 +105,7 @@ class Home extends Component {
                   />
                 </View>
               ) : (
-                <View style={{ alignItems: "center" }}>
+                <View style={{ alignItems: "center", marginTop: hp("10%") }}>
                   <View style={{ textAlign: "left", padding: 20 }}>
                     {this.state.patientName !== "" ? (
                       <Text
