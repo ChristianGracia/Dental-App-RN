@@ -18,6 +18,7 @@ import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view
 import { SafeAreaView } from "react-navigation";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import Directions from "../components/Directions";
+import Phone from "../components/Phone";
 
 class Home extends Component {
   constructor(props) {
@@ -169,9 +170,19 @@ class Home extends Component {
                   <View style={styles.emailButtons}>
                     <TouchableOpacity
                       onPress={this.handleBack}
-                      style={styles.buttonBackground}
+                      style={{
+                        ...styles.buttonBackground
+                      }}
                     >
-                      <Text style={styles.submitButtonText}>Back</Text>
+                      <Text
+                        style={{
+                          ...styles.submitButtonText,
+                          color: "#fcec01",
+                          backgroundColor: "#114260"
+                        }}
+                      >
+                        Back
+                      </Text>
                     </TouchableOpacity>
                   </View>
                   <View style={{ paddingTop: 200 }}></View>
@@ -180,19 +191,7 @@ class Home extends Component {
               {this.state.showEmail ? null : (
                 <View style={styles.contactBox}>
                   <View style={styles.buttonContainer}>
-                    <TouchableOpacity
-                      style={styles.buttonBackground}
-                      onPress={() => Linking.openURL(`tel:5086228777`)}
-                    >
-                      <Text style={styles.buttonText}>
-                        Call us{" "}
-                        <FontAwesomeIcon
-                          icon="phone"
-                          color="#114260"
-                          size={20}
-                        />
-                      </Text>
-                    </TouchableOpacity>
+                    <Phone />
                   </View>
 
                   <View style={styles.buttonContainer}>
