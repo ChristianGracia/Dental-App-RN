@@ -6,8 +6,8 @@ import {
   ScrollView,
   Text,
   StyleSheet,
-  Linking,
-  TextInput
+  TextInput,
+  KeyboardAvoidingView
 } from "react-native";
 import { iOSColors } from "react-native-typography";
 import { SafeAreaView } from "react-navigation";
@@ -15,6 +15,7 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp
 } from "react-native-responsive-screen";
+import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 
 class Contact extends Component {
   constructor(props) {
@@ -91,98 +92,105 @@ class Contact extends Component {
     return (
       <SafeAreaView>
         <ScrollView>
-          <View style={styles.headerDiv}>
-            <Text style={styles.header}>More</Text>
-          </View>
-          <View style={styles.headerSpacing} />
+          <KeyboardAwareScrollView
+            contentContainerStyle={styles.container}
+            resetScrollToCoords={{ x: 0, y: 0 }}
+          >
+            <KeyboardAvoidingView>
+              <View style={styles.headerDiv}>
+                <Text style={styles.header}>More</Text>
+              </View>
+              <View style={styles.headerSpacing} />
 
-          <View style={styles.buttonContainer}>
-            <Text style={styles.titleHeaders}>Tell us what you think!</Text>
-            {this.state.showSuggestion ? null : (
-              <View>
-                <TouchableOpacity
-                  style={styles.buttonStyle}
-                  onPress={this.handleReview}
-                >
-                  <Text style={styles.buttonText}>Anonymous Review</Text>
-                </TouchableOpacity>
-              </View>
-            )}
-            {this.state.showReview ? null : (
-              <View>
-                <TouchableOpacity
-                  style={styles.buttonStyle}
-                  onPress={this.handleSuggestion}
-                >
-                  <Text style={styles.buttonText}>App Suggestions</Text>
-                </TouchableOpacity>
-              </View>
-            )}
-            <View style={{ marginBottom: 20 }}></View>
+              <View style={styles.buttonContainer}>
+                <Text style={styles.titleHeaders}>Tell us what you think!</Text>
+                {this.state.showSuggestion ? null : (
+                  <View>
+                    <TouchableOpacity
+                      style={styles.buttonStyle}
+                      onPress={this.handleReview}
+                    >
+                      <Text style={styles.buttonText}>Anonymous Review</Text>
+                    </TouchableOpacity>
+                  </View>
+                )}
+                {this.state.showReview ? null : (
+                  <View>
+                    <TouchableOpacity
+                      style={styles.buttonStyle}
+                      onPress={this.handleSuggestion}
+                    >
+                      <Text style={styles.buttonText}>App Suggestions</Text>
+                    </TouchableOpacity>
+                  </View>
+                )}
+                <View style={{ marginBottom: 20 }}></View>
 
-            {this.state.showReview ? (
-              <View>
-                <TextInput
-                  multiline={true}
-                  type="text"
-                  name={"patientReview"}
-                  onChange={this.onChangeReview}
-                  placeholder="Leave an anonymous review/comment"
-                  value={this.state.patientReview}
-                  style={{ marginTop: 5, width: wp("80%") }}
-                />
-                <TouchableOpacity
-                  onPress={this.handleReviewSubmit}
-                  style={styles.buttonStyle}
-                >
-                  <Text style={styles.buttonText}>Submit</Text>
-                </TouchableOpacity>
-              </View>
-            ) : null}
-            {this.state.showSuggestion ? (
-              <View>
-                <TextInput
-                  multiline={true}
-                  type="text"
-                  name={"patientSugesstion"}
-                  onChange={this.onChangeSuggestion}
-                  placeholder="Tell us what you want us to add to this App!"
-                  value={this.state.patientSuggestion}
-                  style={{ marginTop: 5, width: wp("80%") }}
-                />
-                <TouchableOpacity
-                  onPress={this.handleSuggestionSubmit}
-                  style={{
-                    ...styles.buttonStyle
-                  }}
-                >
-                  <Text style={{ ...styles.buttonText }}>Submit</Text>
-                </TouchableOpacity>
-              </View>
-            ) : null}
+                {this.state.showReview ? (
+                  <View>
+                    <TextInput
+                      multiline={true}
+                      type="text"
+                      name={"patientReview"}
+                      onChange={this.onChangeReview}
+                      placeholder="Leave an anonymous review/comment"
+                      value={this.state.patientReview}
+                      style={{ marginTop: 5, width: wp("80%") }}
+                    />
+                    <TouchableOpacity
+                      onPress={this.handleReviewSubmit}
+                      style={styles.buttonStyle}
+                    >
+                      <Text style={styles.buttonText}>Submit</Text>
+                    </TouchableOpacity>
+                  </View>
+                ) : null}
+                {this.state.showSuggestion ? (
+                  <View>
+                    <TextInput
+                      multiline={true}
+                      type="text"
+                      name={"patientSugesstion"}
+                      onChange={this.onChangeSuggestion}
+                      placeholder="Tell us what you want us to add to this App!"
+                      value={this.state.patientSuggestion}
+                      style={{ marginTop: 5, width: wp("80%") }}
+                    />
+                    <TouchableOpacity
+                      onPress={this.handleSuggestionSubmit}
+                      style={{
+                        ...styles.buttonStyle
+                      }}
+                    >
+                      <Text style={{ ...styles.buttonText }}>Submit</Text>
+                    </TouchableOpacity>
+                  </View>
+                ) : null}
 
-            {this.state.showOther ? (
-              <View>
-                <Text style={styles.titleHeaders}>Forms</Text>
-                <Forms />
+                {this.state.showOther ? (
+                  <View>
+                    <Text style={styles.titleHeaders}>Forms</Text>
+                    <Forms />
+                  </View>
+                ) : (
+                  <View>
+                    <TouchableOpacity
+                      style={styles.buttonStyle}
+                      onPress={() =>
+                        this.setState({
+                          showOther: true,
+                          showReview: false,
+                          showSuggestion: false
+                        })
+                      }
+                    >
+                      <Text style={styles.buttonText}>Back</Text>
+                    </TouchableOpacity>
+                  </View>
+                )}
               </View>
-            ) : (
-              <View>
-                <TouchableOpacity
-                  style={styles.buttonStyle}
-                  onPress={() =>
-                    this.setState({
-                      showOther: true,
-                      showReview: false,
-                      showSuggestion: false
-                    })
-                  }
-                >
-                  <Text style={styles.buttonText}>Back</Text>
-                </TouchableOpacity>
-              </View>
-            )}
-          </View>
+            </KeyboardAvoidingView>
+          </KeyboardAwareScrollView>
         </ScrollView>
       </SafeAreaView>
     );
