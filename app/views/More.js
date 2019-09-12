@@ -97,7 +97,7 @@ class Contact extends Component {
           <View style={styles.headerSpacing} />
 
           <View style={styles.buttonContainer}>
-            <Text style={styles.formHeader}>Tell us what you think!</Text>
+            <Text style={styles.titleHeaders}>Tell us what you think!</Text>
             {this.state.showSuggestion ? null : (
               <View>
                 <TouchableOpacity
@@ -133,7 +133,7 @@ class Contact extends Component {
                 />
                 <TouchableOpacity
                   onPress={this.handleReviewSubmit}
-                  style={styles.formText}
+                  style={styles.buttonStyle}
                 >
                   <Text style={styles.buttonText}>Submit</Text>
                 </TouchableOpacity>
@@ -152,7 +152,9 @@ class Contact extends Component {
                 />
                 <TouchableOpacity
                   onPress={this.handleSuggestionSubmit}
-                  style={styles.formText}
+                  style={{
+                    ...styles.buttonStyle
+                  }}
                 >
                   <Text style={{ ...styles.buttonText }}>Submit</Text>
                 </TouchableOpacity>
@@ -161,7 +163,7 @@ class Contact extends Component {
 
             {this.state.showOther ? (
               <View>
-                <Text style={styles.formHeader}>Forms</Text>
+                <Text style={styles.titleHeaders}>Forms</Text>
                 <Forms />
               </View>
             ) : (
@@ -209,7 +211,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flex: 1
   },
-  formHeader: {
+  titleHeaders: {
     fontSize: 25,
     color: "#114260",
     fontWeight: "bold",
