@@ -72,6 +72,13 @@ const styles = StyleSheet.create({
     width: "100%",
     height: hp("45%"),
     marginTop: 15
+  },
+  itemHeader: {
+    color: "#114260",
+    fontSize: 25,
+    fontWeight: "bold",
+    textAlign: "center",
+    backgroundColor: "#fcec01"
   }
 });
 
