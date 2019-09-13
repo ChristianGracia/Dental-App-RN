@@ -37,7 +37,7 @@ class Botox extends Component {
 
 const styles = StyleSheet.create({
   itemPickText: {
-    color: "#000",
+    color: "#114260",
     fontSize: 20
   },
   itemPick: {

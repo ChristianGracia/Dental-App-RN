@@ -19,7 +19,7 @@ class Bleaching extends Component {
                 "https://cdn.prod-carehubs.net/n1/802899ec472ea3d8/uploads/2015/05/teeth-whitening.jpg"
             }}
           />
-          <Text style={styles.itemPickText}>Bleaching text goes here</Text>
+          <Text style={styles.itemPickText}>Bleaching text</Text>
         </View>
       </View>
     );
