@@ -59,11 +59,9 @@ class Implants extends Component {
                 {"\n\n"}At Advanced Dental Care of Norton, we have successfully
                 placed thousands of implants with Dr. Gracia placing implants
                 for over 25 years.
-                {"\n\n"}
               </Text>
               <Text style={styles.itemHeader}>Types of dental implants</Text>
               <Text style={styles.itemPickText}>
-                {"\n\n"}
                 At Advanced Dental Care of Norton, we place titanium, zirconia,
                 and zygomatic implants. Titanium and zirconia implants are
                 endosteal implants and they are the most commonly used type of
@@ -73,7 +71,6 @@ class Implants extends Component {
                 zygomatic bone rather than the maxilla. They may be used when
                 maxillary bone quality or quantity is inadequate for the
                 placement of regular dental implants
-                {"\n\n"}
               </Text>
               <Text style={styles.itemHeader}>
                 How do dental implants Work?
@@ -87,19 +84,19 @@ class Implants extends Component {
                 placed over implants — feel more natural than conventional
                 bridges or dentures.
               </Text>
-              <Image
-                style={{
-                  width: wp("80%"),
-                  height: hp("50%"),
-                  marginLeft: wp("25%"),
-                  marginRight: wp("25%")
-                }}
-                resizeMode="contain"
-                source={{
-                  uri:
-                    "https://www.aaid-implant.org/assets/1/7/Implant_Basics_Diagram.png"
-                }}
-              />
+              <View style={{ alignItems: "center" }}>
+                <Image
+                  style={{
+                    width: wp("80%"),
+                    height: hp("50%")
+                  }}
+                  resizeMode="contain"
+                  source={{
+                    uri:
+                      "https://www.aaid-implant.org/assets/1/7/Implant_Basics_Diagram.png"
+                  }}
+                />
+              </View>
               <Text style={styles.itemHeader}>
                 3-D Imaging and Treatment Planning
               </Text>
@@ -109,7 +106,7 @@ class Implants extends Component {
                 and highly predictable. At Advanced Dental Care of Norton we use
                 these tools to analyze the anatomy of your jaw and determine the
                 best sites for implant placement before surgery. This saves time
-                and money, and shortens recovery time.{"\n\n"}
+                and money, and shortens recovery time.
               </Text>
               <Text style={styles.itemHeader}>
                 Dental implants might be right for you if...
@@ -149,46 +146,34 @@ class Implants extends Component {
                 {"\n"} Because dental implants require one or more surgical
                 procedures, you must have a thorough evaluation to prepare for
                 the process, including:{"\n"}
-                {"\n"}
               </Text>
               <Text
                 style={{
-                  fontWeight: "bold",
-                  textAlign: "center",
-                  color: iOSColors.blue
+                  style={ styles.itemSubHeader }
                 }}
               >
                 Comprehensive dental exam
               </Text>
               <Text style={styles.itemPickText}>
-                {"\n\n"} You may have dental X-rays and 3D images taken, and
-                have models made of your teeth and jaw. {"\n\n"}
+                You may have dental X-rays and 3D images taken, and have models
+                made of your teeth and jaw.
               </Text>
               <Text
-                style={{
-                  fontWeight: "bold",
-                  textAlign: "center",
-                  color: iOSColors.blue
-                }}
+                style={styles.itemSubHeader}
               >
                 Review of your medical history
               </Text>
               <Text style={styles.itemPickText}>
-                {"\n\n"}Tell your doctor about any medical conditions and any
+                Tell your doctor about any medical conditions and any
                 medications you take, including prescription and
                 over-the-counter drugs and supplements. If you have certain
                 heart conditions or orthopedic implants, your doctor may
                 prescribe antibiotics before surgery to help prevent infection.
-                {"\n\n"}
               </Text>
               <Text
-                style={{
-                  fontWeight: "bold",
-                  textAlign: "center",
-                  color: iOSColors.blue
-                }}
+                style={styles.itemSubHeader}
               >
-                Treatment plan{"\n\n"}
+                Treatment plan
               </Text>
               <Text style={styles.itemPickText}>
                 Tailored to your situation, this plan takes into account factors
@@ -201,8 +186,7 @@ class Implants extends Component {
                 drinking before surgery, depending on what type of anesthesia
                 you have. If you're having sedation or general anesthesia, plan
                 to have someone take you home after surgery and expect to rest
-                for the remainder of the day.{"\n"}
-                {"\n"}
+                for the remainder of the day.
               </Text>
               <Text style={styles.itemHeader}>What to Expect</Text>
               <Text style={styles.itemPickText}>
@@ -220,57 +204,51 @@ class Implants extends Component {
                 growth of new bone in your jaw. Depending on your situation, the
                 specific procedure done or the materials used, certain steps can
                 sometimes be combined.
-                {"\n"}
-                {"\n"}
               </Text>
               <Text style={styles.itemHeader}>
                 Tips to make your implants last
               </Text>
-              <Text style={styles.itemHeader}>
+              <Text style={styles.itemSubHeader}>
                 Practice excellent oral hygiene
               </Text>
               <Text style={styles.itemPickText}>
-                {"\n"}Just as with your natural teeth, keep implants, artificial
-                teeth and gum tissue clean. Specially designed brushes, such as
-                an interdental brush that slides between teeth, can help clean
-                the nooks and crannies around teeth, gums and metal posts.{" "}
-                {"\n"}
+                Just as with your natural teeth, keep implants, artificial teeth
+                and gum tissue clean. Specially designed brushes, such as an
+                interdental brush that slides between teeth, can help clean the
+                nooks and crannies around teeth, gums and metal posts.{" "}
               </Text>
-              <Text style={styles.itemHeader}>See your dentist regularly</Text>
+              <Text style={styles.itemSubHeader}>
+                See your dentist regularly
+              </Text>
               <Text style={styles.itemPickText}>
-                {" "}
-                {"\n"}
                 Schedule dental checkups to ensure the health and proper
                 functioning of your implants and follow the advice for
-                professional cleanings. {"\n"}
-                {"\n"}
+                professional cleanings.
               </Text>
-              <Text style={styles.itemHeader}>Avoid damaging habits</Text>
+              <Text style={styles.itemSubHeader}>Avoid damaging habits</Text>
               <Text style={styles.itemPickText}>
-                {" "}
-                {"\n"}
                 Don't chew hard items, such as ice and hard candy, which can
                 break your crowns — or your natural teeth. Avoid tooth-staining
                 tobacco and caffeine products. Get treatment if you grind your
-                teeth. {"\n\n"}
+                teeth.
               </Text>
               <Text style={styles.itemHeader}>Facts about Dental Implants</Text>
               <Text style={styles.itemPickText}>
-                {"\n\n"}- Ancient dental implants have been traced back to
-                around 600 AD, when tooth-like pieces of shell were hammered
-                into the jaw of a Mayan woman. {"\n\n"}- Dental implants are the
-                only dental restoration option that preserves natural bone,
-                actually helping to stimulate bone growth. {"\n\n"}- In 1951, a
-                small group of dentists who were successfully placing dental
-                implants formed the AAID – American Academy of Implant Dentistry
-                – to share their knowledge on the practice of implantology. AAID
-                is the first professional organization in the world dedicated to
+                - Ancient dental implants have been traced back to around 600
+                AD, when tooth-like pieces of shell were hammered into the jaw
+                of a Mayan woman. {"\n\n"}- Dental implants are the only dental
+                restoration option that preserves natural bone, actually helping
+                to stimulate bone growth. {"\n\n"}- In 1951, a small group of
+                dentists who were successfully placing dental implants formed
+                the AAID – American Academy of Implant Dentistry – to share
+                their knowledge on the practice of implantology. AAID is the
+                first professional organization in the world dedicated to
                 advancing implant dentistry. {"\n\n"}- In 1952, Swedish
                 orthopedic surgeon P.I. Branemark discovered that titanium
                 naturally fuses with bone, eventually switching his research
                 focus to the mouth from the knee and hip. {"\n\n"}- 3 million
                 people in the United States have implants, a number that is
-                growing by 500,000 annually. {"\n\n"}
+                growing by 500,000 annually.
               </Text>
             </View>
           ) : null}
@@ -337,6 +315,11 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
     backgroundColor: "#fcec01"
+  },
+  itemSubHeader: {
+    fontWeight: "bold",
+    textAlign: "center",
+    color: iOSColors.blue
   }
 });
 
