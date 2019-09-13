@@ -26,9 +26,11 @@ class Contact extends Component {
       showSuggestion: false,
       showTextFields: true,
       patientReview: "",
+      patientSuggestion: "",
       showForms: true
     };
     this.handleReview = this.handleReview.bind(this);
+    this.handleSuggestion = this.handleSuggestion.bind(this);
   }
   handleReview = e => {
     this.setState({
