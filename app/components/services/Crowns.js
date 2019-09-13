@@ -10,7 +10,7 @@ class Crowns extends Component {
     return (
       <View>
         <Text style={styles.itemPick}>Crowns</Text>
-        <View style={{ padding: 15 }}>
+        <View>
           <Image
             style={styles.imgSizer}
             resizeMode="contain"
@@ -64,9 +64,7 @@ class Crowns extends Component {
             <Text>To make a tooth look better</Text>
             {"\n"}
             {"\n"}
-            <Text style={{ fontWeight: "bold", textAlign: "center" }}>
-              Types of Crowns
-            </Text>
+            <Text style={styles.itemHeader}>Types of Crowns</Text>
             {"\n"}
             {"\n"}
             <Text>
@@ -170,8 +168,9 @@ class Crowns extends Component {
 
 const styles = StyleSheet.create({
   itemPickText: {
-    color: "#000",
-    fontSize: 20
+    color: "#114260",
+    fontSize: 20,
+    padding: 15
   },
   itemPick: {
     textAlign: "center",
@@ -186,6 +185,13 @@ const styles = StyleSheet.create({
     width: "100%",
     height: hp("45%"),
     marginTop: 15
+  },
+  itemHeader: {
+    color: "#114260",
+    fontSize: 25,
+    fontWeight: "bold",
+    textAlign: "center",
+    backgroundColor: "#fcec01"
   }
 });
 export default Crowns;
