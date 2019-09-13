@@ -32,13 +32,12 @@ class Crowns extends Component {
               {"\n"}
               {"\n"}
               There are many reasons why a dentist may recommend a crown:
-              {"\n"}
-              {"\n"}
             </Text>
-            <CrownReasons />
-
-            <CrownTypes />
           </Text>
+          <CrownReasons />
+          <Text style={styles.itemHeader}>Types of Crowns</Text>
+
+          <CrownTypes />
         </View>
       </View>
     );
