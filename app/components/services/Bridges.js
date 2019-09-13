@@ -34,7 +34,12 @@ class Bridges extends Component {
           </View>
 
           <Text
-            style={{ fontWeight: "bold", color: iOSColors.blue, fontSize: 18 }}
+            style={{
+              fontWeight: "bold",
+              color: iOSColors.blue,
+              fontSize: 18,
+              padding: 15
+            }}
           >
             {"\n\n"}
             Restore your smile
@@ -65,8 +70,7 @@ const styles = StyleSheet.create({
     color: "#114260",
     marginTop: 20,
     backgroundColor: "#fcec01",
-    marginBottom: 10,
-    padding: 15
+    marginBottom: 10
   },
   imgSizer: {
     width: "100%",
