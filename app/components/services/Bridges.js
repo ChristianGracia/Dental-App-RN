@@ -11,7 +11,7 @@ class Bridges extends Component {
     return (
       <View>
         <Text style={styles.itemPick}>Bridges</Text>
-        <View style={{ padding: 15 }}>
+        <View style={{}}>
           <Image
             style={styles.imgSizer}
             resizeMode="contain"
@@ -21,35 +21,30 @@ class Bridges extends Component {
             }}
           />
           <Text style={styles.itemPickText}>
-            <Text>
-              Dental bridges lliterally bridge the gap created by one or more
-              missing teeth.{"\n\n"}A bridge is made up of two or more crowns
-              for the teeth on either side of the gap. The two or more anchoring
-              teeth are called abutment teeth and contain a false tooth/teeth in
-              between. These false teeth are called pontics and can be made from
-              gold, alloys, porcelain, or a combination of these materials.
-              Dental bridges are supported by natural teeth or implants.{"\n\n"}
-            </Text>
-            <Text>
-              <Text style={{ fontWeight: "bold", textAlign: "center" }}>
-                What Are the Benefits of Dental Bridges?
-              </Text>
-              {"\n\n"}
-              <Text style={{ fontWeight: "bold", color: iOSColors.blue }}>
-                Bridges can:
-              </Text>
-              <Text style>
-                {"\n\n"}
-                Restore your smile
-                {"\n\n"}Restore the ability to properly chew and speak
-                {"\n\n"}
-                Maintain the shape of your face
-                {"\n\n"}Distribute the forces in your bite properly by replacing
-                missing teeth
-                {"\n\n"}Prevent remaining teeth from drifting out of position
-                {"\n\n"}
-              </Text>
-            </Text>
+            Dental bridges lliterally bridge the gap created by one or more
+            missing teeth.{"\n\n"}A bridge is made up of two or more crowns for
+            the teeth on either side of the gap. The two or more anchoring teeth
+            are called abutment teeth and contain a false tooth/teeth in
+            between. These false teeth are called pontics and can be made from
+            gold, alloys, porcelain, or a combination of these materials. Dental
+            bridges are supported by natural teeth or implants.{"\n\n"}
+          </Text>
+          <View style={{ width: "100%" }}>
+            <Text style={styles.itemHeader}>Bridges can...</Text>
+          </View>
+
+          <Text
+            style={{ fontWeight: "bold", color: iOSColors.blue, fontSize: 18 }}
+          >
+            {"\n\n"}
+            Restore your smile
+            {"\n\n"}Restore the ability to properly chew and speak
+            {"\n\n"}
+            Maintain the shape of your face
+            {"\n\n"}Distribute the forces in your bite properly by replacing
+            missing teeth
+            {"\n\n"}Prevent remaining teeth from drifting out of position
+            {"\n\n"}
           </Text>
         </View>
       </View>
@@ -59,8 +54,9 @@ class Bridges extends Component {
 
 const styles = StyleSheet.create({
   itemPickText: {
-    color: "#000",
-    fontSize: 20
+    color: "#114260",
+    fontSize: 20,
+    padding: 15
   },
   itemPick: {
     textAlign: "center",
@@ -69,12 +65,20 @@ const styles = StyleSheet.create({
     color: "#114260",
     marginTop: 20,
     backgroundColor: "#fcec01",
-    marginBottom: 10
+    marginBottom: 10,
+    padding: 15
   },
   imgSizer: {
     width: "100%",
     height: hp("45%"),
     marginTop: 15
+  },
+  itemHeader: {
+    color: "#114260",
+    fontSize: 25,
+    fontWeight: "bold",
+    textAlign: "center",
+    backgroundColor: "#fcec01"
   }
 });
 
