@@ -120,7 +120,7 @@ class Implants extends Component {
                   that will affect bone healing {"\n\n"}Are unable or unwilling
                   to wear dentures{"\n\n"}Want to improve your speech {"\n\n"}
                   Are willing to commit several months to the process {"\n\n"}
-                  Don't smoke tobacco{"\n"}
+                  Don't smoke tobacco
                 </Text>
                 {"\n\n"}
                 For some people, ordinary bridges and dentures are simply not
@@ -303,7 +303,8 @@ const styles = StyleSheet.create({
   itemSubHeader: {
     fontWeight: "bold",
     textAlign: "center",
-    color: iOSColors.blue
+    color: iOSColors.blue,
+    fontSize: 20
   }
 });
 
