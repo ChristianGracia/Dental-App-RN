@@ -147,20 +147,14 @@ class Implants extends Component {
                 procedures, you must have a thorough evaluation to prepare for
                 the process, including:{"\n"}
               </Text>
-              <Text
-                style={{
-                  style={ styles.itemSubHeader }
-                }}
-              >
+              <Text style={styles.itemSubHeader}>
                 Comprehensive dental exam
               </Text>
               <Text style={styles.itemPickText}>
                 You may have dental X-rays and 3D images taken, and have models
                 made of your teeth and jaw.
               </Text>
-              <Text
-                style={styles.itemSubHeader}
-              >
+              <Text style={styles.itemSubHeader}>
                 Review of your medical history
               </Text>
               <Text style={styles.itemPickText}>
@@ -170,11 +164,7 @@ class Implants extends Component {
                 heart conditions or orthopedic implants, your doctor may
                 prescribe antibiotics before surgery to help prevent infection.
               </Text>
-              <Text
-                style={styles.itemSubHeader}
-              >
-                Treatment plan
-              </Text>
+              <Text style={styles.itemSubHeader}>Treatment plan</Text>
               <Text style={styles.itemPickText}>
                 Tailored to your situation, this plan takes into account factors
                 such as how many teeth you need replaced and the condition of
@@ -209,7 +199,7 @@ class Implants extends Component {
                 Tips to make your implants last
               </Text>
               <Text style={styles.itemSubHeader}>
-                Practice excellent oral hygiene
+                {"\n"}Practice excellent oral hygiene
               </Text>
               <Text style={styles.itemPickText}>
                 Just as with your natural teeth, keep implants, artificial teeth

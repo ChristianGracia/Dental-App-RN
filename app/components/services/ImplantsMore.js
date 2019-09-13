@@ -14,9 +14,9 @@ export default class ImplantsMore extends Component {
 
   render() {
     return (
-      <View style={{ paddingTop: 30, flex: 1 }}>
+      <View style={{ paddingTop: 30, flex: 1, padding: 15 }}>
         <View>
-          <Text style={styles.text}>
+          <Text style={styles.itempicktext}>
             If your jawbone is not able to support dental implants, several
             techniques can be used to rebuild bone, restore your natural jawline
             and provide a sturdy foundation for implant-supported teeth. These
@@ -25,7 +25,7 @@ export default class ImplantsMore extends Component {
 
           <Text style={styles.headerTech}>Bone graft{"\n\n"}</Text>
 
-          <Text style={styles.text}>
+          <Text style={styles.itempicktext}>
             If your jawbone isn't thick enough or is too soft, you may need bone
             grafting before you can have dental implant surgery. That's because
             the powerful chewing action of your mouth exerts great pressure on
@@ -44,7 +44,7 @@ export default class ImplantsMore extends Component {
             />
           </View>
 
-          <Text style={styles.text}>
+          <Text style={styles.itempicktext}>
             {"\n\n"}A bone graft can create a more solid base for the implant.
             There are several bone graft materials that can be used to rebuild a
             jawbone. Options may include a natural bone graft, such as from
@@ -60,7 +60,7 @@ export default class ImplantsMore extends Component {
           </Text>
 
           <Text style={styles.headerTech}>Sinus lift{"\n\n"}</Text>
-          <Text style={styles.text}>
+          <Text style={styles.itempicktext}>
             Also called sinus augmentation or sinus elevation, this involves
             adding bone below the sinus in cases where natural bone has
             deteriorated due to missing upper back teeth.{"\n\n"}
@@ -77,7 +77,7 @@ export default class ImplantsMore extends Component {
           </View>
           <Text style={styles.headerTech}>Ridge expansion{"\n\n"}</Text>
 
-          <Text style={styles.text}>
+          <Text style={styles.itempicktext}>
             If your jaw isn’t wide enough to support dental implants, bone graft
             material can be added to a small ridge, or space, created along the
             top of your jaw.{"\n\n"}
@@ -94,7 +94,7 @@ export default class ImplantsMore extends Component {
             />
           </View>
           <Text style={styles.header}>Placing the dental implant{"\n\n"}</Text>
-          <Text style={styles.text}>
+          <Text style={styles.itempicktext}>
             During surgery to place the dental implant, your oral surgeon makes
             a cut to open your gum and expose the bone. Holes are drilled into
             the bone where the dental implant metal post will be placed. Since
@@ -113,7 +113,7 @@ export default class ImplantsMore extends Component {
           </Text>
 
           <Text style={styles.header}>Placing the abutment {"\n\n"}</Text>
-          <Text style={styles.text}>
+          <Text style={styles.itempicktext}>
             When osseointegration is complete, you may need additional surgery
             to place the abutment — the piece where the crown will eventually
             attach. This minor surgery is typically done with local anesthesia
@@ -122,18 +122,18 @@ export default class ImplantsMore extends Component {
           </Text>
 
           <Text style={styles.implantSteps}>1{") "}</Text>
-          <Text style={styles.text}>
+          <Text style={styles.itempicktext}>
             Your oral surgeon reopens your gum to expose the dental implant{" "}
             {"\n\n"}
           </Text>
           <Text style={styles.implantSteps}>2{") "}</Text>
-          <Text style={styles.text}>
+          <Text style={styles.itempicktext}>
             The abutment is attached to the dental implant
             {"\n\n"}
           </Text>
 
           <Text style={styles.implantSteps}>3{") "}</Text>
-          <Text style={styles.text}>
+          <Text style={styles.itempicktext}>
             The gum tissue is then closed around, but not over, the abutment
             {"\n\n"}
             {"\n\n"}
@@ -153,7 +153,7 @@ export default class ImplantsMore extends Component {
             Choosing your new artificial teeth {"\n\n"}
           </Text>
 
-          <Text style={styles.text}>
+          <Text style={styles.itempicktext}>
             Once your gums heal, you'll have more impressions made of your mouth
             and remaining teeth. These impressions are used to make the crown —
             your realistic-looking artificial tooth. The crown can't be placed
@@ -164,7 +164,7 @@ export default class ImplantsMore extends Component {
 
           <View style={styles.removeFixContainer}>
             <Text style={styles.removeOrFix}>Removable {"\n\n"}</Text>
-            <Text style={styles.text}>
+            <Text style={styles.itempicktext}>
               This type is similar to a conventional removable denture and can
               be a partial or full denture. It contains artificial white teeth
               surrounded by pink plastic gum. It's mounted on a metal frame
@@ -174,7 +174,7 @@ export default class ImplantsMore extends Component {
             </Text>
 
             <Text style={styles.removeOrFix}>Fixed {"\n\n"}</Text>
-            <Text style={styles.text}>
+            <Text style={styles.itempicktext}>
               In this type, an artificial tooth is permanently screwed or
               cemented onto an individual implant abutment. You can't remove the
               tooth for cleaning or during sleep. Most of the time, each crown
@@ -188,7 +188,7 @@ export default class ImplantsMore extends Component {
             Alternative Dental Implant Techniques
           </Text>
 
-          <Text style={styles.text}>
+          <Text style={styles.itempicktext}>
             {"\n\n"}
             Depending on the health of your jawbone and your specific needs,
             your dental implant dentist may suggest some alternative treatment
@@ -200,7 +200,7 @@ export default class ImplantsMore extends Component {
               Immediate Load Dental Implants
             </Text>
 
-            <Text style={styles.text}>
+            <Text style={styles.itempicktext}>
               {"\n\n"}
               Also called as same day implants or Teeth in a Day®, immediate
               load dental implants allow placement of a temporary tooth during
@@ -224,7 +224,7 @@ export default class ImplantsMore extends Component {
 
             <Text style={styles.altDentalTech}>{"\n\n"}All-on-4</Text>
 
-            <Text style={styles.text}>
+            <Text style={styles.itempicktext}>
               {"\n\n"}All-on-4 is an alternative to placing a top or bottom set
               of replacement teeth, called a full arch. Four dental implants (6
               for "All-on-6" available) are placed in available bone, avoiding
@@ -271,8 +271,10 @@ const styles = StyleSheet.create({
   implantSteps: {
     color: iOSColors.blue
   },
-  text: {
-    fontSize: 20
+  itempicktext: {
+    color: "#114260",
+    fontSize: 20,
+    alignItems: "center"
   },
 
   removeOrFix: {
