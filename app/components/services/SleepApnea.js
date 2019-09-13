@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet, Linking } from "react-native";
 import { iOSColors } from "react-native-typography";
 import {
   widthPercentageToDP as wp,
@@ -11,7 +11,7 @@ class SleepApnea extends Component {
     return (
       <View>
         <Text style={styles.itemPick}>Sleep Apnea</Text>
-        <View style={{ padding: 15 }}>
+        <View>
           <Image
             style={styles.imgSizer}
             resizeMode="contain"
@@ -32,73 +32,80 @@ class SleepApnea extends Component {
             medical conditions to worsen or make more difficult for you and your
             doctor to manage.
             {"\n"}
-            {"\n"}
-            <Text
-              style={{
-                color: "red",
-                textAlign: "center",
-                fontSize: 25,
-                fontWeight: "bold"
-              }}
-            >
-              Types of Sleep Apnea {"\n"}
-              {"\n"}
-            </Text>
-            <Text style={{ fontWeight: "bold" }}>
-              {"\n"}Obstructive sleep apnea:{"\n"}
-            </Text>
-            More common form that occurs when throat muscles relax
-            {"\n"}
-            {"\n"}
-            <Text style={{ fontWeight: "bold" }}>
-              Central sleep apnea:{"\n"}
-            </Text>
+          </Text>
+          <Text style={styles.itemHeader}>Types of Sleep Apnea</Text>
+          <Text
+            style={{
+              fontWeight: "bold",
+              textAlign: "center",
+              color: iOSColors.blue
+            }}
+          >
+            {"\n"}Obstructive sleep apnea{"\n"}
+          </Text>
+          <Text>
+            More common form that occurs when throat muscles relax{"\n"}
+          </Text>
+          <Text
+            style={{
+              fontWeight: "bold",
+              textAlign: "center",
+              color: iOSColors.blue
+            }}
+          >
+            Central sleep apnea{"\n"}
+          </Text>
+          <Text>
             When your brain doesn't send proper signals to the muscles that
             control breathing
             {"\n"}
             {"\n"}
-            <Text style={{ fontWeight: "bold" }}>
-              Complex sleep apnea syndrome:{"\n"}
-            </Text>
+          </Text>
+          <Text
+            style={{
+              fontWeight: "bold",
+              textAlign: "center",
+              color: iOSColors.blue
+            }}
+          >
+            Complex sleep apnea syndrome
+          </Text>
+          <Text>
+            {"\n"}
             Known as treatment-emergent central sleep apnea, which occurs when
             someone has both obstructive sleep apnea and central sleep apnea
+            {"\n\n"}
+          </Text>
+          <Text style={styles.itemHeader}>Symptoms of Sleep Apnea</Text>
+
+          <Text style={{ fontSize: 14, padding: 15 }}>
             {"\n"}
-            {"\n"}
-            <Text style={{ color: "red", fontWeight: "bold" }}>
-              Symptoms of Sleep Apnea:
-            </Text>
-            {"\n"}
-            {"\n"}
-            <Text style={{ fontSize: 14 }}>
-              Headaches, tension headaches, stress headaches, migraines, lack of
-              energy, interrupted sleep patterns, obesity issues, anxiety,
-              hypertension, tiredness, snoring, soreness in the ears, clenching
-              of the jaw, TMJ problems, trigger point pain, insomnia, and
-              fatigue.
-            </Text>
-            {"\n"}
-            {"\n"}
+            Headaches, tension headaches, stress headaches, migraines, lack of
+            energy, interrupted sleep patterns, obesity issues, anxiety,
+            hypertension, tiredness, snoring, soreness in the ears, clenching of
+            the jaw, TMJ problems, trigger point pain, insomnia, and fatigue.
+          </Text>
+
+          <Text style={styles.itemPickText}>
             Hypertension (high blood pressure, eventually renal failure),
             diabetes, heart failure, and stroke are very common in people who
             suffer from sleep apnea.
-            {"\n"}
-            {"\n"}
-            <Text
-              style={{
-                color: "blue",
-                textAlign: "center",
-                fontWeight: "bold",
-                fontSize: "30",
-                paddingTop: 30
-              }}
-              onPress={() =>
-                Linking.openURL(
-                  "https://www.adcofnorton.com/Norton-Sleep-Apnea-Quiz.asp"
-                )
-              }
-            >
-              Click to take our Sleep Apnea Quiz
-            </Text>
+          </Text>
+          <Text
+            style={{
+              color: "blue",
+              textAlign: "center",
+              fontWeight: "bold",
+              fontSize: "30",
+              paddingTop: 30
+            }}
+            onPress={() =>
+              Linking.openURL(
+                "https://www.adcofnorton.com/Norton-Sleep-Apnea-Quiz.asp"
+              )
+            }
+          >
+            Click to take our Sleep Apnea Quiz
           </Text>
         </View>
       </View>
@@ -108,8 +115,9 @@ class SleepApnea extends Component {
 
 const styles = StyleSheet.create({
   itemPickText: {
-    color: "#000",
-    fontSize: 20
+    color: "#114260",
+    fontSize: 20,
+    padding: 15
   },
   itemPick: {
     textAlign: "center",
@@ -124,6 +132,13 @@ const styles = StyleSheet.create({
     width: "100%",
     height: hp("45%"),
     marginTop: 15
+  },
+  itemHeader: {
+    color: "#114260",
+    fontSize: 25,
+    fontWeight: "bold",
+    textAlign: "center",
+    backgroundColor: "#fcec01"
   }
 });
 
