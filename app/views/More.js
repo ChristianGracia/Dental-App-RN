@@ -59,7 +59,8 @@ class Contact extends Component {
       this.setState({
         patientReview: "",
         showOther: true,
-        showReview: false
+        showReview: false,
+        showForms: true
       });
       alert("Review Received!");
     } else {
@@ -82,7 +83,8 @@ class Contact extends Component {
       this.setState({
         patientSuggestion: "",
         showOther: true,
-        showSuggestion: false
+        showSuggestion: false,
+        showForms: true
       });
       alert("Suggestion Received!");
     } else {
@@ -111,22 +113,23 @@ class Contact extends Component {
                 ) : null}
                 {!this.state.showForms ? null : (
                   <View>
-                    <TouchableOpacity
-                      style={styles.buttonStyle}
-                      onPress={this.handleReview}
-                    >
-                      <Text style={styles.buttonText}>Anonymous Review</Text>
-                    </TouchableOpacity>
-                  </View>
-                )}
-                {!this.state.showForms ? null : (
-                  <View>
-                    <TouchableOpacity
-                      style={styles.buttonStyle}
-                      onPress={this.handleSuggestion}
-                    >
-                      <Text style={styles.buttonText}>App Suggestions</Text>
-                    </TouchableOpacity>
+                    <View>
+                      <TouchableOpacity
+                        style={styles.buttonStyle}
+                        onPress={this.handleReview}
+                      >
+                        <Text style={styles.buttonText}>Anonymous Review</Text>
+                      </TouchableOpacity>
+                    </View>
+
+                    <View>
+                      <TouchableOpacity
+                        style={styles.buttonStyle}
+                        onPress={this.handleSuggestion}
+                      >
+                        <Text style={styles.buttonText}>App Suggestions</Text>
+                      </TouchableOpacity>
+                    </View>
                   </View>
                 )}
                 <View style={{ marginBottom: 20 }}></View>
