@@ -4,6 +4,7 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp
 } from "react-native-responsive-screen";
+import { iOSColors } from "react-native-typography";
 
 class AestheticSpa extends Component {
   render() {
@@ -25,16 +26,15 @@ class AestheticSpa extends Component {
           of skilled nurses, we offer Botox, Dysport, and Dermal Fillers.
           {"\n"}
           {"\n"}
-          Many people confuse Botox with dermal fillers. Botulinum Toxin of
-          which there are three brands approved for cosmetic use in the US
-          {"(Botox, Dysport and Xeomin)"}, acts on the muscles that cause
-          specific lines. Botox is approved for the upper face, where dermal
-          fillers are used in the lower face, and directly fill by providing
-          volume. Botox works on muscles, like the forehead muscle to minimize
-          the lines that run across the forehead when you raise your brow.
-          {"\n\n"}Dermal fillers and Botulinum Toxin are commonly used in the
-          same appointment to achieve the goal of a more rested, more refreshed,
-          youthful appearance. {"\n\n"}
+          There are three brands approved for cosmetic use in the US
+          {" (Botox, Dysport and Xeomin). "}Botox works on muscles, like the
+          forehead muscle to minimize the lines that run across the forehead
+          when you raise your brow. Botox is approved for the upper face, where
+          dermal fillers are used in the lower face, and directly fill by
+          providing volume.
+          {"\n\n"}Dermal fillers and Botox are commonly used in the same
+          appointment to achieve the goal of a more rested, more refreshed,
+          youthful appearance.{"\n\n"}
         </Text>
 
         <Image
@@ -117,7 +117,7 @@ class AestheticSpa extends Component {
 
 const styles = StyleSheet.create({
   itemPickText: {
-    color: "#000",
+    color: "#114260",
     fontSize: 20,
     padding: 15
   },
@@ -138,7 +138,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#fcec01"
   },
   serviceList: {
-    color: "#114260",
+    color: iOSColors.blue,
     textAlign: "center",
     fontSize: 20,
     fontWeight: "bold",
