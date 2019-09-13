@@ -119,8 +119,9 @@ class Orthodontics extends Component {
 
 const styles = StyleSheet.create({
   itemPickText: {
-    color: "#000",
-    fontSize: 20
+    color: "#114260",
+    fontSize: 20,
+    alignItems: "center"
   },
   itemPick: {
     textAlign: "center",

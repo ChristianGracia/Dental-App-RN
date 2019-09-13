@@ -112,15 +112,14 @@ class Implants extends Component {
                 Dental implants might be right for you if...
               </Text>
               <Text style={styles.itemPickText}>
-                1{") "}Have one or more missing teeth {"\n"}2{") "}Have a
-                jawbone that's reached full growth {"\n"}3{") "}Have adequate
-                bone to secure the implants or are able to have a bone graft{" "}
-                {"\n"}4{") "}
-                Have healthy oral tissues {"\n"}5{") "}Don't have health
-                conditions that will affect bone healing {"\n"}6{") "}Are unable
-                or unwilling to wear dentures{"\n"}7{") "}Want to improve your
-                speech {"\n"}8{") "}Are willing to commit several months to the
-                process {"\n"}9{") "}Don't smoke tobacco{"\n"}
+                Have one or more missing teeth {"\n\n"}Have a jawbone that's
+                reached full growth {"\n\n"}Have adequate bone to secure the
+                implants or are able to have a bone graft {"\n\n"}
+                Have healthy oral tissues {"\n\n"}Don't have health conditions
+                that will affect bone healing {"\n\n"}Are unable or unwilling to
+                wear dentures{"\n\n"}Want to improve your speech {"\n\n"}Are
+                willing to commit several months to the process {"\n\n"}Don't
+                smoke tobacco{"\n"}
                 {"\n"}
                 {"\n"}
                 {"\n\n"}For some people, ordinary bridges and dentures are
@@ -254,13 +253,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1
   },
-  itemHeader: {
-    color: "#114260",
-    fontSize: 25,
-    fontWeight: "bold",
-    textAlign: "center",
-    backgroundColor: "#fcec01"
-  },
+
   itemPickText: {
     color: "#114260",
     fontSize: 20,
