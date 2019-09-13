@@ -207,7 +207,8 @@ class Contact extends Component {
                           showOther: true,
                           showReview: false,
                           showSuggestion: false,
-                          showTextFields: true
+                          showTextFields: true,
+                          showForms: true
                         })
                       }
                     >
