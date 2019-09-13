@@ -25,7 +25,8 @@ class Contact extends Component {
       showReview: false,
       showSuggestion: false,
       showTextFields: true,
-      patientReview: ""
+      patientReview: "",
+      showForms: true
     };
     this.handleReview = this.handleReview.bind(this);
   }
@@ -33,14 +34,16 @@ class Contact extends Component {
     this.setState({
       showTextFields: false,
       showReview: true,
-      showOther: false
+      showOther: false,
+      showForms: false
     });
   };
   handleSuggestion = e => {
     this.setState({
       showTextFields: false,
       showSuggestion: true,
-      showOther: false
+      showOther: false,
+      showForms: false
     });
   };
   onChangeReview = e => {
@@ -68,7 +71,8 @@ class Contact extends Component {
         patientReview: "",
         showOther: true,
         showReview: false,
-        showTextFields: true
+        showTextFields: true,
+        showForms: true
       });
       alert("Review Received!");
     } else {
@@ -92,7 +96,8 @@ class Contact extends Component {
         patientSuggestion: "",
         showOther: true,
         showSuggestion: false,
-        showTextFields: true
+        showTextFields: true,
+        showForms: true
       });
       alert("Suggestion Received!");
     } else {
@@ -218,7 +223,7 @@ class Contact extends Component {
                     </TouchableOpacity>
                   </View>
                 )}
-                {this.state.showDocs ? (
+                {this.state.showForms ? (
                   <View>
                     <Text style={styles.titleHeaders}>Forms</Text>
                     <Forms />
