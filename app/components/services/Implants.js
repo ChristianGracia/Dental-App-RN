@@ -49,7 +49,7 @@ class Implants extends Component {
                     "https://i1.wp.com/kentuckyperio.com/wp-content/uploads/2015/08/iStock-543979766-2.jpg?fit=2000%2C1500&ssl=1"
                 }}
               />
-
+              <View style={{ padding: 10 }}></View>
               <Text style={styles.itemHeader}>What are dental implants?</Text>
 
               <Text style={styles.itemPickText}>
@@ -112,23 +112,24 @@ class Implants extends Component {
                 Dental implants might be right for you if...
               </Text>
               <Text style={styles.itemPickText}>
-                Have one or more missing teeth {"\n\n"}Have a jawbone that's
-                reached full growth {"\n\n"}Have adequate bone to secure the
-                implants or are able to have a bone graft {"\n\n"}
-                Have healthy oral tissues {"\n\n"}Don't have health conditions
-                that will affect bone healing {"\n\n"}Are unable or unwilling to
-                wear dentures{"\n\n"}Want to improve your speech {"\n\n"}Are
-                willing to commit several months to the process {"\n\n"}Don't
-                smoke tobacco{"\n"}
-                {"\n"}
-                {"\n"}
-                {"\n\n"}For some people, ordinary bridges and dentures are
-                simply not comfortable or even possible, due to sore spots, poor
-                ridges or gagging. In addition, ordinary bridges must be
-                attached to teeth on either side of the space left by the
-                missing tooth. An advantage of implants is that no adjacent
-                teeth need to be prepared or ground down to hold your new
-                replacement tooth/teeth in place.
+                <Text style={{ color: iOSColors.blue }}>
+                  Have one or more missing teeth {"\n\n"}Have a jawbone that's
+                  reached full growth {"\n\n"}Have adequate bone to secure the
+                  implants or are able to have a bone graft {"\n\n"}
+                  Have healthy oral tissues {"\n\n"}Don't have health conditions
+                  that will affect bone healing {"\n\n"}Are unable or unwilling
+                  to wear dentures{"\n\n"}Want to improve your speech {"\n\n"}
+                  Are willing to commit several months to the process {"\n\n"}
+                  Don't smoke tobacco{"\n"}
+                </Text>
+                {"\n\n"}
+                For some people, ordinary bridges and dentures are simply not
+                comfortable or even possible, due to sore spots, poor ridges or
+                gagging. In addition, ordinary bridges must be attached to teeth
+                on either side of the space left by the missing tooth. An
+                advantage of implants is that no adjacent teeth need to be
+                prepared or ground down to hold your new replacement tooth/teeth
+                in place.
                 {"\n\n"}
               </Text>
               <Text style={styles.itemHeader}>How to prepare</Text>
