@@ -24,16 +24,24 @@ class Contact extends Component {
       showOther: true,
       showReview: false,
       showSuggestion: false,
-      showForms: true,
+      showTextFields: true,
       patientReview: ""
     };
     this.handleReview = this.handleReview.bind(this);
   }
   handleReview = e => {
-    this.setState({ showForms: false, showReview: true, showOther: false });
+    this.setState({
+      showTextFields: false,
+      showReview: true,
+      showOther: false
+    });
   };
   handleSuggestion = e => {
-    this.setState({ showForms: false, showSuggestion: true, showOther: false });
+    this.setState({
+      showTextFields: false,
+      showSuggestion: true,
+      showOther: false
+    });
   };
   onChangeReview = e => {
     this.setState({ patientReview: e.nativeEvent.text });
@@ -60,7 +68,7 @@ class Contact extends Component {
         patientReview: "",
         showOther: true,
         showReview: false,
-        showForms: true
+        showTextFields: true
       });
       alert("Review Received!");
     } else {
@@ -84,7 +92,7 @@ class Contact extends Component {
         patientSuggestion: "",
         showOther: true,
         showSuggestion: false,
-        showForms: true
+        showTextFields: true
       });
       alert("Suggestion Received!");
     } else {
@@ -106,12 +114,12 @@ class Contact extends Component {
               <View style={styles.headerSpacing} />
 
               <View style={styles.buttonContainer}>
-                {this.state.showForms ? (
+                {this.state.showTextFields ? (
                   <Text style={styles.titleHeaders}>
                     Tell us what you think!
                   </Text>
                 ) : null}
-                {!this.state.showForms ? null : (
+                {!this.state.showTextFields ? null : (
                   <View>
                     <View>
                       <TouchableOpacity
@@ -194,7 +202,7 @@ class Contact extends Component {
                           showOther: true,
                           showReview: false,
                           showSuggestion: false,
-                          showForms: true
+                          showTextFields: true
                         })
                       }
                     >
@@ -210,10 +218,12 @@ class Contact extends Component {
                     </TouchableOpacity>
                   </View>
                 )}
-                <View>
-                  <Text style={styles.titleHeaders}>Forms</Text>
-                  <Forms />
-                </View>
+                {this.state.showDocs ? (
+                  <View>
+                    <Text style={styles.titleHeaders}>Forms</Text>
+                    <Forms />
+                  </View>
+                ) : null}
               </View>
             </KeyboardAvoidingView>
           </KeyboardAwareScrollView>
