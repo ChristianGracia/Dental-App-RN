@@ -10,7 +10,7 @@ class Composites extends Component {
     return (
       <View>
         <Text style={styles.itemPick}>Composites</Text>
-        <View style={{ padding: 15 }}>
+        <View>
           <Image
             style={styles.imgSizer}
             resizeMode="contain"
@@ -54,8 +54,9 @@ class Composites extends Component {
 
 const styles = StyleSheet.create({
   itemPickText: {
-    color: "#000",
-    fontSize: 20
+    color: "#114260",
+    fontSize: 20,
+    padding: 15
   },
   itemPick: {
     textAlign: "center",
