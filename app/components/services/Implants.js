@@ -25,7 +25,7 @@ class Implants extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.itemPick}>Implants</Text>
-        <View style={{ padding: 15 }}>
+        <View>
           <View style={styles.buttonDiv}>
             <TouchableOpacity
               styles={styles.showButton}
@@ -51,9 +51,7 @@ class Implants extends Component {
               />
               <Text style={styles.itemPickText}>
                 {"\n"}
-                <Text style={{ fontWeight: "bold" }}>
-                  What are dental implants?
-                </Text>
+                <Text>What are dental implants?</Text>
                 {"\n\n"}
                 <Text>
                   Dental implants are metal posts or frames that are surgically
@@ -65,15 +63,20 @@ class Implants extends Component {
                   {"\n\n"}
                 </Text>
                 <Text style={{ fontWeight: "bold" }}>
-                  Types of dental implants we place:
+                  Types of dental implants
                 </Text>
                 <Text>
                   {"\n\n"}
-                  At Advanced Dental Care of Norton, we uses titanium or
-                  zirconia implants. Zirconia is used when a patient has a metal
-                  allergy and we are unable to use titanium. These implants are
-                  endosteal implants and they are the most commonly used type of
-                  implant.
+                  At Advanced Dental Care of Norton, we place titanium,
+                  zirconia, and zygomatic implants. Titanium and zirconia
+                  implants are endosteal implants and they are the most commonly
+                  used type of implant. Zirconia is used when a patient has a
+                  metal allergy and we are unable to use titanium. Zygoma
+                  implants are different from conventional dental implants in
+                  that they anchor in to the zygomatic bone rather than the
+                  maxilla. They may be used when maxillary bone quality or
+                  quantity is inadequate for the placement of regular dental
+                  implants
                   {"\n\n"}
                 </Text>
                 <Text style={{ fontWeight: "bold" }}>
@@ -315,9 +318,10 @@ const styles = StyleSheet.create({
     backgroundColor: "#fcec01"
   },
   itemPickText: {
-    color: "#000",
+    color: "#114260",
     fontSize: 20,
-    alignItems: "center"
+    alignItems: "center",
+    padding: 15
   },
   itemPick: {
     textAlign: "center",
@@ -350,6 +354,13 @@ const styles = StyleSheet.create({
     width: "100%",
     height: hp("45%"),
     marginTop: 15
+  },
+  itemHeader: {
+    color: "#114260",
+    fontSize: 25,
+    fontWeight: "bold",
+    textAlign: "center",
+    backgroundColor: "#fcec01"
   }
 });
 

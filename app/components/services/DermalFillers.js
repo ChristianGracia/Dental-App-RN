@@ -22,7 +22,7 @@ class DermalFillers extends Component {
           />
 
           <Text style={styles.itemPickText}>
-            {"\n\n"}
+            {"\n"}
             Juvederm is a cosmetic treatment referred to as a filler. It’s used
             to restore facial contours and improve signs of aging. It’s an
             injectable dermal filler with a base of hyaluronic acid. {"\n\n"}
