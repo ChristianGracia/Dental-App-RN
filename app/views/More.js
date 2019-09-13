@@ -58,7 +58,7 @@ class Contact extends Component {
       });
       this.setState({
         patientReview: "",
-
+        showOther: true,
         showReview: false
       });
       alert("Review Received!");
@@ -81,7 +81,7 @@ class Contact extends Component {
       });
       this.setState({
         patientSuggestion: "",
-
+        showOther: true,
         showSuggestion: false
       });
       alert("Suggestion Received!");
@@ -179,12 +179,7 @@ class Contact extends Component {
                   </View>
                 ) : null}
 
-                {this.state.showOther ? (
-                  <View>
-                    <Text style={styles.titleHeaders}>Forms</Text>
-                    <Forms />
-                  </View>
-                ) : (
+                {this.state.showOther ? null : (
                   <View>
                     <TouchableOpacity
                       style={{
@@ -212,6 +207,10 @@ class Contact extends Component {
                     </TouchableOpacity>
                   </View>
                 )}
+                <View>
+                  <Text style={styles.titleHeaders}>Forms</Text>
+                  <Forms />
+                </View>
               </View>
             </KeyboardAvoidingView>
           </KeyboardAwareScrollView>
