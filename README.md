@@ -19,15 +19,15 @@ being made for www.adcofnorton.com
 
 ## Screenshots
 
-### Home
+# Home
 
 ![ScreenShot](https://user-images.githubusercontent.com/42984214/64983893-96985780-d88f-11e9-9ad5-61490af4d474.png)
 
-### Services
+# Services
 
 ![ScreenShot](https://user-images.githubusercontent.com/42984214/64983892-95672a80-d88f-11e9-811e-1711c5870bb0.png)
 
-### More
+# More
 
 ![ScreenShot](https://user-images.githubusercontent.com/42984214/64983895-97c98480-d88f-11e9-9246-f0ac636ab4a2.png)
 
