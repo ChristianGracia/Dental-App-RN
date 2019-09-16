@@ -22,7 +22,7 @@ class Botox extends Component {
           <Text style={styles.itemPickText}>
             Botox injections use a toxin called onobotulinumtoxinA to
             temporarily prevent a muscle from moving. Botox injections are not
-            only reduce the appearance of facial wrinkles, botox can also used
+            only reduce the appearance of facial wrinkles, but can also be used
             to treat conditions such as neck spasms (cervical dystonia),
             excessive sweating (hyperhidrosis), overactive bladder, lazy eye,
             and can help prevent chronic migraines.
