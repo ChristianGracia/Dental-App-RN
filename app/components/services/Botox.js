@@ -16,7 +16,7 @@ class Botox extends Component {
             resizeMode="contain"
             source={{
               uri:
-                "https://www.tidewaterskincare.com/wp-content/uploads/2018/03/Botox-1.jpg"
+                "https://mayoclinichealthsystem.org/-/media/national-files/images/hometown-health/2019/womans-face-after-botox.jpg?h=370&w=660&la=en&hash=91A1B0D074D1A652072B03255E89D015"
             }}
           />
           <Text style={styles.itemPickText}>
