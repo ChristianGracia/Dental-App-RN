@@ -35,7 +35,22 @@ class Bleaching extends Component {
           </Text>
 
           <Text style={styles.bleachHeader}>Glo</Text>
-          <Text style={styles.itemPickText}>
+          <Image
+            style={styles.imgSizer}
+            resizeMode="contain"
+            source={{
+              uri:
+                "https://cdn.shopify.com/s/files/1/0578/0981/products/GloPro_TakeHomeKit_WithComponents_NEW_BOX_NewGvials_1024x1024@2x.jpg?v=1554404856"
+            }}
+          />
+          <Text
+            style={{
+              ...styles.itemPickText,
+              textAlign: "center",
+              fontWeight: "bold"
+            }}
+          >
+            {"\n\n"}
             Our most powerful whitener!{"\n\n"}
           </Text>
 
