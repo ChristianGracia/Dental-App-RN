@@ -16,8 +16,8 @@ import {
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { SafeAreaView } from "react-navigation";
 import { TouchableOpacity } from "react-native-gesture-handler";
-import Directions from "../components/Directions";
-import Phone from "../components/Phone";
+import Directions from "../components/general/Directions";
+import Phone from "../components/general/Phone";
 
 class Home extends Component {
   constructor(props) {

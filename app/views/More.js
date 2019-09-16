@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Forms from "../components/Forms";
+import Forms from "../components/general/Forms";
 import {
   View,
   TouchableOpacity,
