@@ -50,8 +50,33 @@ class Bleaching extends Component {
               fontWeight: "bold"
             }}
           >
-            {"\n\n"}
-            Our most powerful whitener!{"\n\n"}
+            Our most powerful whitener!
+          </Text>
+          <Text style={styles.itemPickText}>
+            Glo in-office whitening treament, combines pro heat and blue LED
+            light for fast, visible whitening results without sensitivity. Glo's
+            whitening agent is hydrogren peroxide and is available in different
+            strengths to meet our patient's individual needs. Light and heat in
+            the closed system mouthpiece accelerates the reaction rate of the
+            whitening gel, producing more whitening oxygens over a shorter
+            period of time.
+          </Text>
+          <Image
+            style={styles.imgSizer}
+            resizeMode="contain"
+            source={{
+              uri:
+                "https://cdn.shopify.com/s/files/1/0578/0981/files/EE10D50E-A442-498D-9043-26CB8D6A95B9.png?v=1535131331"
+            }}
+          />
+          <Text
+            style={{
+              ...styles.itemPickText,
+              textAlign: "center",
+              fontWeight: "bold"
+            }}
+          >
+            Noticable results in just one treatment!
           </Text>
 
           <Text style={styles.bleachHeader}>Sheer White Strips</Text>
@@ -63,9 +88,19 @@ class Bleaching extends Component {
                 "http://cdn.shopify.com/s/files/1/0725/9041/products/sheer_white_600x.jpeg?v=1527097490"
             }}
           />
+          <Text
+            style={{
+              ...styles.itemPickText,
+              textAlign: "center",
+              fontWeight: "bold"
+            }}
+          >
+            For our patients that want to whiten their teeth at home...
+          </Text>
           <Text style={styles.itemPickText}>
-            Sheer White Whitening Strips are teeth whitening strips that are
-            worn for just 1-2 hours and acheive noticable whitening results.
+            Sheer White Whitening Strips are teeth whitening strips made with
+            20% Carbamide Peroxide that are worn for just 1-2 hours and acheive
+            noticable whitening results.{"\n\n"}
           </Text>
 
           <Text style={styles.itemHeader}>No impressions needed!</Text>
@@ -77,8 +112,6 @@ class Bleaching extends Component {
             Not only are they comfortable to wear during any activity, including
             talking or drinking cold beverages, but they also cause little or no
             sensitivity!
-            {"\n\n"}These white strips made with 20% Carbamide Peroxide can
-            usually make your teeth about 5 shades lighter in just 5 days!
           </Text>
           <Image
             style={styles.imgSizer}
