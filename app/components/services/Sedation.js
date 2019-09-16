@@ -20,8 +20,12 @@ class Sedation extends Component {
             }}
           />
           <Text style={styles.itemPickText}>
-            At Advanced Dental Care of Norton we offered in-house oral and IV
-            sedation.
+            At Advanced Dental Care of Norton we a few different types of
+            sedation available to allow our patient's to relax or feel more
+            comfortable during our procedures.{"\n\n"}
+            Whether you are having an extensive full mouth rehabilitation
+            surgery or just experience dental-phobia sedation can be used to
+            make the procedure stress free
           </Text>
         </View>
       </View>
