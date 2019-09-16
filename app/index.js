@@ -10,7 +10,8 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import {
   faPhone,
   faEnvelope,
-  faMapMarkerAlt
+  faMapMarkerAlt,
+  faArrowAltCircleRight
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(fab, faPhone, faEnvelope, faMapMarkerAlt);

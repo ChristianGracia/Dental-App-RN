@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { View, Text, Image, StyleSheet, Linking } from "react-native";
 import { iOSColors } from "react-native-typography";
+import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp
@@ -22,7 +23,6 @@ class SleepApnea extends Component {
           />
           <Text style={styles.itemPickText}>
             {"\n"}
-            {"\n"}
             Sleep apnea is an extremely serious condition that causes a person
             to wake up constantly throughout the night from respiratory
             disturbances like sleep apnea (when you stop breathing).
@@ -43,8 +43,9 @@ class SleepApnea extends Component {
           >
             {"\n"}Obstructive sleep apnea{"\n"}
           </Text>
-          <Text>
-            More common form that occurs when throat muscles relax{"\n"}
+          <Text style={{ padding: 15 }}>
+            More common form of sleep apnea that occurs when throat muscles
+            relax
           </Text>
           <Text
             style={{
@@ -55,11 +56,9 @@ class SleepApnea extends Component {
           >
             Central sleep apnea{"\n"}
           </Text>
-          <Text>
+          <Text style={{ padding: 15 }}>
             When your brain doesn't send proper signals to the muscles that
             control breathing
-            {"\n"}
-            {"\n"}
           </Text>
           <Text
             style={{
@@ -70,11 +69,10 @@ class SleepApnea extends Component {
           >
             Complex sleep apnea syndrome
           </Text>
-          <Text>
+          <Text style={{ padding: 15 }}>
             {"\n"}
             Known as treatment-emergent central sleep apnea, which occurs when
             someone has both obstructive sleep apnea and central sleep apnea
-            {"\n\n"}
           </Text>
           <Text style={styles.itemHeader}>Symptoms of Sleep Apnea</Text>
 
@@ -105,7 +103,12 @@ class SleepApnea extends Component {
               )
             }
           >
-            Click to take our Sleep Apnea Quiz
+            Click for Sleep Apnea Quiz{" "}
+            <FontAwesomeIcon
+              icon="arrow-alt-circle-right"
+              color="#114260"
+              size={20}
+            />
           </Text>
         </View>
       </View>

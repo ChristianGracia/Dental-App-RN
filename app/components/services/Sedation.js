@@ -19,7 +19,10 @@ class Sedation extends Component {
                 "https://d11upr8lrcn9x7.cloudfront.net/www.aspenwooddental.com/s3fs-public/sedation-dentistry-infographic.jpg"
             }}
           />
-          <Text style={styles.itemPickText}>Sedation text goes here</Text>
+          <Text style={styles.itemPickText}>
+            At Advanced Dental Care of Norton we offered in-house oral and IV
+            sedation.
+          </Text>
         </View>
       </View>
     );
