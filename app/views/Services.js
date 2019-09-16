@@ -21,7 +21,6 @@ import Composites from "../components/services/Composites";
 import Crowns from "../components/services/Crowns";
 import Dentures from "../components/services/Dentures";
 import DermalFillers from "../components/services/DermalFillers";
-import Dysport from "../components/services/Dysport";
 import Implants from "../components/services/Implants";
 import Orthodontics from "../components/services/Orthodontics";
 import Partials from "../components/services/Partials";
@@ -48,7 +47,6 @@ class Services extends React.Component {
       showComposites: false,
       showCrowns: false,
       showDentures: false,
-      showDysport: false,
       showDermalFillers: false,
       showImplants: false,
       showOrthodontics: false,
@@ -101,9 +99,6 @@ class Services extends React.Component {
     if (item.key == "Dermal Fillers") {
       this.setState({ showDermalFillers: true });
     }
-    if (item.key == "Dysport") {
-      this.setState({ showDysport: true });
-    }
     if (item.key == "Implants") {
       this.setState({ showImplants: true });
     }
@@ -144,7 +139,6 @@ class Services extends React.Component {
       showCrowns: false,
       showDentures: false,
       showDermalFillers: false,
-      showDysport: false,
       showImplants: false,
       showOrthodontics: false,
       showPartials: false,
@@ -189,7 +183,6 @@ class Services extends React.Component {
                   { key: "Crowns" },
                   { key: "Dentures" },
                   { key: "Dermal Fillers" },
-                  { key: "Dysport" },
                   { key: "Implants" },
                   { key: "Orthodontics" },
                   { key: "Partial Dentures" },
@@ -231,7 +224,6 @@ class Services extends React.Component {
             {this.state.showCrowns ? <Crowns /> : null}
             {this.state.showDentures ? <Dentures /> : null}
             {this.state.showDermalFillers ? <DermalFillers /> : null}
-            {this.state.showDysport ? <Dysport /> : null}
             {this.state.showImplants ? <Implants /> : null}
             {this.state.showOrthodontics ? <Orthodontics /> : null}
             {this.state.showPartials ? <Partials /> : null}
