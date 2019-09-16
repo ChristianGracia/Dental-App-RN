@@ -33,21 +33,47 @@ class Bleaching extends Component {
             {"\n"}Currently we offer two solutions to patients that want white
             their teeth.
           </Text>
-          <View style={{ textAlign: "center", alignItems: "center" }}>
-            <Text style={styles.bleachHeader}>Glo</Text>
-            <Text style={styles.bleachHeader}>Sheer White Strips</Text>
-            <Text style={styles.itemPickText}>
-              Sheer White Whitening Strips are teeth whitening strips that are
-              worn for just 1-2 hours and acheive noticable whitening results.
-              {"\n\n"}
-              These strips stick and mold perfectly to the teeth, becoming
-              almost invisible. Not only are they comfortable to wear during any
-              activity, including talking or drinking cold beverages, but they
-              also cause little or no sensitivity!
-              {"\n\n"}These white strips can usually make your teeth about 5
-              shades lighter in just 5 days!
-            </Text>
-          </View>
+
+          <Text style={styles.bleachHeader}>Glo</Text>
+          <Text style={styles.itemPickText}>
+            Our most powerful whitener!{"\n\n"}
+          </Text>
+
+          <Text style={styles.bleachHeader}>Sheer White Strips</Text>
+          <Image
+            style={styles.imgSizer}
+            resizeMode="contain"
+            source={{
+              uri:
+                "http://cdn.shopify.com/s/files/1/0725/9041/products/sheer_white_600x.jpeg?v=1527097490"
+            }}
+          />
+          <Text style={styles.itemPickText}>
+            Sheer White Whitening Strips are teeth whitening strips that are
+            worn for just 1-2 hours and acheive noticable whitening results.
+          </Text>
+
+          <Text style={styles.itemHeader}>No impressions needed!</Text>
+
+          <Text style={styles.itemPickText}>
+            These strips stick and mold perfectly to the teeth, becoming almost
+            invisible.
+            {"\n\n"}
+            Not only are they comfortable to wear during any activity, including
+            talking or drinking cold beverages, but they also cause little or no
+            sensitivity!
+            {"\n\n"}These white strips made with 20% Carbamide Peroxide can
+            usually make your teeth about 5 shades lighter in just 5 days!
+          </Text>
+          <Image
+            style={styles.imgSizer}
+            resizeMode="contain"
+            source={{
+              uri:
+                "https://sleepsugar.com/wp-content/uploads/2017/01/Woman-placing-whitening-strip-on-top-teeth.jpg"
+            }}
+          />
+
           <Text style={styles.itemHeader}>How to use</Text>
           <Text style={styles.itemPickText}>
             • Open package, whitening formula is face up.
@@ -98,7 +124,9 @@ const styles = StyleSheet.create({
   bleachHeader: {
     color: iOSColors.blue,
     fontSize: 30,
-    fontWeight: "bold"
+    fontWeight: "bold",
+    textAlign: "center",
+    alignItems: "center"
   }
 });
 
