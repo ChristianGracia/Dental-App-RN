@@ -6,7 +6,6 @@ import { createStore } from "redux";
 import rootReducer from "./reducers/rootReducer";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { fab } from "@fortawesome/free-brands-svg-icons";
 import {
   faPhone,
   faEnvelope,
@@ -14,7 +13,7 @@ import {
   faArrowAltCircleRight
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(fab, faPhone, faEnvelope, faMapMarkerAlt, faArrowAltCircleRight);
+library.add(faPhone, faEnvelope, faMapMarkerAlt, faArrowAltCircleRight);
 
 //remove warnings during dev
 console.disableYellowBox = true;
