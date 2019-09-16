@@ -91,11 +91,12 @@ class SleepApnea extends Component {
           </Text>
           <Text
             style={{
-              color: "blue",
+              color: "#114260",
               textAlign: "center",
               fontWeight: "bold",
               fontSize: "30",
-              paddingTop: 30
+              marginTop: 30,
+              backgroundColor: "#fcec01"
             }}
             onPress={() =>
               Linking.openURL(
@@ -103,11 +104,11 @@ class SleepApnea extends Component {
               )
             }
           >
-            Click for Sleep Apnea Quiz{" "}
+            Sleep Apnea Quiz{" "}
             <FontAwesomeIcon
               icon="arrow-alt-circle-right"
-              color="#114260"
-              size={20}
+              color={iOSColors.blue}
+              size={30}
             />
           </Text>
         </View>

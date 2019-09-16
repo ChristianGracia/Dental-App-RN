@@ -14,7 +14,7 @@ import {
   faArrowAltCircleRight
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(fab, faPhone, faEnvelope, faMapMarkerAlt);
+library.add(fab, faPhone, faEnvelope, faMapMarkerAlt, faArrowAltCircleRight);
 
 //remove warnings during dev
 console.disableYellowBox = true;
