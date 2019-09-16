@@ -17,19 +17,11 @@ being made for www.adcofnorton.com
 - opens links to consent forms to be emailed
 - looks good on all mobile devices
 
-## Todo
+## Screenshots
 
-- integrate paypal
-- maybe add more forms, fill out a few more services, style service components
-
-then get on app store
-
-I work on this app for a few hours a week for a dental office and will be getting this app eventually
-to the Apple and Android app store for the patients of the office to use.
-
-This app already displays a ton information related to procedures that can be done at the office such as implants, crowns, root canals, botox, sleep apnea tests, etc.
-
-until its on the app store you have to use expo to view
+![ScreenShot](https://user-images.githubusercontent.com/42984214/64983893-96985780-d88f-11e9-9ad5-61490af4d474.png)
+![ScreenShot](https://user-images.githubusercontent.com/42984214/64983892-95672a80-d88f-11e9-811e-1711c5870bb0.png)
+![ScreenShot](https://user-images.githubusercontent.com/42984214/64983895-97c98480-d88f-11e9-9246-f0ac636ab4a2.png)
 
 ## Installation
 
