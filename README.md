@@ -6,6 +6,11 @@ This repo contains a React Native application that works on all iOS or Android m
 
 being made for www.adcofnorton.com
 
+## v1.0.0 complete
+
+Going through the process of getting it on the app store now
+Will add more features after first release
+
 ## Current Features
 
 - displays tons of information about dental procedures,
