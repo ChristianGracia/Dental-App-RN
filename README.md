@@ -1,6 +1,6 @@
 # Advanced Dental Care of Norton App
 
-10,000+ lines of code
+11,000+ lines of code
 
 This repo contains a React Native application that works on all iOS or Android mobile devices.
 
