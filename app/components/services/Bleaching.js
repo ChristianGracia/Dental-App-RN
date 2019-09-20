@@ -117,8 +117,7 @@ class Bleaching extends Component {
             style={styles.imgSizer}
             resizeMode="contain"
             source={{
-              uri:
-                "https://sleepsugar.com/wp-content/uploads/2017/01/Woman-placing-whitening-strip-on-top-teeth.jpg"
+              uri: "https://www.authoritydental.org/img/whitenig-strips.jpg"
             }}
           />
 
