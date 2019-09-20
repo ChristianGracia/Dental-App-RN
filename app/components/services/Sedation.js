@@ -10,23 +10,27 @@ class Sedation extends Component {
     return (
       <View>
         <Text style={styles.itemPick}>Sedation</Text>
-        <View style={{ padding: 15 }}>
-          <Image
-            style={styles.imgSizer}
-            resizeMode="contain"
-            source={{
-              uri:
-                "https://d11upr8lrcn9x7.cloudfront.net/www.aspenwooddental.com/s3fs-public/sedation-dentistry-infographic.jpg"
-            }}
-          />
+        <View style={{}}>
           <Text style={styles.itemPickText}>
             At Advanced Dental Care of Norton we a few different types of
             sedation available to allow our patient's to relax or feel more
             comfortable during our procedures.{"\n\n"}
             Whether you are having an extensive full mouth rehabilitation
             surgery or just experience dental-phobia sedation can be used to
-            make the procedure stress free
+            make the procedure stress free.
           </Text>
+          <Text style={styles.itemPickText}>
+            We offer nitrous oxide (laughing gas), IV, oral concious, and deep
+            sedation to help even our most anxious patients!
+          </Text>
+          <Image
+            style={styles.imgSizer}
+            resizeMode="cover"
+            source={{
+              uri:
+                "https://live.staticflickr.com/4846/45006886305_6dcec4ba65_b.jpg"
+            }}
+          />
         </View>
       </View>
     );
@@ -35,8 +39,9 @@ class Sedation extends Component {
 
 const styles = StyleSheet.create({
   itemPickText: {
-    color: "#000",
-    fontSize: 20
+    color: "#114260",
+    fontSize: 20,
+    padding: 15
   },
   itemPick: {
     textAlign: "center",
@@ -48,8 +53,8 @@ const styles = StyleSheet.create({
     marginBottom: 10
   },
   imgSizer: {
-    width: "100%",
-    height: hp("45%"),
+    width: wp("100%"),
+    height: hp("70%"),
     marginTop: 15
   },
   itemHeader: {

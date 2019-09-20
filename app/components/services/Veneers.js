@@ -15,12 +15,11 @@ class Veneers extends Component {
             style={styles.imgSizer}
             source={{
               uri:
-                "https://www.dentalhealth.org/GetImage.aspx?IDMF=f95a3006-fe99-4190-9d4c-67d97e9c347f&w=400&h=549&src=mc"
+                "https://live.staticflickr.com/6177/6204514757_2066682132.jpg"
             }}
             resizeMode="contain"
           />
           <Text style={styles.itemPickText}>
-            {"\n"}
             Veneers are a thin layer of porcelain/composite material that is
             designed to fit over the front surface of a tooth.
             {"\n"}
