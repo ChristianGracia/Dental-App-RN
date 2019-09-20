@@ -16,16 +16,18 @@ class Botox extends Component {
             resizeMode="contain"
             source={{
               uri:
-                "https://mayoclinichealthsystem.org/-/media/national-files/images/hometown-health/2019/womans-face-after-botox.jpg?h=370&w=660&la=en&hash=91A1B0D074D1A652072B03255E89D015"
+                "https://live.staticflickr.com/8112/8657527278_292bae0920.jpg"
             }}
           />
           <Text style={styles.itemPickText}>
-            Botox injections use a toxin called onobotulinumtoxinA to
-            temporarily prevent a muscle from moving. Botox injections are not
-            only reduce the appearance of facial wrinkles, but can also be used
-            to treat conditions such as neck spasms (cervical dystonia),
-            excessive sweating (hyperhidrosis), overactive bladder, lazy eye,
-            and can help prevent chronic migraines.
+            {"\n"}
+            Botox injections use onobotulinumtoxinA to temporarily prevent a
+            muscle from moving.
+            {"\n\n"}Botox injections are not only used to reduce the appearance
+            of facial wrinkles, but can also be used to treat conditions such as
+            neck spasms (cervical dystonia), excessive sweating (hyperhidrosis),
+            overactive bladder, lazy eye, and can help prevent chronic
+            migraines.
             {"\n\n"}Compared to Dysport, the effects of Dysport may show up
             sooner, but Botox may last longer.
           </Text>

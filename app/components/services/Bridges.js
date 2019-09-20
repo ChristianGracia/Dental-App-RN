@@ -16,8 +16,7 @@ class Bridges extends Component {
             style={styles.imgSizer}
             resizeMode="contain"
             source={{
-              uri:
-                "https://westcoastinternational.com/wp-content/uploads/2018/05/dental-bridges.jpg"
+              uri: "https://www.authoritydental.org/img/dental-bridge.jpg"
             }}
           />
           <Text style={styles.itemPickText}>
