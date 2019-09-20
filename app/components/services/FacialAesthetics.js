@@ -34,7 +34,7 @@ class AestheticSpa extends Component {
           providing volume.
           {"\n\n"}Dermal fillers and Botox are commonly used in the same
           appointment to achieve the goal of a more rested, more refreshed,
-          youthful appearance.{"\n\n"}
+          youthful appearance.
         </Text>
 
         <Image
@@ -42,7 +42,7 @@ class AestheticSpa extends Component {
           resizeMode="contain"
           source={{
             uri:
-              "https://irp-cdn.multiscreensite.com/aa812790/dms3rep/multi/mobile/BotoxFillersInfographic-4-1-1024x589.jpg"
+              "https://cdn.pixabay.com/photo/2017/05/24/19/27/skin-2341354_960_720.jpg"
           }}
         />
 
