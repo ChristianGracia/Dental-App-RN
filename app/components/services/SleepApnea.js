@@ -18,7 +18,7 @@ class SleepApnea extends Component {
             resizeMode="contain"
             source={{
               uri:
-                "https://cdn.foreversites.com/assets/img/infographics/Sleep-Apnea-Infographic-cropped.png"
+                "https://www.mayoclinic.org/-/media/kcms/gbs/patient-consumer/images/2013/08/26/10/40/sl7_sleep_apnea-8col.jpg"
             }}
           />
           <Text style={styles.itemPickText}>

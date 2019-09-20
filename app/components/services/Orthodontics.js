@@ -16,7 +16,7 @@ class Orthodontics extends Component {
             resizeMode="contain"
             source={{
               uri:
-                "https://www.readersdigest.ca/wp-content/uploads/sites/14/2010/10/does-your-child-really-need-braces-1200x1200.jpg"
+                "https://images.pexels.com/photos/2252154/pexels-photo-2252154.jpeg?cs=srgb&dl=braces-brackets-close-up-2252154.jpg&fm=jpg"
             }}
           />
           <Text style={styles.itemPickText}>

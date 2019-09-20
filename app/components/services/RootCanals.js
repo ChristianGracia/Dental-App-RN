@@ -16,7 +16,7 @@ class RootCanals extends Component {
             resizeMode="contain"
             source={{
               uri:
-                "http://icondentalsf.com/wp-content/uploads/2019/01/rct-before-after.jpg"
+                "https://upload.wikimedia.org/wikipedia/commons/9/93/Blausen_0774_RootCanal.png"
             }}
           />
           <Text style={styles.itemPickText}>
