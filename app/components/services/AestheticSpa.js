@@ -10,7 +10,7 @@ class AestheticSpa extends Component {
   render() {
     return (
       <View>
-        <Text style={styles.itemPick}>Facial Aesthetics</Text>
+        <Text style={styles.itemPick}>Aesthetic Spa</Text>
 
         <Image
           style={styles.imgSizer}

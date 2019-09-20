@@ -13,7 +13,7 @@ import {
   heightPercentageToDP as hp
 } from "react-native-responsive-screen";
 
-import FacialAesthetics from "../components/services/FacialAesthetics";
+import AestheticSpa from "../components/services/AestheticSpa";
 import Bleaching from "../components/services/Bleaching";
 import Botox from "../components/services/Botox";
 import Bridges from "../components/services/Bridges";
@@ -40,7 +40,7 @@ class Services extends React.Component {
       showClick: true,
       showTitle: true,
 
-      showFacialAesthetics: false,
+      showAestheticSpa: false,
       showBleaching: false,
       showBotox: false,
       showBridges: false,
@@ -71,8 +71,8 @@ class Services extends React.Component {
     this.refs._scrollView.scrollTo({ y: 0, animated: true });
 
     //item condition
-    if (item.key == "Facial Aesthetics") {
-      this.setState({ showFacialAesthetics: true });
+    if (item.key == "Aesthetic Spa") {
+      this.setState({ showAestheticSpa: true });
     }
     if (item.key == "Bleaching") {
       this.setState({ showBleaching: true });
@@ -131,7 +131,7 @@ class Services extends React.Component {
 
     //reset
     this.setState({
-      showFacialAesthetics: false,
+      showAestheticSpa: false,
       showBleaching: false,
       showBotox: false,
       showBridges: false,
@@ -175,7 +175,7 @@ class Services extends React.Component {
               <FlatList
                 style={styles.flatList}
                 data={[
-                  { key: "Facial Aesthetics" },
+                  { key: "Aesthetic Spa" },
                   { key: "Bleaching" },
                   { key: "Botox" },
                   { key: "Bridges" },
@@ -216,7 +216,7 @@ class Services extends React.Component {
             </View>
 
             {/* Show Service Component */}
-            {this.state.showFacialAesthetics ? <FacialAesthetics /> : null}
+            {this.state.showAestheticSpa ? <AestheticSpa /> : null}
             {this.state.showBleaching ? <Bleaching /> : null}
             {this.state.showBotox ? <Botox /> : null}
             {this.state.showBridges ? <Bridges /> : null}
