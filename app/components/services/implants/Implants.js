@@ -320,8 +320,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: iOSColors.blue,
     fontSize: 20
-  },
-  showButton: {}
+  }
 });
 
 export default Implants;
