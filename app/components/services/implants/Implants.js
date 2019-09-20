@@ -27,15 +27,30 @@ class Implants extends Component {
         <Text style={styles.itemPick}>Implants</Text>
         <View>
           <View style={styles.buttonDiv}>
-            <TouchableOpacity
-              styles={styles.showButton}
-              onPress={() => this.showButton()}
-            >
+            <TouchableOpacity style={{}} onPress={() => this.showButton()}>
               {this.state.showProcedures ? (
-                <Text style={styles.buttonText}>Hide Implant Procedures</Text>
+                <Text
+                  style={{
+                    ...styles.buttonText,
+                    paddingLeft: 5,
+                    paddingRight: 5,
+                    backgroundColor: "#114260"
+                  }}
+                >
+                  Hide Implant Procedures
+                </Text>
               ) : null}
               {!this.state.showProcedures ? (
-                <Text style={styles.buttonText}>Show Implant Procedures</Text>
+                <Text
+                  style={{
+                    ...styles.buttonText,
+                    paddingLeft: 5,
+                    paddingRight: 5,
+                    backgroundColor: "#114260"
+                  }}
+                >
+                  Show Implant Procedures
+                </Text>
               ) : null}
             </TouchableOpacity>
           </View>
@@ -46,7 +61,7 @@ class Implants extends Component {
                 resizeMode="contain"
                 source={{
                   uri:
-                    "https://i1.wp.com/kentuckyperio.com/wp-content/uploads/2015/08/iStock-543979766-2.jpg?fit=2000%2C1500&ssl=1"
+                    "https://www.authoritydental.org/img/titanium-vs-zirconia-dental-implants.jpg"
                 }}
               />
               <View style={{ padding: 10 }}></View>
@@ -305,7 +320,8 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: iOSColors.blue,
     fontSize: 20
-  }
+  },
+  showButton: {}
 });
 
 export default Implants;

@@ -16,8 +16,7 @@ class Dentures extends Component {
             style={styles.imgSizer}
             resizeMode="contain"
             source={{
-              uri:
-                "https://media.istockphoto.com/photos/-picture-id149154378?k=6&m=149154378&s=612x612&w=0&h=SRNcXobWE2UkF3tSBdO5dqiiAbElkiMGfKqBZXg94BE="
+              uri: "https://www.authoritydental.org/img/dentures-1080.jpg"
             }}
           />
           <Text style={styles.itemPickText}>

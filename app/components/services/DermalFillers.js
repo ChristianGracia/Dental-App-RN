@@ -17,7 +17,7 @@ class DermalFillers extends Component {
             resizeMode="contain"
             source={{
               uri:
-                "http://www.goenerplex.com/wp-content/uploads/2019/03/Dermal-Fillers-1024x609-673x400.jpg"
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Beautiful_lips.jpg/360px-Beautiful_lips.jpg"
             }}
           />
 
