@@ -17,8 +17,7 @@ class Crowns extends Component {
             style={styles.imgSizer}
             resizeMode="contain"
             source={{
-              uri:
-                "https://www.news-medical.net/image.axd?picture=2017%2F8%2Fshutterstock_611274782.jpg"
+              uri: "https://www.authoritydental.org/img/tooth-crown.jpg"
             }}
           />
           <Text style={styles.itemPickText}>

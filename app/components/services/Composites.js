@@ -16,7 +16,7 @@ class Composites extends Component {
             resizeMode="contain"
             source={{
               uri:
-                "https://completedentalhealthmi.com/wp-content/uploads/2019/05/white-filling-vs-silver-filling.png"
+                "https://upload.wikimedia.org/wikipedia/commons/8/8c/Polymerisationslampe_an_20090930_03.JPG"
             }}
           />
           <Text style={styles.itemPickText}>
