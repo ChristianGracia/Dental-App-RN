@@ -6,10 +6,15 @@ This repo contains a React Native application that works on all iOS or Android m
 
 being made for www.adcofnorton.com
 
+vid - https://twitter.com/CG_CODING/status/1173662545464451075?s=20
+
 ## v1.0.0 complete
 
 Going through the process of getting it on the app store now
 Will add more features after first release
+
+NEED A MAC WITH XCODE TO PROGRESS FURTHER
+WILL HAPPEN SEEN
 
 ## Current Features
 
