@@ -10,7 +10,8 @@ export default class Directions extends Component {
         onPress={() => Linking.openURL(`tel:5086228777`)}
       >
         <Text style={styles.buttonText}>
-          Call us <FontAwesomeIcon icon="phone" color="#114260" size={20} />
+          Call us 
+          {/* <FontAwesomeIcon icon="phone" color="#114260" size={20} /> */}
         </Text>
       </TouchableOpacity>
     );

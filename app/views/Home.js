@@ -212,11 +212,9 @@ class Home extends Component {
                     >
                       <Text style={styles.buttonText}>
                         Email us{" "}
-                        <FontAwesomeIcon
-                          icon="envelope"
-                          color="#114260"
+                        {/* <FontAwesomeIcon icon="envelope" color="#114260"
                           size={20}
-                        />
+                        /> */}
                       </Text>
                     </TouchableOpacity>
                   </View>

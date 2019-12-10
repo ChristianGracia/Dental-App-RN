@@ -15,7 +15,7 @@ export default class Directions extends Component {
       >
         <Text style={styles.buttonText}>
           Directions{" "}
-          <FontAwesomeIcon icon="map-marker-alt" color="#114260" size={20} />
+          {/* <FontAwesomeIcon icon="map-marker-alt" color="#114260" size={20} /> */}
         </Text>
       </TouchableOpacity>
     );
