@@ -14,7 +14,7 @@ Going through the process of getting it on the app store now
 Will add more features after first release
 
 NEED A MAC WITH XCODE TO PROGRESS FURTHER
-WILL HAPPEN SEEN
+WILL HAPPEN SOON
 
 ## Current Features
 
